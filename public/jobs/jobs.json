@@ -1,9 +1,25 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-16T15:04:50.654596Z",
+  "generatedAt": "2026-09-16T21:18:01.120738Z",
   "expiryDays": 45,
-  "totalJobs": 16,
+  "totalJobs": 17,
   "jobs": [
+    {
+      "id": "fd83b4debd61cf0d48905dd8afe8753d7cfc87c173168f6d593811be986f93c5",
+      "title": "Geospatial Team Leader",
+      "company": "Woolpert",
+      "location": "Remote - United States",
+      "city": "",
+      "country": "",
+      "category": "GIS / Geospatial",
+      "postedAt": "2026-09-16T19:09:45Z",
+      "discoveredAt": "2026-09-16T21:18:01.120738Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4408033009",
+      "remote": false
+    },
     {
       "id": "f2ce17b9b6d902193d7693a0da1cb3af4d7bd3c49d615c750399f8dbaea7a74b",
       "title": "Senior Survey Crew Chief",
