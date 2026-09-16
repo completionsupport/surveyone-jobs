@@ -1,0 +1,38 @@
+{
+  "expiryDays": 45,
+  "maxRequestsPerSource": 12,
+  "maxResponseBytes": 2000000,
+  "checkLinksPerRun": 8,
+  "sources": [
+    {
+      "enabled": true,
+      "name": "Woolpert Careers",
+      "company": "Woolpert",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "country": "",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; robots.txt checked 2026-09-15"
+    },
+    {
+      "enabled": true,
+      "name": "Atwell Careers",
+      "company": "Atwell",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/atwellgroup/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; robots.txt checked 2026-09-15"
+    },
+    {
+      "enabled": true,
+      "name": "Lumos & Associates Careers",
+      "company": "Lumos & Associates",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/lumosassociates/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; robots.txt checked 2026-09-15"
+    }
+  ]
+}

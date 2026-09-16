@@ -1,0 +1,33 @@
+{
+  "include": [
+    "land surveyor",
+    "survey engineer",
+    "site surveyor",
+    "senior surveyor",
+    "chief surveyor",
+    "setting out surveyor",
+    "engineering surveyor",
+    "geomatics",
+    "geospatial",
+    "gis surveyor",
+    "utility surveyor",
+    "gpr surveyor",
+    "topographic surveyor",
+    "topographical surveyor",
+    "hydrographic surveyor",
+    "mine surveyor",
+    "mining surveyor",
+    "uav surveyor",
+    "drone surveyor",
+    "lidar",
+    "laser scanning",
+    "survey technician",
+    "survey assistant",
+    "survey party chief",
+    "survey crew chief"
+  ],
+  "exclude": [
+    "quantity surveyor",
+    "cost surveyor"
+  ]
+}
