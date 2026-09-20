@@ -33,6 +33,168 @@
       "country": "United States",
       "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
       "permissionNote": "Public Greenhouse Job Board API; robots.txt checked 2026-09-15"
+    },
+    {
+      "enabled": true,
+      "name": "AMT Engineering Careers",
+      "company": "AMT Engineering",
+      "type": "lever",
+      "url": "https://api.lever.co/v0/postings/amtengineering?mode=json",
+      "country": "United States",
+      "allowedHosts": ["api.lever.co", "jobs.lever.co"],
+      "permissionNote": "Public Lever Postings API; official public job metadata endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Thomas & Hutton Careers",
+      "company": "Thomas & Hutton",
+      "type": "lever",
+      "url": "https://api.lever.co/v0/postings/tandh?mode=json",
+      "country": "United States",
+      "allowedHosts": ["api.lever.co", "jobs.lever.co"],
+      "permissionNote": "Public Lever Postings API; official public job metadata endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Lochmueller Group Careers",
+      "company": "Lochmueller Group",
+      "type": "lever",
+      "url": "https://api.lever.co/v0/postings/lochgroup?mode=json",
+      "country": "United States",
+      "allowedHosts": ["api.lever.co", "jobs.lever.co"],
+      "permissionNote": "Public Lever Postings API; official public job metadata endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Beedie Careers",
+      "company": "Beedie",
+      "type": "lever",
+      "url": "https://api.lever.co/v0/postings/beedie?mode=json",
+      "country": "Canada",
+      "allowedHosts": ["api.lever.co", "jobs.lever.co"],
+      "permissionNote": "Public Lever Postings API; official public job metadata endpoint"
+    },
+    {
+      "enabled": false,
+      "name": "TSMG Careers",
+      "company": "TSMG",
+      "type": "lever",
+      "url": "https://api.lever.co/v0/postings/tsmg?mode=json",
+      "country": "",
+      "maxResponseBytes": 6000000,
+      "allowedHosts": ["api.lever.co", "jobs.lever.co"],
+      "permissionNote": "Disabled: the public response exceeded 33 MB in a measured run, so it is not safe for the bounded collector"
+    },
+    {
+      "enabled": true,
+      "name": "McAdams Careers",
+      "company": "McAdams",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/mcadams/jobs?content=true",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Parametrix Careers",
+      "company": "Parametrix",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/parametrix/jobs?content=true",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "MacKay Sposito Careers",
+      "company": "MacKay Sposito",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/mackaysposito/jobs?content=true",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Olsson Careers",
+      "company": "Olsson",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/olsson/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "AKS Engineering & Forestry Careers",
+      "company": "AKS Engineering & Forestry",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/aksengineeringforestryllc/jobs?content=true",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Langan Careers",
+      "company": "Langan Engineering & Environmental Services",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/langanengineeringandenvironmentalservicesllc/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; documented unauthenticated GET endpoint"
+    },
+    {
+      "enabled": true,
+      "name": "Decima International Careers",
+      "company": "Decima International",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/decimainternational/jobs?content=true",
+      "country": "",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; includes publicly listed Middle East roles"
+    },
+    {
+      "enabled": true,
+      "name": "Jobicy Public Engineering Feed",
+      "company": "",
+      "type": "jobicy",
+      "url": "https://jobicy.com/api/v2/remote-jobs?count=200&industry=engineering",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["jobicy.com"],
+      "permissionNote": "Official public Jobicy API; no authentication; canonical source URL retained"
+    },
+    {
+      "enabled": true,
+      "name": "Jensen Hughes Careers",
+      "company": "Jensen Hughes",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/jensenhughes/jobs",
+      "country": "",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; global public surveying and engineering roles"
+    },
+    {
+      "enabled": true,
+      "name": "Morrison-Maierle Careers",
+      "company": "Morrison-Maierle",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/morrisonmaierle/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; endpoint returned a bounded public job feed in the 2026-09-20 validation"
+    },
+    {
+      "enabled": true,
+      "name": "Michels Careers",
+      "company": "Michels Corporation",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/michelscorporation/jobs",
+      "country": "United States",
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Public Greenhouse Job Board API; endpoint returned a bounded public job feed in the 2026-09-20 validation"
     }
   ]
 }

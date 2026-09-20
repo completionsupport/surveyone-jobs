@@ -43,16 +43,22 @@ def collect():
     successes = failures = checked = 0
     dead = set()
     checks = state.setdefault("linkChecks", {})
+    source_health = state.setdefault("sourceHealth", {})
     link_budget = config.get("checkLinksPerRun", 8)
     for source in config.get("sources", []):
         if not source.get("enabled"):
+            continue
+        previous_health = source_health.get(source.get("name", "unnamed"), {})
+        last_success = date(previous_health.get("lastSuccess"))
+        poll_hours = max(1, int(source.get("pollIntervalHours", 1)))
+        if last_success and (now - last_success).total_seconds() < poll_hours * 3600:
             continue
         checked += 1
         try:
             fetch = Fetcher(
                 source,
                 config.get("maxRequestsPerSource", 12),
-                config.get("maxResponseBytes", 2000000),
+                source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)),
             )
             queue, visited = [source["url"]], set()
             while queue and fetch.remaining > 1:
@@ -93,8 +99,21 @@ def collect():
                 if status in (404, 410):
                     dead.add(job["id"])
             successes += 1
+            source_health[source["name"]] = dict(
+                status="healthy",
+                lastSuccess=iso(now),
+                lastFailure=source_health.get(source["name"], {}).get("lastFailure"),
+                consecutiveFailures=0,
+            )
         except Exception as error:
             failures += 1
+            source_health[source.get("name", "unnamed")] = dict(
+                status="failed",
+                lastSuccess=previous_health.get("lastSuccess"),
+                lastFailure=iso(now),
+                consecutiveFailures=int(previous_health.get("consecutiveFailures", 0)) + 1,
+                errorType=type(error).__name__,
+            )
             print(
                 f"Source {source.get('name', 'unnamed')}: {type(error).__name__}; retained cached jobs"
             )
@@ -139,6 +158,7 @@ def collect():
         updatedJobs=sum(j["id"] in previous and j != previous[j["id"]] for j in active),
         expiredJobs=len(set(previous) - {j["id"] for j in active}),
         totalActiveJobs=len(active),
+        healthySources=sum(v.get("status") == "healthy" for v in source_health.values()),
     )
     print(json.dumps(summary, indent=2))
     if os.getenv("GITHUB_STEP_SUMMARY"):

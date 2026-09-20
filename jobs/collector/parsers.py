@@ -147,9 +147,106 @@ def greenhouse(text):
     return found
 
 
+def lever(text):
+    """Parse Lever's documented public Postings API response."""
+    payload = json.loads(text)
+    if not isinstance(payload, list):
+        raise ValueError("Lever response must be a list")
+    found = []
+    for job in payload:
+        if not isinstance(job, dict):
+            continue
+        categories = job.get("categories", {})
+        if not isinstance(categories, dict):
+            categories = {}
+        apply_url = job.get("applyUrl") or job.get("hostedUrl")
+        created = job.get("createdAt")
+        posted = None
+        if isinstance(created, (int, float)):
+            from datetime import datetime, timezone
+            posted = datetime.fromtimestamp(created / 1000, timezone.utc).isoformat()
+        if job.get("text") and apply_url:
+            found.append(
+                dict(
+                    title=job["text"],
+                    location=categories.get("location", ""),
+                    category=categories.get("team", ""),
+                    employmentType=categories.get("commitment", ""),
+                    description=job.get("descriptionPlain", ""),
+                    postedAt=posted,
+                    applyUrl=apply_url,
+                )
+            )
+    return found
+
+
+def jobicy(text):
+    """Parse Jobicy's documented public remote-jobs response.
+
+    The public endpoint deliberately returns the Jobicy canonical URL.  Keeping that URL
+    preserves source attribution and avoids pretending that it is a direct employer link.
+    """
+    payload = json.loads(text)
+    jobs = payload.get("jobs", []) if isinstance(payload, dict) else []
+    found = []
+    for job in jobs:
+        if not isinstance(job, dict):
+            continue
+        title = job.get("jobTitle")
+        url = job.get("url")
+        if title and url:
+            found.append(
+                dict(
+                    title=title,
+                    company=job.get("companyName", ""),
+                    location=job.get("jobGeo", ""),
+                    category=job.get("jobIndustry", ""),
+                    employmentType=job.get("jobType", ""),
+                    description=job.get("jobDescription") or job.get("jobExcerpt", ""),
+                    postedAt=job.get("pubDate"),
+                    applyUrl=url,
+                    remote=True,
+                )
+            )
+    return found
+
+
+def remotive(text):
+    """Parse Remotive's public API while retaining its canonical listing URL."""
+    payload = json.loads(text)
+    jobs = payload.get("jobs", []) if isinstance(payload, dict) else []
+    found = []
+    for job in jobs:
+        if not isinstance(job, dict):
+            continue
+        title = job.get("title")
+        url = job.get("url")
+        if title and url:
+            found.append(
+                dict(
+                    title=title,
+                    company=job.get("company_name", ""),
+                    location=job.get("candidate_required_location", ""),
+                    category=job.get("category", ""),
+                    employmentType=job.get("job_type", ""),
+                    description=job.get("description", ""),
+                    postedAt=job.get("publication_date"),
+                    applyUrl=url,
+                    remote=True,
+                )
+            )
+    return found
+
+
 def parse(text, url, source):
     if source.get("type") == "greenhouse":
         return greenhouse(text), []
+    if source.get("type") == "lever":
+        return lever(text), []
+    if source.get("type") == "jobicy":
+        return jobicy(text), []
+    if source.get("type") == "remotive":
+        return remotive(text), []
     structured = jsonld(text, url)
     if structured:
         return structured, []

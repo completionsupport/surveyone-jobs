@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone, timedelta
-from jobs.collector.parsers import greenhouse, jsonld, rss, sitemap, xml_root
+from jobs.collector.parsers import greenhouse, jsonld, lever, rss, sitemap, xml_root
 from jobs.collector.model import normalize_url, relevant, make_job, expired, deduplicate
 from jobs.collector.main import load, ROOT
 
@@ -27,6 +27,13 @@ class CollectorTests(unittest.TestCase):
             "https://job-boards.greenhouse.io/acme/jobs/42",
             jobs[0]["applyUrl"],
         )
+
+    def test_lever_public_postings_response(self):
+        payload = '[{"text":"Survey Engineer","hostedUrl":"https://jobs.lever.co/acme/42","createdAt":1789459200000,"categories":{"location":"Dubai","team":"Survey","commitment":"Full-time"},"descriptionPlain":"Set out works"}]'
+        jobs = lever(payload)
+        self.assertEqual("Survey Engineer", jobs[0]["title"])
+        self.assertEqual("Full-time", jobs[0]["employmentType"])
+        self.assertEqual("https://jobs.lever.co/acme/42", jobs[0]["applyUrl"])
 
     def test_jsonld_graph(self):
         html = '<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"Land Surveyor","hiringOrganization":{"name":"Survey Ltd"},"jobLocation":{"address":{"addressLocality":"Dubai","addressCountry":"AE"}},"url":"/jobs/1"}]}</script>'
@@ -55,15 +62,13 @@ class CollectorTests(unittest.TestCase):
             "Senior Land Surveyor",
             "GIS / Geomatics Survey Engineer",
             "Underground Utility Surveyor",
-        ):
-            self.assertTrue(relevant(title, words))
-        for title in (
             "Quantity Surveyor",
             "Senior Quantity Surveyor",
             "MEP Quantity Surveyor",
             "Cost Surveyor",
         ):
-            self.assertFalse(relevant(title, words))
+            self.assertTrue(relevant(title, words))
+        self.assertFalse(relevant("Customer Support Specialist", words))
 
     def test_normalize_urls_and_dedupe(self):
         a = make_job(
@@ -103,6 +108,19 @@ class CollectorTests(unittest.TestCase):
             NOW,
         )
         self.assertEqual(len(deduplicate([a, b])), 2)
+
+    def test_cross_source_duplicate_requires_strong_description_match(self):
+        first = make_job(
+            {"title": "Land Surveyor", "city": "Dubai", "country": "UAE",
+             "description": "Set out roads and verify control points with GNSS and total station.",
+             "applyUrl": "https://careers.example.org/job/77"}, SOURCE, NOW,
+        )
+        second = make_job(
+            {"title": "Land Surveyor", "city": "Dubai", "country": "UAE",
+             "description": "Set out roads and verify control points with GNSS and total station.",
+             "applyUrl": "https://board.example.org/openings/77"}, SOURCE, NOW,
+        )
+        self.assertEqual(1, len(deduplicate([first, second])))
 
     def test_expiry(self):
         job = {"discoveredAt": (NOW - timedelta(days=46)).isoformat()}

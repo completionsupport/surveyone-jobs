@@ -7,7 +7,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 from jobs.collector import main, notify
-from jobs.collector.model import make_job, iso
+from jobs.collector.model import make_job, iso, infer_country, category
+from jobs.collector.parsers import jobicy, remotive
 
 
 class FakeFetcher:
@@ -65,9 +66,7 @@ class PipelineTests(unittest.TestCase):
         ):
             notify.reserve()
             self.assertEqual(1, len(main.load(notify.BATCH, {})["ids"]))
-            self.assertEqual(
-                "ae", main.load(notify.BATCH, {})["batches"][0]["countryCode"]
-            )
+            self.assertEqual("ae", main.load(notify.BATCH, {})["batches"][0]["countryCode"])
             notify.reserve()
             self.assertEqual([], main.load(notify.BATCH, {})["ids"])
 
@@ -75,6 +74,39 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual("ae", notify.country_code("United Arab Emirates"))
         self.assertEqual("sa", notify.country_code("SA"))
         self.assertIsNone(notify.country_code(""))
+
+    def test_country_is_inferred_only_from_strong_location_evidence(self):
+        self.assertEqual("United Arab Emirates", infer_country("Dubai, UAE"))
+        self.assertEqual("United States", infer_country("Raleigh, NC"))
+        self.assertEqual("Canada", infer_country("Vancouver, BC"))
+        self.assertEqual("Australia", infer_country("Brisbane, Australia"))
+        self.assertEqual("", infer_country("Worldwide / APAC"))
+
+    def test_quantity_surveyor_has_its_own_category(self):
+        self.assertEqual("Quantity Surveying", category("Senior Quantity Surveyor"))
+
+    def test_public_aggregator_parsers_keep_canonical_urls(self):
+        jobicy_jobs = jobicy('{"jobs":[{"jobTitle":"GIS Surveyor","companyName":"Geo Co",'
+            '"jobGeo":"Canada","jobIndustry":"Engineering","jobType":"full-time",'
+            '"pubDate":"2026-09-20T00:00:00Z","url":"https://jobicy.com/jobs/1"}]}')
+        remotive_jobs = remotive('{"jobs":[{"title":"Geospatial Engineer","company_name":"Map Co",'
+            '"candidate_required_location":"United Kingdom","category":"All others",'
+            '"job_type":"full_time","publication_date":"2026-09-20T00:00:00",'
+            '"url":"https://remotive.com/remote-jobs/1"}]}')
+        self.assertEqual("https://jobicy.com/jobs/1", jobicy_jobs[0]["applyUrl"])
+        self.assertEqual("https://remotive.com/remote-jobs/1", remotive_jobs[0]["applyUrl"])
+
+    def test_source_poll_interval_skips_recent_success(self):
+        main.save(self.root / "jobs/config/sources.json", {
+            "sources": [dict(self.source, pollIntervalHours=6)], "checkLinksPerRun": 0,
+        })
+        main.save(self.root / "jobs/state.json", {"sourceHealth": {
+            "Careers": {"lastSuccess": iso(datetime.now(timezone.utc)), "status": "healthy"}
+        }})
+        main.collect()
+        self.assertEqual(0, main.load(self.root / "public/jobs/jobs.json", {})["totalJobs"])
+        health = main.load(self.root / "jobs/state.json", {})["sourceHealth"]
+        self.assertEqual("healthy", health["Careers"]["status"])
 
     def test_old_undated_job_does_not_reappear_after_expiry(self):
         now = datetime.now(timezone.utc)
@@ -104,3 +136,6 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(
             1, len(main.load(self.root / "public/jobs/jobs.json", {})["jobs"])
         )
+        health = main.load(self.root / "jobs/state.json", {})["sourceHealth"]
+        self.assertEqual("failed", health["Broken"]["status"])
+        self.assertEqual("healthy", health["Careers"]["status"])
