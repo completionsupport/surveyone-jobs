@@ -30,6 +30,24 @@ def country_code(country):
     return COUNTRY_CODES.get(value.casefold())
 
 
+def fcm_payload(group):
+    """Build one country-only FCM v1 message with a stable reporting label."""
+    return {
+        "message": {
+            "topic": "survey_jobs_" + group["countryCode"],
+            "data": {
+                "destination": "survey_jobs",
+                "jobs_count": str(len(group["ids"])),
+                "jobs_batch": group["id"],
+                "jobs_country": group["country"],
+                "job_id": group["ids"][0] if len(group["ids"]) == 1 else "",
+            },
+            "android": {"priority": "high", "ttl": "86400s"},
+            "fcm_options": {"analytics_label": "survey_jobs_country"},
+        }
+    }
+
+
 def reserve():
     state = load(ROOT / "jobs/state.json", {})
     notified = set(state.get("notified", []))
@@ -84,19 +102,7 @@ def send():
         raise ValueError("Invalid project ID")
     sent = 0
     for group in batch.get("batches", []):
-        payload = {
-            "message": {
-                "topic": "survey_jobs_" + group["countryCode"],
-                "data": {
-                    "destination": "survey_jobs",
-                    "jobs_count": str(len(group["ids"])),
-                    "jobs_batch": group["id"],
-                    "jobs_country": group["country"],
-                    "job_id": group["ids"][0] if len(group["ids"]) == 1 else "",
-                },
-                "android": {"priority": "high", "ttl": "86400s"},
-            }
-        }
+        payload = fcm_payload(group)
         response = requests.post(
             f"https://fcm.googleapis.com/v1/projects/{project}/messages:send",
             json=payload,

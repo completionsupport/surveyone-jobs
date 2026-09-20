@@ -75,6 +75,15 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual("sa", notify.country_code("SA"))
         self.assertIsNone(notify.country_code(""))
 
+    def test_country_notification_has_report_label_and_no_global_topic(self):
+        payload = notify.fcm_payload({
+            "countryCode": "ae", "country": "United Arab Emirates",
+            "id": "batch-1", "ids": ["job-1"],
+        })["message"]
+        self.assertEqual("survey_jobs_ae", payload["topic"])
+        self.assertEqual("survey_jobs_country", payload["fcm_options"]["analytics_label"])
+        self.assertNotEqual("survey_jobs_all", payload["topic"])
+
     def test_country_is_inferred_only_from_strong_location_evidence(self):
         self.assertEqual("United Arab Emirates", infer_country("Dubai, UAE"))
         self.assertEqual("United States", infer_country("Raleigh, NC"))
