@@ -34,6 +34,7 @@ class PipelineTests(unittest.TestCase):
             "name": "Careers",
             "url": "https://example.org",
             "type": "auto",
+            "country": "United Arab Emirates",
         }
         main.save(
             self.root / "jobs/config/sources.json",
@@ -64,8 +65,16 @@ class PipelineTests(unittest.TestCase):
         ):
             notify.reserve()
             self.assertEqual(1, len(main.load(notify.BATCH, {})["ids"]))
+            self.assertEqual(
+                "ae", main.load(notify.BATCH, {})["batches"][0]["countryCode"]
+            )
             notify.reserve()
             self.assertEqual([], main.load(notify.BATCH, {})["ids"])
+
+    def test_country_topic_mapping_never_broadcasts_known_country_globally(self):
+        self.assertEqual("ae", notify.country_code("United Arab Emirates"))
+        self.assertEqual("sa", notify.country_code("SA"))
+        self.assertIsNone(notify.country_code(""))
 
     def test_old_undated_job_does_not_reappear_after_expiry(self):
         now = datetime.now(timezone.utc)
