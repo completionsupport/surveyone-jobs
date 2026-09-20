@@ -218,7 +218,15 @@
     "ae77de573ad2126d9b4748c9f0b00c1b00fcc70b79906ca1da16a49f00a99fe1": "2026-09-20T16:13:07.158208Z",
     "6a63df7c160f4761a28e663afe37893875152758b3b81e22bbe6bcd701ae3332": "2026-09-20T16:13:07.158208Z",
     "947b34b9399391800e5ee2173d05701a29312f8cec70475c6ed77d2243443157": "2026-09-20T16:13:07.158208Z",
-    "7a6e11ccbcb27eabf5cdf3ba2fd3ca4369ce64c5808465bab951e6577a669898": "2026-09-20T16:13:07.158208Z"
+    "7a6e11ccbcb27eabf5cdf3ba2fd3ca4369ce64c5808465bab951e6577a669898": "2026-09-20T16:13:07.158208Z",
+    "c0b2129ccd469b1e314b6451a21f6c81359ded052c631c73ef315bbaa7c558c9": "2026-09-20T18:52:03.475070Z",
+    "67d87ca2ef23d716635a8495dce7c0635f321a5a8a2b7ed751c8bdd49b5b9937": "2026-09-20T18:52:03.475070Z",
+    "526a3e9663e78bfc8fd26ebc7de9863f303f922699c7e8d41a5772ec3671e902": "2026-09-20T18:52:03.475070Z",
+    "9fc439716e32c690c787293a1484451fc7cf25de36fc787996e529305d02f2ba": "2026-09-20T18:52:03.475070Z",
+    "95d06d0ac13ff63aa29f01f1d628200be3fe2c41513588f7bdfd6e36c3a8c2c5": "2026-09-20T18:52:03.475070Z",
+    "c1b438d1efd2e6b2e7f7be8ce0d6989ecd7326e9dca7ed72bc3e11f0adcaacb2": "2026-09-20T18:52:03.475070Z",
+    "b3512d0da89ea1887e11f411884b803acfadaf4256f84b41a954ec8dd2f07886": "2026-09-20T18:52:03.475070Z",
+    "1078f6fba31a74c286440ddd136f9db60b798fbfac8b749c99215501fe191bfe": "2026-09-20T18:52:03.475070Z"
   },
   "firstDiscovered": {
     "a95151d997d8231266169e3055596ae3e695b585125cde822ae0f8c0da45472d": "2026-09-15T15:15:29.550527Z",
@@ -335,109 +343,109 @@
   "sourceHealth": {
     "Woolpert Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Atwell Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Lumos & Associates Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "AMT Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Thomas & Hutton Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Lochmueller Group Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Beedie Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "McAdams Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Parametrix Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "MacKay Sposito Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Olsson Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "AKS Engineering & Forestry Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Langan Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Decima International Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Jobicy Public Engineering Feed": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Jensen Hughes Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Morrison-Maierle Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Michels Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-20T16:13:07.158208Z",
+      "lastSuccess": "2026-09-20T18:52:03.475070Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     }
