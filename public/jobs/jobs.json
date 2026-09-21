@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-20T14:12:07.407426Z",
+  "generatedAt": "2026-09-21T05:04:32.101272Z",
   "expiryDays": 45,
-  "totalJobs": 93,
+  "totalJobs": 94,
   "jobs": [
+    {
+      "id": "9c2169090ca2eff615f7e37ba53db8078a02016de9287180fd8b2db46b147966",
+      "title": "Building Surveyor (Code and Building Compliance)",
+      "company": "Jensen Hughes",
+      "location": "Sydney, New South Wales, Australia",
+      "city": "",
+      "country": "United Kingdom",
+      "category": "Building Surveying",
+      "postedAt": "2026-09-21T03:17:18Z",
+      "discoveredAt": "2026-09-21T05:04:32.101272Z",
+      "expiresAt": null,
+      "source": "Jensen Hughes Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/jensenhughes/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/jensenhughes/jobs/5429783008",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "ade0f2a9e654aad599c6e44647c08f45bce2dd6338ede65b0cb434bba180e828",
       "title": "Survey Crew Chief",
