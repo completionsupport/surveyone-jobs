@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-21T19:32:28.050554Z",
+  "generatedAt": "2026-09-22T05:06:22.570923Z",
   "expiryDays": 45,
-  "totalJobs": 95,
+  "totalJobs": 96,
   "jobs": [
+    {
+      "id": "4e09a7f7d55be1c58331e995c679ec8be80d90b7b3e033e26a2dcfbd32f2f6f2",
+      "title": "Senior Building Surveyor (Code and Building Compliance)",
+      "company": "Jensen Hughes",
+      "location": "Brisbane, Queensland, Australia",
+      "city": "",
+      "country": "Australia",
+      "category": "Building Surveying",
+      "postedAt": "2026-09-22T03:23:57Z",
+      "discoveredAt": "2026-09-22T05:06:22.570923Z",
+      "expiresAt": null,
+      "source": "Jensen Hughes Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/jensenhughes/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/jensenhughes/jobs/5430877008",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "50b85980486d855ede5019e2cea9082158e346c3a133ef7a6942d2bd6f299d92",
       "title": "Survey Crew Chief",
