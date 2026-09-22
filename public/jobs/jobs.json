@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T05:06:22.570923Z",
+  "generatedAt": "2026-09-22T21:24:44.137798Z",
   "expiryDays": 45,
-  "totalJobs": 96,
+  "totalJobs": 97,
   "jobs": [
+    {
+      "id": "7f25403156b778f89ea5cf54964eee075f75afceb144b905616266140df70505",
+      "title": "Principal Airborne LiDAR Systems Engineer",
+      "company": "Woolpert",
+      "location": "Remote - United States",
+      "city": "",
+      "country": "United States",
+      "category": "UAV / LiDAR",
+      "postedAt": "2026-09-22T18:01:17Z",
+      "discoveredAt": "2026-09-22T21:24:44.137798Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4386436009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "4e09a7f7d55be1c58331e995c679ec8be80d90b7b3e033e26a2dcfbd32f2f6f2",
       "title": "Senior Building Surveyor (Code and Building Compliance)",
