@@ -23,6 +23,7 @@
     "31bf3f2b5bf9a065381e2772ca130250785eff520bb8168536775acec6d99581",
     "35c977fe8f95e18eb68a314a39dc6da2d0b6bdf0899483534d2621b623c23c23",
     "38fcaf0c475e82dc9eced1bf17a85a01d0a7fb414db8c539d7b992ec2af5591f",
+    "39ea78a3159358dc2687b4e6ed0b98ea1f18873fdb32d7853be6f9f31f02a85f",
     "3d80d8732d28e9f2244ec54d522d9b8a56cf7a069a6262f55bc0fa2953814563",
     "43b6f5593f5d7845e5403d38c778d3587ce51f900ef07754716614b04b0ab3bb",
     "465f8708e780a4e14604be6acee0726ef417a6967504bee0681416aa30367009",
@@ -37,6 +38,7 @@
     "54f242919dbc76ee7b74ad77170a2d580191c2cc2c03b2dc2acbb1cb1578a11e",
     "5cdaf154e69094650ee7c52e051c9e8f38781c0e56593600330929e32c4a8090",
     "5d5f92e04ddb0451f40f07eaf561872e75d94197cacee835155ff64106a50be4",
+    "67a0d994e2ab92d798a0721ead5846a3deec2197fb3f2aa5b9efb03b27443863",
     "67d87ca2ef23d716635a8495dce7c0635f321a5a8a2b7ed751c8bdd49b5b9937",
     "688c1de084111a79f5ba266d78824262044ef0d1b05f2c6adf69c350eff050e2",
     "6a2656967b0c491529d39fed19eafbbf1a7b78f88d0e6b1a85923dc5ed59feb8",
@@ -57,6 +59,7 @@
     "9468bfc9cf1668e5d22a9825c2f269c51d53dbdca6e36f930e604d062c5166eb",
     "947b34b9399391800e5ee2173d05701a29312f8cec70475c6ed77d2243443157",
     "95d06d0ac13ff63aa29f01f1d628200be3fe2c41513588f7bdfd6e36c3a8c2c5",
+    "992b2077b259c90237b9e76b8f0481525dc5badc09372f889b961103c8e57c50",
     "9a4e723552411258e4f86e9e94f73e9a251c7e4645c0c7866a5e7f87c7b8c49c",
     "9c2169090ca2eff615f7e37ba53db8078a02016de9287180fd8b2db46b147966",
     "9fc439716e32c690c787293a1484451fc7cf25de36fc787996e529305d02f2ba",
@@ -73,10 +76,13 @@
     "ade0f2a9e654aad599c6e44647c08f45bce2dd6338ede65b0cb434bba180e828",
     "ae4fbf159f60ba93650085b0864073eaeeef4666854013bc67ac0b50a1dffd68",
     "ae77de573ad2126d9b4748c9f0b00c1b00fcc70b79906ca1da16a49f00a99fe1",
+    "af3ff99e3950815bedcc689ba28e5a2fc77457deee2ea055b706b37aa4a85cbb",
     "b3512d0da89ea1887e11f411884b803acfadaf4256f84b41a954ec8dd2f07886",
     "b5a0f51d8f1cfe5697ed65d2be210d276529fc9b4d77fa87990ba00d82792650",
     "b65d83728b543be34abd8ffb8900421f745a1ad7062c77b326da0b6c5bc8a4e5",
+    "b966724f2c75292bfe29012259dbfdbb32d6913aeba9a8ecfc7dea3edf64e771",
     "bb4253e9814a1a63cfd714a3549b733b11461e46dc4002b326de19361f6d8541",
+    "bf44b2a9696737ac20666ce520d1550dd7a4d1c64d29e4c47e131f75bbbf742a",
     "c0b2129ccd469b1e314b6451a21f6c81359ded052c631c73ef315bbaa7c558c9",
     "c0f73d9d1be8d81dd0971163e0d0fc7250a2da60e930711e0a6b59db572b012f",
     "c1b438d1efd2e6b2e7f7be8ce0d6989ecd7326e9dca7ed72bc3e11f0adcaacb2",
@@ -199,7 +205,14 @@
     "fb940394683d686e1122afada55fea863e7a1cd0b9ef59e72837846485f1c3f5",
     "fd83b4debd61cf0d48905dd8afe8753d7cfc87c173168f6d593811be986f93c5"
   ],
-  "pending": [],
+  "pending": [
+    "39ea78a3159358dc2687b4e6ed0b98ea1f18873fdb32d7853be6f9f31f02a85f",
+    "67a0d994e2ab92d798a0721ead5846a3deec2197fb3f2aa5b9efb03b27443863",
+    "992b2077b259c90237b9e76b8f0481525dc5badc09372f889b961103c8e57c50",
+    "af3ff99e3950815bedcc689ba28e5a2fc77457deee2ea055b706b37aa4a85cbb",
+    "b966724f2c75292bfe29012259dbfdbb32d6913aeba9a8ecfc7dea3edf64e771",
+    "bf44b2a9696737ac20666ce520d1550dd7a4d1c64d29e4c47e131f75bbbf742a"
+  ],
   "linkChecks": {
     "a1b8a3a722af878d73053ddf6837f40af9ca509959bf0b9c4d675070d55c0877": "2026-09-23T18:25:49.917919Z",
     "8384d03627d0cbea685c0bcbffa8c1a60575f6c3b74e3b1eaef8799192f2c404": "2026-09-23T18:25:49.917919Z",
@@ -402,116 +415,117 @@
     "7f25403156b778f89ea5cf54964eee075f75afceb144b905616266140df70505": "2026-09-22T21:24:44.137798Z",
     "34f02db3f2d6be1bda4cfb81da762d5ef4dee6584ccda05d783c7a6886defb6d": "2026-09-23T13:41:54.461078Z",
     "f899f5f0875f8bb50b033713e95d3b8507bc231ebeebd4bbabfd12e590f1b8e7": "2026-09-23T18:25:49.917919Z",
-    "1ff7ba81642e66ccf132e62f7e77bc364fa5a32ddea01af8b24307a6dbea5ae9": "2026-09-23T18:25:49.917919Z"
+    "1ff7ba81642e66ccf132e62f7e77bc364fa5a32ddea01af8b24307a6dbea5ae9": "2026-09-23T18:25:49.917919Z",
+    "992b2077b259c90237b9e76b8f0481525dc5badc09372f889b961103c8e57c50": "2026-09-24T17:17:25.462042Z"
   },
   "sourceHealth": {
     "Woolpert Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Atwell Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Lumos & Associates Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "AMT Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Thomas & Hutton Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Lochmueller Group Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Beedie Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "McAdams Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Parametrix Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "MacKay Sposito Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Olsson Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "AKS Engineering & Forestry Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Langan Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Decima International Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Jobicy Public Engineering Feed": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Jensen Hughes Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Morrison-Maierle Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-09-24T11:55:01.168069Z",
+      "lastSuccess": "2026-09-24T17:17:25.462042Z",
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Michels Careers": {
       "status": "failed",
       "lastSuccess": "2026-09-23T22:58:49.490786Z",
-      "lastFailure": "2026-09-24T11:55:01.168069Z",
-      "consecutiveFailures": 2,
+      "lastFailure": "2026-09-24T17:17:25.462042Z",
+      "consecutiveFailures": 3,
       "errorType": "ValueError"
     }
   }
