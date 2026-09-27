@@ -137,7 +137,7 @@ class PipelineTests(unittest.TestCase):
         main.save(
             self.root / "jobs/config/sources.json",
             {
-                "sources": [dict(self.source, name="Broken"), self.source],
+                "sources": [dict(self.source, name="Broken", url="https://broken.example.org"), self.source],
                 "checkLinksPerRun": 0,
             },
         )
