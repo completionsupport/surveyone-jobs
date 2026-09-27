@@ -7,6 +7,14 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 
 COUNTRY_ALIASES = {
+    "eg": "Egypt", "مصر": "Egypt", "القاهرة": "Egypt",
+    "السعودية": "Saudi Arabia", "المملكة العربية السعودية": "Saudi Arabia",
+    "الرياض": "Saudi Arabia", "جدة": "Saudi Arabia",
+    "ae": "United Arab Emirates", "الإمارات": "United Arab Emirates",
+    "qa": "Qatar", "قطر": "Qatar", "kw": "Kuwait", "الكويت": "Kuwait",
+    "bh": "Bahrain", "البحرين": "Bahrain", "om": "Oman", "سلطنة عمان": "Oman",
+    "jo": "Jordan", "الأردن": "Jordan", "lb": "Lebanon", "لبنان": "Lebanon",
+    "iq": "Iraq", "العراق": "Iraq",
     "uae": "United Arab Emirates", "united arab emirates": "United Arab Emirates",
     "dubai": "United Arab Emirates", "abu dhabi": "United Arab Emirates",
     "sa": "Saudi Arabia", "saudi": "Saudi Arabia", "saudi arabia": "Saudi Arabia",
@@ -176,7 +184,9 @@ def deduplicate(jobs):
     result = {}
     semantic = []
     for job in jobs:
-        url_key = normalize_url(job["applyUrl"])
+        # One requisition can advertise multiple countries. Keep these distinct so
+        # country-specific delivery does not silently discard Egypt or Saudi Arabia.
+        url_key = (normalize_url(job["applyUrl"]), normalize(job.get("country")))
         if url_key in result:
             continue
         company = normalize(job.get("company"))
