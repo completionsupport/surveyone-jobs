@@ -1,0 +1,38 @@
+name: Test Survey Jobs on isolated debug phone
+on:
+  workflow_dispatch:
+    inputs:
+      test_topic:
+        description: Random QA topic from the debug device test; never a production topic
+        required: true
+        type: string
+      country:
+        description: Two-letter lowercase country code with an active real job
+        required: true
+        default: sa
+        type: string
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r jobs/requirements.txt
+      - name: Send real job to the isolated QA topic only
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TEST_TOPIC: ${{ inputs.test_topic }}
+          TEST_COUNTRY: ${{ inputs.country }}
+        run: python -m jobs.collector.notify test --topic "$TEST_TOPIC" --country "$TEST_COUNTRY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jobs-qa-delivery-report
+          path: jobs/notification-delivery.json
+          if-no-files-found: ignore
+          retention-days: 7

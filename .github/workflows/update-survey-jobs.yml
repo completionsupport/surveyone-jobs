@@ -61,3 +61,13 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python -m jobs.collector.notify send
+      - name: Save redacted collection and delivery diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-run-diagnostics
+          path: |
+            jobs/last-run.json
+            jobs/notification-delivery.json
+          if-no-files-found: ignore
+          retention-days: 14
