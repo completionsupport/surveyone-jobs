@@ -126,7 +126,9 @@ def html(text, url, selectors):
 def greenhouse(text):
     """Parse Greenhouse's documented public Job Board API response."""
     payload = json.loads(text)
-    jobs = payload.get("jobs", []) if isinstance(payload, dict) else []
+    if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+        raise ValueError("Invalid Greenhouse public feed")
+    jobs = payload["jobs"]
     found = []
     for job in jobs:
         if not isinstance(job, dict):
@@ -238,7 +240,41 @@ def remotive(text):
     return found
 
 
+def workable(text):
+    """Documented public account feed; no candidate/private API or credentials.
+
+    Preserve distinct locations for country-targeted delivery. Never label a company's
+    global jobs as Egyptian/Saudi just because its headquarters are there.
+    """
+    payload = json.loads(text)
+    if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+        raise ValueError("Invalid Workable public feed")
+    found = []
+    for job in payload["jobs"]:
+        if not isinstance(job, dict) or not job.get("title") or not job.get("url"):
+            continue
+        locations = job.get("locations") or [job]
+        if not isinstance(locations, list):
+            continue
+        for location in locations:
+            if not isinstance(location, dict) or location.get("hidden") is True:
+                continue
+            country = location.get("country", "")
+            city = location.get("city", "")
+            found.append(dict(
+                title=job["title"], company=payload.get("name", ""),
+                country=country, city=city,
+                location=", ".join(str(v) for v in (city, country) if v),
+                postedAt=job.get("published_on"),
+                applyUrl=job["url"], employmentType=job.get("employment_type", ""),
+                remote=job.get("telecommuting") is True,
+            ))
+    return found
+
+
 def parse(text, url, source):
+    if source.get("type") == "workable":
+        return workable(text), []
     if source.get("type") == "greenhouse":
         return greenhouse(text), []
     if source.get("type") == "lever":

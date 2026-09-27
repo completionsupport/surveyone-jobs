@@ -1,11 +1,13 @@
 import argparse
 import json
 import os
+import time
 from pathlib import Path
 from datetime import datetime, timezone
 from .model import make_job, relevant, expired, deduplicate, date, iso
 from .network import Fetcher
 from .parsers import parse
+from .registry import enabled_sources, rotated_sources, source_key
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -24,11 +26,13 @@ def save(path, value):
     temp.replace(path)
 
 
-def collect():
+def collect(output_root=None):
     now = datetime.now(timezone.utc)
     config = load(ROOT / "jobs/config/sources.json", {})
     keywords = load(ROOT / "jobs/config/keywords.json", {})
-    feedpath, statepath = ROOT / "public/jobs/jobs.json", ROOT / "jobs/state.json"
+    # Audit runs can keep all output/pending notifications separate from production.
+    output_root = Path(output_root) if output_root is not None else ROOT
+    feedpath, statepath = output_root / "public/jobs/jobs.json", output_root / "jobs/state.json"
     old = load(
         feedpath, {"version": 1, "generatedAt": None, "totalJobs": 0, "jobs": []}
     )
@@ -44,16 +48,23 @@ def collect():
     dead = set()
     checks = state.setdefault("linkChecks", {})
     source_health = state.setdefault("sourceHealth", {})
+    sources = enabled_sources(config)
+    ordered = rotated_sources(sources, state.get("sourceCursor"))
+    started = time.monotonic()
+    run_seconds = max(60, min(1200, int(config.get("maxRunSeconds", 900))))
+    source_limit = max(1, min(10000, int(config.get("maxSourcesPerRun", 100))))
     link_budget = config.get("checkLinksPerRun", 8)
-    for source in config.get("sources", []):
-        if not source.get("enabled"):
-            continue
+    for source in ordered:
         previous_health = source_health.get(source.get("name", "unnamed"), {})
         last_success = date(previous_health.get("lastSuccess"))
         poll_hours = max(1, int(source.get("pollIntervalHours", 1)))
         if last_success and (now - last_success).total_seconds() < poll_hours * 3600:
             continue
+        if checked >= source_limit or time.monotonic() - started >= run_seconds:
+            break
         checked += 1
+        state["sourceCursor"] = source_key(source)
+        fetch = None
         try:
             fetch = Fetcher(
                 source,
@@ -61,15 +72,22 @@ def collect():
                 source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)),
             )
             queue, visited = [source["url"]], set()
+            pages = records_read = matched = 0
             while queue and fetch.remaining > 1:
+                if time.monotonic() - started >= run_seconds:
+                    break
                 url = queue.pop(0)
                 if url in visited:
                     continue
                 visited.add(url)
                 status, body = fetch.request(url)
                 if status in (404, 410):
+                    if url == source["url"]:
+                        raise ValueError("Source endpoint no longer exists")
                     continue
                 records, links = parse(body, url, source)
+                pages += 1
+                records_read += len(records)
                 queue.extend(links[: config.get("maxRequestsPerSource", 12)])
                 for raw in records:
                     if not relevant(
@@ -85,8 +103,11 @@ def collect():
                         job["id"], job["discoveredAt"]
                     )
                     merged[job["id"]] = job
+                    matched += 1
+            if pages == 0:
+                raise ValueError("No source page read")
             for job in sorted(previous.values(), key=lambda j: checks.get(j["id"], "")):
-                if link_budget <= 0 or fetch.remaining <= 1:
+                if link_budget <= 0 or fetch.remaining <= 1 or time.monotonic() - started >= run_seconds:
                     break
                 if job["sourceUrl"] != source["url"]:
                     continue
@@ -100,8 +121,10 @@ def collect():
                     dead.add(job["id"])
             successes += 1
             source_health[source["name"]] = dict(
-                status="healthy",
-                lastSuccess=iso(now),
+                status="partial" if queue else "healthy",
+                lastSuccess=previous_health.get("lastSuccess") if queue else iso(now),
+                lastAttempt=iso(now),
+                pages=pages, records=records_read, matchingRecords=matched,
                 lastFailure=source_health.get(source["name"], {}).get("lastFailure"),
                 consecutiveFailures=0,
             )
@@ -111,12 +134,17 @@ def collect():
                 status="failed",
                 lastSuccess=previous_health.get("lastSuccess"),
                 lastFailure=iso(now),
+                lastAttempt=iso(now),
                 consecutiveFailures=int(previous_health.get("consecutiveFailures", 0)) + 1,
                 errorType=type(error).__name__,
             )
             print(
                 f"Source {source.get('name', 'unnamed')}: {type(error).__name__}; retained cached jobs"
             )
+        finally:
+            session = getattr(fetch, "session", None)
+            if session is not None:
+                session.close()
     active = deduplicate(
         [
             j
@@ -151,6 +179,8 @@ def collect():
         )
     save(statepath, state)
     summary = dict(
+        configuredSources=len(config.get("sources", [])),
+        enabledUniqueSources=len(sources),
         sourcesChecked=checked,
         successful=successes,
         failed=failures,
@@ -158,9 +188,10 @@ def collect():
         updatedJobs=sum(j["id"] in previous and j != previous[j["id"]] for j in active),
         expiredJobs=len(set(previous) - {j["id"] for j in active}),
         totalActiveJobs=len(active),
-        healthySources=sum(v.get("status") == "healthy" for v in source_health.values()),
+        healthySources=sum(source_health.get(s["name"], {}).get("status") == "healthy" for s in sources),
     )
     print(json.dumps(summary, indent=2))
+    save(output_root / "jobs/last-run.json", dict(checkedAt=iso(now), **summary))
     if os.getenv("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write(
@@ -171,4 +202,7 @@ def collect():
 
 
 if __name__ == "__main__":
-    collect()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-root", type=Path, help="Isolate an audit feed and state; never sends FCM")
+    args = parser.parse_args()
+    collect(args.output_root)

@@ -40,4 +40,36 @@ delivery is skipped.
 
 ## Schedule
 
-The workflow runs every six hours and can also be started manually from GitHub Actions.
+The workflow is scheduled every two hours (`17 */2 * * *`) and can also be started
+manually from GitHub Actions. GitHub may delay scheduled runs; this is not an
+exact two-hour delivery guarantee.
+
+## Verified source coverage
+
+As of 2026-09-27, 27 distinct enabled career boards passed a live parsing audit;
+15 returned currently eligible surveying/geospatial vacancies. A clean collection
+produced 100 active, deduplicated jobs. This is not 1,000 verified sources. Boards
+with no current matching jobs remain useful monitored sources, not fabricated jobs.
+Country filters and pagination are never counted as additional sources.
+
+The collector uses a persisted round-robin cursor and bounded time/source budgets.
+Malformed feeds and missing endpoints are failures, not healthy empty sources.
+Run `python -m jobs.audit_sources --output source-audit.json` for a read-only audit.
+Run `python -m jobs.collector.main --output-root .tmp/isolated-collection` to test
+collection without changing the production feed, pending jobs, or notification history.
+
+## Country notifications and device verification
+
+Production notifications are grouped by job country and sent only to
+`survey_jobs_<country-code>`; jobs with unknown country are not broadcast globally.
+Delivery attempts are reserved before sending to avoid duplicate notifications.
+Ambiguous failures are not retried automatically; inspect the redacted diagnostic
+artifact. FCM acceptance is not proof of receipt on a device.
+
+The manual **Test Survey Jobs on isolated debug phone** workflow accepts only
+`surveyone_jobs_qa_<32 lowercase hexadecimal characters>` from the Android debug
+device test. It sends a real, unexpired job from the chosen country to that topic
+only, without changing production pending/notified state. Use the Android test's
+prepare, receipt verification, then cleanup methods. It uses the existing
+`FIREBASE_SERVICE_ACCOUNT` secret; no additional secret or device token is needed.
+The test topic is not an authentication credential.

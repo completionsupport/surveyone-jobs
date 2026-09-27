@@ -3,7 +3,93 @@
   "maxRequestsPerSource": 12,
   "maxResponseBytes": 2000000,
   "checkLinksPerRun": 8,
+  "maxSourcesPerRun": 100,
+  "maxRunSeconds": 900,
   "sources": [
+    {
+      "enabled": true,
+      "name": "SSC HR Solutions Careers", "company": "SSC HR Solutions", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/ssc-hr", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Public account API, live parsed 2026-09-27; Egypt vacancies use their own country; 0 current eligible surveying jobs"
+    },
+    {
+      "enabled": true,
+      "name": "Hyde Park Developments Careers", "company": "Hyde Park Developments", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/hpdcareers", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Public account API, live parsed 2026-09-27; Egypt construction employer; 0 current eligible surveying jobs"
+    },
+    {
+      "enabled": true,
+      "name": "Phasor Engineering Careers", "company": "Phasor Engineering", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/phasorengineering", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Public account API, live parsed 2026-09-27; 14 relevant records, 1 current eligible vacancy"
+    },
+    {
+      "enabled": true,
+      "name": "LaBella Associates Careers", "company": "LaBella Associates", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/labella-associates", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Public account API, live parsed 2026-09-27; 11 relevant records, no records inside the configured 45-day window"
+    },
+    {
+      "enabled": true,
+      "name": "Label Your Data Careers", "company": "Label Your Data", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/labelyourdata", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Public account API, live parsed 2026-09-27; 7 current geospatial/LiDAR vacancies in 5 countries"
+    },
+    {
+      "enabled": true,
+      "name": "Eram Talent Careers",
+      "company": "Eram Talent",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/eramtalent-1",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Documented public Workable account API; Gulf vacancies retain their individual countries"
+    },
+    {
+      "enabled": true,
+      "name": "JASARA PMC Careers",
+      "company": "JASARA PMC",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/jasarapmc",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Documented public account API; country taken from each vacancy, not company headquarters"
+    },
+    {
+      "enabled": true,
+      "name": "ICARDA Careers",
+      "company": "ICARDA",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/icarda",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Documented public account API; Egypt/MENA employer; actual vacancy country retained"
+    },
+    {
+      "enabled": true,
+      "name": "International Water Management Institute Careers",
+      "company": "International Water Management Institute",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/international-water-management-institute",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Documented public account API; global geospatial roles including MENA when available"
+    },
     {
       "enabled": true,
       "name": "Woolpert Careers",
