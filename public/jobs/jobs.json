@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-27T09:12:02.941568Z",
+  "generatedAt": "2026-09-27T19:47:32.376550Z",
   "expiryDays": 45,
-  "totalJobs": 111,
+  "totalJobs": 110,
   "jobs": [
     {
       "id": "3a6ea6bbbc95752f885a37776a2b762c82cebdd08842aaf894f4ef5ab177d34e",
@@ -1980,24 +1980,6 @@
       "applyUrl": "https://job-boards.greenhouse.io/langanengineeringandenvironmentalservicesllc/jobs/4374716009",
       "description": "",
       "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "9fc439716e32c690c787293a1484451fc7cf25de36fc787996e529305d02f2ba",
-      "title": "Survey Manager",
-      "company": "Thomas & Hutton",
-      "location": "Savannah, Georgia",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-13T18:16:50.131000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Thomas & Hutton Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/tandh?mode=json",
-      "applyUrl": "https://jobs.lever.co/tandh/ebae0217-1405-41dc-8901-b180a70a28df/apply",
-      "description": "Advance your surveying career where your work helps shape communities across the Southeast. At Thomas & Hutton, you'll lead complex surveying and mapping projects, collaborate with multidisciplinary teams, mentor survey professionals, and grow within a company consistently recognized as a Best Place to Work. If you're ready to combine your technical expertise, leadership abilities, and client-focused approach to deliver impactful projects, this role is for you.",
-      "employmentType": "Full-time",
       "remote": false
     }
   ]
