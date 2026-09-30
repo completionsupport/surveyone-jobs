@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T22:21:28.122356Z",
+  "generatedAt": "2026-09-30T12:43:52.702439Z",
   "expiryDays": 45,
-  "totalJobs": 116,
+  "totalJobs": 117,
   "jobs": [
+    {
+      "id": "ca0e0ddb810ac940a80fb86922af665350806c09395c5540ff426c1b1c0fff74",
+      "title": "Data Annotator for Geospatial / LiDAR project",
+      "company": "Label Your Data",
+      "location": "Tiranë, Albania",
+      "city": "Tiranë",
+      "country": "Albania",
+      "category": "UAV / LiDAR",
+      "postedAt": "2026-09-30T00:00:00Z",
+      "discoveredAt": "2026-09-30T12:43:52.702439Z",
+      "expiresAt": null,
+      "source": "Label Your Data Careers",
+      "sourceUrl": "https://www.workable.com/api/accounts/labelyourdata",
+      "applyUrl": "https://apply.workable.com/j/851E9F680C",
+      "description": "",
+      "employmentType": "Full-time",
+      "remote": true
+    },
     {
       "id": "33ccda8c6073a217727472903fc44c6cb161b1bf1b8918acfc88442d17b9135e",
       "title": "SUE CAD Technician",
