@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T19:22:56.025771Z",
+  "generatedAt": "2026-10-02T23:50:04.483475Z",
   "expiryDays": 45,
-  "totalJobs": 451,
+  "totalJobs": 452,
   "jobs": [
+    {
+      "id": "ba84477c905bf318ce5c49498af1d29231a7d200a486360f5940648e9cd65bdd",
+      "title": "Survey Crew Chief",
+      "company": "Woolpert",
+      "location": "Houston, TX",
+      "city": "",
+      "country": "United States",
+      "category": "Land Surveying",
+      "postedAt": "2026-10-02T19:48:28Z",
+      "discoveredAt": "2026-10-02T23:50:04.483475Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4413375009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "0231101bdaa765dd1c9e6922b5cf6c0e3e4240aebdba2f147aca4e264c9cbf48",
       "title": "Project Surveyor, Aviation & Geodesy",
