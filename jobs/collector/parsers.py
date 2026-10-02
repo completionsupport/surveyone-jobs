@@ -1,7 +1,8 @@
 """Parsers return metadata only. Site selectors live entirely in configuration."""
 
 import json
-from urllib.parse import urljoin
+import re
+from urllib.parse import unquote, urljoin
 from xml.etree import ElementTree as ET
 from bs4 import BeautifulSoup
 
@@ -272,6 +273,72 @@ def workable(text):
     return found
 
 
+def smartrecruiters_html(text):
+    """Parse the employer's public SmartRecruiters career page.
+
+    We intentionally use the public career page rather than the Posting API because the API
+    robots policy disallows generic crawlers. This parser is suited to bounded boards whose
+    complete current openings are present in the initial page.
+    """
+    soup = BeautifulSoup(text, "html.parser")
+    sections = soup.select("section.js-group")
+    if not sections and not soup.select_one(".js-openings"):
+        raise ValueError("Invalid SmartRecruiters career page")
+    company_heading = soup.select_one("h1")
+    company = company_heading.get_text(" ", strip=True) if company_heading else ""
+    found = []
+    for section in sections:
+        heading = section.select_one("h3")
+        location = heading.get_text(" ", strip=True) if heading else ""
+        city = location.split(",", 1)[0].strip()
+        for card in section.select("li.opening-job"):
+            link = card.select_one("a[href]")
+            title = card.select_one(".job-title")
+            employment = card.select_one(".job-desc")
+            if link and title:
+                found.append(dict(
+                    title=title.get_text(" ", strip=True), company=company,
+                    city=city, location=location,
+                    employmentType=(employment.get_text(" ", strip=True)
+                                    if employment else ""),
+                    applyUrl=link["href"],
+                ))
+    return found
+
+
+def icims(text, source):
+    """Read a bounded iCIMS sitemap, then public metadata from matching job pages."""
+    if "<urlset" in text[:500].casefold():
+        terms = [str(value).replace("-", " ").replace("_", " ").casefold()
+                 for value in source.get("linkKeywords", [])]
+        links = []
+        for link in sitemap(text):
+            slug = unquote(link).replace("-", " ").replace("_", " ").casefold()
+            matches = not terms or any(
+                re.search(r"(?<!\w)" + re.escape(term) + r"(?!\w)", slug)
+                for term in terms
+            )
+            if "/jobs/" in slug and matches:
+                links.append(link)
+        return [], links
+    match = re.search(r"var\s+icimsSD\s*=\s*(\{.*?\});", text, re.DOTALL)
+    if not match:
+        raise ValueError("Invalid iCIMS public job page")
+    payload = json.loads(match.group(1))
+    job = payload.get("job", {})
+    urls = job.get("jobUrls", []) if isinstance(job, dict) else []
+    apply_url = next((item.get("url") for item in urls
+                      if isinstance(item, dict) and item.get("url")), "")
+    if not job.get("title") or not apply_url:
+        return [], []
+    location = job.get("location", "")
+    return [dict(
+        title=job["title"], company=payload.get("companyName", ""),
+        city=str(location).split(",", 1)[0].strip(), location=location,
+        applyUrl=apply_url,
+    )], []
+
+
 def parse(text, url, source):
     if source.get("type") == "workable":
         return workable(text), []
@@ -283,6 +350,10 @@ def parse(text, url, source):
         return jobicy(text), []
     if source.get("type") == "remotive":
         return remotive(text), []
+    if source.get("type") == "smartrecruiters_html":
+        return smartrecruiters_html(text), []
+    if source.get("type") == "icims":
+        return icims(text, source)
     structured = jsonld(text, url)
     if structured:
         return structured, []

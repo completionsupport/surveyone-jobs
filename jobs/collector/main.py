@@ -68,7 +68,8 @@ def collect(output_root=None):
         try:
             fetch = Fetcher(
                 source,
-                config.get("maxRequestsPerSource", 12),
+                min(24, int(source.get("maxRequestsPerSource",
+                                       config.get("maxRequestsPerSource", 12)))),
                 source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)),
             )
             queue, visited = [source["url"]], set()

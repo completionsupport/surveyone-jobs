@@ -1,6 +1,7 @@
+import json
 import unittest
 from datetime import datetime, timezone, timedelta
-from jobs.collector.parsers import greenhouse, jsonld, lever, rss, sitemap, xml_root
+from jobs.collector.parsers import greenhouse, icims, jsonld, lever, rss, sitemap, smartrecruiters_html, xml_root
 from jobs.collector.model import normalize_url, relevant, make_job, expired, deduplicate
 from jobs.collector.main import load, ROOT
 
@@ -35,6 +36,32 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual("Full-time", jobs[0]["employmentType"])
         self.assertEqual("https://jobs.lever.co/acme/42", jobs[0]["applyUrl"])
 
+    def test_smartrecruiters_public_career_page(self):
+        page = '''<h1>ABEC</h1><div class="js-openings"><section class="js-group">
+        <h3>Cairo, Egypt</h3><li class="opening-job"><a href="https://jobs.smartrecruiters.com/ABEC1/42">
+        <h4 class="job-title">Senior Land Surveyor</h4><p class="job-desc">Full-time</p>
+        </a></li></section></div>'''
+        jobs = smartrecruiters_html(page)
+        self.assertEqual("Senior Land Surveyor", jobs[0]["title"])
+        self.assertEqual("Cairo, Egypt", jobs[0]["location"])
+        self.assertEqual("https://jobs.smartrecruiters.com/ABEC1/42", jobs[0]["applyUrl"])
+
+    def test_icims_sitemap_is_filtered_before_fetching_job_pages(self):
+        source = {"linkKeywords": ["surveyor", "gis"]}
+        sitemap_page = '''<urlset><url><loc>https://careers.example/jobs/1/accountant/job</loc></url>
+        <url><loc>https://careers.example/jobs/2/senior-surveyor/job</loc></url></urlset>'''
+        records, links = icims(sitemap_page, source)
+        self.assertFalse(records)
+        self.assertEqual(["https://careers.example/jobs/2/senior-surveyor/job"], links)
+
+    def test_icims_public_job_metadata(self):
+        page = '''<script>var icimsSD = {"companyName":"SYSTRA","job":{"title":"Surveyor",
+        "location":"Cairo, Egypt","jobUrls":[{"url":"https://careers.example/jobs/2/job"}]}};</script>'''
+        records, links = icims(page, {})
+        self.assertEqual("Surveyor", records[0]["title"])
+        self.assertEqual("Cairo, Egypt", records[0]["location"])
+        self.assertFalse(links)
+
     def test_jsonld_graph(self):
         html = '<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"Land Surveyor","hiringOrganization":{"name":"Survey Ltd"},"jobLocation":{"address":{"addressLocality":"Dubai","addressCountry":"AE"}},"url":"/jobs/1"}]}</script>'
         job = jsonld(html, SOURCE["url"])[0]
@@ -66,9 +93,11 @@ class CollectorTests(unittest.TestCase):
             "Senior Quantity Surveyor",
             "MEP Quantity Surveyor",
             "Cost Surveyor",
+            "Senior GIS Specialist",
         ):
             self.assertTrue(relevant(title, words))
         self.assertFalse(relevant("Customer Support Specialist", words))
+        self.assertFalse(relevant("Logistics Operations Supervisor", words))
 
     def test_normalize_urls_and_dedupe(self):
         a = make_job(

@@ -17,7 +17,8 @@ from .collector.parsers import parse
 def audit_source(source, config, keywords, now):
     result = dict(name=source["name"], url=source["url"], enabled=source.get("enabled", False),
                   status="failed", pages=0, records=0, relevant=0, eligible=0, countries={})
-    fetch = Fetcher(source, config.get("maxRequestsPerSource", 12),
+    fetch = Fetcher(source, min(24, int(source.get("maxRequestsPerSource",
+                                                  config.get("maxRequestsPerSource", 12)))),
                     source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)))
     try:
         queue, visited, jobs = [source["url"]], set(), []
