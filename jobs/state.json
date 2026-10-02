@@ -3,6 +3,7 @@
     "014fb232ef99119fcd5831743f16104ba6272a140cc7350a8d96cf31aa8a8568",
     "016199ba0b0a85aeb5aacff4b305ac6879094073a2736703ef4cfbe5f390fd32",
     "01676cd755575705386a8cb7a3de4a93497bc8079eff3def50713cbcd6ec61c4",
+    "0231101bdaa765dd1c9e6922b5cf6c0e3e4240aebdba2f147aca4e264c9cbf48",
     "02dc51ab14a691ac7e41f0f1285488ddf1c6abe4d1f17bd3c3e491ae488e8c51",
     "0337817c8b67e6a3b037ef5907a676b2c7e86754d031b9b70c12aed625c5148e",
     "03ff12dc56b9d090ac8df5a64e83d2679f8ff1223e2ae012130aa2bffa379af9",
@@ -828,6 +829,7 @@
   ],
   "pending": [
     "01676cd755575705386a8cb7a3de4a93497bc8079eff3def50713cbcd6ec61c4",
+    "0231101bdaa765dd1c9e6922b5cf6c0e3e4240aebdba2f147aca4e264c9cbf48",
     "09aee88b3e22889a1050eef957488a8efcbd523a3ecba34efa22b58faf9d3cc5",
     "1253a1c86a30c13e8b56aedaae45ea9735e670462e906450793e3b4fcde83340",
     "1bdb011b4a2ca2b7719fb460fd16e3636e6ecfe70a74cd0290faef46c3499380",
@@ -1016,7 +1018,15 @@
     "ad2fddb077b3c6509eb9eccc99227a9d6b14e332c43a00b15e2bc9a0903c9008": "2026-09-30T23:55:36.364621Z",
     "6636597ea3b27fe8d03d417c2b03aa274321ba0722f7f704258f108c92e07548": "2026-10-01T06:05:42.255024Z",
     "26d1defda4419d9e554051c6629f8476e7f8c22d5c823f932dce6bc95686d1fe": "2026-10-01T06:05:42.255024Z",
-    "4c475f327c60f7809b66e259c6f0a0509bfbee4b37835598eac42b7e7d37d1f1": "2026-10-01T06:05:42.255024Z"
+    "4c475f327c60f7809b66e259c6f0a0509bfbee4b37835598eac42b7e7d37d1f1": "2026-10-01T06:05:42.255024Z",
+    "ab76414c70a8af212a481bd27c29b370a0a582ca1beba4e233f7ff6b7c40f9ca": "2026-10-02T19:22:56.025771Z",
+    "6283bd5109cd9cfc56102ad6186257dea3b78fc5d774fe90650f1c78d1589720": "2026-10-02T19:22:56.025771Z",
+    "abfc2b6d95b77435e028a22c0dc956ad99a8aa85d0df3d1d814d5efb850c3cfa": "2026-10-02T19:22:56.025771Z",
+    "ab17300ca7966b978b0b26f4f2d5a194a043a17ead7705d34c907495f75e6e2b": "2026-10-02T19:22:56.025771Z",
+    "11a2e3446ff268149a7ec77d753725f5353c22c801f0ae0de222644495c21340": "2026-10-02T19:22:56.025771Z",
+    "abf88e336a4e4665df3b6d9dd10075147233bc1493ee31012e38124be5b06627": "2026-10-02T19:22:56.025771Z",
+    "ce9f6693acb851ee9e58e8ce522b249e8326c45a8176fb5c2972e19da77053e4": "2026-10-02T19:22:56.025771Z",
+    "c9345db4385886e518f632add89f59b07b806edb491d3abbf7b3e583a24d62a9": "2026-10-02T19:22:56.025771Z"
   },
   "firstDiscovered": {
     "a95151d997d8231266169e3055596ae3e695b585125cde822ae0f8c0da45472d": "2026-09-15T15:15:29.550527Z",
@@ -1569,33 +1579,34 @@
     "604bccde43d0cc43121094f8b2cbd3a24bbb4ed6b0d76b625615d74c5f3b287a": "2026-10-02T18:12:49.204292Z",
     "a8ee94b3f5026c52cade094c3eb21b7f2a2bcdd8a8673561e19641c26e005163": "2026-10-02T18:12:49.204292Z",
     "40dc693bbcc7ae68c66a45ebc94efdb281fd934a32a13f301cc9e571bb23d167": "2026-10-02T18:12:49.204292Z",
-    "45fe8b8598ac803127659fbec13a8297b9d84c4cf9f7359295efdbda5be707f1": "2026-10-02T18:12:49.204292Z"
+    "45fe8b8598ac803127659fbec13a8297b9d84c4cf9f7359295efdbda5be707f1": "2026-10-02T18:12:49.204292Z",
+    "0231101bdaa765dd1c9e6922b5cf6c0e3e4240aebdba2f147aca4e264c9cbf48": "2026-10-02T19:22:56.025771Z"
   },
   "sourceHealth": {
     "Woolpert Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 111,
-      "matchingRecords": 15,
+      "matchingRecords": 16,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Atwell Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
-      "records": 186,
+      "records": 187,
       "matchingRecords": 14,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Lumos & Associates Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 15,
       "matchingRecords": 1,
@@ -1604,18 +1615,18 @@
     },
     "AMT Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
-      "records": 113,
+      "records": 115,
       "matchingRecords": 4,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Thomas & Hutton Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 121,
       "matchingRecords": 8,
@@ -1624,8 +1635,8 @@
     },
     "Lochmueller Group Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 34,
       "matchingRecords": 1,
@@ -1634,8 +1645,8 @@
     },
     "Beedie Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 16,
       "matchingRecords": 1,
@@ -1644,8 +1655,8 @@
     },
     "McAdams Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 88,
       "matchingRecords": 14,
@@ -1654,18 +1665,18 @@
     },
     "Parametrix Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
-      "records": 24,
+      "records": 23,
       "matchingRecords": 1,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "MacKay Sposito Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 45,
       "matchingRecords": 6,
@@ -1674,18 +1685,18 @@
     },
     "Olsson Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
-      "records": 417,
+      "records": 420,
       "matchingRecords": 16,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "AKS Engineering & Forestry Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 81,
       "matchingRecords": 0,
@@ -1694,8 +1705,8 @@
     },
     "Langan Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 519,
       "matchingRecords": 17,
@@ -1704,8 +1715,8 @@
     },
     "Decima International Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 30,
       "matchingRecords": 0,
@@ -1724,8 +1735,8 @@
     },
     "Jensen Hughes Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 168,
       "matchingRecords": 6,
@@ -1734,8 +1745,8 @@
     },
     "Morrison-Maierle Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-10-02T17:36:39.606741Z",
-      "lastAttempt": "2026-10-02T17:36:39.606741Z",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
       "pages": 1,
       "records": 61,
       "matchingRecords": 3,
@@ -1743,12 +1754,14 @@
       "consecutiveFailures": 0
     },
     "Michels Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-10-01T06:05:42.255024Z",
+      "status": "healthy",
+      "lastSuccess": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
+      "pages": 1,
+      "records": 620,
+      "matchingRecords": 9,
       "lastFailure": "2026-10-02T18:12:49.204292Z",
-      "lastAttempt": "2026-10-02T18:12:49.204292Z",
-      "consecutiveFailures": 7,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "SSC HR Solutions Careers": {
       "status": "healthy",
@@ -1953,9 +1966,9 @@
     "G Map Oman Careers": {
       "status": "failed",
       "lastSuccess": null,
-      "lastFailure": "2026-10-02T18:12:49.204292Z",
-      "lastAttempt": "2026-10-02T18:12:49.204292Z",
-      "consecutiveFailures": 1,
+      "lastFailure": "2026-10-02T19:22:56.025771Z",
+      "lastAttempt": "2026-10-02T19:22:56.025771Z",
+      "consecutiveFailures": 2,
       "errorType": "HTTPError"
     },
     "InfoGraph Jordan Careers": {
