@@ -1,7 +1,7 @@
 import json
 import unittest
 from datetime import datetime, timezone, timedelta
-from jobs.collector.parsers import greenhouse, icims, jsonld, lever, rss, sitemap, smartrecruiters_html, xml_root
+from jobs.collector.parsers import greenhouse, html, icims, jsonld, lever, rss, sitemap, smartrecruiters_html, workday, xml_root
 from jobs.collector.model import normalize_url, relevant, make_job, expired, deduplicate
 from jobs.collector.main import load, ROOT
 
@@ -14,6 +14,33 @@ SOURCE = {
 
 
 class CollectorTests(unittest.TestCase):
+    def test_static_career_page_can_use_its_https_page_as_apply_url(self):
+        jobs = html('<details><h3>Senior GIS Engineer</h3></details>',
+                    'https://example.org/careers',
+                    {'job': 'details', 'title': 'h3'},
+                    'https://example.org/careers')
+        self.assertEqual('https://example.org/careers', jobs[0]['applyUrl'])
+
+    def test_workday_search_is_bounded_and_preserves_public_location(self):
+        source = dict(
+            type="workday", company="Example Engineering",
+            url="https://example.wd1.myworkdayjobs.com/wday/cxs/example/Careers/jobs?search=land+surveyor&offset=0",
+            publicBaseUrl="https://example.wd1.myworkdayjobs.com/en-US/Careers",
+            searchTerms=["land surveyor", "GIS"], maxPagesPerTerm=2,
+        )
+        body = json.dumps(dict(total=25, jobPostings=[dict(
+            title="Land Surveyor", externalPath="/job/AE---Dubai/Land-Surveyor_R1",
+            locationsText="AE - Dubai", bulletFields=["R1"],
+        )]))
+        jobs, links = workday(body, source["url"], source)
+        self.assertEqual("AE - Dubai", jobs[0]["location"])
+        self.assertTrue(jobs[0]["applyUrl"].endswith("/job/AE---Dubai/Land-Surveyor_R1"))
+        self.assertEqual(2, len(links))
+        self.assertIn("offset=20", links[0])
+        self.assertIn("search=GIS", links[1])
+        with self.assertRaises(ValueError):
+            workday(body, source["url"], dict(source, publicBaseUrl="https://evil.example/job"))
+
     def test_greenhouse_public_board_response(self):
         payload = (
             '{"jobs":[{"title":"Land Surveyor",'

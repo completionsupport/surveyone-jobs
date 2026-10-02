@@ -8,11 +8,20 @@ from unittest.mock import Mock, patch
 
 from jobs.collector import main, notify
 from jobs.collector.model import iso
+from jobs.collector.model import infer_country
 from jobs.collector.parsers import greenhouse
 from jobs.collector.registry import enabled_sources, rotated_sources, source_key
 
 
 class RegistryTests(unittest.TestCase):
+    def test_middle_east_workday_country_codes_are_inferred(self):
+        for location, expected in [("AE - Dubai", "United Arab Emirates"),
+                                   ("SA.Riyadh", "Saudi Arabia"),
+                                   ("Cairo, EGY", "Egypt"),
+                                   ("QA - Doha", "Qatar"),
+                                   ("Kuwait City, KWT", "Kuwait")]:
+            self.assertEqual(expected, infer_country(location))
+
     def test_thousand_unique_boards_round_robin_without_starvation(self):
         # Synthetic offline fixture only; these are NOT counted as real sources.
         sources = [dict(enabled=True, name=f"Fixture {i}", url=f"https://example.org/board/{i}") for i in range(1000)]

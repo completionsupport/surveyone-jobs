@@ -46,9 +46,12 @@ exact two-hour delivery guarantee.
 
 ## Verified source coverage
 
-As of 2026-09-27, 27 distinct enabled career boards passed a live parsing audit;
-15 returned currently eligible surveying/geospatial vacancies. A clean collection
-produced 100 active, deduplicated jobs. This is not 1,000 verified sources. Boards
+As of 2026-10-02, 49 distinct enabled career boards passed live parsing and clean
+collection; 35 returned currently eligible surveying/geospatial vacancies. The clean
+isolated collection produced 425 active, deduplicated jobs across 26 countries, including
+current listings in the United Arab Emirates, Saudi Arabia, Qatar, Kuwait, Oman, Egypt,
+Jordan and Lebanon. Coverage includes official Workday, Workable, SmartRecruiters,
+iCIMS, Greenhouse and Lever employer boards. This is not 1,000 verified sources. Boards
 with no current matching jobs remain useful monitored sources, not fabricated jobs.
 Country filters and pagination are never counted as additional sources.
 

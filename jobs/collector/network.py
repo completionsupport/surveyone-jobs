@@ -3,7 +3,7 @@
 import ipaddress
 import socket
 import time
-from urllib.parse import urlsplit, urljoin
+from urllib.parse import parse_qs, urlsplit, urljoin
 from urllib.robotparser import RobotFileParser
 import requests
 from .model import normalize_url
@@ -50,13 +50,30 @@ class Fetcher:
         self.remaining -= 1
         self.last = time.monotonic()
         try:
-            response = self.session.get(
-                url,
-                timeout=(10, 20),
-                stream=True,
-                allow_redirects=False,
+            request_options = dict(
+                timeout=(10, 20), stream=True, allow_redirects=False,
                 headers={"User-Agent": self.agent},
             )
+            if self.source.get("type") == "workday" and not robots:
+                query = parse_qs(urlsplit(url).query)
+                search = str(query.get("search", [""])[0])
+                allowed_terms = [str(value) for value in self.source.get("searchTerms", [])]
+                if search not in allowed_terms:
+                    raise ValueError("Unapproved Workday search term")
+                try:
+                    offset = int(query.get("offset", ["0"])[0])
+                except (TypeError, ValueError):
+                    raise ValueError("Invalid Workday offset")
+                if offset < 0 or offset % 20:
+                    raise ValueError("Invalid Workday offset")
+                response = self.session.post(
+                    urlsplit(url)._replace(query="", fragment="").geturl(),
+                    json=dict(appliedFacets={}, limit=20, offset=offset,
+                              searchText=search),
+                    **request_options,
+                )
+            else:
+                response = self.session.get(url, **request_options)
         except (requests.Timeout, requests.ConnectionError):
             if retry and self.remaining > 0:
                 return self.request(url, robots=robots, retry=False)

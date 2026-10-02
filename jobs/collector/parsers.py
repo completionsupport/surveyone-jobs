@@ -2,7 +2,7 @@
 
 import json
 import re
-from urllib.parse import unquote, urljoin
+from urllib.parse import parse_qs, unquote, urlencode, urljoin, urlsplit, urlunsplit
 from xml.etree import ElementTree as ET
 from bs4 import BeautifulSoup
 
@@ -101,7 +101,7 @@ def sitemap(text):
     ]
 
 
-def html(text, url, selectors):
+def html(text, url, selectors, fixed_apply_url=""):
     soup = BeautifulSoup(text, "html.parser")
     found = []
     for card in soup.select(selectors["job"]):
@@ -110,15 +110,16 @@ def html(text, url, selectors):
             item = card.select_one(selectors[name]) if selectors.get(name) else None
             return item.get_text(" ", strip=True) if item else ""
 
-        link = card.select_one(selectors["link"])
-        if link and link.get("href"):
+        link = card.select_one(selectors["link"]) if selectors.get("link") else None
+        apply_url = fixed_apply_url or (link.get("href") if link else "")
+        if apply_url:
             found.append(
                 dict(
                     title=field("title"),
                     category=field("category"),
                     location=field("location"),
                     company=field("company"),
-                    applyUrl=urljoin(url, link["href"]),
+                    applyUrl=urljoin(url, apply_url),
                 )
             )
     return found
@@ -273,6 +274,65 @@ def workable(text):
     return found
 
 
+def workday(text, url, source):
+    """Parse a bounded Workday public career-search response.
+
+    Workday career sites expose a public job-search endpoint used by their own web UI.
+    Search terms and pagination are whitelisted in source configuration so the collector
+    never turns this into an unbounded crawl.
+    """
+    payload = json.loads(text)
+    postings = payload.get("jobPostings", []) if isinstance(payload, dict) else []
+    total = payload.get("total") if isinstance(payload, dict) else None
+    if not isinstance(postings, list) or not isinstance(total, int):
+        raise ValueError("Invalid Workday public feed")
+    public_base = str(source.get("publicBaseUrl", "")).rstrip("/")
+    if (not public_base.startswith("https://") or
+            urlsplit(public_base).hostname != urlsplit(source["url"]).hostname):
+        raise ValueError("Missing Workday public career URL")
+    found = []
+    for job in postings:
+        if not isinstance(job, dict):
+            continue
+        title, path = job.get("title"), job.get("externalPath")
+        bullets = job.get("bulletFields", [])
+        # Workday tenants differ: some expose location in locationsText, while others
+        # put it in the first bullet and reserve locationsText for multi-location labels.
+        locations_text = str(job.get("locationsText", "")).strip()
+        bullet_location = str(bullets[0]) if isinstance(bullets, list) and bullets else ""
+        location = (locations_text if locations_text and not locations_text.endswith(" Locations")
+                    else bullet_location)
+        if title and isinstance(path, str) and path.startswith("/job/"):
+            found.append(dict(
+                title=title, company=source.get("company", ""),
+                location=location, city=location.split("-", 1)[-1].strip(),
+                applyUrl=public_base + path,
+            ))
+
+    query = parse_qs(urlsplit(url).query)
+    term = str(query.get("search", [""])[0])
+    try:
+        offset = int(query.get("offset", ["0"])[0])
+    except (TypeError, ValueError):
+        raise ValueError("Invalid Workday response URL")
+    terms = [str(value) for value in source.get("searchTerms", [])]
+    if term not in terms:
+        raise ValueError("Unexpected Workday search term")
+    max_pages = max(1, min(4, int(source.get("maxPagesPerTerm", 2))))
+    links = []
+
+    def page_url(search, page_offset=0):
+        parsed = urlsplit(source["url"])
+        return urlunsplit((parsed.scheme, parsed.netloc, parsed.path,
+                           urlencode(dict(search=search, offset=page_offset)), ""))
+
+    if offset + 20 < total and (offset // 20) + 1 < max_pages:
+        links.append(page_url(term, offset + 20))
+    if offset == 0 and term == terms[0]:
+        links.extend(page_url(other) for other in terms[1:])
+    return found, links
+
+
 def smartrecruiters_html(text):
     """Parse the employer's public SmartRecruiters career page.
 
@@ -342,6 +402,8 @@ def icims(text, source):
 def parse(text, url, source):
     if source.get("type") == "workable":
         return workable(text), []
+    if source.get("type") == "workday":
+        return workday(text, url, source)
     if source.get("type") == "greenhouse":
         return greenhouse(text), []
     if source.get("type") == "lever":
@@ -373,5 +435,5 @@ def parse(text, url, source):
         except ET.ParseError:
             pass
     if source.get("selectors"):
-        return html(text, url, source["selectors"]), []
+        return html(text, url, source["selectors"], source.get("fixedApplyUrl", "")), []
     return [], []
