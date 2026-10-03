@@ -90,6 +90,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual("Canada", infer_country("Vancouver, BC"))
         self.assertEqual("Australia", infer_country("Brisbane, Australia"))
         self.assertEqual("", infer_country("Worldwide / APAC"))
+        for location, country in (
+            ("Lagos, NGA", "Nigeria"), ("Nairobi, KE", "Kenya"),
+            ("Lahore, PK", "Pakistan"), ("Cape Town, ZA", "South Africa"),
+            ("Manila, PH", "Philippines"),
+        ):
+            self.assertEqual(country, infer_country(location))
 
     def test_quantity_surveyor_has_its_own_category(self):
         self.assertEqual("Quantity Surveying", category("Senior Quantity Surveyor"))

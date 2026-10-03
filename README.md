@@ -46,14 +46,17 @@ exact two-hour delivery guarantee.
 
 ## Verified source coverage
 
-As of 2026-10-02, 49 distinct enabled career boards passed live parsing and clean
-collection; 35 returned currently eligible surveying/geospatial vacancies. The clean
-isolated collection produced 425 active, deduplicated jobs across 26 countries, including
-current listings in the United Arab Emirates, Saudi Arabia, Qatar, Kuwait, Oman, Egypt,
-Jordan and Lebanon. Coverage includes official Workday, Workable, SmartRecruiters,
-iCIMS, Greenhouse and Lever employer boards. This is not 1,000 verified sources. Boards
-with no current matching jobs remain useful monitored sources, not fabricated jobs.
-Country filters and pagination are never counted as additional sources.
+As of 2026-10-03, 59 distinct enabled career boards passed live parsing and clean
+collection with zero source failures. The clean isolated collection produced 490 active,
+deduplicated jobs across 28 known countries. Current target-country coverage includes
+the United Arab Emirates (60), Saudi Arabia (28), the Philippines (12), Kenya (7), Egypt
+(6), Pakistan (6), Nigeria (2), and South Africa (1). Official sources added for this
+expansion include IRTH, Rise Geo, Stantec, GHD, Punjab Land Records Authority, Fosad,
+Kenya National Highways Authority, Orbital Africa, GeoDev Kenya, and Hassan Allam.
+Coverage also includes official Workday, Workable, SmartRecruiters, Oracle Recruiting,
+iCIMS, Greenhouse and Lever employer boards. Boards with no current matching jobs remain
+useful monitored sources, not fabricated jobs. Country filters and pagination are never
+counted as additional sources.
 
 The collector uses a persisted round-robin cursor and bounded time/source budgets.
 Malformed feeds and missing endpoints are failures, not healthy empty sources.

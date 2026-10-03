@@ -1,7 +1,7 @@
 import json
 import unittest
 from datetime import datetime, timezone, timedelta
-from jobs.collector.parsers import greenhouse, html, icims, jsonld, lever, rss, sitemap, smartrecruiters_html, workday, xml_root
+from jobs.collector.parsers import greenhouse, html, icims, jsonld, lever, nextjs_jobs, oracle, orbital_careers, plra, rss, sitemap, smartrecruiters_html, stantec_sitemap, workday, xml_root
 from jobs.collector.model import normalize_url, relevant, make_job, expired, deduplicate
 from jobs.collector.main import load, ROOT
 
@@ -103,6 +103,74 @@ class CollectorTests(unittest.TestCase):
         )
         self.assertEqual(records[0]["title"], "Survey Engineer")
 
+    def test_rss_extracts_country_from_stantec_metadata(self):
+        records = rss(
+            "<rss><channel><item><title>Quantity Surveyor</title>"
+            "<link>https://stantec.jobs/dubai-ae/job/1</link>"
+            "<description>**City:** Dubai\n**Country:** United Arab Emirates\n"
+            "**Job Category:** Civil Engineering</description></item></channel></rss>",
+            SOURCE["url"],
+        )
+        self.assertEqual("Dubai, United Arab Emirates", records[0]["location"])
+        self.assertEqual("United Arab Emirates", records[0]["country"])
+
+    def test_oracle_public_feed_is_bounded(self):
+        source = dict(
+            type="oracle", company="GHD",
+            url=("https://example.oraclecloud.com/hcmRestApi/resources/latest/"
+                 "recruitingCEJobRequisitions?onlyData=true&finder="
+                 "findReqs%3BsiteNumber%3DCX%2Climit%3D25%2Coffset%3D0%2Ckeyword%3Dsurveyor"),
+            publicBaseUrl=("https://example.oraclecloud.com/hcmUI/"
+                           "CandidateExperience/en/sites/CX"),
+            searchTerms=["surveyor", "GIS"], maxPagesPerTerm=2, siteNumber="CX",
+        )
+        body = json.dumps({"items": [{"TotalJobsCount": 26, "requisitionList": [{
+            "Id": "42", "Title": "Geodetic Surveyor",
+            "PrimaryLocation": "Manila, Philippines",
+            "PrimaryLocationCountry": "PH", "PostedDate": "2026-10-01",
+        }]}]})
+        jobs, links = oracle(body, source["url"], source)
+        self.assertEqual("PH", jobs[0]["country"])
+        self.assertTrue(jobs[0]["applyUrl"].endswith("/job/42"))
+        self.assertEqual(2, len(links))
+        self.assertIn("offset%3D25", links[0])
+
+    def test_plra_spa_discovers_and_parses_current_jobs(self):
+        records, links = plra(
+            '<script src="/static/js/main.123abc.js"></script>',
+            "https://www.punjab-zameen.gov.pk/Careers",
+        )
+        self.assertFalse(records)
+        self.assertEqual("https://www.punjab-zameen.gov.pk/static/js/main.123abc.js", links[0])
+        bundle = ('Xa=[{id:1,title:{en:"Surveyor",ur:"x"},'
+                  'link:"https://jobs.punjab.gov.pk/job/1",'
+                  'department:{en:"Survey & Geospatial",ur:"x"}}]')
+        records, links = plra(bundle, links[0])
+        self.assertEqual("Surveyor", records[0]["title"])
+        self.assertEqual("Pakistan", records[0]["country"])
+        self.assertFalse(links)
+
+    def test_nextjs_jobs_list(self):
+        payload = {"props": {"pageProps": {"jobsList": [{
+            "date": "2026-10-01T00:00:00", "slug": "land-surveyor",
+            "acf": {"job": {"title": "Land Surveyor", "code": "Cairo, Egypt",
+                              "description": "Field survey"}},
+        }]}}}
+        page = '<script id="__NEXT_DATA__" type="application/json">' + json.dumps(payload) + '</script>'
+        jobs = nextjs_jobs(page, "https://www.example.org/careers", {"company": "Example"})
+        self.assertEqual("Cairo, Egypt", jobs[0]["location"])
+        self.assertEqual("https://www.example.org/jobs-items/land-surveyor/", jobs[0]["applyUrl"])
+
+    def test_orbital_africa_shared_hr_portal_keeps_distinct_titles(self):
+        page = '''<div class="vc_toggle_content">
+        <p>1. Full Stack GIS Software Engineer <a href="https://hr.example.org/jobs">Please click here for more details ++</a></p>
+        <p>4. We’re looking for An Assistant Land Surveyor. <a href="https://hr.example.org/jobs">For more details, please click here ++</a></p>
+        </div>'''
+        jobs = orbital_careers(page, "https://orbital.example/careers")
+        self.assertEqual(["Full Stack GIS Software Engineer", "Assistant Land Surveyor"],
+                         [job["title"] for job in jobs])
+        self.assertTrue(all(job["country"] == "Kenya" for job in jobs))
+
     def test_atom(self):
         records = rss(
             '<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Geomatics</title><link href="/job/3"/><published>2026-09-14</published></entry></feed>',
@@ -194,6 +262,18 @@ class CollectorTests(unittest.TestCase):
             ),
             ["https://careers.example.org/1"],
         )
+
+    def test_stantec_sitemap_filters_and_preserves_country_code(self):
+        source = {"company": "Stantec", "slugKeywords": ["surveyor", "geospatial"]}
+        page = """<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url><loc>https://stantec.jobs/abu-dhabi-are/senior-quantity-surveyor/ABC/job/</loc><lastmod>2026-10-01</lastmod></url>
+        <url><loc>https://stantec.jobs/dubai-are/accountant/DEF/job/</loc></url>
+        </urlset>"""
+        jobs, links = stantec_sitemap(page, "https://stantec.jobs/sitemaps/jobs_1.xml", source)
+        self.assertEqual(1, len(jobs))
+        self.assertEqual("Abu Dhabi, ARE", jobs[0]["location"])
+        self.assertEqual("Senior Quantity Surveyor", jobs[0]["title"])
+        self.assertFalse(links)
 
     def test_unsafe_inputs(self):
         with self.assertRaises(ValueError):

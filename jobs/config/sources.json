@@ -8,6 +8,107 @@
   "sources": [
     {
       "enabled": true,
+      "name": "IRTH UAE Careers", "company": "IRTH Group", "type": "html",
+      "url": "https://irth.ae/careers/", "country": "United Arab Emirates",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["irth.ae", "apply.workable.com"],
+      "selectors": {
+        "job": ".rb-workable-job-item", "title": ".rb-workable-job-title",
+        "link": ".rb-workable-job-title a", "category": "", "location": "", "company": ""
+      },
+      "permissionNote": "Official IRTH careers page; live Land Surveyor vacancy and canonical Workable application verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Rise Geo UAE Careers", "company": "Rise Geo UAE", "type": "html",
+      "url": "https://risegeouae.ae/career/", "country": "United Arab Emirates",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["risegeouae.ae"],
+      "selectors": {
+        "job": "section.elementor-inner-section:has(h2.elementor-heading-title):has(a[href*=career-form])",
+        "title": "h2.elementor-heading-title", "link": "a[href*=career-form]",
+        "category": "", "location": "", "company": ""
+      },
+      "permissionNote": "Official UAE geospatial employer careers page; three live land-survey roles verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Stantec Survey Careers", "company": "Stantec", "type": "stantec_sitemap",
+      "url": "https://stantec.jobs/sitemaps/index.xml", "country": "",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 4,
+      "slugKeywords": ["surveyor", "survey-technician", "geomatics", "geospatial", "gis-", "quantity-surveyor"],
+      "allowedHosts": ["stantec.jobs"],
+      "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles"
+    },
+    {
+      "enabled": true,
+      "name": "GHD Global Survey Careers", "company": "GHD", "type": "oracle",
+      "url": "https://ejov.fa.ca2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation%2CrequisitionList.otherWorkLocations%2CrequisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D25%2Coffset%3D0%2Ckeyword%3Dsurveyor",
+      "publicBaseUrl": "https://ejov.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX",
+      "siteNumber": "CX", "country": "", "pollIntervalHours": 2,
+      "searchTerms": ["surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 12,
+      "allowedHosts": ["ejov.fa.ca2.oraclecloud.com"],
+      "permissionNote": "Official GHD Oracle Candidate Experience public feed; live Philippines and global locations retained per vacancy"
+    },
+    {
+      "enabled": true,
+      "name": "Punjab Land Records Authority Careers", "company": "Punjab Land Records Authority", "type": "plra",
+      "url": "https://www.punjab-zameen.gov.pk/Careers", "country": "Pakistan",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 4,
+      "allowedHosts": ["www.punjab-zameen.gov.pk", "jobs.punjab.gov.pk"],
+      "permissionNote": "Official Government of Punjab careers page; 18 live vacancies including Surveyor, GIS and field-survey roles verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Fosad Nigeria Careers", "company": "Fosad Consulting", "type": "smartrecruiters_html",
+      "url": "https://careers.smartrecruiters.com/FosadConsulting", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["careers.smartrecruiters.com", "jobs.smartrecruiters.com"],
+      "permissionNote": "Official Fosad public SmartRecruiters board; live Nigerian quantity-survey vacancies verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Kenya National Highways Authority Careers", "company": "Kenya National Highways Authority", "type": "html",
+      "url": "https://kenha.co.ke/careers/", "country": "Kenya",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["kenha.co.ke"],
+      "selectors": {
+        "job": "table tr", "title": "td:nth-of-type(2)", "link": "td:nth-of-type(2) a",
+        "category": "", "location": "", "company": ""
+      },
+      "permissionNote": "Official Kenyan roads authority careers page; current public vacancy table verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Orbital Africa Careers", "company": "Orbital Africa", "type": "orbital_careers",
+      "url": "https://orbital.co.ke/careers/", "country": "Kenya",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["orbital.co.ke", "hr.orbital.co.ke", "sites.orbital.co.ke"],
+      "permissionNote": "Official Kenyan geospatial employer careers page; GIS and Assistant Land Surveyor openings verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "GeoDev Kenya Careers", "company": "GeoDev", "type": "html",
+      "url": "https://geodev.co.ke/careers/", "country": "Kenya",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["geodev.co.ke"], "fixedApplyUrl": "https://geodev.co.ke/careers/",
+      "selectors": {
+        "job": ".elementor-tab-title", "title": ".elementor-accordion-title",
+        "link": "", "category": "", "location": "", "company": ""
+      },
+      "permissionNote": "Official Kenyan surveying and GIS employer careers page; Land Surveyor and GIS Analyst openings verified 2026-10-03"
+    },
+    {
+      "enabled": true,
+      "name": "Hassan Allam Careers", "company": "Hassan Allam Holding", "type": "nextjs_jobs",
+      "url": "https://www.hassanallam.com/careers", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.hassanallam.com"],
+      "permissionNote": "Official Egyptian engineering employer careers page; country retained from each vacancy"
+    },
+    {
+      "enabled": true,
       "name": "SSC HR Solutions Careers", "company": "SSC HR Solutions", "type": "workable",
       "url": "https://www.workable.com/api/accounts/ssc-hr", "country": "",
       "pollIntervalHours": 2,

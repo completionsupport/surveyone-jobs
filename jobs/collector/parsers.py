@@ -84,12 +84,184 @@ def rss(text, url):
                     values["applyUrl"] = urljoin(
                         url, child.attrib.get("href") or child.text or ""
                     )
+            elif tag in ("description", "summary", "encoded"):
+                if child.text and not values.get("description"):
+                    values["description"] = child.text
             elif tag in ("title", "pubDate", "published", "updated"):
                 if tag != "updated" or not values.get("postedAt"):
                     values["title" if tag == "title" else "postedAt"] = child.text or ""
         if values.get("title") and values.get("applyUrl"):
+            description = values.get("description", "")
+
+            def labelled(name):
+                match = re.search(
+                    r"\*\*" + re.escape(name) + r":\*\*\s*([^\r\n<]+)",
+                    description,
+                    re.IGNORECASE,
+                )
+                return match.group(1).strip(" \t|,") if match else ""
+
+            city, country = labelled("City"), labelled("Country")
+            primary = labelled("Primary Location")
+            if primary and not country:
+                parts = [part.strip() for part in primary.split("|") if part.strip()]
+                if parts:
+                    country = parts[0]
+                    city = parts[-1] if len(parts) > 1 else ""
+            location = ", ".join(value for value in (city, country) if value)
+            if not location and primary:
+                location = primary.replace(" | ", ", ")
+            values.update(
+                city=city,
+                country=country,
+                location=location,
+                category=labelled("Job Category"),
+            )
             jobs.append(values)
     return jobs
+
+
+def oracle(text, url, source):
+    """Parse Oracle Recruiting Candidate Experience's public requisition feed."""
+    payload = json.loads(text)
+    items = payload.get("items", []) if isinstance(payload, dict) else []
+    root = items[0] if items and isinstance(items[0], dict) else {}
+    postings = root.get("requisitionList", [])
+    total = root.get("TotalJobsCount")
+    if not isinstance(postings, list) or not isinstance(total, int):
+        raise ValueError("Invalid Oracle public careers feed")
+    public_base = str(source.get("publicBaseUrl", "")).rstrip("/")
+    if (not public_base.startswith("https://") or
+            urlsplit(public_base).hostname != urlsplit(source["url"]).hostname):
+        raise ValueError("Missing Oracle public career URL")
+    found = []
+    for job in postings:
+        if not isinstance(job, dict):
+            continue
+        job_id, title = job.get("Id"), job.get("Title")
+        if not job_id or not title:
+            continue
+        location = str(job.get("PrimaryLocation", "")).strip()
+        country = str(job.get("PrimaryLocationCountry", "")).strip()
+        found.append(dict(
+            title=title,
+            company=source.get("company", ""),
+            location=location,
+            city=location.split(",", 1)[0].strip(),
+            country=country,
+            postedAt=job.get("PostedDate"),
+            expiresAt=job.get("PostingEndDate"),
+            applyUrl=f"{public_base}/job/{job_id}",
+        ))
+
+    query = parse_qs(urlsplit(url).query)
+    finder = str(query.get("finder", [""])[0])
+    term_match = re.search(r"(?:^|,)keyword=([^,]*)$", finder)
+    offset_match = re.search(r"(?:^|,)offset=(\d+)(?:,|$)", finder)
+    if not term_match or not offset_match:
+        raise ValueError("Invalid Oracle response URL")
+    term, offset = unquote(term_match.group(1)), int(offset_match.group(1))
+    terms = [str(value) for value in source.get("searchTerms", [])]
+    if term not in terms or offset < 0 or offset % 25:
+        raise ValueError("Unexpected Oracle search request")
+    max_pages = max(1, min(4, int(source.get("maxPagesPerTerm", 2))))
+    site_number = str(source.get("siteNumber", "CX"))
+
+    def page_url(search, page_offset=0):
+        parsed = urlsplit(source["url"])
+        finder_value = (
+            f"findReqs;siteNumber={site_number},limit=25,"
+            f"offset={page_offset},keyword={search}"
+        )
+        params = dict(
+            onlyData="true",
+            expand=("requisitionList.workLocation,requisitionList.otherWorkLocations,"
+                    "requisitionList.secondaryLocations"),
+            finder=finder_value,
+        )
+        return urlunsplit((parsed.scheme, parsed.netloc, parsed.path,
+                           urlencode(params), ""))
+
+    links = []
+    if offset + 25 < total and (offset // 25) + 1 < max_pages:
+        links.append(page_url(term, offset + 25))
+    if offset == 0 and term == terms[0]:
+        links.extend(page_url(other) for other in terms[1:])
+    return found, links
+
+
+def plra(text, url):
+    """Read PLRA's public careers SPA and its same-origin compiled vacancy data."""
+    if not urlsplit(url).path.endswith(".js"):
+        soup = BeautifulSoup(text, "html.parser")
+        script = soup.select_one('script[src*="/static/js/main."][src$=".js"]')
+        if not script or not script.get("src"):
+            raise ValueError("PLRA careers bundle not found")
+        return [], [urljoin(url, script["src"])]
+    pattern = re.compile(
+        r'\{id:\d+,title:\{en:"([^"]+)".*?\},link:"(https:[^"]+)",'
+        r'department:\{en:"([^"]+)"',
+        re.DOTALL,
+    )
+    found = [
+        dict(title=title, category=department, location="Punjab, Pakistan",
+             country="Pakistan", applyUrl=apply_url)
+        for title, apply_url, department in pattern.findall(text)
+    ]
+    if not found:
+        raise ValueError("No PLRA careers data found")
+    return found, []
+
+
+def nextjs_jobs(text, url, source):
+    """Parse a bounded public Next.js careers page with a jobsList payload."""
+    soup = BeautifulSoup(text, "html.parser")
+    script = soup.select_one("script#__NEXT_DATA__")
+    if not script:
+        raise ValueError("Next.js careers data not found")
+    payload = json.loads(script.string or script.get_text())
+    jobs = payload.get("props", {}).get("pageProps", {}).get("jobsList", [])
+    if not isinstance(jobs, list):
+        raise ValueError("Invalid Next.js careers data")
+    found = []
+    for record in jobs:
+        if not isinstance(record, dict):
+            continue
+        details = record.get("acf", {}).get("job", {})
+        slug = record.get("slug")
+        title = details.get("title") if isinstance(details, dict) else ""
+        if title and slug:
+            found.append(dict(
+                title=title,
+                company=source.get("company", ""),
+                location=details.get("code", ""),
+                description=details.get("description", ""),
+                postedAt=record.get("date"),
+                applyUrl=urljoin(url, f"/jobs-items/{slug}/"),
+            ))
+    return found
+
+
+def orbital_careers(text, url):
+    """Parse the official Orbital Africa careers list and its shared HR portal."""
+    soup = BeautifulSoup(text, "html.parser")
+    found = []
+    for card in soup.select(".vc_toggle_content p"):
+        link = card.select_one("a[href^='https://']")
+        if not link:
+            continue
+        title = card.get_text(" ", strip=True)
+        title = re.sub(r"^\s*\d+\.\s*", "", title)
+        title = re.split(r"\s+(?:Please|For) (?:click|more details)", title,
+                         maxsplit=1, flags=re.IGNORECASE)[0]
+        title = re.sub(r"^We(?:\ufffd|'|’)re looking for\s+(?:An?\s+)?", "",
+                       title, flags=re.IGNORECASE).strip(" .+")
+        if title:
+            found.append(dict(title=title, location="Nairobi, Kenya",
+                              country="Kenya", applyUrl=link["href"]))
+    if not found:
+        raise ValueError("Orbital careers list not found")
+    return found
 
 
 def sitemap(text):
@@ -99,6 +271,43 @@ def sitemap(text):
         for node in root.iter()
         if node.tag.split("}")[-1] == "loc" and node.text
     ]
+
+
+def stantec_sitemap(text, url, source):
+    """Use Stantec's robots-allowed sitemap without touching blocked search feeds."""
+    root = xml_root(text)
+    kind = root.tag.split("}")[-1]
+    if kind == "sitemapindex":
+        links = [link for link in sitemap(text) if "/sitemaps/jobs_" in link]
+        if not links:
+            raise ValueError("Stantec jobs sitemap not found")
+        return [], links[:2]
+    if kind != "urlset":
+        raise ValueError("Invalid Stantec sitemap")
+    terms = tuple(str(term).casefold() for term in source.get("slugKeywords", []))
+    found = []
+    for node in root:
+        values = {child.tag.split("}")[-1]: (child.text or "").strip()
+                  for child in node}
+        apply_url = values.get("loc", "")
+        parts = [unquote(part) for part in urlsplit(apply_url).path.split("/") if part]
+        if len(parts) < 4 or parts[-1] != "job":
+            continue
+        location_slug, title_slug = parts[-4], parts[-3]
+        if terms and not any(term in title_slug.casefold() for term in terms):
+            continue
+        location_parts = location_slug.rsplit("-", 1)
+        location = location_slug.replace("-", " ").title()
+        if len(location_parts) == 2 and len(location_parts[1]) in (2, 3):
+            location = f"{location_parts[0].replace('-', ' ').title()}, {location_parts[1].upper()}"
+        found.append(dict(
+            title=title_slug.replace("-", " ").title(),
+            company=source.get("company", "Stantec"),
+            location=location,
+            postedAt=values.get("lastmod"),
+            applyUrl=apply_url,
+        ))
+    return found, []
 
 
 def html(text, url, selectors, fixed_apply_url=""):
@@ -404,6 +613,16 @@ def parse(text, url, source):
         return workable(text), []
     if source.get("type") == "workday":
         return workday(text, url, source)
+    if source.get("type") == "oracle":
+        return oracle(text, url, source)
+    if source.get("type") == "plra":
+        return plra(text, url)
+    if source.get("type") == "nextjs_jobs":
+        return nextjs_jobs(text, url, source), []
+    if source.get("type") == "stantec_sitemap":
+        return stantec_sitemap(text, url, source)
+    if source.get("type") == "orbital_careers":
+        return orbital_careers(text, url), []
     if source.get("type") == "greenhouse":
         return greenhouse(text), []
     if source.get("type") == "lever":

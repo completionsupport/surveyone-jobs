@@ -32,6 +32,11 @@ COUNTRY_ALIASES = {
     "south africa": "South Africa", "india": "India", "pakistan": "Pakistan",
     "bangladesh": "Bangladesh", "philippines": "Philippines", "malaysia": "Malaysia",
     "singapore": "Singapore", "indonesia": "Indonesia",
+    "ng": "Nigeria", "nga": "Nigeria", "nigeria": "Nigeria",
+    "ke": "Kenya", "ken": "Kenya", "kenya": "Kenya",
+    "pk": "Pakistan", "pak": "Pakistan",
+    "za": "South Africa", "zaf": "South Africa",
+    "ph": "Philippines", "phl": "Philippines",
 }
 
 US_STATE_CODES = {
@@ -189,7 +194,10 @@ def deduplicate(jobs):
     for job in jobs:
         # One requisition can advertise multiple countries. Keep these distinct so
         # country-specific delivery does not silently discard Egypt or Saudi Arabia.
-        url_key = (normalize_url(job["applyUrl"]), normalize(job.get("country")))
+        # Some employers deliberately use one shared application form for several roles.
+        # Keep distinct titles while still collapsing the same requisition/country/title.
+        url_key = (normalize_url(job["applyUrl"]), normalize(job.get("country")),
+                   normalize(job.get("title")))
         if url_key in result:
             continue
         company = normalize(job.get("company"))
