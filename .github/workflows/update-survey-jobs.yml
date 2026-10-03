@@ -1,5 +1,12 @@
 name: Update Survey Jobs
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'jobs/collector/**'
+      - 'jobs/config/**'
+      - 'jobs/tests/**'
+      - 'jobs/requirements.txt'
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
