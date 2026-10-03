@@ -61,6 +61,94 @@
     },
     {
       "enabled": true,
+      "name": "Pakistan National Job Portal", "company": "Government of Pakistan", "type": "njp",
+      "url": "https://njp.gov.pk/jobs/search?q=surveyor", "country": "Pakistan",
+      "searchTerms": ["surveyor", "survey", "GIS", "geospatial", "geomatics"],
+      "pollIntervalHours": 2, "maxRequestsPerSource": 7,
+      "allowedHosts": ["njp.gov.pk"],
+      "permissionNote": "Official Government of Pakistan National Job Portal; bounded public searches and robots.txt verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "Karachi Water and Sewerage Careers", "company": "Karachi Water & Sewerage Corporation", "type": "kwsc",
+      "url": "https://www.kwsc.gos.pk/api/careers?lang=en", "country": "Pakistan",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["www.kwsc.gos.pk"],
+      "permissionNote": "Official KW&SC public careers API; live openings, publication dates and deadlines verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "ACCIONA Global Survey Careers", "company": "ACCIONA", "type": "workday",
+      "url": "https://acciona.wd3.myworkdayjobs.com/wday/cxs/acciona/ACCIONA_Employment_Channel/jobs?search=surveyor&offset=0",
+      "publicBaseUrl": "https://acciona.wd3.myworkdayjobs.com/en-US/ACCIONA_Employment_Channel",
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
+      "country": "", "pollIntervalHours": 2,
+      "allowedHosts": ["acciona.wd3.myworkdayjobs.com"],
+      "permissionNote": "Official ACCIONA Workday search; live survey and Philippines GIS/geodetic opportunities verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "SLR Consulting Survey Careers", "company": "SLR Consulting", "type": "workday",
+      "url": "https://slrconsulting.wd103.myworkdayjobs.com/wday/cxs/slrconsulting/SLRCareers/jobs?search=surveyor&offset=0",
+      "publicBaseUrl": "https://slrconsulting.wd103.myworkdayjobs.com/en-US/SLRCareers",
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
+      "country": "", "pollIntervalHours": 2,
+      "allowedHosts": ["slrconsulting.wd103.myworkdayjobs.com"],
+      "permissionNote": "Official SLR Consulting Workday search; Cairo, Africa and global geospatial coverage verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "World Food Programme Geospatial Careers", "company": "World Food Programme", "type": "workday",
+      "url": "https://wfp.wd3.myworkdayjobs.com/wday/cxs/wfp/job_openings/jobs?search=GIS&offset=0",
+      "publicBaseUrl": "https://wfp.wd3.myworkdayjobs.com/en-US/job_openings",
+      "searchTerms": ["GIS", "geospatial", "surveyor", "remote sensing"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 11,
+      "country": "", "pollIntervalHours": 2,
+      "allowedHosts": ["wfp.wd3.myworkdayjobs.com"],
+      "permissionNote": "Official WFP Workday search; Pakistan, Philippines, Africa and worldwide public vacancies"
+    },
+    {
+      "enabled": true,
+      "name": "Ferrovial Survey Careers", "company": "Ferrovial", "type": "workday",
+      "url": "https://ferrovial.wd3.myworkdayjobs.com/wday/cxs/ferrovial/Ferrovial_Career_Site/jobs?search=surveyor&offset=0",
+      "publicBaseUrl": "https://ferrovial.wd3.myworkdayjobs.com/en-US/Ferrovial_Career_Site",
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
+      "country": "", "pollIntervalHours": 2,
+      "allowedHosts": ["ferrovial.wd3.myworkdayjobs.com"],
+      "permissionNote": "Official Ferrovial Workday search; live land, engineering and quantity survey roles verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "Westgold Survey Careers", "company": "Westgold Resources", "type": "workday",
+      "url": "https://westgold.wd103.myworkdayjobs.com/wday/cxs/westgold/westgold/jobs?search=surveyor&offset=0",
+      "publicBaseUrl": "https://westgold.wd103.myworkdayjobs.com/en-US/westgold",
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics"],
+      "maxPagesPerTerm": 2, "maxRequestsPerSource": 10,
+      "country": "", "pollIntervalHours": 2,
+      "allowedHosts": ["westgold.wd103.myworkdayjobs.com"],
+      "permissionNote": "Official Westgold Workday search; live mine-survey vacancies verified 2026-10-04"
+    },
+    {
+      "enabled": true,
+      "name": "Planet Geospatial Careers", "company": "Planet", "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/planetlabs/jobs", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Official public Planet Greenhouse board for global Earth-observation and geospatial vacancies"
+    },
+    {
+      "enabled": true,
+      "name": "BlackSky Geospatial Careers", "company": "BlackSky", "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/blacksky/jobs", "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
+      "permissionNote": "Official public BlackSky Greenhouse board for geospatial-intelligence vacancies"
+    },
+    {
+      "enabled": true,
       "name": "Fosad Nigeria Careers", "company": "Fosad Consulting", "type": "smartrecruiters_html",
       "url": "https://careers.smartrecruiters.com/FosadConsulting", "country": "",
       "pollIntervalHours": 2,

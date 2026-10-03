@@ -46,13 +46,15 @@ exact two-hour delivery guarantee.
 
 ## Verified source coverage
 
-As of 2026-10-03, 59 distinct enabled career boards passed live parsing and clean
-collection with zero source failures. The clean isolated collection produced 490 active,
+As of 2026-10-04, 68 distinct enabled career boards passed live parsing and clean
+collection with zero source failures. The clean isolated collection produced 511 active,
 deduplicated jobs across 28 known countries. Current target-country coverage includes
 the United Arab Emirates (60), Saudi Arabia (28), the Philippines (12), Kenya (7), Egypt
 (6), Pakistan (6), Nigeria (2), and South Africa (1). Official sources added for this
 expansion include IRTH, Rise Geo, Stantec, GHD, Punjab Land Records Authority, Fosad,
-Kenya National Highways Authority, Orbital Africa, GeoDev Kenya, and Hassan Allam.
+Kenya National Highways Authority, Orbital Africa, GeoDev Kenya, Hassan Allam, Pakistan's
+National Job Portal, Karachi Water and Sewerage Corporation, ACCIONA, SLR Consulting,
+World Food Programme, Ferrovial, Westgold, Planet, and BlackSky.
 Coverage also includes official Workday, Workable, SmartRecruiters, Oracle Recruiting,
 iCIMS, Greenhouse and Lever employer boards. Boards with no current matching jobs remain
 useful monitored sources, not fabricated jobs. Country filters and pagination are never

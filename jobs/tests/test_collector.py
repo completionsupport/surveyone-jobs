@@ -1,7 +1,7 @@
 import json
 import unittest
 from datetime import datetime, timezone, timedelta
-from jobs.collector.parsers import greenhouse, html, icims, jsonld, lever, nextjs_jobs, oracle, orbital_careers, plra, rss, sitemap, smartrecruiters_html, stantec_sitemap, workday, xml_root
+from jobs.collector.parsers import greenhouse, html, icims, jsonld, kwsc, lever, nextjs_jobs, njp, oracle, orbital_careers, plra, rss, sitemap, smartrecruiters_html, stantec_sitemap, workday, xml_root
 from jobs.collector.model import normalize_url, relevant, make_job, expired, deduplicate
 from jobs.collector.main import load, ROOT
 
@@ -14,6 +14,36 @@ SOURCE = {
 
 
 class CollectorTests(unittest.TestCase):
+    def test_pakistan_national_job_portal_searches_are_bounded(self):
+        source = dict(
+            url="https://njp.gov.pk/jobs/search?q=surveyor",
+            searchTerms=["surveyor", "GIS"],
+        )
+        body = '''<html><body><div class="job-card">
+          <h2><a href="https://njp.gov.pk/jobs/99">GIS Surveyor</a></h2>
+          <p>by Survey of Pakistan</p>
+          <p class="text-gray-400">Field mapping and control survey.</p>
+        </div></body></html>'''
+        jobs, links = njp(body, source["url"], source)
+        self.assertEqual("GIS Surveyor", jobs[0]["title"])
+        self.assertEqual("Survey of Pakistan", jobs[0]["company"])
+        self.assertEqual("Pakistan", jobs[0]["country"])
+        self.assertEqual(["https://njp.gov.pk/jobs/search?q=GIS"], links)
+
+    def test_kwsc_public_careers_api(self):
+        body = json.dumps({"data": {"openings": [{
+            "status": "PUBLISHED", "title": "GIS Analyst",
+            "location": "Karachi, Sindh, Pakistan", "department": "KWSSIP",
+            "publishAt": "2026-10-01T12:00:00Z",
+            "expireAt": "2026-10-16T17:00:00Z",
+        }, {"status": "DRAFT", "title": "Hidden Surveyor"}]}})
+        jobs = kwsc(body, "https://www.kwsc.gos.pk/api/careers?lang=en")
+        self.assertEqual(1, len(jobs))
+        self.assertEqual("GIS Analyst", jobs[0]["title"])
+        self.assertEqual("Pakistan", jobs[0]["country"])
+        self.assertEqual("https://www.kwsc.gos.pk/careers#career-openings",
+                         jobs[0]["applyUrl"])
+
     def test_static_career_page_can_use_its_https_page_as_apply_url(self):
         jobs = html('<details><h3>Senior GIS Engineer</h3></details>',
                     'https://example.org/careers',

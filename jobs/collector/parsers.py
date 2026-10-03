@@ -264,6 +264,74 @@ def orbital_careers(text, url):
     return found
 
 
+def njp(text, url, source):
+    """Parse bounded searches from Pakistan's official National Job Portal."""
+    soup = BeautifulSoup(text, "html.parser")
+    cards = soup.select(".job-card")
+    page_text = soup.get_text(" ", strip=True)
+    if not cards and "No Jobs Found" not in page_text:
+        raise ValueError("Invalid National Job Portal response")
+    found = []
+    for card in cards:
+        link = card.select_one("h2 a[href]")
+        if not link:
+            continue
+        title = link.get_text(" ", strip=True)
+        company_node = card.select_one("h2 + p")
+        company = company_node.get_text(" ", strip=True) if company_node else ""
+        company = re.sub(r"^by\s+", "", company, flags=re.IGNORECASE)
+        description_node = card.select_one("p.text-gray-400")
+        found.append(dict(
+            title=title,
+            company=company,
+            location="Pakistan",
+            country="Pakistan",
+            description=(description_node.get_text(" ", strip=True)
+                         if description_node else ""),
+            applyUrl=urljoin(url, link.get("href", "")),
+        ))
+
+    query = parse_qs(urlsplit(url).query)
+    term = str(query.get("q", [""])[0])
+    terms = [str(value) for value in source.get("searchTerms", [])]
+    if term not in terms:
+        raise ValueError("Unexpected National Job Portal search term")
+    links = []
+    if term == terms[0]:
+        parsed = urlsplit(source["url"])
+        for other in terms[1:]:
+            links.append(urlunsplit((parsed.scheme, parsed.netloc, parsed.path,
+                                     urlencode({"q": other}), "")))
+    return found, links
+
+
+def kwsc(text, url):
+    """Parse the official Karachi Water & Sewerage careers API."""
+    payload = json.loads(text)
+    openings = payload.get("data", {}).get("openings")
+    if not isinstance(openings, list):
+        raise ValueError("Invalid KW&SC careers response")
+    found = []
+    for job in openings:
+        if not isinstance(job, dict) or job.get("status") != "PUBLISHED":
+            continue
+        title = str(job.get("title", "")).strip()
+        if not title:
+            continue
+        found.append(dict(
+            title=title,
+            company="Karachi Water & Sewerage Corporation",
+            location=job.get("location") or "Karachi, Pakistan",
+            country="Pakistan",
+            category=job.get("department") or job.get("jobType") or "",
+            description=job.get("summary") or job.get("description") or "",
+            postedAt=job.get("publishAt"),
+            expiresAt=job.get("expireAt"),
+            applyUrl="https://www.kwsc.gos.pk/careers#career-openings",
+        ))
+    return found
+
+
 def sitemap(text):
     root = xml_root(text)
     return [
@@ -623,6 +691,10 @@ def parse(text, url, source):
         return stantec_sitemap(text, url, source)
     if source.get("type") == "orbital_careers":
         return orbital_careers(text, url), []
+    if source.get("type") == "njp":
+        return njp(text, url, source)
+    if source.get("type") == "kwsc":
+        return kwsc(text, url), []
     if source.get("type") == "greenhouse":
         return greenhouse(text), []
     if source.get("type") == "lever":
