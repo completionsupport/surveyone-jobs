@@ -38,7 +38,7 @@
       "pollIntervalHours": 2, "maxRequestsPerSource": 4,
       "slugKeywords": ["surveyor", "survey-technician", "geomatics", "geospatial", "gis-", "quantity-surveyor"],
       "allowedHosts": ["stantec.jobs"],
-      "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles"
+      "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles; verified 2026-10-03"
     },
     {
       "enabled": true,
