@@ -2270,9 +2270,9 @@
     "G Map Oman Careers": {
       "status": "failed",
       "lastSuccess": null,
-      "lastFailure": "2026-10-03T20:36:08.637907Z",
-      "lastAttempt": "2026-10-03T20:36:08.637907Z",
-      "consecutiveFailures": 8,
+      "lastFailure": "2026-10-03T21:24:07.231499Z",
+      "lastAttempt": "2026-10-03T21:24:07.231499Z",
+      "consecutiveFailures": 9,
       "errorType": "HTTPError"
     },
     "InfoGraph Jordan Careers": {
@@ -2586,5 +2586,5 @@
       "consecutiveFailures": 0
     }
   },
-  "sourceCursor": "boards-api.greenhouse.io/v1/boards/michelscorporation/jobs"
+  "sourceCursor": "www.gmapglobal.com/careers"
 }
