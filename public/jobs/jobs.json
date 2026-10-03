@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T15:17:57.562208Z",
+  "generatedAt": "2026-10-03T16:27:43.087191Z",
   "expiryDays": 45,
-  "totalJobs": 516,
+  "totalJobs": 515,
   "jobs": [
     {
       "id": "a4c8e0a488ace36a0d02a0b1cb599ada56c3dd274ae6348d2b20b34827d7bff4",
@@ -9268,24 +9268,6 @@
       "source": "Michels Careers",
       "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/michelscorporation/jobs",
       "applyUrl": "https://job-boards.eu.greenhouse.io/michelscorporation/jobs/4889116101",
-      "description": "",
-      "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "d57d76e1d5b4ec50cb35c278cc3c6d9fc6339ca6c15b490b2fddb809d68db930",
-      "title": "Entry-Level GIS Analyst",
-      "company": "Langan Engineering & Environmental Services",
-      "location": "Los Angeles, CA",
-      "city": "",
-      "country": "United States",
-      "category": "GIS / Geospatial",
-      "postedAt": "2026-08-19T15:42:57Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Langan Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/langanengineeringandenvironmentalservicesllc/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/langanengineeringandenvironmentalservicesllc/jobs/4374716009",
       "description": "",
       "employmentType": "",
       "remote": false
