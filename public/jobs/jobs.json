@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T19:41:12.301517Z",
+  "generatedAt": "2026-10-04T23:15:18.794311Z",
   "expiryDays": 45,
-  "totalJobs": 547,
+  "totalJobs": 546,
   "jobs": [
     {
       "id": "6a45ebd26518f533b6bba38a1c286dca8ea880dd1b82674586875d8aa652851d",
@@ -9018,24 +9018,6 @@
       "applyUrl": "https://job-boards.greenhouse.io/decimainternational/jobs/4707958006",
       "description": "",
       "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "7a6e11ccbcb27eabf5cdf3ba2fd3ca4369ce64c5808465bab951e6577a669898",
-      "title": "Survey Manager - Professional Land Surveyor",
-      "company": "Thomas & Hutton",
-      "location": "Greenville, South Carolina",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-09-08T23:20:59.964000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Thomas & Hutton Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/tandh?mode=json",
-      "applyUrl": "https://jobs.lever.co/tandh/671af401-3496-46cc-a69a-ea17345e74e2/apply",
-      "description": "Advance your surveying career where your work helps shape communities across the Southeast. At Thomas & Hutton, you'll lead complex surveying and mapping projects, collaborate with multidisciplinary teams, mentor survey professionals, and grow within a company consistently recognized as a Best Place to Work. If you're ready to combine your technical expertise, leadership abilities, and client-focused approach to deliver impactful projects, this role is for you.",
-      "employmentType": "Full-time",
       "remote": false
     },
     {
