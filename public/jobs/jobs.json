@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T15:16:11.110263Z",
+  "generatedAt": "2026-10-06T21:02:17.234674Z",
   "expiryDays": 45,
-  "totalJobs": 572,
+  "totalJobs": 573,
   "jobs": [
+    {
+      "id": "91a8a42bfdef3ff18806f7ea52fa509d6ee84e1e862ad6483d27eecdd4df8cb3",
+      "title": "Senior Airborne LiDAR Systems Engineer",
+      "company": "Woolpert",
+      "location": "Kiln, MS",
+      "city": "",
+      "country": "United States",
+      "category": "UAV / LiDAR",
+      "postedAt": "2026-10-06T17:52:03Z",
+      "discoveredAt": "2026-10-06T21:02:17.234674Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4386436009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "880d6138df6632c11dc088fd3fd3721786a01104a81153b0ff4cf6ae335b6397",
       "title": "Surveyor",
