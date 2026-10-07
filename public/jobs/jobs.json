@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-07T17:27:12.136188Z",
+  "generatedAt": "2026-10-07T23:09:55.398165Z",
   "expiryDays": 45,
-  "totalJobs": 586,
+  "totalJobs": 587,
   "jobs": [
+    {
+      "id": "e1e53a92b890ca655d356112a33d272c772100b97e8f9d8844e46ac9658dcae3",
+      "title": "Geospatial Field Internship (Summer 2027)",
+      "company": "Woolpert",
+      "location": "Port Orchard, WA",
+      "city": "",
+      "country": "United States",
+      "category": "GIS / Geospatial",
+      "postedAt": "2026-10-07T20:11:35Z",
+      "discoveredAt": "2026-10-07T23:09:55.398165Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4426488009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "038ec88ece4d7ceaf0e40291e0fa1218ce2ee206ef0a24cfeabe1755422fc9be",
       "title": "Land Surveyor (Bridges & Roads)",
