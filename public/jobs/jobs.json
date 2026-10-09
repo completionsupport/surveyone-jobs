@@ -1,9 +1,45 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T17:01:36.822762Z",
+  "generatedAt": "2026-10-09T22:43:36.483880Z",
   "expiryDays": 45,
-  "totalJobs": 587,
+  "totalJobs": 588,
   "jobs": [
+    {
+      "id": "e5b4ae5ce9506d535135d7d653b4ebe50eb952c4d29297732fa5ba63280150fc",
+      "title": "Survey Cad Technician (Hybrid)",
+      "company": "Atwell",
+      "location": "Remote",
+      "city": "",
+      "country": "United States",
+      "category": "Land Surveying",
+      "postedAt": "2026-10-09T19:49:43Z",
+      "discoveredAt": "2026-10-09T22:43:36.483880Z",
+      "expiresAt": null,
+      "source": "Atwell Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/atwellgroup/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/atwellgroup/jobs/5262637007",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
+    {
+      "id": "0dede2941f661d955e26a1498de360426c3e6f070cf721c5c9230e410aa12473",
+      "title": "Survey Crew Chief",
+      "company": "Woolpert",
+      "location": "Cincinnati, OH; Cleveland, OH; Columbus, OH; Dayton, OH",
+      "city": "",
+      "country": "United States",
+      "category": "Land Surveying",
+      "postedAt": "2026-10-09T19:07:49Z",
+      "discoveredAt": "2026-10-09T22:43:36.483880Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4241356009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "112e9d6021131e6df0acf2a761dfb65742c70cd7e1b18214fe891499f66efb93",
       "title": "Quantity Surveyor",
@@ -10548,24 +10584,6 @@
       "applyUrl": "https://job-boards.greenhouse.io/parametrix/jobs/4383121009",
       "description": "",
       "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "95d06d0ac13ff63aa29f01f1d628200be3fe2c41513588f7bdfd6e36c3a8c2c5",
-      "title": "Survey Assistant",
-      "company": "Beedie",
-      "location": "Burnaby, BC",
-      "city": "",
-      "country": "Canada",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-25T18:20:54.462000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Beedie Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/beedie?mode=json",
-      "applyUrl": "https://jobs.lever.co/beedie/4361a939-0e9d-4ef0-aedf-e60c0c37182e/apply",
-      "description": "At Beedie, we foster talent, encourage innovation, and reward success.\n\nWe’re always looking for like-minded people to join our team and share our passion for doing the best work of our lives. Our approach is simple: we work hard, we have fun, and we make a difference. And, we’ve been recognized as a top employer provincially and nationally. Our people are the heart and soul of our organization. If you are passionate, hardworking, ambitious, and want to be part of a dynamic and growing company that will take your career forward, join us.\n\nAre you interested in starting your career in land surveying and development? As a Survey Assistant (Entry Level Grademan), you’ll work closely with our surveyors to gather essential site information and support a variety of field tasks. This is an entry-level role, ideal for candidates with a foundational understanding of surveying who are eager to learn and grow. We offer comprehensive training and mentorship to help you build your skills and advance in the field.\nYou’ll assist with preparing documents, drawings, and maps, setting up and using survey equipment, and supporting layout and measurement activities on site. The role involves hands-on work outdoors, including clearing survey lines, installing stakes, and recording geographical data. If you’re reliable, proactive, and ready to work as part of a collaborative team, we encourage you to apply!",
-      "employmentType": "Permanent Full Time",
       "remote": false
     }
   ]
