@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T06:00:18.128241Z",
+  "generatedAt": "2026-10-10T23:37:44.914539Z",
   "expiryDays": 45,
-  "totalJobs": 587,
+  "totalJobs": 585,
   "jobs": [
     {
       "id": "0dede2941f661d955e26a1498de360426c3e6f070cf721c5c9230e410aa12473",
@@ -10531,42 +10531,6 @@
       "description": "",
       "employmentType": "Full-time",
       "remote": true
-    },
-    {
-      "id": "67d87ca2ef23d716635a8495dce7c0635f321a5a8a2b7ed751c8bdd49b5b9937",
-      "title": "Land Survey Crew - Instrument Operator",
-      "company": "Thomas & Hutton",
-      "location": "Nashville, Tennessee",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-26T20:02:40.032000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Thomas & Hutton Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/tandh?mode=json",
-      "applyUrl": "https://jobs.lever.co/tandh/573ceed0-003d-472c-a946-789309c96008/apply",
-      "description": "Begin your surveying career where your work supports the development of infrastructure and communities across the Southeast. At Thomas & Hutton, you’ll work alongside experienced survey professionals collecting critical field data that supports engineering, design, and construction projects. If you enjoy working outdoors, operating specialized equipment, and being part of a collaborative team, this role offers an excellent opportunity to build a long-term career in land surveying.",
-      "employmentType": "Full-time",
-      "remote": false
-    },
-    {
-      "id": "526a3e9663e78bfc8fd26ebc7de9863f303f922699c7e8d41a5772ec3671e902",
-      "title": "Land Surveyor - Crew Chief",
-      "company": "Thomas & Hutton",
-      "location": "Nashville, Tennessee",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-26T19:21:07.398000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Thomas & Hutton Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/tandh?mode=json",
-      "applyUrl": "https://jobs.lever.co/tandh/93f4748b-dd0e-4613-a875-31918e09d589/apply",
-      "description": "Advance your surveying career where your work supports the development of infrastructure and communities across the Southeast. At Thomas & Hutton, you’ll lead field crews, oversee survey crew operations, and contribute to high-impact projects while growing within a company celebrated as a Best Place to Work. If you’re an experienced survey professional who enjoys working in dynamic field environments, this role is for you.",
-      "employmentType": "Full-time",
-      "remote": false
     }
   ]
 }
