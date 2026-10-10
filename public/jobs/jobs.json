@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T22:43:36.483880Z",
+  "generatedAt": "2026-10-10T06:00:18.128241Z",
   "expiryDays": 45,
-  "totalJobs": 588,
+  "totalJobs": 587,
   "jobs": [
+    {
+      "id": "0dede2941f661d955e26a1498de360426c3e6f070cf721c5c9230e410aa12473",
+      "title": "Survey Crew Chief",
+      "company": "Woolpert",
+      "location": "Cincinnati, OH; Cleveland, OH; Columbus, OH; Dayton, OH",
+      "city": "",
+      "country": "United States",
+      "category": "Land Surveying",
+      "postedAt": "2026-10-10T00:51:14Z",
+      "discoveredAt": "2026-10-09T22:43:36.483880Z",
+      "expiresAt": null,
+      "source": "Woolpert Careers",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
+      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4241356009",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "e5b4ae5ce9506d535135d7d653b4ebe50eb952c4d29297732fa5ba63280150fc",
       "title": "Survey Cad Technician (Hybrid)",
@@ -18,24 +36,6 @@
       "source": "Atwell Careers",
       "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/atwellgroup/jobs",
       "applyUrl": "https://job-boards.greenhouse.io/atwellgroup/jobs/5262637007",
-      "description": "",
-      "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "0dede2941f661d955e26a1498de360426c3e6f070cf721c5c9230e410aa12473",
-      "title": "Survey Crew Chief",
-      "company": "Woolpert",
-      "location": "Cincinnati, OH; Cleveland, OH; Columbus, OH; Dayton, OH",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-10-09T19:07:49Z",
-      "discoveredAt": "2026-10-09T22:43:36.483880Z",
-      "expiresAt": null,
-      "source": "Woolpert Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4241356009",
       "description": "",
       "employmentType": "",
       "remote": false
@@ -10566,24 +10566,6 @@
       "applyUrl": "https://jobs.lever.co/tandh/93f4748b-dd0e-4613-a875-31918e09d589/apply",
       "description": "Advance your surveying career where your work supports the development of infrastructure and communities across the Southeast. At Thomas & Hutton, you’ll lead field crews, oversee survey crew operations, and contribute to high-impact projects while growing within a company celebrated as a Best Place to Work. If you’re an experienced survey professional who enjoys working in dynamic field environments, this role is for you.",
       "employmentType": "Full-time",
-      "remote": false
-    },
-    {
-      "id": "db0655cbc90cecaf8f3a7417d722ae1205c00b7f88d312465a47a383865aee44",
-      "title": "Survey Party Chief",
-      "company": "Parametrix",
-      "location": "Bend, Oregon, United States",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-26T01:09:18Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Parametrix Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/parametrix/jobs?content=true",
-      "applyUrl": "https://job-boards.greenhouse.io/parametrix/jobs/4383121009",
-      "description": "",
-      "employmentType": "",
       "remote": false
     }
   ]
