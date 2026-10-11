@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T23:37:44.914539Z",
+  "generatedAt": "2026-10-11T05:56:40.630556Z",
   "expiryDays": 45,
-  "totalJobs": 585,
+  "totalJobs": 584,
   "jobs": [
     {
       "id": "0dede2941f661d955e26a1498de360426c3e6f070cf721c5c9230e410aa12473",
@@ -10513,24 +10513,6 @@
       "description": "",
       "employmentType": "",
       "remote": false
-    },
-    {
-      "id": "86ad44d82e9ebd012b33225093dd7c0223125937d33a362f0d2324482cc4ee76",
-      "title": "Survey Assistant",
-      "company": "Phasor Engineering Inc",
-      "location": "Canada",
-      "city": "",
-      "country": "Canada",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-27T00:00:00Z",
-      "discoveredAt": "2026-09-27T09:12:02.941568Z",
-      "expiresAt": null,
-      "source": "Phasor Engineering Careers",
-      "sourceUrl": "https://www.workable.com/api/accounts/phasorengineering",
-      "applyUrl": "https://apply.workable.com/j/F2438BB7A4",
-      "description": "",
-      "employmentType": "Full-time",
-      "remote": true
     }
   ]
 }
