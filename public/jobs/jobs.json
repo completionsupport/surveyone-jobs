@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T18:58:42.446496Z",
+  "generatedAt": "2026-10-11T23:43:31.447382Z",
   "expiryDays": 45,
-  "totalJobs": 600,
+  "totalJobs": 599,
   "jobs": [
     {
       "id": "2f30b4a8616387dbf199a137030a7763da9522a8ef8b639600c8ca4da93c872d",
@@ -10782,24 +10782,6 @@
       "applyUrl": "https://job-boards.greenhouse.io/olsson/jobs/5405928008",
       "description": "",
       "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "c0b2129ccd469b1e314b6451a21f6c81359ded052c631c73ef315bbaa7c558c9",
-      "title": "Survey CAD Technician",
-      "company": "Thomas & Hutton",
-      "location": "Nashville, Tennessee",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-27T19:05:57.195000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Thomas & Hutton Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/tandh?mode=json",
-      "applyUrl": "https://jobs.lever.co/tandh/48a172af-d642-461b-b7f5-70f452368ab5/apply",
-      "description": "Advance your civil engineering design career where your work supports impactful land development and infrastructure projects across the Southeast. At Thomas & Hutton, you’ll work alongside experienced engineers and designers to develop detailed construction plans and technical drawings for a wide range of commercial, residential, and site development projects. If you enjoy technical problem-solving, working with advanced design tools, and contributing to collaborative project teams, this role offers an excellent opportunity to grow within a company recognized as a Best Place to Work.",
-      "employmentType": "Full-time",
       "remote": false
     }
   ]
