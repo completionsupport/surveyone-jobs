@@ -1,9 +1,45 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T13:01:12.694679Z",
+  "generatedAt": "2026-10-11T18:58:42.446496Z",
   "expiryDays": 45,
-  "totalJobs": 598,
+  "totalJobs": 600,
   "jobs": [
+    {
+      "id": "2f30b4a8616387dbf199a137030a7763da9522a8ef8b639600c8ca4da93c872d",
+      "title": "Quantity Surveyor (Site Supervision)",
+      "company": "AECOM",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "category": "Quantity Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-11T18:58:42.446496Z",
+      "expiresAt": null,
+      "source": "AECOM Survey Careers",
+      "sourceUrl": "https://careers.smartrecruiters.com/AECOM2/api/groups?page=0&search=Surveyor",
+      "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000154885349-quantity-surveyor-site-supervision-",
+      "description": "",
+      "employmentType": "Contract",
+      "remote": false
+    },
+    {
+      "id": "99ef9555e99cd3ad8948b49518758022e45ebc71105a04f37ab6dfca90a0cd2f",
+      "title": "Senior Quantity Surveyor (Site Supervision)",
+      "company": "AECOM",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "category": "Quantity Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-11T18:58:42.446496Z",
+      "expiresAt": null,
+      "source": "AECOM Survey Careers",
+      "sourceUrl": "https://careers.smartrecruiters.com/AECOM2/api/groups?page=0&search=Surveyor",
+      "applyUrl": "https://jobs.smartrecruiters.com/AECOM2/744000154884789-senior-quantity-surveyor-site-supervision-",
+      "description": "",
+      "employmentType": "Contract",
+      "remote": false
+    },
     {
       "id": "00c0ef05c160c2359190647aaade11110d986140bf0151166175cae62a25b1a8",
       "title": "Surveyor Technician - Alex Tram",
@@ -1082,6 +1118,24 @@
       "applyUrl": "https://stantec.jobs/galway-irl/principal-geospatial-consultant/D5D6C4BBAD314EA382DD04A11DCB4E58/job/",
       "description": "",
       "employmentType": "",
+      "remote": false
+    },
+    {
+      "id": "0a8c12def43bddd87fbdb375bc508ed3c931622cb21ed2fffff10245a75d1e50",
+      "title": "Geomatics Engineer - Fresh Graduates",
+      "company": "Eram Talent",
+      "location": "Dhahran, Saudi Arabia",
+      "city": "Dhahran",
+      "country": "Saudi Arabia",
+      "category": "GIS / Geospatial",
+      "postedAt": "2026-10-11T00:00:00Z",
+      "discoveredAt": "2026-10-11T18:58:42.446496Z",
+      "expiresAt": null,
+      "source": "Eram Talent Careers",
+      "sourceUrl": "https://www.workable.com/api/accounts/eramtalent-1",
+      "applyUrl": "https://apply.workable.com/j/53A8E9F653",
+      "description": "",
+      "employmentType": "Contract",
       "remote": false
     },
     {
@@ -10746,24 +10800,6 @@
       "applyUrl": "https://jobs.lever.co/tandh/48a172af-d642-461b-b7f5-70f452368ab5/apply",
       "description": "Advance your civil engineering design career where your work supports impactful land development and infrastructure projects across the Southeast. At Thomas & Hutton, you’ll work alongside experienced engineers and designers to develop detailed construction plans and technical drawings for a wide range of commercial, residential, and site development projects. If you enjoy technical problem-solving, working with advanced design tools, and contributing to collaborative project teams, this role offers an excellent opportunity to grow within a company recognized as a Best Place to Work.",
       "employmentType": "Full-time",
-      "remote": false
-    },
-    {
-      "id": "5cdaf154e69094650ee7c52e051c9e8f38781c0e56593600330929e32c4a8090",
-      "title": "Land Survey Technician",
-      "company": "Morrison-Maierle",
-      "location": "Boise, ID",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-08-27T17:01:54Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Morrison-Maierle Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/morrisonmaierle/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/morrisonmaierle/jobs/4376875009",
-      "description": "",
-      "employmentType": "",
       "remote": false
     }
   ]
