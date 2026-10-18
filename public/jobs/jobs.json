@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-17T00:32:52.064154Z",
+  "generatedAt": "2026-10-18T11:18:04.854956Z",
   "expiryDays": 45,
-  "totalJobs": 648,
+  "totalJobs": 649,
   "jobs": [
+    {
+      "id": "43045d68baef8c8d2b820fd4e5fb6da6ebf4d5e0a99bdf2e76d2e3b5e9b172a1",
+      "title": "Intermediate Quantity Surveyor",
+      "company": "AtkinsRealis",
+      "location": "AE.Dubai.EmaarSq",
+      "city": "AE.Dubai.EmaarSq",
+      "country": "United Arab Emirates",
+      "category": "Quantity Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-18T11:18:04.854956Z",
+      "expiresAt": null,
+      "source": "AtkinsRealis Careers",
+      "sourceUrl": "https://slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/Careers/jobs?search=land%20surveyor&offset=0",
+      "applyUrl": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/AEDubaiEmaarSq/Intermediate-Quantity-Surveyor_R-166839",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "bb1203547c246a411f2c26311f2cc789044714f3e10741d1accc6243527d667f",
       "title": "Project Surveyor / Project Manager",
