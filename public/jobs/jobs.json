@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-19T19:59:21.189581Z",
+  "generatedAt": "2026-10-19T23:46:28.325228Z",
   "expiryDays": 45,
-  "totalJobs": 661,
+  "totalJobs": 660,
   "jobs": [
     {
       "id": "28d2505dfd02d69dc8b68563fa7d965a83d784f4738427abbc4f6af36bd08f66",
@@ -11881,24 +11881,6 @@
       "description": "",
       "employmentType": "Full-time",
       "remote": true
-    },
-    {
-      "id": "947b34b9399391800e5ee2173d05701a29312f8cec70475c6ed77d2243443157",
-      "title": "Licensed Land Surveyor (LS)",
-      "company": "AMT Engineering",
-      "location": "Herndon, Virginia",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-09-04T19:59:39.204000Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "AMT Engineering Careers",
-      "sourceUrl": "https://api.lever.co/v0/postings/amtengineering?mode=json",
-      "applyUrl": "https://jobs.lever.co/amtengineering/9147cdfe-7e55-4bdf-88bc-90bf22866df4/apply",
-      "description": "Build Your Future at AMT\nA. Morton Thomas and Associates, Inc. (AMT), an employee-owned engineering consulting firm, is seeking a motivated Virginia Licensed Surveyor (LS) to join our growing Survey practice in Richmond or Northern Virginia.\nThis opportunity is designed for a survey professional who is ready to take the next step in their career. Whether you've recently obtained your Virginia license or are looking to expand your leadership responsibilities, AMT offers the opportunity to serve in responsible charge of survey projects, mentor staff, develop client relationships, and contribute to the continued growth of our Survey practice.\nOur survey professionals work closely with AMT's transportation and infrastructure engineering teams. The work primarily includes topographic, boundary, right-of-way, and utility surveys supporting roadway, bridge, utility, and public infrastructure design projects supporting our public sector clientele. \nAs an employee-owned company, AMT invests in its people through mentorship, professional development, leadership opportunities, and a collaborative culture that values teamwork, client service, and work-life balance. We are looking for a future leader who wants to make a meaningful impact on our projects, clients, teams, and communities. Surveyors who have recently obtained their Virginia Licensed Surveyor credential are encouraged to apply.\nWhy This Opportunity Is Different\nAt AMT, leadership opportunities are created through growth, not simply through waiting for someone else to retire.  This position offers the opportunity to:\nServe in responsible charge of survey projects.\nLead and mentor survey field and office personnel.\nGain greater project management responsibility.\nDevelop client management and business development skills.\nWork closely with transportation and infrastructure engineering teams.\nBuild leadership experience within an employee-owned company.\nHelp shape the future growth of AMT's Survey practice.\nEnjoy flexible hybrid work arrangements and a strong commitment to work-life balance.\nWe are looking for more than a licensed surveyor. We're looking for a future leader. If you've recently earned your Virginia Licensed Surveyor credential and are looking for an opportunity to expand your responsibilities, lead projects and staff, worn on meaningful transportation and infrastructure projects, and accelerate your professional growth, AMT offers the platform and support to help you succeed.\nJoin AMT and help shape the future of surveying throughout Virginia and the Mid-Atlantic region.",
-      "employmentType": "Full time",
-      "remote": false
     }
   ]
 }
