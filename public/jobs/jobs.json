@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T23:25:10.939345Z",
+  "generatedAt": "2026-10-22T04:58:41.365417Z",
   "expiryDays": 45,
-  "totalJobs": 696,
+  "totalJobs": 694,
   "jobs": [
     {
       "id": "d63a7b4df12c223bb29ca8c3ac1fd0c66b94e765137f373815a5befe2155ef4a",
@@ -12493,42 +12493,6 @@
       "description": "",
       "employmentType": "",
       "remote": false
-    },
-    {
-      "id": "ab76414c70a8af212a481bd27c29b370a0a582ca1beba4e233f7ff6b7c40f9ca",
-      "title": "Senior GIS Consultant",
-      "company": "Woolpert",
-      "location": "Adelaide, Australia; Brisbane, Australia; Melbourne, Australia; Perth, Australia; Sydney, Australia",
-      "city": "",
-      "country": "Australia",
-      "category": "GIS / Geospatial",
-      "postedAt": "2026-09-07T03:01:24Z",
-      "discoveredAt": "2026-10-02T17:36:39.606741Z",
-      "expiresAt": null,
-      "source": "Woolpert Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4397038009",
-      "description": "",
-      "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "e73247e3b9377f7dec02899999fbcbd06aa6aa34768863475c1b4364345ce5c8",
-      "title": "Data Annotator for Geospatial / LiDAR project",
-      "company": "Label Your Data",
-      "location": "Kolomyya, Ukraine",
-      "city": "Kolomyya",
-      "country": "Ukraine",
-      "category": "UAV / LiDAR",
-      "postedAt": "2026-09-07T00:00:00Z",
-      "discoveredAt": "2026-09-27T09:12:02.941568Z",
-      "expiresAt": null,
-      "source": "Label Your Data Careers",
-      "sourceUrl": "https://www.workable.com/api/accounts/labelyourdata",
-      "applyUrl": "https://apply.workable.com/j/1C3FC6F787",
-      "description": "",
-      "employmentType": "Full-time",
-      "remote": true
     }
   ]
 }
