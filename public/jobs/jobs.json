@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T18:26:32.486007Z",
+  "generatedAt": "2026-10-24T16:02:20.945708Z",
   "expiryDays": 45,
   "totalJobs": 719,
   "jobs": [
+    {
+      "id": "bcf1ae0e0b5914a6fe836042934adae54006e9b9d55840cd54392f492673c6a5",
+      "title": "Senior Quantity Surveyor (Roads & Infra)",
+      "company": "Parsons",
+      "location": "AE - Dubai",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "category": "Quantity Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-24T16:02:20.945708Z",
+      "expiresAt": null,
+      "source": "Parsons Careers",
+      "sourceUrl": "https://parsons.wd5.myworkdayjobs.com/wday/cxs/parsons/Search/jobs?search=land%20surveyor&offset=0",
+      "applyUrl": "https://parsons.wd5.myworkdayjobs.com/en-US/Search/job/AE---Dubai/Senior-Quantity-Surveyor--Roads---Infra-_R187552",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "b248e5ac67531122dd693dbe65326ce1c1c6ee98609c0e9b455850a895655bf4",
       "title": "Intermediate Infrastructure Quantity Surveyor – Aviation",
@@ -12925,24 +12943,6 @@
       "description": "",
       "employmentType": "Full-time",
       "remote": true
-    },
-    {
-      "id": "a14ba5736f168b7a24adf09b977568da63cd433f4905ed6661dce55154ed4783",
-      "title": "Quantity Surveyor (Saudi National only)",
-      "company": "Decima International",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "city": "",
-      "country": "Saudi Arabia",
-      "category": "Quantity Surveying",
-      "postedAt": "2026-09-09T12:11:41Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Decima International Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/decimainternational/jobs?content=true",
-      "applyUrl": "https://job-boards.greenhouse.io/decimainternational/jobs/4707958006",
-      "description": "",
-      "employmentType": "",
-      "remote": false
     }
   ]
 }
