@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from .main import ROOT, load, save
 from .model import expired
+from .editorial import is_editorial
 
 BATCH = ROOT / "jobs/notification.json"
 
@@ -59,7 +60,7 @@ def reserve():
     expiry_days = load(ROOT / "jobs/config/sources.json", {}).get("expiryDays", 45)
     pending_jobs = [
         j for j in jobs if j["id"] in state.get("pending", [])
-        and j["id"] not in notified and not expired(j, now, expiry_days)
+        and j["id"] not in notified and not expired(j, now, expiry_days) and not is_editorial(j)
     ]
     groups = {}
     for job in pending_jobs:

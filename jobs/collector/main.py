@@ -8,6 +8,7 @@ from .model import make_job, relevant, expired, deduplicate, date, iso
 from .network import Fetcher
 from .parsers import parse
 from .registry import enabled_sources, rotated_sources, source_key
+from .editorial import is_editorial, load_editorial, replace_editorial
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -43,7 +44,8 @@ def collect(output_root=None):
     first_discovered = state.setdefault("firstDiscovered", {})
     for job in previous.values():
         first_discovered.setdefault(job["id"], job["discoveredAt"])
-    merged = dict(previous)
+    # Scraper caching must not revive a paused/deleted administrative job.
+    merged = {key: job for key, job in previous.items() if not is_editorial(job)}
     successes = failures = checked = 0
     dead = set()
     checks = state.setdefault("linkChecks", {})
@@ -110,7 +112,7 @@ def collect(output_root=None):
             for job in sorted(previous.values(), key=lambda j: checks.get(j["id"], "")):
                 if link_budget <= 0 or fetch.remaining <= 1 or time.monotonic() - started >= run_seconds:
                     break
-                if job["sourceUrl"] != source["url"]:
+                if is_editorial(job) or job["sourceUrl"] != source["url"]:
                     continue
                 last = date(checks.get(job["id"]))
                 if last and (now - last).days < 7:
@@ -146,6 +148,9 @@ def collect(output_root=None):
             session = getattr(fetch, "session", None)
             if session is not None:
                 session.close()
+    # Collection can take 15–20 minutes. Validate the live editorial snapshot and
+    # all expiry dates against the end-of-run clock, not the original scraper start.
+    now = datetime.now(timezone.utc)
     active = deduplicate(
         [
             j
@@ -153,14 +158,20 @@ def collect(output_root=None):
             if j["id"] not in dead and not expired(j, now, config.get("expiryDays", 45))
         ]
     )
+    editorial_jobs, editorial_health = load_editorial(config, now)
+    # Preserve administrative identity/contact methods rather than fuzzy-deduplicating
+    # an explicitly authored vacancy against unrelated scraped requisitions.
+    active = replace_editorial(active, editorial_jobs)
+    state["editorialFeed"] = dict(checkedAt=iso(now), **editorial_health)
     active.sort(
         key=lambda j: date(j.get("postedAt")) or date(j["discoveredAt"]), reverse=True
     )
     seen = set(state.get("seen", [])) | set(previous)
-    new = [j["id"] for j in active if j["id"] not in seen]
+    new = [j["id"] for j in active if j["id"] not in seen and not is_editorial(j)]
     state["seen"] = sorted(seen | {j["id"] for j in active})
+    active_scraped = {j["id"] for j in active if not is_editorial(j)}
     state["pending"] = sorted(
-        (set(state.get("pending", [])) | set(new)) - set(state.get("notified", []))
+        ((set(state.get("pending", [])) | set(new)) - set(state.get("notified", []))) & active_scraped
     )
     expiry_days = config.get("expiryDays", 45)
     if (
@@ -189,6 +200,8 @@ def collect(output_root=None):
         updatedJobs=sum(j["id"] in previous and j != previous[j["id"]] for j in active),
         expiredJobs=len(set(previous) - {j["id"] for j in active}),
         totalActiveJobs=len(active),
+        editorialFeedStatus=editorial_health["status"],
+        editorialActiveJobs=len(editorial_jobs),
         healthySources=sum(source_health.get(s["name"], {}).get("status") == "healthy" for s in sources),
     )
     print(json.dumps(summary, indent=2))

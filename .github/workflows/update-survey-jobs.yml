@@ -33,6 +33,8 @@ jobs:
       - run: pip install -r jobs/requirements.txt
       - run: python -m unittest discover -s jobs/tests -v
       - run: python -m jobs.collector.main
+        env:
+          SURVEYONE_EDITORIAL_JOBS_FEED_URL: ${{ vars.SURVEYONE_EDITORIAL_JOBS_FEED_URL }}
       - name: Save feed and collector state when changed
         run: |
           git config user.name "github-actions[bot]"
