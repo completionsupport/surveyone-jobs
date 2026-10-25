@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T16:02:20.945708Z",
+  "generatedAt": "2026-10-25T04:52:17.060957Z",
   "expiryDays": 45,
-  "totalJobs": 719,
+  "totalJobs": 718,
   "jobs": [
     {
       "id": "bcf1ae0e0b5914a6fe836042934adae54006e9b9d55840cd54392f492673c6a5",
@@ -12925,24 +12925,6 @@
       "description": "",
       "employmentType": "",
       "remote": false
-    },
-    {
-      "id": "886fa29ef3086582d2b6db3d6ab4c1c1de1ec16744aabae10e230d3c7d6ed820",
-      "title": "Data Annotator for Geospatial / LiDAR project",
-      "company": "Label Your Data",
-      "location": "Poznań, Poland",
-      "city": "Poznań",
-      "country": "Poland",
-      "category": "UAV / LiDAR",
-      "postedAt": "2026-09-10T00:00:00Z",
-      "discoveredAt": "2026-09-27T09:12:02.941568Z",
-      "expiresAt": null,
-      "source": "Label Your Data Careers",
-      "sourceUrl": "https://www.workable.com/api/accounts/labelyourdata",
-      "applyUrl": "https://apply.workable.com/j/A2E8AB39CC",
-      "description": "",
-      "employmentType": "Full-time",
-      "remote": true
     }
   ]
 }
