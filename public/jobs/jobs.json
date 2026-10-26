@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-25T21:02:55.416610Z",
+  "generatedAt": "2026-10-26T00:33:17.326983Z",
   "expiryDays": 45,
-  "totalJobs": 720,
+  "totalJobs": 718,
   "jobs": [
     {
       "id": "cb56ed7129f78e42d8a7fe221611d6981ab579e8830372c5b0759a1cd49a9060",
@@ -12922,42 +12922,6 @@
       "source": "Atwell Careers",
       "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/atwellgroup/jobs",
       "applyUrl": "https://job-boards.greenhouse.io/atwellgroup/jobs/5085236007",
-      "description": "",
-      "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "bbb081d7260098462b068c99d4275058da4fac3734da46eaa33c9d09bb5f0823",
-      "title": "Data Annotator for Geospatial / LiDAR project",
-      "company": "Label Your Data",
-      "location": "Bratislava, Slovakia",
-      "city": "Bratislava",
-      "country": "Slovakia",
-      "category": "UAV / LiDAR",
-      "postedAt": "2026-09-11T00:00:00Z",
-      "discoveredAt": "2026-09-27T09:12:02.941568Z",
-      "expiresAt": null,
-      "source": "Label Your Data Careers",
-      "sourceUrl": "https://www.workable.com/api/accounts/labelyourdata",
-      "applyUrl": "https://apply.workable.com/j/C3D09E08A3",
-      "description": "",
-      "employmentType": "Full-time",
-      "remote": true
-    },
-    {
-      "id": "09d02a4fb75e11407cd17e8680140bb91df9be04cf42b147af25099964718b9b",
-      "title": "CAD Technician",
-      "company": "Morrison-Maierle",
-      "location": "Washington",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-09-10T22:30:20Z",
-      "discoveredAt": "2026-09-20T14:12:07.407426Z",
-      "expiresAt": null,
-      "source": "Morrison-Maierle Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/morrisonmaierle/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/morrisonmaierle/jobs/4402901009",
       "description": "",
       "employmentType": "",
       "remote": false
