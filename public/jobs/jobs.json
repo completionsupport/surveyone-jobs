@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-26T00:33:17.326983Z",
+  "generatedAt": "2026-10-26T07:58:49.561017Z",
   "expiryDays": 45,
-  "totalJobs": 718,
+  "totalJobs": 719,
   "jobs": [
+    {
+      "id": "a9735d92ff829cdbf27a390b61a1b9a0159bb4c8cbbc30144aa643de3f3ebecf",
+      "title": "Land Surveyor",
+      "company": "Parsons",
+      "location": "AE - Abu Dhabi",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "category": "Land Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-26T07:52:39.124438Z",
+      "expiresAt": null,
+      "source": "Parsons Careers",
+      "sourceUrl": "https://parsons.wd5.myworkdayjobs.com/wday/cxs/parsons/Search/jobs?search=land%20surveyor&offset=0",
+      "applyUrl": "https://parsons.wd5.myworkdayjobs.com/en-US/Search/job/AE---Abu-Dhabi/Land-Surveyor_R187683",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "cb56ed7129f78e42d8a7fe221611d6981ab579e8830372c5b0759a1cd49a9060",
       "title": "Senior Quantity Surveyor Buildings",
