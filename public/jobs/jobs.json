@@ -1,9 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-26T15:21:57.112499Z",
+  "generatedAt": "2026-10-26T21:10:30.593513Z",
   "expiryDays": 45,
   "totalJobs": 722,
   "jobs": [
+    {
+      "id": "8cade002e8a689a3d328e30f6f6bbcca541925a1e823a90b3210447540b3f892",
+      "title": "Senior Quantity Surveyor",
+      "company": "AtkinsRealis",
+      "location": "GB.Manchester.Piccadilly",
+      "city": "GB.Manchester.Piccadilly",
+      "country": "",
+      "category": "Quantity Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-26T21:03:47.253655Z",
+      "expiresAt": null,
+      "source": "AtkinsRealis Careers",
+      "sourceUrl": "https://slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/Careers/jobs?search=land%20surveyor&offset=0",
+      "applyUrl": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/GBManchesterPiccadilly/Senior-Quantity-Surveyor_R-166664",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "534097509974a281a86d3aff5163c6447149812245d1770168f19e53707e6d26",
       "title": "Land Surveyor - Marine",
@@ -12976,24 +12994,6 @@
       "source": "ABIS Careers",
       "sourceUrl": "https://www.workable.com/api/accounts/abis",
       "applyUrl": "https://apply.workable.com/j/32F522EF54",
-      "description": "",
-      "employmentType": "",
-      "remote": false
-    },
-    {
-      "id": "8371072b85fe7b9b0770476531c8824fec780b3e31181a49cab3b900de25e72e",
-      "title": "Survey Crew Chief",
-      "company": "Atwell",
-      "location": "Southfield, Michigan, United States",
-      "city": "",
-      "country": "United States",
-      "category": "Land Surveying",
-      "postedAt": "2026-09-11T20:37:56Z",
-      "discoveredAt": "2026-09-15T15:15:29.550527Z",
-      "expiresAt": null,
-      "source": "Atwell Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/atwellgroup/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/atwellgroup/jobs/5085236007",
       "description": "",
       "employmentType": "",
       "remote": false
