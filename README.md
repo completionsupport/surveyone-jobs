@@ -44,6 +44,15 @@ The workflow is scheduled every two hours (`17 */2 * * *`) and can also be start
 manually from GitHub Actions. GitHub may delay scheduled runs; this is not an
 exact two-hour delivery guarantee.
 
+Admin-authored vacancies also use a lightweight publication run every 15 minutes
+(`7,22,37,52 * * * *`). It refreshes the authoritative admin entries in the same
+public JSON URL already used by released Android versions, preserves employer
+listings and collector notification state, and sends no notifications. GitHub can
+delay scheduled runs; this is not instant publication. To publish immediately,
+run **Update Survey Jobs** with **editorial_only** checked. The regular two-hour
+employer collection and its notification policy are unchanged. Paused, archived
+and expired admin entries are removed by the next publication run.
+
 ## Verified source coverage
 
 As of 2026-10-04, 68 distinct enabled career boards passed live parsing and clean

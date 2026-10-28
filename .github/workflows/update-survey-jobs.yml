@@ -9,7 +9,13 @@ on:
       - 'jobs/requirements.txt'
   schedule:
     - cron: '17 */2 * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
+    inputs:
+      editorial_only:
+        description: 'Sync admin vacancies to the app only (no scraping or notifications)'
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -23,6 +29,8 @@ jobs:
     timeout-minutes: 25
     environment:
       name: github-pages
+    env:
+      EDITORIAL_ONLY: ${{ (github.event_name == 'workflow_dispatch' && inputs.editorial_only) || (github.event_name == 'schedule' && github.event.schedule != '17 */2 * * *') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,7 +40,14 @@ jobs:
           cache-dependency-path: jobs/requirements.txt
       - run: pip install -r jobs/requirements.txt
       - run: python -m unittest discover -s jobs/tests -v
-      - run: python -m jobs.collector.main
+      - name: Collect employer sources and admin vacancies
+        if: env.EDITORIAL_ONLY != 'true'
+        run: python -m jobs.collector.main
+        env:
+          SURVEYONE_EDITORIAL_JOBS_FEED_URL: ${{ vars.SURVEYONE_EDITORIAL_JOBS_FEED_URL }}
+      - name: Sync admin vacancies without notifications
+        if: env.EDITORIAL_ONLY == 'true'
+        run: python -m jobs.collector.sync_editorial
         env:
           SURVEYONE_EDITORIAL_JOBS_FEED_URL: ${{ vars.SURVEYONE_EDITORIAL_JOBS_FEED_URL }}
       - name: Save feed and collector state when changed
@@ -50,13 +65,14 @@ jobs:
           path: public
       - uses: actions/deploy-pages@v4
       - name: Check notification configuration
+        if: env.EDITORIAL_ONLY != 'true'
         id: config
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
           if [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"; fi
       - name: Reserve notification before delivery
-        if: steps.config.outputs.enabled == 'true'
+        if: env.EDITORIAL_ONLY != 'true' && steps.config.outputs.enabled == 'true'
         id: reserve
         run: |
           python -m jobs.collector.notify reserve
@@ -66,7 +82,7 @@ jobs:
             git push
           fi
       - name: Send one FCM notification
-        if: steps.reserve.outputs.send == 'true'
+        if: env.EDITORIAL_ONLY != 'true' && steps.reserve.outputs.send == 'true'
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python -m jobs.collector.notify send
