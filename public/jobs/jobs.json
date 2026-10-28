@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T11:03:22.926512Z",
+  "generatedAt": "2026-10-28T11:08:57.598751Z",
   "expiryDays": 45,
   "totalJobs": 526,
   "jobs": [
@@ -4025,7 +4025,7 @@
       "title": "Survey Engineer K3 - MML 5,9&7A- Mumbai",
       "company": "SYSTRA",
       "location": "India",
-      "city": "India",
+      "city": "",
       "country": "IN",
       "category": "Survey Engineering",
       "postedAt": null,
@@ -4451,7 +4451,7 @@
       "title": "Chief Surveyor",
       "company": "Orascom Construction",
       "location": "Egypt",
-      "city": "Egypt",
+      "city": "",
       "country": "EG",
       "category": "Land Surveying",
       "postedAt": "2026-10-14T00:00:00Z",

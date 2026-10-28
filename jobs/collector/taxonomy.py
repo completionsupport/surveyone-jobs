@@ -33,11 +33,13 @@ def filter_job(job):
     result = dict(job)
     if "city" in result:
         city = result["city"]
+        if city and country_code(city) and country_code(city) == country_code(result.get("country")):
+            city = ""
         if not city and result.get("country"):
             candidate = str(result.get("location") or "").split(",", 1)[0].strip()
             canonical = city_name(candidate, result["country"])
-            # Infer only a known city, or the explicit city part of a comma-separated
-            # location. Do not invent a city for All Sites, Worldwide or country-only rows.
+            # Infer only a known city. Do not invent one for All Sites,
+            # Worldwide or country-only locations.
             if canonical != candidate or canonical in TAXONOMY["cities"].get(country_code(result["country"]), {}):
                 city = canonical
         result["city"] = city_name(city, result.get("country"))

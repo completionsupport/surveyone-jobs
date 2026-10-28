@@ -27,4 +27,5 @@ class PublicCountryFilterTests(unittest.TestCase):
             b=filter_job(dict(country=country,city=second,category="Land Surveying"))
             self.assertEqual(a,b)
         self.assertEqual("",filter_job(dict(country="EG",city="",location="All Sites"))["city"])
+        self.assertEqual("",filter_job(dict(country="EG",city="Egypt",location="Egypt"))["city"])
         self.assertEqual("Alexandria",filter_job(dict(country="EG",city="",location="Alexandria"))["city"])
