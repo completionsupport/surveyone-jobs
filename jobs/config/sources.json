@@ -36,7 +36,7 @@
       "name": "Stantec Survey Careers", "company": "Stantec", "type": "stantec_sitemap",
       "url": "https://stantec.jobs/sitemaps/index.xml", "country": "",
       "pollIntervalHours": 2, "maxRequestsPerSource": 4,
-      "slugKeywords": ["surveyor", "survey-technician", "geomatics", "geospatial", "gis-", "quantity-surveyor"],
+      "slugKeywords": ["surveyor", "survey-technician", "geomatics", "geospatial", "gis-"],
       "allowedHosts": ["stantec.jobs"],
       "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles; verified 2026-10-03"
     },
@@ -46,7 +46,7 @@
       "url": "https://ejov.fa.ca2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation%2CrequisitionList.otherWorkLocations%2CrequisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D25%2Coffset%3D0%2Ckeyword%3Dsurveyor",
       "publicBaseUrl": "https://ejov.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX",
       "siteNumber": "CX", "country": "", "pollIntervalHours": 2,
-      "searchTerms": ["surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics"],
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics"],
       "maxPagesPerTerm": 2, "maxRequestsPerSource": 12,
       "allowedHosts": ["ejov.fa.ca2.oraclecloud.com"],
       "permissionNote": "Official GHD Oracle Candidate Experience public feed; live Philippines and global locations retained per vacancy"
@@ -81,7 +81,7 @@
       "name": "ACCIONA Global Survey Careers", "company": "ACCIONA", "type": "workday",
       "url": "https://acciona.wd3.myworkdayjobs.com/wday/cxs/acciona/ACCIONA_Employment_Channel/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://acciona.wd3.myworkdayjobs.com/en-US/ACCIONA_Employment_Channel",
-      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics"],
       "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
       "country": "", "pollIntervalHours": 2,
       "allowedHosts": ["acciona.wd3.myworkdayjobs.com"],
@@ -92,7 +92,7 @@
       "name": "SLR Consulting Survey Careers", "company": "SLR Consulting", "type": "workday",
       "url": "https://slrconsulting.wd103.myworkdayjobs.com/wday/cxs/slrconsulting/SLRCareers/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://slrconsulting.wd103.myworkdayjobs.com/en-US/SLRCareers",
-      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics"],
       "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
       "country": "", "pollIntervalHours": 2,
       "allowedHosts": ["slrconsulting.wd103.myworkdayjobs.com"],
@@ -114,7 +114,7 @@
       "name": "Ferrovial Survey Careers", "company": "Ferrovial", "type": "workday",
       "url": "https://ferrovial.wd3.myworkdayjobs.com/wday/cxs/ferrovial/Ferrovial_Career_Site/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://ferrovial.wd3.myworkdayjobs.com/en-US/Ferrovial_Career_Site",
-      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics", "quantity surveyor"],
+      "searchTerms": ["surveyor", "GIS", "geospatial", "geomatics"],
       "maxPagesPerTerm": 2, "maxRequestsPerSource": 13,
       "country": "", "pollIntervalHours": 2,
       "allowedHosts": ["ferrovial.wd3.myworkdayjobs.com"],
@@ -354,7 +354,7 @@
       "country": "",
       "pollIntervalHours": 2,
       "maxRequestsPerSource": 16,
-      "linkKeywords": ["surveyor", "survey-engineer", "quantity-surveyor", "gis", "geospatial", "geomatics"],
+      "linkKeywords": ["surveyor", "survey-engineer", "gis", "geospatial", "geomatics"],
       "allowedHosts": ["careers-systra.icims.com"],
       "permissionNote": "Official public iCIMS sitemap; relevant job pages are filtered before bounded fetching; live Cairo survey vacancy validated 2026-10-02"
     },
@@ -456,7 +456,7 @@
       "type": "workday",
       "url": "https://parsons.wd5.myworkdayjobs.com/wday/cxs/parsons/Search/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://parsons.wd5.myworkdayjobs.com/en-US/Search",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -471,7 +471,7 @@
       "type": "workday",
       "url": "https://slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/Careers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -486,7 +486,7 @@
       "type": "workday",
       "url": "https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://jll.wd1.myworkdayjobs.com/en-US/jllcareers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -501,7 +501,7 @@
       "type": "workday",
       "url": "https://kbr.wd5.myworkdayjobs.com/wday/cxs/kbr/KBR_Careers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://kbr.wd5.myworkdayjobs.com/en-US/KBR_Careers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -516,7 +516,7 @@
       "type": "workday",
       "url": "https://surbanajurong.wd3.myworkdayjobs.com/wday/cxs/surbanajurong/careersatsmec/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://surbanajurong.wd3.myworkdayjobs.com/en-US/careersatsmec",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -531,7 +531,7 @@
       "type": "workday",
       "url": "https://trimble.wd1.myworkdayjobs.com/wday/cxs/trimble/TrimbleCareers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -546,7 +546,7 @@
       "type": "workday",
       "url": "https://fugro.wd3.myworkdayjobs.com/wday/cxs/fugro/Careers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://fugro.wd3.myworkdayjobs.com/en-US/Careers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -561,7 +561,7 @@
       "type": "workday",
       "url": "https://pae.wd1.myworkdayjobs.com/wday/cxs/pae/Amentum_Careers/jobs?search=land%20surveyor&offset=0",
       "publicBaseUrl": "https://pae.wd1.myworkdayjobs.com/en-US/Amentum_Careers",
-      "searchTerms": ["land surveyor", "quantity surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
+      "searchTerms": ["land surveyor", "GIS", "geospatial", "geomatics", "survey engineer"],
       "maxPagesPerTerm": 2,
       "maxRequestsPerSource": 16,
       "country": "",
@@ -760,6 +760,313 @@
       "country": "United States",
       "allowedHosts": ["boards-api.greenhouse.io", "job-boards.greenhouse.io"],
       "permissionNote": "Public Greenhouse Job Board API; endpoint returned a bounded public job feed in the 2026-09-20 validation"
+    },
+    {
+      "enabled": true,
+      "name": "ASCOM Egypt Survey Careers",
+      "company": "ASCOM",
+      "type": "html",
+      "url": "https://www.ascom.com.eg/careers/",
+      "country": "Egypt",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.ascom.com.eg"
+      ],
+      "selectors": {
+        "job": "header.job-wrapper",
+        "title": ".job-title",
+        "link": ".job-apply-now a",
+        "location": ".job-location-type"
+      },
+      "locationCountryMap": {
+        "cairo, egy": "Egypt"
+      },
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "ECG Egypt and Gulf Careers",
+      "company": "Engineering Consultants Group",
+      "type": "html",
+      "url": "https://www.ecgsa.com/careers/",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.ecgsa.com"
+      ],
+      "selectors": {
+        "job": ".awsm-job-listing-item",
+        "title": ".awsm-job-post-title",
+        "link": "a.awsm-job-item",
+        "location": ".awsm-job-specification-job-location .awsm-job-specification-term"
+      },
+      "locationCountryMap": {
+        "alexandria": "Egypt",
+        "nasr city": "Egypt",
+        "smart village": "Egypt",
+        "hq": "Egypt",
+        "assuit": "Egypt",
+        "nasr city / smart village / alexandria": "Egypt",
+        "nasr city / smart village / assiut": "Egypt",
+        "nasr city /smart village": "Egypt",
+        "nasr city / smart village / alexendria / assuit": "Egypt",
+        "cairo and north coast construction sites.": "Egypt",
+        "smart village/alexandria": "Egypt",
+        "smart village/assiut": "Egypt"
+      },
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Globe24-7 Mining Survey Careers",
+      "company": "Globe24-7",
+      "type": "html",
+      "url": "https://globe24-7.com/jobs/",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "globe24-7.com"
+      ],
+      "selectors": {
+        "job": ".job-card",
+        "title": ".job-card__title",
+        "link": ".job-card__title a",
+        "location": ".job-card__locations",
+        "postedAt": ".job-card__date",
+        "description": ".job-card__excerpt",
+        "employmentType": ".job-card__jobtype"
+      },
+        "maxRequestsPerSource": 6,
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "KEO Middle East Survey Careers",
+      "company": "KEO International Consultants",
+      "type": "jibe",
+      "url": "https://careers.keo.com/api/jobs?keywords=surveyor&limit=100&page=1",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "careers.keo.com"
+      ],
+      "maxRequestsPerSource": 5,
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Dar Al Riyadh Egypt and Saudi Careers",
+      "company": "Dar Al Riyadh",
+      "type": "dar_al_riyadh",
+      "url": "https://careers.daralriyadh.com/Api/PublishedOpportnitiesAPI/GetPublishedOpportunities",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "careers.daralriyadh.com"
+      ],
+      "maxResponseBytes": 3000000,
+      "locationCountryMap": {
+        "abha": "Saudi Arabia",
+        "al ahsa": "Saudi Arabia",
+        "al khobar": "Saudi Arabia",
+        "al qasim": "Saudi Arabia",
+        "dammam": "Saudi Arabia",
+        "dibah": "Saudi Arabia",
+        "hafar albatin": "Saudi Arabia",
+        "hafr al baten": "Saudi Arabia",
+        "jazan": "Saudi Arabia",
+        "jeddah": "Saudi Arabia",
+        "jizan": "Saudi Arabia",
+        "jubail": "Saudi Arabia",
+        "mecca": "Saudi Arabia",
+        "medina": "Saudi Arabia",
+        "najran": "Saudi Arabia",
+        "riyadh": "Saudi Arabia",
+        "tabouk": "Saudi Arabia",
+        "taif": "Saudi Arabia",
+        "yanbu": "Saudi Arabia",
+        "cairo": "Egypt",
+        "manila": "Philippines"
+      },
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Master-Works Saudi GIS Careers",
+      "company": "Master-Works",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/masterworksco",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.workable.com",
+        "apply.workable.com"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "GIS Career Hub Egypt and Saudi Jobs",
+      "company": "GIS Career Hub",
+      "type": "gis_career_hub",
+      "url": "https://giscareerhub.com/gis-jobs/location/egypt",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "giscareerhub.com"
+      ],
+      "additionalUrls": [
+        "https://giscareerhub.com/gis-jobs/location/saudi-arabia"
+      ],
+      "maxRequestsPerSource": 5,
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Orascom Construction Egypt Careers",
+      "company": "Orascom Construction",
+      "type": "oracle",
+      "url": "https://fa-esco-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation%2CrequisitionList.otherWorkLocations%2CrequisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX_1%2Climit%3D25%2Coffset%3D0%2Ckeyword%3Dsurveyor",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "fa-esco-saasfaprod1.fa.ocs.oraclecloud.com"
+      ],
+      "publicBaseUrl": "https://fa-esco-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+      "siteNumber": "CX_1",
+      "searchTerms": [
+        "surveyor",
+        "GIS",
+        "geospatial"
+      ],
+      "maxPagesPerTerm": 2,
+      "maxRequestsPerSource": 9,
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Hill International Egypt and Saudi Careers",
+      "company": "Hill International",
+      "type": "oracle",
+      "url": "https://hcib.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation%2CrequisitionList.otherWorkLocations%2CrequisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX_1001%2Climit%3D25%2Coffset%3D0%2Ckeyword%3Dsurveyor",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "hcib.fa.us2.oraclecloud.com"
+      ],
+      "publicBaseUrl": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001",
+      "siteNumber": "CX_1001",
+      "searchTerms": [
+        "surveyor",
+        "GIS",
+        "geospatial"
+      ],
+      "maxPagesPerTerm": 2,
+      "maxRequestsPerSource": 9,
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Archirodon Egypt and Saudi Careers",
+      "company": "Archirodon",
+      "type": "smartrecruiters_html",
+      "url": "https://careers.smartrecruiters.com/ArchirodonGroup/api/groups?page=0&search=survey",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "careers.smartrecruiters.com",
+        "jobs.smartrecruiters.com"
+      ],
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/ArchirodonGroup/api/groups?page=0&search=GIS"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Assystem Middle East Survey Careers",
+      "company": "Assystem",
+      "type": "smartrecruiters_html",
+      "url": "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=survey",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "careers.smartrecruiters.com",
+        "jobs.smartrecruiters.com"
+      ],
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=GIS"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "BESIX Middle East Survey Careers",
+      "company": "BESIX",
+      "type": "smartrecruiters_html",
+      "url": "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=survey",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "careers.smartrecruiters.com",
+        "jobs.smartrecruiters.com"
+      ],
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=GIS"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "Talent360 Egypt Engineering Careers",
+      "company": "Talent360",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/t63",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.workable.com",
+        "apply.workable.com"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "BlackStone eIT Egypt and Gulf GIS Careers",
+      "company": "BlackStone eIT",
+      "type": "workable",
+      "url": "https://www.workable.com/api/accounts/blackstone-eit-2",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.workable.com",
+        "apply.workable.com",
+        "jobs.workable.com"
+      ],
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+    },
+    {
+      "enabled": true,
+      "name": "alfanar and DAR Engineering Saudi Careers",
+      "company": "alfanar / DAR Engineering",
+      "type": "html",
+      "url": "https://jobs.alfanar.com/search/?q=surveyor",
+      "country": "",
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "jobs.alfanar.com"
+      ],
+      "additionalUrls": [
+        "https://jobs.alfanar.com/search/?q=GIS"
+      ],
+      "selectors": {
+        "job": "tr.data-row",
+        "title": "a.jobTitle-link",
+        "link": "a.jobTitle-link",
+        "location": "td.colLocation .jobLocation",
+        "postedAt": "td.colDate .jobDate"
+      },
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
     }
   ]
 }

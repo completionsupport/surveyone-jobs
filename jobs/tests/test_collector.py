@@ -214,10 +214,6 @@ class CollectorTests(unittest.TestCase):
             "Senior Land Surveyor",
             "GIS / Geomatics Survey Engineer",
             "Underground Utility Surveyor",
-            "Quantity Surveyor",
-            "Senior Quantity Surveyor",
-            "MEP Quantity Surveyor",
-            "Cost Surveyor",
             "Senior GIS Specialist",
         ):
             self.assertTrue(relevant(title, words))

@@ -396,9 +396,119 @@ def html(text, url, selectors, fixed_apply_url=""):
                     category=field("category"),
                     location=field("location"),
                     company=field("company"),
+                    postedAt=re.sub(r"^Posted\s*[-:]\s*", "", field("postedAt"), flags=re.I),
+                    description=field("description"),
+                    employmentType=field("employmentType"),
                     applyUrl=urljoin(url, apply_url),
                 )
             )
+    return found
+
+
+def jibe(text, url):
+    """Public iCIMS/Jibe search response; no login or applicant data."""
+    payload = json.loads(text)
+    if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+        raise ValueError("Invalid public Jibe careers feed")
+    found = []
+    for row in payload["jobs"]:
+        data = row.get("data", {}) if isinstance(row, dict) else {}
+        if not isinstance(data, dict):
+            continue
+        slug = str(data.get("slug", ""))
+        if not slug.isdigit() or not data.get("title") or data.get("applyable") is False:
+            continue
+        city, country = data.get("city", ""), data.get("country", "")
+        found.append(dict(
+            title=data["title"], city=city, country=country,
+            location=", ".join(str(v) for v in (city, country) if v),
+            postedAt=data.get("posted_date"),
+            description=data.get("description", ""),
+            applyUrl=urljoin(url, "/jobs/" + slug),
+        ))
+    parsed = urlsplit(url)
+    query = parse_qs(parsed.query)
+    page = int(query.get("page", ["1"])[0])
+    limit = int(query.get("limit", ["100"])[0])
+    links = []
+    total = payload.get("totalCount", 0)
+    # Keep the public board bounded even if its API reports a corrupt total.
+    if isinstance(total, int) and 1 <= page < 3 and 1 <= limit <= 100 and page * limit < total:
+        query["page"] = [str(page + 1)]
+        links.append(urlunsplit((parsed.scheme, parsed.netloc, parsed.path,
+                                 urlencode(query, doseq=True), "")))
+    return found, links
+
+
+def gis_career_hub(text, url):
+    """Read public Next.js card data as JSON, without executing site JavaScript."""
+    soup = BeautifulSoup(text, "html.parser")
+    decoder = json.JSONDecoder()
+    found, seen = [], set()
+    for script in soup.find_all("script"):
+        match = re.search(r"self\.__next_f\.push\((\[.*\])\)", script.get_text(), re.S)
+        if not match:
+            continue
+        try:
+            packet = json.loads(match[1])
+        except ValueError:
+            continue
+        if not isinstance(packet, list) or len(packet) < 2 or not isinstance(packet[1], str):
+            continue
+        for marker in re.finditer(r'"job":\s*\{', packet[1]):
+            try:
+                job, _ = decoder.raw_decode(packet[1][marker.end() - 1:])
+            except ValueError:
+                continue
+            slug = str(job.get("slug", ""))
+            if (not re.fullmatch(r"[a-z0-9-]+", slug) or slug in seen
+                    or not job.get("title")):
+                continue
+            seen.add(slug)
+            country, city = job.get("country", ""), job.get("city", "")
+            found.append(dict(
+                title=job["title"], company=job.get("company_name", ""),
+                country=country, city=city,
+                location=job.get("location_name") or ", ".join(str(v) for v in (city, country) if v),
+                description=job.get("summary", ""),
+                employmentType=job.get("employment_type", ""),
+                postedAt=job.get("posted_at"), expiresAt=job.get("closes_at"),
+                remote=job.get("location_type") == "Remote",
+                # Attribute the aggregator correctly; it owns this public job card.
+                applyUrl=urljoin(url, "/jobs/" + slug),
+            ))
+    if not found:
+        empty = False
+        for script in soup.select('script[type="application/ld+json"]'):
+            try:
+                value = json.loads(script.get_text())
+                empty = empty or (isinstance(value, dict) and value.get("@type") == "ItemList"
+                                  and value.get("numberOfItems") == 0)
+            except ValueError:
+                continue
+        if not empty:
+            raise ValueError("GIS Career Hub public card data not found")
+    return found
+
+
+def dar_al_riyadh(text, url):
+    """Dar's public published-opportunities endpoint, with a strict field allowlist."""
+    payload = json.loads(text)
+    if not isinstance(payload, list):
+        raise ValueError("Invalid Dar Al Riyadh public careers feed")
+    found = []
+    for row in payload:
+        if not isinstance(row, dict) or row.get("IsExpired") is True:
+            continue
+        job_id = str(row.get("Id", ""))
+        if not job_id.isdigit() or not row.get("Position"):
+            continue
+        found.append(dict(
+            title=row["Position"], location=row.get("JobLocation", ""),
+            city=row.get("JobLocation", ""), postedAt=row.get("PostedDate"),
+            expiresAt=row.get("ExpiryDate"), description=row.get("JobDescription", ""),
+            applyUrl=urljoin(url, "/#/JobDetails/" + job_id),
+        ))
     return found
 
 
@@ -677,6 +787,12 @@ def icims(text, source):
 
 
 def parse(text, url, source):
+    if source.get("type") == "jibe":
+        return jibe(text, url)
+    if source.get("type") == "gis_career_hub":
+        return gis_career_hub(text, url), []
+    if source.get("type") == "dar_al_riyadh":
+        return dar_al_riyadh(text, url), []
     if source.get("type") == "workable":
         return workable(text), []
     if source.get("type") == "workday":
@@ -704,6 +820,10 @@ def parse(text, url, source):
     if source.get("type") == "remotive":
         return remotive(text), []
     if source.get("type") == "smartrecruiters_html":
+        # The public groups fragment returns HTTP 200 with an empty body when a
+        # search has no vacancies. A blank full careers page remains an error.
+        if urlsplit(url).path.endswith("/api/groups") and not text.strip():
+            return [], []
         return smartrecruiters_html(text), []
     if source.get("type") == "icims":
         return icims(text, source)

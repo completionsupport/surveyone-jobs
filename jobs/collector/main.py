@@ -4,7 +4,7 @@ import os
 import time
 from pathlib import Path
 from datetime import datetime, timezone
-from .model import make_job, relevant, expired, deduplicate, date, iso
+from .model import make_job, relevant, expired, deduplicate, date, iso, quantity_surveying_role
 from .network import Fetcher
 from .parsers import parse
 from .registry import enabled_sources, rotated_sources, source_key
@@ -74,7 +74,10 @@ def collect(output_root=None):
                                        config.get("maxRequestsPerSource", 12)))),
                 source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)),
             )
-            queue, visited = [source["url"]], set()
+            # Search/country variants belong to one employer/source, not separate
+            # sources. All requests still pass the same allowlist and robots checks.
+            queue = [source["url"], *source.get("additionalUrls", [])[:6]]
+            visited = set()
             pages = records_read = matched = 0
             while queue and fetch.remaining > 1:
                 if time.monotonic() - started >= run_seconds:
@@ -156,6 +159,7 @@ def collect(output_root=None):
             j
             for j in merged.values()
             if j["id"] not in dead and not expired(j, now, config.get("expiryDays", 45))
+            and not quantity_surveying_role(str(j.get("title", "")) + " " + str(j.get("category", "")))
         ]
     )
     editorial_jobs, editorial_health = load_editorial(config, now)

@@ -43,14 +43,15 @@
     "cad surveyor",
     "cad technician",
     "civil survey engineer",
-    "quantity surveyor",
-    "cost surveyor",
     "building surveyor",
     "fire surveyor",
     "survey assistant",
     "survey party chief",
     "survey crew chief",
     "survey manager",
+    "surveying manager",
+    "head of survey",
+    "surveying team leader",
     "instrument operator",
     "survey rodman",
     "field and cad technician",
@@ -59,7 +60,10 @@
     "geospatial analyst",
     "gis analyst",
     "mapping engineer",
-    "photogrammetrist"
+    "photogrammetrist",
+    "photogrammetry",
+    "cartography",
+    "cartographer"
   ],
-  "exclude": []
+  "exclude": ["quantity surveyor", "quantity surveying", "quntity surveyor", "cost surveyor", "حصر كميات", "حصر الكميات", "مساح كميات"]
 }

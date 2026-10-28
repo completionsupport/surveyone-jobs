@@ -21,7 +21,8 @@ def audit_source(source, config, keywords, now):
                                                   config.get("maxRequestsPerSource", 12)))),
                     source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)))
     try:
-        queue, visited, jobs = [source["url"]], set(), []
+        queue = [source["url"], *source.get("additionalUrls", [])[:6]]
+        visited, jobs = set(), []
         while queue and fetch.remaining > 1:
             url = queue.pop(0)
             if url in visited:

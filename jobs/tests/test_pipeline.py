@@ -154,3 +154,25 @@ class PipelineTests(unittest.TestCase):
         health = main.load(self.root / "jobs/state.json", {})["sourceHealth"]
         self.assertEqual("failed", health["Broken"]["status"])
         self.assertEqual("healthy", health["Careers"]["status"])
+
+    def test_quantity_jobs_are_removed_from_cache_even_when_the_source_fails(self):
+        now = datetime.now(timezone.utc)
+        source = dict(self.source, name="Broken")
+        main.save(self.root / "jobs/config/sources.json", {"sources": [source], "checkLinksPerRun": 0})
+        main.save(self.root / "jobs/config/keywords.json", {"include": ["surveyor"], "exclude": []})
+        jobs = [make_job(dict(title=title, applyUrl=f"https://example.org/job/{i}"), source, now)
+                for i, title in enumerate(["Land Surveyor", "Quantity Surveyor", "Cost Surveyor"])]
+        main.save(self.root / "public/jobs/jobs.json", dict(version=1, jobs=jobs))
+        main.save(self.root / "jobs/state.json", dict(pending=[job["id"] for job in jobs]))
+        main.collect()
+        kept = main.load(self.root / "public/jobs/jobs.json", {})["jobs"]
+        self.assertEqual(["Land Surveyor"], [job["title"] for job in kept])
+        self.assertEqual([kept[0]["id"]], main.load(self.root / "jobs/state.json", {})["pending"])
+
+    def test_country_search_variants_are_collected_as_one_board(self):
+        main.save(self.root / "jobs/config/sources.json", {"sources": [dict(
+            self.source, additionalUrls=["https://example.org/saudi"])], "checkLinksPerRun": 0})
+        main.collect()
+        health = main.load(self.root / "jobs/state.json", {})["sourceHealth"]["Careers"]
+        self.assertEqual(2, health["pages"])
+        self.assertEqual(1, main.load(self.root / "jobs/last-run.json", {})["enabledUniqueSources"])

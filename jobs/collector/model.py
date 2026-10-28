@@ -20,7 +20,7 @@ COUNTRY_ALIASES = {
     "jor": "Jordan", "lbn": "Lebanon", "irq": "Iraq",
     "uae": "United Arab Emirates", "united arab emirates": "United Arab Emirates",
     "dubai": "United Arab Emirates", "abu dhabi": "United Arab Emirates",
-    "sa": "Saudi Arabia", "saudi": "Saudi Arabia", "saudi arabia": "Saudi Arabia",
+    "sa": "Saudi Arabia", "ksa": "Saudi Arabia", "saudi": "Saudi Arabia", "saudi arabia": "Saudi Arabia",
     "riyadh": "Saudi Arabia", "jeddah": "Saudi Arabia",
     "qatar": "Qatar", "doha": "Qatar", "kuwait": "Kuwait", "bahrain": "Bahrain",
     "oman": "Oman", "muscat": "Oman", "egypt": "Egypt", "cairo": "Egypt",
@@ -82,8 +82,12 @@ def normalize_url(url):
         if not k.lower().startswith("utm_")
         and k.lower() not in ("gclid", "fbclid", "msclkid")
     ]
+    # Dar Al Riyadh's public application uses a client-side job-details route.
+    # Retain only this validated vacancy identifier; ordinary tracking fragments
+    # still disappear and different jobs must never collapse to the board home.
+    fragment = p.fragment if re.fullmatch(r"/JobDetails/\d+", p.fragment) else ""
     return urlunsplit(
-        ("https", p.netloc.lower(), p.path or "/", urlencode(sorted(query)), "")
+        ("https", p.netloc.lower(), p.path or "/", urlencode(sorted(query)), fragment)
     )
 
 
@@ -96,7 +100,17 @@ def date(value):
         try:
             result = parsedate_to_datetime(str(value))
         except (ValueError, TypeError):
-            return None
+            # Public career cards sometimes use an unambiguous written month.
+            # Never interpret ambiguous numeric day/month dates as a new vacancy.
+            result = None
+            for pattern in ("%d %B %Y", "%d %b %Y"):
+                try:
+                    result = datetime.strptime(str(value).strip(), pattern)
+                    break
+                except ValueError:
+                    continue
+            if result is None:
+                return None
     return (
         result.replace(tzinfo=timezone.utc)
         if result.tzinfo is None
@@ -108,8 +122,19 @@ def iso(value):
     return value.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
+def quantity_surveying_role(title):
+    """Commercial quantity surveying is distinct from field/land surveying."""
+    value = normalize(title)
+    value = re.sub(r"[\u064b-\u065f\u0670\u0640]", "", value)
+    value = re.sub(r"[\W_]+", " ", value)
+    return bool(re.search(r"\b(?:quantity|quantities|quntity|qty|cost)\s+(?:surveyor\w*|surveying)\b|\bqs\b", value)
+                or re.search(r"(?:حصر\s+(?:ال)?كميات|(?:حاسب|حساب|مساح|مساحين)\s+(?:ال)?(?:كميات|كمية))", value))
+
+
 def relevant(title, keywords):
     title = normalize(title)
+    if quantity_surveying_role(title):
+        return False
 
     def matches(word):
         return (
@@ -140,14 +165,19 @@ def category(title):
 
 def make_job(raw, source, now):
     title = BeautifulText(raw.get("title", ""))[:240]
-    company = BeautifulText(
-        raw.get("company") or source.get("company") or source["name"]
-    )[:160]
+    public_company = raw.get("company")
+    if normalize(public_company) in ("company", "company name"):
+        public_company = ""
+    company = BeautifulText(public_company or source.get("company") or source["name"])[:160]
     location = BeautifulText(raw.get("location") or source.get("location", ""))[:200]
     country = str(raw.get("country") or source.get("country", ""))[:100]
     country = COUNTRY_ALIASES.get(country.casefold(), country)
     if not country:
         country = infer_country(location)
+    if not country:
+        # Employer-specific city labels must not become global country aliases
+        # (for example, Alexandria also exists outside Egypt).
+        country = source.get("locationCountryMap", {}).get(normalize(location), "")
     url = normalize_url(raw["applyUrl"])
     identity = "|".join(
         (normalize(company), normalize(title), normalize(location), url)
