@@ -1,6 +1,7 @@
 """Offline-only editorial jobs integration; never calls production or sends FCM."""
 
 import json
+import hashlib
 import os
 import tempfile
 import unittest
@@ -34,6 +35,16 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual("+201234567890", job["phoneE164"])
         self.assertIs(job["allowWhatsApp"], False)
         self.assertEqual("Cairo, Egypt", job["location"])
+
+    def test_direct_firebase_publications_are_excluded_without_reviving_an_older_duplicate(self):
+        raw = row(self.now)
+        direct = {**raw, "revision": 3, "appPublication": "COMMUNITY",
+                  "communityPostId": "community_" + hashlib.sha256(("editorial\0" + raw["id"]).encode()).hexdigest()[:32]}
+        self.assertEqual([], editorial.parse_snapshot(snapshot(self.now, [raw, direct]), self.now))
+        self.assertEqual([], editorial.parse_snapshot(snapshot(self.now, [direct, raw]), self.now))
+        for change in [dict(communityPostId="community_" + "0" * 32), dict(appPublication="OTHER")]:
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                editorial.parse_snapshot(snapshot(self.now, [{**direct, **change}]), self.now)
 
     def test_partial_stale_or_untrusted_snapshot_is_rejected(self):
         for change in [dict(version=2), dict(authoritative=False), dict(origin="OTHER"), dict(totalJobs=12),

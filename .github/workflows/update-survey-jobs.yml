@@ -9,7 +9,6 @@ on:
       - 'jobs/requirements.txt'
   schedule:
     - cron: '17 */2 * * *'
-    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
       editorial_only:
@@ -30,7 +29,7 @@ jobs:
     environment:
       name: github-pages
     env:
-      EDITORIAL_ONLY: ${{ (github.event_name == 'workflow_dispatch' && inputs.editorial_only) || (github.event_name == 'schedule' && github.event.schedule != '17 */2 * * *') }}
+      EDITORIAL_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.editorial_only }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

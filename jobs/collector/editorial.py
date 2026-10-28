@@ -5,6 +5,7 @@ restore a withdrawn job or its contact number. Ordinary source jobs are unaffect
 """
 
 import json
+import hashlib
 import os
 import re
 from urllib.parse import urlsplit
@@ -83,10 +84,15 @@ def parse_snapshot(payload, now):
                    expiresAt=iso(expires), phoneE164=phone if call or whatsapp else "", allowCall=call, allowWhatsApp=whatsapp,
                    externalApplyUrl=external, source="SurveyOne", sourceUrl="https://surveyone.app/en/jobs/",
                    applyUrl="https://surveyone.app/en/job/?id=" + raw["id"], remote=False)
+        if raw.get("appPublication"):
+            expected = "community_" + hashlib.sha256(("editorial\0" + raw["id"]).encode()).hexdigest()[:32]
+            if raw["appPublication"] != "COMMUNITY" or raw.get("communityPostId") != expected:
+                raise ValueError("Invalid direct app publication identity")
+            row["appPublication"] = "COMMUNITY"
         # Stable IDs survive edits. A duplicate snapshot row cannot create a duplicate job.
         if raw["id"] not in result or raw["revision"] > result[raw["id"]]["revision"]:
             result[raw["id"]] = row
-    return [job for job in result.values() if date(job["expiresAt"]) > now]
+    return [job for job in result.values() if date(job["expiresAt"]) > now and job.get("appPublication") != "COMMUNITY"]
 
 
 def load_editorial(config, now, fetcher_factory=Fetcher):
