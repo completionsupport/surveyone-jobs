@@ -9,6 +9,8 @@ from .network import Fetcher
 from .parsers import parse
 from .registry import enabled_sources, rotated_sources, source_key
 from .editorial import is_editorial, load_editorial, replace_editorial
+from .countries import internal_job, published_job
+from .taxonomy import filter_job
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -40,7 +42,7 @@ def collect(output_root=None):
     state = load(
         statepath, {"seen": [], "notified": [], "pending": [], "linkChecks": {}}
     )
-    previous = {j["id"]: j for j in old["jobs"]}
+    previous = {j["id"]: filter_job(internal_job(j)) for j in old["jobs"]}
     first_discovered = state.setdefault("firstDiscovered", {})
     for job in previous.values():
         first_discovered.setdefault(job["id"], job["discoveredAt"])
@@ -178,6 +180,7 @@ def collect(output_root=None):
         ((set(state.get("pending", [])) | set(new)) - set(state.get("notified", []))) & active_scraped
     )
     expiry_days = config.get("expiryDays", 45)
+    active = [published_job(filter_job(job)) for job in active]
     if (
         active != old["jobs"]
         or old.get("expiryDays", 45) != expiry_days
@@ -201,7 +204,7 @@ def collect(output_root=None):
         successful=successes,
         failed=failures,
         newJobs=len(new),
-        updatedJobs=sum(j["id"] in previous and j != previous[j["id"]] for j in active),
+        updatedJobs=sum(j["id"] in previous and internal_job(j) != previous[j["id"]] for j in active),
         expiredJobs=len(set(previous) - {j["id"] for j in active}),
         totalActiveJobs=len(active),
         editorialFeedStatus=editorial_health["status"],

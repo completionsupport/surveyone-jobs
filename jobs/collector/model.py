@@ -4,6 +4,7 @@ from difflib import SequenceMatcher
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from .countries import country_name
 
 
 COUNTRY_ALIASES = {
@@ -178,6 +179,7 @@ def make_job(raw, source, now):
         # Employer-specific city labels must not become global country aliases
         # (for example, Alexandria also exists outside Egypt).
         country = source.get("locationCountryMap", {}).get(normalize(location), "")
+    country = country_name(country)
     url = normalize_url(raw["applyUrl"])
     identity = "|".join(
         (normalize(company), normalize(title), normalize(location), url)

@@ -8,6 +8,8 @@ from pathlib import Path
 from .editorial import load_editorial, replace_editorial
 from .main import ROOT, load, save
 from .model import date, iso
+from .countries import published_job
+from .taxonomy import filter_job
 
 # The already-published Android client accepts at most 4 MiB and 10,000 rows.
 MAX_FEED_BYTES = 4 * 1024 * 1024
@@ -32,7 +34,7 @@ def sync(output_root=None):
     jobs, health = load_editorial(config, now)
     # Match the full collector: a withdrawn/expired/unavailable admin entry must
     # not be resurrected from a cached phone number. Employer rows stay intact.
-    active = replace_editorial(old["jobs"], jobs)
+    active = [published_job(filter_job(job)) for job in replace_editorial(old["jobs"], jobs)]
     active.sort(key=lambda j: date(j.get("postedAt")) or date(j.get("discoveredAt"))
                 or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
     changed = active != old["jobs"]

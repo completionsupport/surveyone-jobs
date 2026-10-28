@@ -10,6 +10,7 @@ from pathlib import Path
 from .main import ROOT, load, save
 from .model import expired
 from .editorial import is_editorial
+from .countries import country_name
 
 BATCH = ROOT / "jobs/notification.json"
 
@@ -74,7 +75,7 @@ def reserve():
         batches.append(dict(
             id=hashlib.sha256((code + "|" + "|".join(group_ids)).encode()).hexdigest(),
             countryCode=code,
-            country=values[0].get("country", ""),
+            country=country_name(values[0].get("country", "")),
             ids=group_ids,
         ))
     batch = dict(id=hashlib.sha256("|".join(ids).encode()).hexdigest(), ids=ids, batches=batches)

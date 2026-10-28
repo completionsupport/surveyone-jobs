@@ -1,0 +1,38 @@
+{
+  "cities": {
+    "EG": {
+      "Cairo": ["cairo", "القاهرة", "القاهره"],
+      "New Cairo": ["new cairo", "new cairo city", "القاهرة الجديدة", "القاهره الجديده"],
+      "Alexandria": ["alexandria", "alexendria", "الإسكندرية", "الاسكندرية", "الاسكندريه"],
+      "Giza": ["giza", "الجيزة", "الجيزه"],
+      "Suez": ["suez", "السويس"],
+      "Nasr City": ["nasr city", "مدينة نصر", "مدينه نصر"],
+      "Assiut": ["assiut", "assuit", "asyut", "أسيوط", "اسيوط"],
+      "Marsa Alam": ["marsa alam", "مرسى علم"],
+      "Hurghada": ["hurghada", "الغردقة", "الغردقه"],
+      "6th of October": ["6th of october", "6th of october city", "6 october", "السادس من أكتوبر", "6 أكتوبر", "٦ أكتوبر"]
+    },
+    "SA": {
+      "Riyadh": ["riyadh", "الرياض"],
+      "Jeddah": ["jeddah", "jeddah city", "جدة", "جده"],
+      "Medina": ["medina", "madinah", "al madinah", "al-madinah", "المدينة المنورة", "المدينه المنوره"],
+      "Mecca": ["mecca", "makkah", "مكة", "مكة المكرمة", "مكه"],
+      "Dammam": ["dammam", "الدمام"],
+      "Al Khobar": ["al khobar", "khobar", "الخبر"],
+      "Jubail": ["jubail", "al jubail", "الجبيل"],
+      "Tabuk": ["tabuk", "tabouk", "tabūk", "تبوك"],
+      "Jazan": ["jazan", "jizan", "جازان", "جيزان"],
+      "Najran": ["najran", "نجران"],
+      "Abha": ["abha", "أبها", "ابها"],
+      "Taif": ["taif", "الطائف"]
+    }
+  },
+  "categories": {
+    "Land Surveying": ["land surveying", "surveying", "survey", "land survey", "مساحة", "مساحه", "مساح", "مساحة أرضية", "مساحة ارضية"],
+    "Survey Engineering": ["survey engineering", "surveying engineering", "هندسة المساحة", "هندسة مساحة", "مهندس مساحة"],
+    "GIS / Geospatial": ["gis / geospatial", "gis", "geospatial", "geomatics", "نظم المعلومات الجغرافية", "نظم معلومات جغرافية"],
+    "Utility Survey": ["utility survey", "utility surveying", "مساحة المرافق"],
+    "Hydrographic": ["hydrographic", "hydrographic surveying", "مساحة بحرية", "المساحة البحرية"],
+    "UAV / LiDAR": ["uav / lidar", "lidar", "uav", "drone surveying", "ليدار", "مسح بالدرون"]
+  }
+}

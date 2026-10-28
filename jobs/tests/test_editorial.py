@@ -10,6 +10,7 @@ from pathlib import Path
 from unittest.mock import patch
 from jobs.collector import editorial, main, notify
 from jobs.collector.model import iso
+from jobs.collector.countries import published_job
 
 
 def row(now, **changes):
@@ -127,17 +128,17 @@ class EditorialPipelineTests(unittest.TestCase):
         job = editorial.parse_snapshot(snapshot(self.now), self.now)[0]
         self.assertEqual(2, len(self.collect([job])))
         edited = {**job, "revision": 4, "title": "New title"}
-        self.assertEqual(edited, next(j for j in self.collect([edited]) if editorial.is_editorial(j)))
-        self.assertEqual([self.ordinary], self.collect([]))
-        self.assertEqual([self.ordinary], self.collect([]))
+        self.assertEqual(published_job(edited), next(j for j in self.collect([edited]) if editorial.is_editorial(j)))
+        self.assertEqual([published_job(self.ordinary)], self.collect([]))
+        self.assertEqual([published_job(self.ordinary)], self.collect([]))
         self.assertEqual(2, len(self.collect([{**edited, "revision": 6}])))
-        self.assertEqual([self.ordinary], self.collect([]))
-        self.assertEqual([self.ordinary], self.collect([]))
+        self.assertEqual([published_job(self.ordinary)], self.collect([]))
+        self.assertEqual([published_job(self.ordinary)], self.collect([]))
 
     def test_outage_or_disabled_feed_withdraws_editorial_only(self):
         job = editorial.parse_snapshot(snapshot(self.now), self.now)[0]
-        self.collect([job]); self.assertEqual([self.ordinary], self.collect([], "unavailable"))
-        self.collect([job]); self.assertEqual([self.ordinary], self.collect([], "disabled"))
+        self.collect([job]); self.assertEqual([published_job(self.ordinary)], self.collect([], "unavailable"))
+        self.collect([job]); self.assertEqual([published_job(self.ordinary)], self.collect([], "disabled"))
 
     def test_repeat_snapshot_does_not_rewrite_feed_and_never_enqueues_automatic_notifications(self):
         job = editorial.parse_snapshot(snapshot(self.now), self.now)[0]
