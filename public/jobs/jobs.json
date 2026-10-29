@@ -1,9 +1,103 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T18:26:44.058313Z",
+  "generatedAt": "2026-10-29T19:56:56.299862Z",
   "expiryDays": 45,
-  "totalJobs": 2650,
+  "totalJobs": 2653,
   "jobs": [
+    {
+      "id": "b11362833560852c6a156499fb3e8e8ff26048d064dfc3dafd1f88eba9b6f6bc",
+      "title": "Vermessungstechniker Bauvermessung (m/w/d)",
+      "company": "Murphy Geospatial",
+      "location": "Dresden, Saxony",
+      "city": "Dresden",
+      "country": "",
+      "category": "Land Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-29T19:41:51.541070Z",
+      "expiresAt": null,
+      "source": "Murphy Geospatial Careers",
+      "sourceUrl": "https://murphygs.bamboohr.com/careers/list",
+      "applyUrl": "https://murphygs.bamboohr.com/careers/473",
+      "description": "",
+      "employmentType": "Full Time Permanent",
+      "remote": false
+    },
+    {
+      "id": "467272da89e8cadca065578c8ef2fb9f0725712dc7f97aa0a6fabf9ecd8cfbc0",
+      "title": "Intern, Geodesy & National Mapping",
+      "company": "Singapore Public Service",
+      "location": "SLA-REVENUE HOUSE LEVEL 11",
+      "city": "",
+      "country": "",
+      "category": "GIS / Geospatial",
+      "postedAt": null,
+      "discoveredAt": "2026-10-29T19:41:51.541070Z",
+      "expiresAt": null,
+      "source": "Singapore Public Service Careers",
+      "sourceUrl": "https://sggovterp.wd102.myworkdayjobs.com/wday/cxs/sggovterp/PublicServiceCareers/jobs?search=surveyor&offset=0",
+      "applyUrl": "https://sggovterp.wd102.myworkdayjobs.com/en-US/PublicServiceCareers/job/SLA-REVENUE-HOUSE-LEVEL-11/Intern--Geodesy---National-Mapping_JR-10000053318",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
+    {
+      "id": "b3e00373051cb9b132f26fd391e5e7d52fa888b8738468c4640b3d372307809d",
+      "title": "Junior Exploitation Specialist/Photogrammetrist",
+      "company": "Leidos",
+      "location": "St. Louis, MO",
+      "city": "St. Louis, MO",
+      "country": "US",
+      "category": "Land Surveying",
+      "postedAt": null,
+      "discoveredAt": "2026-10-29T19:41:51.541070Z",
+      "expiresAt": null,
+      "source": "Leidos Careers",
+      "sourceUrl": "https://leidos.wd5.myworkdayjobs.com/wday/cxs/leidos/External/jobs?search=surveyor&offset=0",
+      "applyUrl": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/St-Louis-MO/Junior-Exploitation-Specialist-Photogrammetrist_R-00195856",
+      "description": "",
+      "employmentType": "",
+      "remote": false,
+      "countryCode": "US",
+      "countryName": "United States"
+    },
+    {
+      "id": "463d64610681dddfd2c3b2a4f8b56b4a3b821682f5484213293ee993cb45e00f",
+      "title": "Specialty Developer .NET/Sharepoint - ArcGIS Maps for SharePoint and Power BI",
+      "company": "Modern Geographic Technologies Corp",
+      "location": "Bayrut, Lebanon",
+      "city": "Bayrut",
+      "country": "LB",
+      "category": "GIS / Geospatial",
+      "postedAt": null,
+      "discoveredAt": "2026-10-29T19:41:51.541070Z",
+      "expiresAt": null,
+      "source": "Modern Geographic Technologies Corp Global Careers",
+      "sourceUrl": "https://careers.smartrecruiters.com/moderngeographictechnologiescorp",
+      "applyUrl": "https://jobs.smartrecruiters.com/moderngeographictechnologiescorp/743999744877362-specialty-developer-net-sharepoint-arcgis-maps-for-sharepoint-and-power-bi",
+      "description": "",
+      "employmentType": "Part-time",
+      "remote": false,
+      "countryCode": "LB",
+      "countryName": "Lebanon"
+    },
+    {
+      "id": "bf15a87db21feaf821494d1ccc3e88585e7be8af6373b6392942147b1b735900",
+      "title": "Commercial Manager LATAM – Earth Observation & Geoinformation",
+      "company": "Leonardo SpA",
+      "location": "COL - Bogotà",
+      "city": "Bogotà",
+      "country": "",
+      "category": "GIS / Geospatial",
+      "postedAt": null,
+      "discoveredAt": "2026-10-29T19:41:51.541070Z",
+      "expiresAt": null,
+      "source": "Leonardo SpA Global Careers",
+      "sourceUrl": "https://leonardocompany.wd3.myworkdayjobs.com/wday/cxs/leonardocompany/LeonardoCareerSite/jobs?search=surveyor&offset=0",
+      "applyUrl": "https://leonardocompany.wd3.myworkdayjobs.com/en-US/LeonardoCareerSite/job/COL---Bogot/Commercial-Manager-LATAM---Earth-Observation---Geoinformation_R0031187",
+      "description": "",
+      "employmentType": "",
+      "remote": false
+    },
     {
       "id": "ff718efee24c5b50637a7e0e5206515edfbf10a96102d37feb58e24a68085d02",
       "title": "Professional GIS Analyst",
@@ -6966,8 +7060,8 @@
       "id": "5673b4cbacf5a2df7038062578b11c448d6ac51e2f2656e03ac9f26666ef9664",
       "title": "Surveyor",
       "company": "Sawtooth Mining",
-      "location": "Winnemucca, NV",
-      "city": "Winnemucca, NV",
+      "location": "Winnemucca NV",
+      "city": "",
       "country": "US",
       "category": "Land Surveying",
       "postedAt": null,
@@ -7345,7 +7439,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://axiomdata.com.au/careers/1000039",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/lead-data-engineer-earth-observation-el1-equivalent",
       "countryCode": "AU",
       "countryName": "Australia"
     },
@@ -7367,7 +7460,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://phf.tbe.taleo.net/phf03/ats/careers/v2/viewRequisition?cws=37&org=CALTECH&rid=11205",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/research-assistant-remote-sensing-permit-lab",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7388,7 +7480,6 @@
       "description": "Deloitte India is hiring a GIS / Digital Twin / Urban Data Platform Expert in Dehradun with 7-8 years of experience. The role focuses on GIS, digital twin and urban data platforms. Apply by emailing your CV to Tarajput@deloitte.com.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-digital-twin-urban-data-platform-expert",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -7474,7 +7565,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://job-boards.greenhouse.io/planetlabs/jobs/8278543",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-product-designer-platform-geospatial-ef440e",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7496,7 +7586,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.esri.com/careers/5138089007?gh_jid=5138089007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-product-engineer-arcgis-business-analyst-enterprise-1b65bb",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7518,7 +7607,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.esri.com/careers/5154478007?gh_jid=5154478007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-product-designer-web-gis-sdk-9d0744",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7540,7 +7628,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.esri.com/careers/5223102007?gh_jid=5223102007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-gis-solution-engineer-commercial-aff745",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7562,7 +7649,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://www.esri.com/careers/5185012007?gh_jid=5185012007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-gis-solution-engineer-aec-e3d2a0",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7584,7 +7670,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.esri.com/careers/5259762007?gh_jid=5259762007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-gis-partner-manager-utilities-telecom-rail-1691d3",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7606,7 +7691,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.esri.com/careers/5271175007?gh_jid=5271175007",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/product-engineer-ii-user-assistance-indoor-gis-8c7062",
       "countryCode": "US",
       "countryName": "United States"
     },
@@ -7888,7 +7972,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://estm.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/job/37760/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/territorial-information-and-gis-assistant-npsa5",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -8042,7 +8125,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://m.liepin.com/job/1943911645.shtml?mscid=ly_h5_01&s=r",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveying-engineer-276bda",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -8262,7 +8344,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.undelucram.ro/ro/locuri-de-munca/senior-gis-consultant-technical-lead/100048",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-consultant-technical-lead-9f9482",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -8524,7 +8605,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://people-prime.com/job-details?id=77174&src=LinkedIn",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/contract-gis-developer-esri-technologies",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -8700,7 +8780,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.geocareergo.com/jobs/47/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-a8adb1",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -8722,7 +8801,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/fr-CA/job/92290/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/principal-gis-consultant-geoai-spatial-intelligence-11c272",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -8744,7 +8822,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://rr.jobsyn.org/5F61727891E346DDA05E661F0EAFA16F1606?src=SNS-102",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-blr-277650",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -8876,7 +8953,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://br.linkedin.com/jobs/view/analista-gis-%E2%80%94-webgis-e-projetos-municipais-at-solo-topografia-ltda-4482508470",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-webgis-and-municipal-projects-4a4961",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -9008,7 +9084,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://in.linkedin.com/jobs/view/gis-python-network-algorithms-engineer%0D-at-bolzano-india-4482526705",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-python-network-algorithms-engineer",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -9030,7 +9105,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://ph.linkedin.com/jobs/view/gis-logistics-specialist-cv-pooling-at-anonymous-4482283468",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-logistics-specialist-cv-pooling",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -9220,7 +9294,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-specialist-pt-bertie-tani-makmur-east-kalimantan--techmap_id_95526884",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-8f847e",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -9826,7 +9899,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ro/jobs/senior-gis-consultant-technical-lead-undelucramro-iasi--fj-2436978738",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-consultant-technical-lead-f7a2ec",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -9890,7 +9962,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-data-processing-analyst-dronelab-technologies-ahmedabad--t7xk-905651117",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-processing-analyst",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -9934,7 +10005,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-gis-bim-data-driven-infra-parsons-abu-dhabi--talent-643002036889062691",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-gis-bim-data-driven-infra",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -10132,7 +10202,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/eg/jobs/gis-ftth-planning-specialist-h-touch--techmap_eg_4484437360",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-ftth-planning-specialist",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -10198,7 +10267,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/drafter-gis-analyst-oe-environmental-consulting-sdn-bhd-kuala-terengganu--t7xk-905622397",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/drafter-gis-analyst",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -10242,7 +10310,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-techno-functional-associate-engineer-yodatech--techmap_in_69613804",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-techno-functional-associate-engineer-9799f1",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -10308,7 +10375,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/gis-editors-gis-analysts-precision-solution-land-survey-engineering-consultancy-dubai--t7xk-906256459",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-editors-gis-analysts",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -10374,7 +10440,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/qa/jobs/gis-team-lead-avanceon-mea-doha-qa--t7xk-907049452",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-team-lead-30a683",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -10462,7 +10527,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/row-gis-supervisor-lead-maps-land-data-aboitiz-power-corp--techmap_ph_69560336",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/row-gis-supervisor-lead-maps-land-data-b7134f",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -10506,7 +10570,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/gis-specialist-ahad-construction-jeddah--fj-2437500333",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-6adfa0",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -10660,7 +10723,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-expert-entit-consultancy-services-pvt-ltd-raipur-chhattisgarh--t7xk-906412252",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-expert-2c1f77",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -10704,7 +10766,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/senior-land-surveyor-housing-development-board-singapore--fj-2437342273",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-land-surveyor-dbde06",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -10792,7 +10853,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-etl-analyst-arcgis-fme-2yrs-hyd-chennai-white-horse-manpower-consultancy-private-limited-chennai--t7xk-905903843",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-etl-analyst-arcgis-fme-2yrs-hyd-chennai",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -10814,7 +10874,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/consultant-gis-wsp-in-india-noida-uttar-pradesh--t7xk-906763181",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/consultant-gis-63e68a",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -10836,7 +10895,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-analyst-i-verisk-hyderabad--fj-2437301332",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-i-38d5c8",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -11056,7 +11114,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/gis-intern-apex-etech-private-limited--fj-2435963644",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-intern-3fb431",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -11210,7 +11267,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/photogrammetry-engineer-gis-satpalda-geospatial-services-ghaziabad--t7xk-906143682",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/photogrammetry-engineer-gis-13d602",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -11689,7 +11745,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://qa.indeed.com/viewjob?jk=6c49d0f85aab8cb9",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-team-lead-senior-gis-engineer",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -11711,7 +11766,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://qa.indeed.com/viewjob?jk=4e056191a127b4ff",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-roads-infrastructure-handover",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -11732,10 +11786,6 @@
       "description": "People Prime Worldwide is hiring 3 ESRI GIS Developers (3-8 years, 3-5 in ArcGIS Online) to build enterprise geospatial solutions with ArcGIS Online, Survey123, Python and Snowflake. Remote or work from office in Hyderabad; CTC up to INR 12-18 LPA. Apply by emailing divya@people-prime.com.",
       "employmentType": "Full time",
       "remote": true,
-      "salaryMin": 1200000,
-      "salaryMax": 1800000,
-      "salaryCurrency": "INR",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/esri-gis-developer-python-data-integration-098d44",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -11756,7 +11806,6 @@
       "description": "Engineer Philosophy Web Services (MAPOG) is hiring a GIS Client Relations Executive, work from home, as a full-time job or paid internship. You will manage leads, explain the MAPOG GIS platform, follow up with prospects and schedule product demos. Freshers and students welcome; apply at hr@engineerphilosophy.com.",
       "employmentType": "Full time",
       "remote": true,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-client-relations-executive",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -11985,7 +12034,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://citics.vn/chi-tiet-tuyen-dung/5247",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-collaborator-c85d5d",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -12051,7 +12099,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://m.liepin.com/job/1939101349.shtml?mscid=ly_h5_01&s=r",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/intelligent-remote-sensing-data-processing-specialist",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -12381,7 +12428,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.timeshighereducation.com/unijobs/listing/414120/arc_air-postdoctoral-position-in-earth-observation-ai-and-territorial-sustainability/?TrackID=311557",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/arc_air-postdoctoral-position-in-earth-observation-ai-and-territorial-sustainability",
       "countryCode": "MA",
       "countryName": "Morocco"
     },
@@ -12643,7 +12689,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.undelucram.ro/ro/locuri-de-munca/gis-developer/100049",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-51e781",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -12709,7 +12754,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.undelucram.ro/ro/locuri-de-munca/gis-developer/100050",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-ebfa51",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -13017,7 +13061,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobs-ta.pwc.com/global/en/job/PACPACGLOBAL769935WDEXTERNALENGLOBAL/GIS-Automation-Tester-Senior-Associate",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-automation-tester-senior-associate-ae721c",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -13105,7 +13148,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cl.linkedin.com/jobs/view/top%C3%B3grafo-ingeniero-geomensor-especialista-en-fotogrametr%C3%ADa-y-drones-at-ags-soluciones-industriales-a%C3%A9reas-4483684914",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-geomatics-engineer-specialist-in-photogrammetry-and-drones",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -13345,7 +13387,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ro.linkedin.com/jobs/view/geodetic-engineer-at-total-business-land-4481884601",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-8585b7",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -13389,7 +13430,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://sg.linkedin.com/jobs/view/gis-engineer-contract-at-zenith-infotech-4483269950",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-contract",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -13565,7 +13605,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://in.linkedin.com/jobs/view/gis-intern-at-apex-etech-private-limited-4483642322",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-intern-da2fbe",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -13609,7 +13648,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://in.linkedin.com/jobs/view/senior-geospatial-data-scientist-at-kritter-software-technology-4483615416",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-geospatial-data-scientist-feaab9",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -13735,7 +13773,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-collaborator-citics-group-xa-an-thanh--fj-2435258922",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-collaborator",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -14627,7 +14664,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/nhan-vien-ky-thuat-gis-cong-ty-co-phan-hang-tieu-dung-new-day-thanh-pho-ho-chi-minh--t7xk-904764863",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technical-specialist-03a287",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -14715,7 +14751,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-gis-webgis-e-projetos-municipais-solo-topografia-ltda-curitiba--fj-2433974425",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-webgis-and-municipal-projects-8f8e9b",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -14779,7 +14814,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/head-of-eam-utilities-platform-gis-fsm-aventus-abu-dhabi--talent-643141910175354147",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/head-of-eam-utilities-platform-gis-fsm",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -14801,7 +14835,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-software-developer-contract-zenith-infotech-s-pte-ltd--techmap_sg_69563763",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-software-developer-contract-627b98",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -14823,7 +14856,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/senior-geospatial-specialist-geospectrum-marketing-services-pasig--fj-2434591167",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-geospatial-specialist-28f6f8",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -14845,7 +14877,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/full-stack-engineer-gis-geospatial-applications-1-year-contract-rhino-partners--fj-2435125434",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/full-stack-engineer-gis-geospatial-applications-1-year-contract",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -14867,7 +14898,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/gis-solutions-engineer-pre-sales-demos-arcgis-geodata-systems-technologies-inc-pasig--fj-2434179797",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solutions-engineer-pre-sales-demos-arcgis-1f0eb0",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -14933,7 +14963,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-remote-sensing-and-mrv-specialist-food-and-agriculture-organization-of-the-united-nations-jakart--t7xk-904869864",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-and-mrv-specialist-b396e1",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -15021,7 +15050,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-software-developer-contract-zenith-infotech-singapore--t7xk-905391567",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-software-developer-contract",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -15065,7 +15093,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-software-engineer-contract-zenith-infotech-s-pte-ltd-singapore--techmap_sg_e1396a410e8dfda946fe7545908d45fe",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-software-engineer-contract-f4edc3",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -15197,7 +15224,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/in/jobs/remote-sensing-and-gis-professional-geoconsultants-india-services-new-delhi--t7xk-904799806",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-sensing-and-gis-professional",
       "countryCode": "IN",
       "countryName": "India"
     },
@@ -15327,7 +15353,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ro/jobs/gis-developer-undelucramro-bucharest--fj-2434622398",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-563bfa",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -15525,7 +15550,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/protege-gis-executive-temara-infra-care-sdn-bhd-hang-tuah-jaya--t7xk-904296053",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/protege-gis-executive",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -15547,7 +15571,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-lead-abu-dhabi-infrastructure-projects-smec-services-pty-limited-abu-dhabi--talent-643400270248938787",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-lead-abu-dhabi-infrastructure-projects",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -15741,7 +15764,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/geospatial-specialist-geospectrum-marketing-services-pasig--fj-2433827143",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-specialist-528b9b",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -15763,7 +15785,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/gis-lead-for-abu-dhabi-infrastructure-projects-surbanajurong-abu-dhabi--talent-643001430661464221",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-lead-for-abu-dhabi-infrastructure-projects",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -15785,7 +15806,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/historical-cartography-subject-matter-experts-innodata-inc--fj-2434591102",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/historical-cartography-subject-matter-experts",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -15961,7 +15981,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-software-engineer-contract-zenith-infotech-singapore--t7xk-905421735",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-software-engineer-contract",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -16027,7 +16046,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/lead-gis-specialist-for-major-uae-infrastructure-project-sj-group-abu-dhabi--jobted-1b87ef14e314235cf797b5c738129614",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/lead-gis-specialist-for-major-uae-infrastructure-project",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -16189,7 +16207,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ae.indeed.com/viewjob?jk=c7a904a0a825382d",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/research-assistant-gis-remote-sensing-desert-environment-research-center",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -16319,7 +16336,6 @@
       "description": "SysGlob Software Solutions is hiring a lead GIS/Spatial Architect for a 3-year Digital Twin program in Abu Dhabi, UAE. The architect will lead the spatial side of the program. Apply by emailing info@sysglob.in.",
       "employmentType": "Contract",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-spatial-architect-digital-twin-program",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -16340,7 +16356,6 @@
       "description": "SysGlob Software Solutions is hiring a GIS Engineer for a 3-year Digital Twin program in Abu Dhabi, UAE. This is a mid-level contract role. Apply by emailing info@sysglob.in.",
       "employmentType": "Contract",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-digital-twin-program",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -16361,7 +16376,6 @@
       "description": "SysGlob Software Solutions is hiring a Photogrammetry Specialist for a 3-year Digital Twin program in Abu Dhabi, UAE. This is a mid-level contract role. Apply by emailing info@sysglob.in.",
       "employmentType": "Contract",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/photogrammetry-specialist-digital-twin-program",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -16383,7 +16397,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.rozee.pk/full-stack-developer-rawalpindi-jobs-1927767",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/full-stack-developer-geospatial-39e8c0",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -16834,7 +16847,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/om/jobs/head-of-gis-asset-data-gis-lead-client-of-pentabell-muscat--t7xk-900132114",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/head-of-gis-asset-data-gis-lead",
       "countryCode": "OM",
       "countryName": "Oman"
     },
@@ -16944,7 +16956,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bossjob.com/job/other-jobs-philippines-576087",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-geospatial-specialist-3c0912",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -16966,7 +16977,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bossjob.com/job/other-building-construction-jobs-pasay-222265",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-6d9e75",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -17054,7 +17064,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bossjob.com/job/other-jobs-philippines-576090",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-specialist-6c24ed",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -17230,7 +17239,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://jobs.fao.org/careersection/fao_external/jobdetail.ftl?job=2602207",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-and-mrv-specialist-27fee2",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -17626,7 +17634,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/nhan-vien-ky-thuat-gis-cong-ty-co-phan-cong-nghe-mot-giai-phap-ho-chi-minh--techmap_vn_35C8BD9D",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technical-specialist-e19e02",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -17758,7 +17765,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gis--techmap_cn_86308227",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-bid-specialist-supervisor-software-gis-focus-5c66a6",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -18220,7 +18226,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/software-engineer-gis-contract-zenith-infotech-singapore--techmap_sg_4482927174",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/software-engineer-gis-contract",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -18308,7 +18313,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-solution-architect-7606-acn-sg-svc-pte-ltd-company-singapore-sg--talent-642678745380488625",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solution-architect-894d8b",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -18374,7 +18378,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-and-project-manager-city-of-richmond-virginia-lembang-west-java--t7xk-903555154",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-and-project-manager-fc3a4c",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -18418,7 +18421,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-eoi-surbana-jurong-north-asia-abu-dhabi--jobted-a6821430906eb2d0f792ff41e001104a",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-eoi-c5e001",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -18440,7 +18442,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-remote-sensing-and-mrv-specialist-food-and-agriculture-organization-fao-special-capital-region-o--fj-2433615087",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-and-mrv-specialist-f723b8",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -18528,7 +18529,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-remote-sensing-and-mrv-specialist-fao-jakarta--techmap_id_4481470424",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-and-mrv-specialist-740c18",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -18550,7 +18550,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-lead-for-major-infrastructure-abu-dhabi-surbana-jurong-north-asia-abu-dhabi--jobted-b3dfa363d7f85288c7a292cbfaa54f2d",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-lead-for-major-infrastructure-abu-dhabi",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -18616,7 +18615,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/remote-mineral-exploration-gis-specialist-placements24-mmabatho-unit-4--talent-643141930633923875",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-mineral-exploration-gis-specialist",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -18748,7 +18746,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-eoi-surbana-jurong-abu-dhabi--jobted-bd3f6971821d760cf186f11f379b0976",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-eoi-d4ffb4",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -18814,7 +18811,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/remote-business-development-support-specialist-gis-mapping-lead-research-delegate-cx-metro-manila--techmap_ph_95477030",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-business-development-support-specialist-gis-mapping-lead-research",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -18938,7 +18934,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobsearch.baesystems.com/job/senior-photogrammetry-specialist-00128933",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-photogrammetry-specialist-b47674",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -18960,7 +18955,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobsearch.baesystems.com/job/geospatial-data-standards-manager-00128901",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-data-standards-manager",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -18982,7 +18976,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobsearch.baesystems.com/job/geospatial-al-specialist-00134732",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-ai-specialist",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -19004,7 +18997,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobsearch.baesystems.com/job/senior-digital-cartography-specialist-00128931",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-digital-cartography-specialist",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -19026,7 +19018,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobsearch.baesystems.com/job/remote-sensing-specialist-00128936",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-sensing-specialist-d8798b",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -19070,7 +19061,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.fao.org/careersection/fao_external/jobdetail.ftl?job=2602207&lang=en",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-and-mrv-specialist",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -20892,7 +20882,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/row-gis-supervisor-lead-maps-land-data-aboitizpower-makati--fj-2432364993",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/row-gis-supervisor-lead-maps-land-data-78bede",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -21376,7 +21365,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/geographic-information-system-gis-cad-specialist-hanmiglobal-saudi-riyadh--fj-2432795888",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-system-gis-cad-specialist",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -21728,7 +21716,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://careers-page.com/star-services-llc-2/job/5WYY6V83",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/cadgis-operator-e2-waterstppipeline-projects",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -21750,7 +21737,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.bayt.com/en/saudi-arabia/jobs/gis-specialist-3d-animator-74992122/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-3d-animator-74a84b",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -22880,7 +22866,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://careers.ndrmf.pk/career/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/assistant-manager-gis-developer-modeling-expert",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -23427,7 +23412,6 @@
       "description": "Stradale Ltda. is seeking a Surveying Engineer for a contract supporting fiscal inspection of public works in the Biobío Norponiente region. Candidates must have 3 years of experience in road construction (for engineers) or 5 years (for technical surveyors), with offices located in Cabrero.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveying-engineer-road-projects-contract-str-2658",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -23493,7 +23477,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ars2.equest.com/?response_id=65d7af68cc9d96c0bbdbd86025cbf565",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-gis-analyst-delivery-analyst-ai-and-analytics-solutions-d10ae6",
       "countryCode": "LB",
       "countryName": "Lebanon"
     },
@@ -23625,7 +23608,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://divulgavagas.com.br/job-philippines/aboitizpower-row-gis-supervisor-lead-maps-land-data-393053",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/row-gis-supervisor-lead-maps-land-data",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -23823,7 +23805,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://eg.linkedin.com/jobs/view/geospatial-senior-software-developer-remote-at-executive-search-b-4483338163",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-senior-software-developer-remote",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -23933,7 +23914,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gis--ss-cn-125s8uz",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/spatial-data-engineer-gis",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -23955,7 +23935,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-de-inteligencia-de-expansao-gis-e-geoprocessamento-grupo-panvel-eldorado-do-sul--fj-2430386509",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/expansion-intelligence-analyst-gis-and-geoprocessing-1e4a2a",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -24043,7 +24022,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-de-inteligencia-de-expansao-gis-e-geoprocessamento-netvagas-eldorado-do-sul--talent-642902846982268624",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/expansion-intelligence-analyst-gis-and-geoprocessing-ddd980",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -24087,7 +24065,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gis2027--ss-cn-1eydc5v",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/solution-engineer-gis-focus-2027-campus-recruitment",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -24109,7 +24086,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/pe/jobs/especialista-gis-cad-junior-arequipa-tacna-y-moquegua-stantec-arequipa--talent-642864384796986659",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-giscad-specialist-arequipa-tacna-and-moquegua-c686aa",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -24153,7 +24129,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gis2027--ss-cn-kfxy5g",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-2027-campus-recruitment",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -24175,7 +24150,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-de-inteligencia-de-expansao-gis-e-geoprocessamento-corporativo-eldorado-do-sul--ss-br-fxk5t",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/expansion-intelligence-analyst-gis-and-geoprocessing-549425",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -24219,7 +24193,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/27-gis--ss-cn-14w6pb8",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/27th-campus-recruitment-gis-rd-engineer-spatial-intelligence",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -24241,7 +24214,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gisj46161--ss-cn-194mfa9",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-development-engineer-j46161",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -24725,7 +24697,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/executive-engineer-gis-data-management-spgroup-singapore--jobmesh-b1fef445-16a2-4f15-afb4-db9128dff25d",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/executive-engineer-gis-data-management-dfb61f",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -25143,7 +25114,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-lead-infrastructure-projects-abu-dhabi-jurong-international-abu-dhabi--jobted-218eb7af92f5c57224e8a4df9d20ffba",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-lead-infrastructure-projects-abu-dhabi",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -25187,7 +25157,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-lead-for-infrastructure-projects-surbana-jurong-abu-dhabi--jobted-fe44dc25a6d878351e14690f0cb16891",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-lead-for-infrastructure-projects",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -25275,7 +25244,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/gis-editors-and-gis-analysts-precision-solutions-gis-land-survey-engineering-consultancy-dubai-dubai--t7xk-899874111",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-editors-and-gis-analysts",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -25538,7 +25506,6 @@
       "description": "SBS is urgently hiring a GIS Developer in Riyadh, Saudi Arabia. Arabic language skills are mandatory and immediate joiners are preferred. Send your CV to cvs@sbs-sa.net.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-e9e7e4",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -25560,10 +25527,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://ejobportal.pk/",
-      "salaryMin": 159340,
-      "salaryMax": 159340,
-      "salaryCurrency": "PKR",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/information-technology-officer-gis",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -25693,7 +25656,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://corporativopanvel.gupy.io/job/eyJqb2JJZCI6MTI3NzM1NjksInNvdXJjZSI6ImxpbmtlZGluIn0=?jobBoardSource=linkedin",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/expansion-intelligence-analyst-gis-and-geoprocessing",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -25935,7 +25897,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://careers.octave.com/job/Senior-Implementation-Consultant-Safety,-Infrastructure-and-Geospatial/3392-en_US",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-implementation-consultant-safety-infrastructure-and-geospatial",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -25979,7 +25940,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.gainrep.com/post/b31f3499-adac-4feb-b767-4c0c498ea32c",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-consultant-3203a3",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -26111,7 +26071,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://br.linkedin.com/jobs/view/top%C3%B3grafo-a-at-confidencial-4483126168",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-abf36e",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -26331,7 +26290,6 @@
       "employmentType": "Internship",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/tecnico-gis-grupo-verante-remoto--t7xk-898777345",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technician-f0105b",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -26419,7 +26377,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gisbim--fj-2429288053",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-processing-platform-testing-intern-bim-3d-focus-guangzhou-852d1b",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -26485,7 +26442,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-technical-analyst-itmax-system-berhad-sri-petaling-kuala-lumpur--t7xk-897393313",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technical-analyst",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -26749,7 +26705,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-administrator-accenture-southeast-asia-singapore-sg--talent-642846179668266416",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-administrator-d7bd4c",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -26881,7 +26836,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ke/jobs/gis-consultant-gainrep-nairobi--fj-2429970932",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-consultant-414c9b",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -26903,7 +26857,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/delivery-and-adaptation-of-core-gis-user-training-vector-synergy-oeiras--talent-642819227223988787",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/delivery-and-adaptation-of-core-gis-user-training-ec9f1f",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -27057,7 +27010,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-solution-architect-accenture-southeast-asia-singapore-sg--talent-642678730109552049",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solution-architect-c953d9",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -27101,7 +27053,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/surveying-gis-engineer-geotech-3d-company-riyadh--fj-2429384889",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveying-gis-engineer",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -27123,7 +27074,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/senior-gis-developer-modern-vision-company-riyadh--fj-2429384712",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-developer-c855f6",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -27365,7 +27315,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-head-office-land-and-agricultural-development-bank-of-south-africa-sandton--fj-2429892497",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-head-office-f87926",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -27675,7 +27624,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://drjobs.ae/jobs/cad-gis-specialist-abu-dhabi-aecom-MVLLRE8G01U82JC",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/cad-gis-specialist-93862f",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -27837,7 +27785,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.geespace.com/job/%e9%81%a5%e6%84%9f%e5%bd%b1%e5%83%8f%e7%ae%97%e6%b3%95%e5%b7%a5%e7%a8%8b%e5%b8%88/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-sensing-image-algorithm-engineer-b6406c",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -28211,7 +28158,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ro.linkedin.com/jobs/view/inginer-geodez-topograf-tehnician-topograf-at-ispcf-s-a-4480045047",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-surveyor-surveying-technician",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -28233,7 +28179,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://my.linkedin.com/jobs/view/gis-trainee-at-afed-4480744877",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-trainee-022495",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -28299,7 +28244,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://qa.linkedin.com/jobs/view/land-surveyor-at-babylon-agriculture-services-and-trading-4479484965",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/land-surveyor-40d90e",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -28517,7 +28461,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-chuyen-vien-cong-nghe-dia-ly-meey-group-jsc-ha-noi--fj-2427375308",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-50a4b1",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -28649,7 +28592,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/geespace-shanghai--fj-2428110762",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-sensing-image-algorithm-engineer",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -28737,7 +28679,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-developer-staff-arsari-group-jakarta--t7xk-896081945",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-staff",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -28803,7 +28744,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-analyst-staff-arsari-group-jakarta--t7xk-896081750",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-staff",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -28825,7 +28765,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gis--techmap_cn_4479487367",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-processing-engineer-aee138",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -28847,7 +28786,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/senior-gis-web-developer-success-human-resource-centre-singapore-sg--talent-642678998646334993",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-web-developer",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -28979,7 +28917,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/lb/jobs/gis-automation-engineer-electric-power-engineers-beirut--fj-2427108859",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-automation-engineer-e44008",
       "countryCode": "LB",
       "countryName": "Lebanon"
     },
@@ -29001,7 +28938,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/lb/jobs/lead-gis-engineer-electric-power-engineers-beirut--fj-2427108863",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/lead-gis-engineer-c00958",
       "countryCode": "LB",
       "countryName": "Lebanon"
     },
@@ -29023,7 +28959,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-mapping-driver-singapore-jsan-consulting-ltd-singapore--t7xk-896010963",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-mapping-driver-singapore",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -29067,7 +29002,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/senior-gis-manager-mace--techmap_sa_4481594935",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-manager-05f924",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -29309,7 +29243,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-parsons-abu-dhabi--ss-ae-rfstyd",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-f2cef5",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -29397,7 +29330,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-trainee-afed-sepang--fj-2426752991",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-trainee-406e21",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -29617,7 +29549,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/assistant-surveyor-gis-officer-jl-global-invision-sdn-bhd-johor-bahru--t7xk-895702450",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/assistant-surveyorgis-officer",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -30995,7 +30926,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://m.liepin.com/job/1944609373.shtml?mscid=ly_h5_01&s=r",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/cartography-gis-data-processing-engineer-561a57",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -31061,7 +30991,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://worldvision.wd1.myworkdayjobs.com/WorldVisionInternational/job/Cuauhtmoc-Mexico/ANALISTA-DE-GEOMATICA-JR_JR53476?source=LinkedIn",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-geomatics-analyst-f09d70",
       "countryCode": "MX",
       "countryName": "Mexico"
     },
@@ -31633,7 +31562,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://sg.linkedin.com/jobs/view/esri-arcgis-technical-lead-at-tech-mahindra-4480793034",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/esri-arcgis-technical-lead",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -32133,7 +32061,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/mx/jobs/analista-de-geomatica-jr-world-vision-cuauhtemoc--fj-2424407941",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-geomatics-analyst",
       "countryCode": "MX",
       "countryName": "Mexico"
     },
@@ -32155,7 +32082,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/pe/jobs/asistente-cad-y-gis-gestion-predial-integral-eirl-lima--techmap_pe_474CC4A70A2B9A0961373E686DCF3405",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/cad-gis-assistant",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -32199,7 +32125,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/qa/jobs/gis-solutions-engineer-doha--fj-2424069684",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solutions-engineer-5540fa",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -32375,7 +32300,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/bd/jobs/data-management-and-geographic-information-system-gis-specialist-unv-asia-the-pacific-coxs-bazar-cha--t7xk-894100825",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/data-management-and-geographic-information-system-gis-specialist-c02c4d",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -32419,7 +32343,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/precision-agriculture-specialist-remote-sensing-gis-placements24-polokwane--talent-642094433991656618",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/precision-agriculture-specialist-remote-sensing-gis",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -32485,7 +32408,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-jurong-international-abu-dhabi--t7xk-894590371",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-db0ccc",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -32507,7 +32429,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ae/jobs/senior-gis-specialist-eoi-sj-abu-dhabi--ss-ae-1nrv3n8",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-specialist-eoi-0fc6a6",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -32529,7 +32450,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/geographic-information-system-specialist-unik-civil-engineering-pty-ltd-johannesburg--fj-2425125749",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-system-specialist-e7b729",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -32992,7 +32912,7 @@
       "location": "Remote - United States",
       "city": "",
       "country": "US",
-      "category": "Land Surveying",
+      "category": "GIS / Geospatial",
       "postedAt": "2026-10-21T16:56:24Z",
       "discoveredAt": "2026-10-02T19:22:56.025771Z",
       "expiresAt": null,
@@ -33092,7 +33012,7 @@
       "location": "Denver, CO",
       "city": "",
       "country": "US",
-      "category": "Land Surveying",
+      "category": "GIS / Geospatial",
       "postedAt": "2026-10-21T16:56:24Z",
       "discoveredAt": "2026-09-20T14:12:07.407426Z",
       "expiresAt": null,
@@ -33283,7 +33203,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.bayt.com/en/saudi-arabia/jobs/senior-gis-manager-75342564/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-manager-eae00b",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -33325,7 +33244,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://gulfsurveyhub.com/jobs/gis-analyst-fujairah-uae-90",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-fd0705",
       "countryCode": "AE",
       "countryName": "United Arab Emirates"
     },
@@ -33347,7 +33265,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://geonet.co.id/careers/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-0cbb4a",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -33445,7 +33362,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://aldesaconstrucciones.factorialhr.com/apply/topografo-moquegua-313986",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-moquegua-04473c",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -33489,7 +33405,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.wrike.com/forms/ABPKITPWUXEESWRR/GISSolutionsEngineer",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solutions-engineer-924e9c",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -33511,7 +33426,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://app.unv.org/opportunities/1784888021273358",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/data-management-and-geographic-information-system-gis-specialist-712e44",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -33599,7 +33513,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ma.linkedin.com/jobs/view/geomatic-engineer-processing-analysing-gis-data-at-ribatis-4480480497",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geomatics-engineer-gis-data-processing-analysis-294600",
       "countryCode": "MA",
       "countryName": "Morocco"
     },
@@ -33621,7 +33534,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://ph.linkedin.com/jobs/view/geographic-information-system-specialist-at-vena-group-4481542725",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-system-specialist-724249",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -33747,7 +33659,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-de-dados-gis-especialista-vaga-inclusiva-para-pessoas-com-deficiencia-concremat-engenharia---t7xk-892906363",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisdata-analyst-specialist-inclusive-role-for-people-with-disabilities-e61cb4",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -33813,7 +33724,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-de-dados-gis-especialista-vaga-inclusiva-para-pessoas-com-deficiencia-concremat-engenharia---fj-2422021907",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisdata-analyst-specialist-inclusive-role-for-people-with-disabilities-b5e713",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -33835,7 +33745,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/geographic-information-system-specialist-vena-group--fj-2423021703",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-system-specialist-2ed4be",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -33857,7 +33766,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ma/jobs/geomatic-engineer-processing-analysing-gis-data-ribatis-summerfield-township--fj-2423614634",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geomatics-engineer-gis-data-processing-analysis",
       "countryCode": "MA",
       "countryName": "Morocco"
     },
@@ -33901,7 +33809,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/mx/jobs/high-voltage-substations-engineering-trainee-gis-siemens-energy-queretaro--fj-2422250541",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/high-voltage-substations-engineering-trainee-gis",
       "countryCode": "MX",
       "countryName": "Mexico"
     },
@@ -33923,7 +33830,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/qa/jobs/gis-technician-intelligent-technology-systems-co-doha--t7xk-892446114",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technician-eaceea",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -34055,7 +33961,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/bd/jobs/data-management-and-geographic-information-system-gis-specialist-united-nations-volunteers-asia-the---fj-2422843776",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/data-management-and-geographic-information-system-gis-specialist",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -34099,7 +34004,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-data-annotator-easytech-services-sdn-bhd-kuala-lumpur-centre-kuala-lumpur--t7xk-892408877",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-annotator-1e2b03",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -34121,7 +34025,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/senior-gis-engineering-prasetia-dwidharma-central-jakarta-jakarta--t7xk-892286026",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-engineering",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -34187,7 +34090,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ng/jobs/manager-electrical-network-gis-beacon-power-services-lagos--fj-2423500189",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/manager-electrical-network-gis",
       "countryCode": "NG",
       "countryName": "Nigeria"
     },
@@ -34312,7 +34214,6 @@
       "employmentType": "Part time",
       "remote": false,
       "canonicalApplyUrl": "https://www.naukrigulf.com/gis-technician-jobs-in-doha-qatar-in-confidential-3-to-5-years-n-jid-201026000182",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technician-part-time-ashghal-traffic-signals",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -34618,7 +34519,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://atracaodetalentos.totvs.app/concremat/1606/analista-de-dados-gis-especialista-vaga-inclusiva-para-pessoas-com-deficiencia?applicationSource=0",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisdata-analyst-specialist-inclusive-role-for-people-with-disabilities",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -34662,7 +34562,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.aplitrak.com/?adid=QW5kcmVhLk9yemEuNzI0MjEuMTU1MEBkZXV0c2NoZWJhaG4uYXBsaXRyYWsuY29t",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-german-language-required-b5beda",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -34684,7 +34583,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cydingenieria.trabajando.cl/trabajo/6136781-topografo",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-9d13e1",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -34816,7 +34714,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://ph.linkedin.com/jobs/view/right-of-way-gis-supervisor-at-aboitizpower-4479952194",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/right-of-way-gis-supervisor-909560",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -34926,7 +34823,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/especialista-gis-liderazgo-en-geodatabases-y-cartografia-imineros-santiago--talent-641258794119660326",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-leadership-in-geodatabases-and-cartography",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -35080,7 +34976,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ph/jobs/right-of-way-gis-supervisor-aboitizpower-makati--fj-2421210717",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/right-of-way-gis-supervisor-2a23b9",
       "countryCode": "PH",
       "countryName": "Philippines"
     },
@@ -35102,7 +34997,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/remote-gis-specialist-mineral-resource-mapping-placements24-rustenburg--talent-641516699645182484",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-gis-specialist-mineral-resource-mapping",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -35212,7 +35106,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/apac-national-government-gis-sales-team-lead-powertofly-singapore--jobmesh-e02c4660-6243-4433-b5cb-728795bdebfe",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/apac-national-government-gis-sales-team-lead-2d1dbc",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -35322,7 +35215,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/gis-cad-support-wsp-in-the-middle-east-riyadh-riyadh--t7xk-891280908",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/giscad-support-777315",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -35803,7 +35695,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/delineante-de-permisos-ambientales-cad-gis-bechtel-corporation-santiago--talent-641973923281504271",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/environmental-permitting-drafter-cadgis",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -35847,7 +35738,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/pk/jobs/deputy-manager-gis-mapping-wipro-hyderabad--ss-pk-1dyb4s8",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/deputy-manager-gis-mapping",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -35935,7 +35825,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://atmisgestao.inhire.app/imagemgeosistemas/vagas/7b9755d7-17ab-4e13-807c-2989a41591e6/arquiteto-de-negocios-gis-or-mineracao?source=linkedin",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-mining-sector-bd91c9",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -35957,7 +35846,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://atmisgestao.inhire.app/imagemgeosistemas/vagas/830cd343-b951-4c05-9a06-d1778488c55b/arquiteto-de-negocios-gis-or-governo?source=linkedin",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-government-sector-135c47",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -35979,7 +35867,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://m.liepin.com/job/1963373391.shtml?mscid=ly_h5_01&s=r",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveying-geomatics-engineer-e6b9b2",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -36000,7 +35887,6 @@
       "description": "DRS Ingeniería y Gestión is seeking a qualified Surveyor to support road construction for the Rucalhue Hydroelectric Plant project, lasting 5 months. The candidate must hold a degree in Surveying or Geomatics Engineering, have at least 7 years of post-graduation experience, and reside in the Biobío Region.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-road-construction-rucalhue-hydroelectric-plant",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -36022,7 +35908,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://budotek.com.tr/insan-kaynaklari/gis-engineer-adastec/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-adastec-34e758",
       "countryCode": "NG",
       "countryName": "Nigeria"
     },
@@ -36110,7 +35995,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/arquiteto-de-negocios-gis-governo-netvagas-sao-paulo--talent-641977725495149738",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-government-sector-e6de5e",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -36154,7 +36038,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/arquiteto-de-negocios-gis-governo-atmis-gestao-sao-paulo--intera-76cc02aed32c4812",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-government-sector",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -36264,7 +36147,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/arquiteto-de-negocios-gis-mineracao-netvagas-belo-horizonte--talent-641977736852931754",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-mining-sector-44419a",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -36352,7 +36234,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/arquiteto-de-negocios-gis-mineracao-atmis-gestao-belo-horizonte--intera-7ce676f964e0fa1a",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-business-architect-mining-sector",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -36396,7 +36277,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ng/jobs/gis-engineer-adastec-dudullu-osb-bogazici-universitesi-teknopark-as-budotek-mah--fj-2420010968",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-adastec",
       "countryCode": "NG",
       "countryName": "Nigeria"
     },
@@ -36506,7 +36386,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/sr-gis-solution-engineer-infrastructure-esri--t7xk-888453444",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/sr-gis-solution-engineer-infrastructure-31327d",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -36528,7 +36407,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/software-engineer-geospatial-public-service-division--fj-2419468270",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/software-engineer-geospatial",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -36550,7 +36428,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-specialist-kg-information-systems-sdn-bhd-kuala-lumpur--t7xk-887639921",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-c7d842",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -36910,7 +36787,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://career.fwo.com.pk/job/details/457",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/assistant-manager-gis-165d21",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -36932,7 +36808,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://career.fwo.com.pk/job/details/458",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-manager-gis",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -36954,7 +36829,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://career.fwo.com.pk/job/details/467",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/chief-surveyor",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -36998,10 +36872,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.punjab.gov.pk/new_recruit/job_detail/programme-manager-technical-47",
-      "salaryMin": 80000,
-      "salaryMax": 80000,
-      "salaryCurrency": "PKR",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/programme-manager-technical-gis",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -37045,7 +36915,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://www.gouv.bj/opportunite/161/recrutement-expert-systemes-information-geographique-gestion-bases-donnees/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/recruitment-of-a-gis-database-management-expert-8b6351",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -37089,7 +36958,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://vitru.inhire.app/vagas/0335ee2b-a7e5-4f31-803f-9fa18254ea2b/professora-autora-or-curadoria-e-validacao-de-conteudo-sistemas-de-informacao-geografica-sig-e-cartografia-digital-edtech-or-vitru?source=linkedin",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/professorauthor-content-curation-and-validation-geographic-information-systems-gis-and-digital-cartography-edtech-vitru",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -37111,7 +36979,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://m.liepin.com/job/1943909033.shtml?mscid=ly_h5_01&s=r",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-web-front-end-engineer-e59d22",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -37353,7 +37220,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/recrutement-dun-expert-en-systemes-dinformation-geographique-sig-gestion-de-bases-de-donnees-gouvern--fj-2418074180",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/recruitment-of-a-gis-database-management-expert",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -37485,7 +37351,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/mx/jobs/especialista-en-tecnologia-agricola-remota-y-gis-mexico-proyectos-y-desarrollos-servicios-xico--talent-641605377424687910",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-agricultural-technology-and-gis-specialist",
       "countryCode": "MX",
       "countryName": "Mexico"
     },
@@ -37573,7 +37438,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/consultor-gis-remopt-sao-paulo--ss-br-a6mbku",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-consultant-125c04",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -37705,7 +37569,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/consultor-de-engenharia-gis-planejamento-de-redes-moveis-remopt-sao-paulo--techmap_br_38836882",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-mobile-network-planning-engineering-consultant",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -37771,7 +37634,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cn/jobs/gisweb-mj000475--techmap_cn_4477348555",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-web-front-end-engineer-6e83b4",
       "countryCode": "CN",
       "countryName": "China"
     },
@@ -37793,7 +37655,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/jefe-de-proyectos-gis-lidera-soluciones-de-ti-y-gis-veolia-environnement-sa-santiago--talent-641258778432504614",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-project-manager-leading-it-and-gis-solutions",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -37815,7 +37676,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/br/jobs/analista-gis-pleno-governos-sao-paulo-imagem-geosistemas-sao-paulo-sao-paulo--t7xk-886445279",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-mid-level-government-sector-sao-paulo-106de8",
       "countryCode": "BR",
       "countryName": "Brazil"
     },
@@ -37881,7 +37741,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-sandton-ee-r750-paton-personnel-johannesburg--jobted-81e89b2afdf273722a5937a73e7ec5f0",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-sandton-ee-r750-18f8ed",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -37903,7 +37762,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/rangeland-stewardship-gis-technician-conservation-international-gaborone--fj-2417350800",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/rangeland-stewardship-gis-technician-5b3c8e",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -37947,7 +37805,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-specialist-spatial-decisions-ha-noi--t7xk-884837695",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-ed5721",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -37969,7 +37826,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-solution-architect-jass-tech-pte-ltd-singapore--techmap_sg_600ad1c02bf7fe66ff2abdc62ffbbb7b",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-solution-architect-65f820",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -38211,7 +38067,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-sandton-ee-r750-johannesburg-gauteng--ss-za-2ucob",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-sandton-ee-r750-209086",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -38233,7 +38088,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-mploy-global-resourcing-johannesburg--ss-za-15xnx5z",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-3cd4f5",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -38299,7 +38153,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-sandton-ee-r750-paton-personnel-johannesburg-gauteng--techmap_za_4291425",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-sandton-ee-r750",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -39248,7 +39101,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4586317",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-internship-summer-2027-be42e6",
       "countryCode": "LB",
       "countryName": "Lebanon"
     },
@@ -39270,7 +39122,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://rspo.org/career/manager-geographic-information-system-gis-2/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/manager-geographic-information-system-gis-bd961b",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -39402,7 +39253,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://pk.linkedin.com/jobs/view/web-gis-developer-gis-specialist-at-digital-marketing-solutions-meta-experts-4477085755",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/web-gis-developer-gis-specialist-c2a990",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -39424,7 +39274,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://my.linkedin.com/jobs/view/manager-geographic-information-system-gis-at-roundtable-on-sustainable-palm-oil-rspo-4479770142",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/manager-geographic-information-system-gis-9d407e",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -39578,7 +39427,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/especialista-gis-exploracion-minera-imineros-santiago--talent-641258789902025510",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-mineral-exploration",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -39776,7 +39624,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/gis-technician-saudi-national-parsons--ss-sa-1xe6gf1",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technician-saudi-national-ae4577",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -39820,7 +39667,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/manager-geographic-information-system-gis-roundtable-on-sustainable-palm-oil-rspo-kuala-lumpur--fj-2415224790",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/manager-geographic-information-system-gis",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -39886,7 +39732,6 @@
       "employmentType": "Contract",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/eg/jobs/oracle-ops-gis-consultant-blackstone-eit--ss-eg-acvi6w",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/oracle-ops-gis-consultant",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -40290,7 +40135,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cydingenieria.trabajando.cl/trabajo/6116802-26263-5-topografo-infraestructura-electrica",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/26263-5-surveying-engineer-electrical-infrastructure",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -40442,7 +40286,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ke.linkedin.com/jobs/view/geospatial-trainer-at-forbspace-inc-4476668503",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-trainer",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -40876,7 +40719,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/jefe-de-proyectos-con-experiencia-en-proyectos-gis-veolia-environnement-sa-santiago--talent-641258795756552998",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/project-manager-with-gis-project-experience-05fb22",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -41074,7 +40916,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-engineer-spatial-data-mapping-logistics-bilingual-cekap-link-tech-sdn-bhd-kuala-lumpur-sentral-k--t7xk-881227681",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-spatial-data-mapping-logistics-bilingual",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -41162,7 +41003,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/gis-specialist-master-works-riyadh-riyadh--t7xk-882530992",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-0d2b40",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -41338,7 +41178,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/senior-environmental-scientist-eia-gis-lead-placements24-polokwane--talent-640805649376677772",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-environmental-scientist-eia-gis-lead",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -41669,7 +41508,6 @@
       "description": "ECIL is hiring an Assistant GIS Analyst (male/female) at its Head Office in Karachi. The role creates and maintains GIS databases and maps, processes spatial data in ArcGIS/QGIS, supports field data collection and digitization, and prepares maps and reports for engineering projects. Open to fresh graduates with 0–2 years of experience.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/assistant-gis-analyst-2e4e5a",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -41691,7 +41529,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://pk.indeed.com/viewjob?jk=b3a74533d4f6eeff",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/software-engineer-gis-3d-spatial-data",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -41884,7 +41721,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.deutschebahngroup.careers/jobs/ApplicationMethods?jobId=622881",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodetic-engineer-german-language-required",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -42212,7 +42048,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/especialista-gis-medio-tiempo-interpretacion-de-datos-sgs-calama--talent-641147002875151142",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-interpretation-specialist-part-time",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -42300,7 +42135,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/drafter-gis-pt-bangun-laksana-persada-tangerang-banten--t7xk-879746115",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-drafter",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -42366,7 +42200,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/jefe-de-proyectos-con-experiencia-en-proyectos-gis-smartrecruiters-inc-santiago--talent-641028399185200043",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/project-manager-with-gis-project-experience-09867b",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -42388,7 +42221,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/big-data-gis-technical-support-engineer-gsr-technology-limited-kuala-lumpur--t7xk-880199386",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/big-data-gis-technical-support-engineer",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -42410,7 +42242,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-data-specialist-gis-engineer-cekap-link-tech-sdn-bhd-kuala-lumpur--t7xk-880060704",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-data-specialist-gis-engineer",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -42520,7 +42351,6 @@
       "employmentType": "Contract",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/eg/jobs/oracle-fusion-ops-gis-consultant-blackstone-eit--ss-eg-acvi6w",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/oracle-fusion-ops-gis-consultant",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -42564,7 +42394,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sg/jobs/gis-developer-yepeesoft-pte-ltd-geylang--t7xk-880359246",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-developer-d423ae",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -42586,7 +42415,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/sa/jobs/director-geospatial-data-governance-qiddiya-investment-company-riyadh--fj-2411241179",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/director-geospatial-data-governance-66068d",
       "countryCode": "SA",
       "countryName": "Saudi Arabia"
     },
@@ -43078,7 +42906,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://careers.nus.edu.sg/job/Research-Assistant-%28GeoAI-GIS-Urban-Flood-Resilience%29/34646-en_GB",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/research-assistant-geoai-gis-urban-flood-resilience-bd2110",
       "countryCode": "SG",
       "countryName": "Singapore"
     },
@@ -43122,7 +42949,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://www.accenture.com/ro-en/careers/jobdetails?id=R00324578_en&src=LINKEDINJP",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-advisor-with-german-3993e4",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -43276,7 +43102,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/eg/jobs/director-of-the-technical-office-and-gis-solutions-terra-tech--techmap_eg_4261920420",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/director-of-the-technical-office-and-gis-solutions",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -43452,7 +43277,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/eg/jobs/senior-gis-developer-remote-executive-search-h--techmap_eg_4478394875",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-developer-remote",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -43474,7 +43298,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/ro/jobs/gis-engineer-advisor-with-german-accenture-romania-cluj-napoca--techmap_ro_4477278946",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-advisor-with-german-3d9f46",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -43496,7 +43319,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/qa/jobs/gis-specialist-db-engineering-amp-consulting--techmap_qa_4478327556",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-fmd-14841a",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -43562,7 +43384,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/gis-specialist-5-months-contract-renewable-tmt-recruitment-roodepoort--ss-za-d1r2a4",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-5-months-contract-renewable",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -43650,31 +43471,8 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/10500008-gis-asset-data-co-ordinator-ethekwini-municipality-durban--ss-za-1godmg5",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/10500008-gis-asset-data-co-ordinator-98b24c",
       "countryCode": "ZA",
       "countryName": "South Africa"
-    },
-    {
-      "id": "20127c1ea2813b4849da35fbd10e15c5c7aae815234270fac3e6c5e7705b2e6b",
-      "title": "Research Assistant (GeoAI / GIS / Urban Flood Resilience)",
-      "company": "National University of Singapore",
-      "location": "Singapore",
-      "city": "",
-      "country": "SG",
-      "category": "GIS / Geospatial",
-      "postedAt": "2026-10-12T22:33:40.763864Z",
-      "discoveredAt": "2026-10-29T18:07:34.670095Z",
-      "expiresAt": "2026-11-11T23:59:59Z",
-      "source": "GIS Career Hub Worldwide Jobs",
-      "sourceUrl": "https://giscareerhub.com/jobs",
-      "applyUrl": "https://giscareerhub.com/jobs/research-assistant-geoai-gis-urban-flood-resilience-bcf285",
-      "description": "Job Title: Research Assistant (GeoAI / GIS / Urban Flood Resilience) University-Level Unit: Arts & Social Sciences Faculty/Department-Level Unit: Geography",
-      "employmentType": "Full time",
-      "remote": false,
-      "canonicalApplyUrl": "https://bebee.com/sg/jobs/research-assistant-geoai-gis-urban-flood-resilience-national-university-of-singapore-singapore--fj-2409666905",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/research-assistant-geoai-gis-urban-flood-resilience-bcf285",
-      "countryCode": "SG",
-      "countryName": "Singapore"
     },
     {
       "id": "3cd555c1e0805c0a3d3b3499c30f5f939528ba990cb3bc1ffeda04a4e822c8e3",
@@ -43716,7 +43514,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/remote-gis-analyst-agriculture-placements24-johannesburg--talent-641032601984107028",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-gis-analyst-agriculture-6d9fdb",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -44076,7 +43873,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.aplitrak.com/?adid=RXNyYWEuRW1hZC5IYXNzYW5pbi45NDM0NS4xNTUwQGRldXRzY2hlYmFobi5hcGxpdHJhay5jb20",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-fmd",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -44186,7 +43982,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://eg.linkedin.com/jobs/view/senior-gis-engineer-remote-at-executive-search-b-4478322554",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-engineer-remote",
       "countryCode": "EG",
       "countryName": "Egypt"
     },
@@ -44230,7 +44025,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/pe/jobs/especialista-gis-junior-stantec-san-isidro--talent-641032973986824998",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/junior-gis-specialist-d236db",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -44362,7 +44156,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/ke/jobs/senior-technical-project-manager-gis-multi-sector-vidaplace-nairobi--ss-ke-15th819",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-technical-project-manager-gis-multi-sector-a91aaa",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -44660,7 +44453,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://luzdelsur.hiringroom.com/jobs/get_vacancy/6ac923bdf3cacc6c85ae3534?source=linkedinjobs",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geodesy-intern",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -44792,7 +44584,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.jandenul.com/jobs/hydrographic-surveyor-bahia-blanca?iis=LinkedIn&iisn=LinkedIn&lang=en-us&mode=apply",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/hydrographic-surveyor-bahia-blanca",
       "countryCode": "AR",
       "countryName": "Argentina"
     },
@@ -44924,7 +44715,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/cl/jobs/practicante-ingenieria-ambiental-hatch-santiago--techmap_cl_hatchassocP_1438025500",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/environmental-engineering-intern-gis-natural-resources-759a70",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -45100,7 +44890,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/nhan-vien-ky-thuat-gis-vien-thong-cong-ty-tnhh-proxcad-can-tho--t7xk-873810098",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technical-specialist-telecommunications",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -45188,7 +44977,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/nhan-vien-ky-thuat-gis-vien-thong-lam-viec-tai-ho-chi-minh-cong-ty-tnhh-proxcad-thanh-pho-ho-chi-min--t7xk-873810575",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technical-specialist-telecommunications-ho-chi-minh-city",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -45276,7 +45064,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ng/jobs/gis-mapping-assistant-jobberman-gombe--techmap_ng_54072781626",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-mapping-assistant",
       "countryCode": "NG",
       "countryName": "Nigeria"
     },
@@ -45342,7 +45129,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/remote-gis-specialist-for-mining-environmental-insights-placements24-kwazulu-natal-za--talent-640397838714211138",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-gis-specialist-for-mining-environmental-insights",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -45364,7 +45150,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ke/jobs/senior-technical-project-manager-gis-multi-sector-gainrep-nairobi-nairobi-county--t7xk-876589577",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-technical-project-manager-gis-multi-sector-ab95f1",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -45408,7 +45193,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/remote-gis-specialist-for-mining-exploration-placements24-western-cape-za--talent-640805621214154636",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/remote-gis-specialist-for-mining-exploration",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -45650,7 +45434,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-section-head-pt-royal-lestari-utama-michelin-group-jakarta--t7xk-872856490",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-section-head",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -45716,7 +45499,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-leader-citics-group-thu-thiem-ho-chi-minh-city--t7xk-875285240",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-leader-79a765",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -45759,7 +45541,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://recruitment-iwip.com/drop-cv",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-engineer-e41a0f",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -46001,7 +45782,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://vn.linkedin.com/jobs/view/gis-leader-at-citics-group-4476261901",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-leader",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -46265,7 +46045,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-leader-citics-group-an-thanh--techmap_vn_4475449146",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-team-leader-3ab00e",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -46353,7 +46132,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/penolong-5-bahagian-geospatial-gis-permodalan-darul-tazim-sdn-bhd-iskandar-puteri-johor--t7xk-871013914",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/assistant-5-geospatial-division-gis",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -46419,7 +46197,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ar/jobs/consultor-de-exploraciones-senior-implementacion-gis-datamine-international-peru--talent-640739957359182763",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-exploration-consultant-gis-implementation",
       "countryCode": "AR",
       "countryName": "Argentina"
     },
@@ -46441,7 +46218,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/gis-application-developer-pt-bukit-silikon-indonesia-west-jakarta-jakarta--t7xk-871491849",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-application-developer-d9084c",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -46463,7 +46239,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/10500008-gis-asset-data-co-ordinator-ethekwini--fj-2404996729",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/10500008-gis-asset-data-co-ordinator",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -46507,7 +46282,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/timber-gis-resource-planning-specialist-twk-agri-mpumalanga-za--talent-640009503692426991",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/timber-gis-resource-planning-specialist",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -46793,7 +46567,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/cartographer-draughter-gis-edubest-plantation-holdings-sdn-bhd-gua-musang-kelantan--t7xk-870941078",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/cartographerdraughtergis-29bf67",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -46815,7 +46588,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/senior-gis-software-engineer-web-mapping-platforms-qaaf-resources-sdn-bhd-kuala-lumpur--techmap_my_54064689935",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-gis-software-engineer-web-mapping-platforms",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -46947,7 +46719,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ke/jobs/senior-technical-project-manager-gis-multi-sector-vida-nairobi--techmap_ke_4476781434",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-technical-project-manager-gis-multi-sector",
       "countryCode": "KE",
       "countryName": "Kenya"
     },
@@ -47476,7 +47247,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/vn/jobs/gis-analyst-vietmap-cong-ty-co-phan-ung-dung-ban-do-viet-ho-chi-minh--techmap_vn_35C89C5E",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-analyst-5a79e1",
       "countryCode": "VN",
       "countryName": "Vietnam"
     },
@@ -47586,7 +47356,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.hatch.com/job/Santiago-Practicante-Ingenier%C3%ADa-Ambiental-Sant/1438025500/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/environmental-engineering-intern-gis-natural-resources",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -47762,7 +47531,6 @@
       "employmentType": "Full time",
       "remote": true,
       "canonicalApplyUrl": "https://bebee.com/ar/jobs/senior-geospatial-software-engineer-ryz-labs--fj-2402614445",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-geospatial-software-engineer-8a534f",
       "countryCode": "AR",
       "countryName": "Argentina"
     },
@@ -47784,7 +47552,6 @@
       "employmentType": "Part time",
       "remote": false,
       "canonicalApplyUrl": "https://jobs.nationalguard.com/job/868164/12y-geospatial-engineer/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/12y-geospatial-engineer-3293ce",
       "countryCode": "LB",
       "countryName": "Lebanon"
     },
@@ -47806,7 +47573,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://nextjobz.com.bd/linkedin-job-apply/IJOB202674187?src=Linkedin",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-system-gis-officer-420276",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -47872,7 +47638,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://my.linkedin.com/jobs/view/technical-sales-specialist-geospatial-drones-at-droneskaki-professional-4475767900",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/technical-sales-specialist-geospatial-drones",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -48589,7 +48354,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://forms.gle/f7VbutmEH3y15Htw5",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-software-developer-0d48c3",
       "countryCode": "NG",
       "countryName": "Nigeria"
     },
@@ -48655,7 +48419,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://hire-r1.mokahr.com/m/social-recruitment/tp01/100008731?hash=%23%2Fjob%2Ffc9acf6c-481d-4f07-aa07-d014decdd5ad%3Ffrom%3Dqrcode",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/customer-support-gis-bahasa-indonesia-yogyakarta-94dbf9",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -48699,7 +48462,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://id.linkedin.com/jobs/view/geographic-information-systems-engineer-at-indonesia-weda-bay-industrial-park-iwip-4475519331",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geographic-information-systems-gis-engineer-d33925",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -48721,7 +48483,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://ro.linkedin.com/jobs/view/angajam-inginer-geodez-departament-topografie-inginereasca-bucuresti-at-xplorate-group-4473611565",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyinggeomatics-engineer-engineering-surveying-department-bucharest-6aab2f",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -48787,7 +48548,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bd.linkedin.com/jobs/view/research-officer-gis-remote-sensing-and-data-analysis-for-uttaran-job-id-1540882-at-bdjobs-com-4473625604",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/research-officer-gis-remote-sensing-and-data-analysis-for-uttaran-job-id-1540882",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -49087,7 +48847,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/geospatial-field-technician-natcarbon-africa--fj-2398422517",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-field-technician",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -49109,7 +48868,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/geospatial-young-professional-natcarbon-africa--fj-2398422479",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/geospatial-young-professional",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -49131,7 +48889,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/customer-support-gis-bahasa-indonesia-yogyakarta-tp-daerah-istimewa-yogyakarta--techmap_id_4475525464",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/customer-support-gis-bahasa-indonesia-yogyakarta",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -49153,7 +48910,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/senior-geospatial-field-technician-natcarbon-africa--fj-2398422452",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/senior-geospatial-field-technician",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -49598,7 +49354,6 @@
       "description": "Design District is hiring a full-time onsite GIS & Remote Sensing Analyst in Karachi for agriculture-focused geospatial analysis, crop monitoring, precision agriculture, and Earth Observation. Requires 2–5 years’ experience with ArcGIS Pro/QGIS, satellite imagery, Python and/or Google Earth Engine. Apply by email with CV and portfolio samples.",
       "employmentType": "Full time",
       "remote": false,
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-remote-sensing-analyst-10754a",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -49620,7 +49375,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.governmentjobs.com/careers/richmond/jobs/5477954/gis-and-project-manager",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-and-project-manager-54cd61",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -49686,7 +49440,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/id/jobs/asisten-gis-pt-ciliandry-anky-abadi-group-caa-group-riau-islands--t7xk-863250524",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-assistant-20e4de",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -51516,7 +51269,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/qa/jobs/distribution-planning-engineer-gis-surveyor-assistant-gis-support-autocad-draftsman-translator-al-na--ss-qa-ytn6co",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/distribution-planning-engineergis-surveyorsurveyor-assistantgis-supportautocad-draftsmantranslator",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -51560,7 +51312,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cialdnb.bamboohr.com/careers/722",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-assistant-dfeda9",
       "countryCode": "PE",
       "countryName": "Peru"
     },
@@ -51604,7 +51355,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cydingenieria.trabajando.cl/trabajo/6132088-26312-5-topografo-infraestructura-electrica",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/26312-5-surveying-engineer-electrical-infrastructure",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -51802,7 +51552,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://my.linkedin.com/jobs/view/hydrographic-surveyor-at-oms-group-4474579743",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/hydrographic-surveyor-7de1c0",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -53564,8 +53313,8 @@
       "id": "3061580eccb2d4dfbb734d2af9732dd19b3419a0bb9a21ed75982e984c7b8495",
       "title": "Software Engineer - Real-Time Geospatial Mapping for Planetary Exploration",
       "company": "KBR",
-      "location": "R2129705",
-      "city": "R2129705",
+      "location": "Moffett Field California",
+      "city": "",
       "country": "",
       "category": "GIS / Geospatial",
       "postedAt": null,
@@ -54367,7 +54116,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://rr.jobsyn.org/F0498AB3868348AD9E18EF8C465F10BD1606?trid=2d92f286-613b-4daf-9dfa-6340ffbecf73",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-i-fixed-term-4d2832",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -54389,7 +54137,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://rr.jobsyn.org/7F266EAA88A942BBBFB5E0EDE0884C641606?trid=2d92f286-613b-4daf-9dfa-6340ffbecf73",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-ii-fixed-term-13fdcf",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -54477,7 +54224,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://cl.linkedin.com/jobs/view/top%C3%B3grafo-at-erifor-4472917731",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/surveyor-c049dd",
       "countryCode": "CL",
       "countryName": "Chile"
     },
@@ -54741,7 +54487,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/my/jobs/gis-supervisor-sin-thye-management-sdn-bhd-rompin--t7xk-859241817",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-supervisor-803e25",
       "countryCode": "MY",
       "countryName": "Malaysia"
     },
@@ -54785,7 +54530,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://www.thryve.earth/careers",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-nbs-specialist",
       "countryCode": "ID",
       "countryName": "Indonesia"
     },
@@ -55341,7 +55085,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ro/jobs/gis-specialist-i-fixed-term-aecom-bucharest--fj-2390504581",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-i-fixed-term",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -55385,7 +55128,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/ro/jobs/gis-specialist-ii-fixed-term-aecom-bucharest--fj-2390532434",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-specialist-ii-fixed-term",
       "countryCode": "RO",
       "countryName": "Romania"
     },
@@ -55517,7 +55259,6 @@
       "employmentType": "Full time",
       "remote": false,
       "canonicalApplyUrl": "https://bebee.com/za/jobs/fiber-optic-network-design-lead-gis-cad-placements24-vereeniging--talent-638821590077219648",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/fiber-optic-network-design-lead-giscad",
       "countryCode": "ZA",
       "countryName": "South Africa"
     },
@@ -56829,7 +56570,6 @@
       "employmentType": "Contract",
       "remote": false,
       "canonicalApplyUrl": "https://www.brunel.net/nl-be/apply?vacancyID=CR-305682",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-technician-106ff4",
       "countryCode": "QA",
       "countryName": "Qatar"
     },
@@ -56972,7 +56712,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://lnkd.in/eXerkDrD",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gisremote-sensing-intern",
       "countryCode": "PK",
       "countryName": "Pakistan"
     },
@@ -57338,7 +57077,6 @@
       "employmentType": "Internship",
       "remote": false,
       "canonicalApplyUrl": "https://giscareerhub.com/",
-      "listingProvenanceUrl": "https://giscareerhub.com/jobs/gis-intern-1e97bb",
       "countryCode": "BD",
       "countryName": "Bangladesh"
     },
@@ -57710,26 +57448,6 @@
       "source": "Woolpert Careers",
       "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
       "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4241356009",
-      "description": "",
-      "employmentType": "",
-      "remote": false,
-      "countryCode": "US",
-      "countryName": "United States"
-    },
-    {
-      "id": "8384d03627d0cbea685c0bcbffa8c1a60575f6c3b74e3b1eaef8799192f2c404",
-      "title": "Geospatial Project Manager",
-      "company": "Woolpert",
-      "location": "Remote - United States",
-      "city": "",
-      "country": "US",
-      "category": "GIS / Geospatial",
-      "postedAt": "2026-09-14T18:43:53Z",
-      "discoveredAt": "2026-09-15T15:15:29.550527Z",
-      "expiresAt": null,
-      "source": "Woolpert Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4370830009",
       "description": "",
       "employmentType": "",
       "remote": false,
