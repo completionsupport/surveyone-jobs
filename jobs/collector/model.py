@@ -128,7 +128,7 @@ def quantity_surveying_role(title):
     value = normalize(title)
     value = re.sub(r"[\u064b-\u065f\u0670\u0640]", "", value)
     value = re.sub(r"[\W_]+", " ", value)
-    return bool(re.search(r"\b(?:quantity|quantities|quntity|qty|cost)\s+(?:surveyor\w*|surveying)\b|\bqs\b", value)
+    return bool(re.search(r"\b(?:quantity|quantities|quntity|quanity|quantitiy|quanitity|qty|cost)\s+(?:surveyor\w*|surveying)\b|\bqs\b", value)
                 or re.search(r"(?:حصر\s+(?:ال)?كميات|(?:حاسب|حساب|مساح|مساحين)\s+(?:ال)?(?:كميات|كمية))", value))
 
 

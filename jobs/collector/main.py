@@ -4,7 +4,7 @@ import os
 import time
 from pathlib import Path
 from datetime import datetime, timezone
-from .model import make_job, relevant, expired, deduplicate, date, iso, quantity_surveying_role
+from .model import make_job, relevant, expired, deduplicate, date, iso, quantity_surveying_role, normalize, normalize_url
 from .network import Fetcher
 from .parsers import parse
 from .registry import enabled_sources, rotated_sources, source_key
@@ -43,6 +43,11 @@ def collect(output_root=None):
         statepath, {"seen": [], "notified": [], "pending": [], "linkChecks": {}}
     )
     previous = {j["id"]: filter_job(internal_job(j)) for j in old["jobs"]}
+    previous_requisitions = {}
+    for item in previous.values():
+        if not is_editorial(item):
+            key = (normalize_url(item["applyUrl"]), normalize(item.get("company")), normalize(item.get("title")))
+            previous_requisitions.setdefault(key, []).append(item)
     first_discovered = state.setdefault("firstDiscovered", {})
     for job in previous.values():
         first_discovered.setdefault(job["id"], job["discoveredAt"])
@@ -105,6 +110,14 @@ def collect(output_root=None):
                         continue
                     try:
                         job = make_job(raw, source, now)
+                        if source.get("type") == "workday":
+                            key = (normalize_url(job["applyUrl"]), normalize(job["company"]), normalize(job["title"]))
+                            matches = previous_requisitions.get(key, [])
+                            # A corrected Workday location must update the existing
+                            # requisition, retaining its first discovery and notification
+                            # history rather than creating a second cached vacancy.
+                            if len(matches) == 1:
+                                job["id"] = matches[0]["id"]
                     except (ValueError, TypeError):
                         continue
                     job["discoveredAt"] = first_discovered.setdefault(

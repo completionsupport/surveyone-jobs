@@ -65,5 +65,13 @@
     "cartography",
     "cartographer"
   ],
-  "exclude": ["quantity surveyor", "quantity surveying", "quntity surveyor", "cost surveyor", "حصر كميات", "حصر الكميات", "مساح كميات"]
+  "exclude": [
+    "quantity surveyor", "quantity surveying", "quntity surveyor", "quanity surveyor", "cost surveyor",
+    "حصر كميات", "حصر الكميات", "مساح كميات",
+    "datep surveyor", "ntp surveyor", "licensure surveyor", "guest surveyor",
+    "assisted living surveyor", "nursing home surveyor", "nurse surveyor",
+    "housing surveyor", "residential surveyor and valuer", "estates surveyor",
+    "stock condition surveyor", "valuation surveyor", "electrical surveyor",
+    "gas installation surveying"
+  ]
 }

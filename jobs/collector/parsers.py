@@ -682,17 +682,12 @@ def workday(text, url, source):
         if not isinstance(job, dict):
             continue
         title, path = job.get("title"), job.get("externalPath")
-        bullets = job.get("bulletFields", [])
-        # Workday tenants differ: some expose location in locationsText, while others
-        # put it in the first bullet and reserve locationsText for multi-location labels.
-        locations_text = str(job.get("locationsText", "")).strip()
-        bullet_location = str(bullets[0]) if isinstance(bullets, list) and bullets else ""
-        location = (locations_text if locations_text and not locations_text.endswith(" Locations")
-                    else bullet_location)
+        from .public_ats import workday_location
+        location, city, country = workday_location(job)
         if title and isinstance(path, str) and path.startswith("/job/"):
             found.append(dict(
                 title=title, company=source.get("company", ""),
-                location=location, city=location.split("-", 1)[-1].strip(),
+                location=location, city=city, country=country,
                 applyUrl=public_base + path,
             ))
 
@@ -787,6 +782,11 @@ def icims(text, source):
 
 
 def parse(text, url, source):
+    if source.get("type") in ("bamboohr", "recruitee", "personio"):
+        from . import public_ats
+        if source["type"] == "recruitee":
+            return public_ats.recruitee(text)
+        return getattr(public_ats, source["type"])(text, url)
     if source.get("type") == "jibe":
         return jibe(text, url)
     if source.get("type") == "gis_career_hub":
