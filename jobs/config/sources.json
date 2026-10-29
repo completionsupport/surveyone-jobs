@@ -8,6 +8,60 @@
   "sources": [
     {
       "enabled": true,
+      "name": "HanmiGlobal Saudi Careers", "company": "HanmiGlobal Saudi", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/hanmiglobal-saudi", "country": "",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 6,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Official public employer Workable feed; robots allowed, 58 vacancy/location records and 1 active relevant surveying vacancy parsed with the existing collector on 2026-10-29. Application page returned HTTP 200. Countries retained per vacancy; no daily posting guarantee."
+    },
+    {
+      "enabled": true,
+      "name": "Advanced Roads and Development Saudi Careers", "company": "Advanced Roads and Development Contracting", "type": "html",
+      "url": "https://www.ardco.sa/jobs", "country": "Saudi Arabia",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 5,
+      "allowedHosts": ["www.ardco.sa"],
+      "selectors": {
+        "job": ".card:has(a[href^='/jobs/'])", "title": "h3", "link": "a[href^='/jobs/']",
+        "category": "", "location": "", "company": ""
+      },
+      "permissionNote": "Official Saudi employer board; robots allowed, 10 current cards and 1 relevant field-surveyor vacancy parsed on 2026-10-29. Surveyor application page returned HTTP 200. Generic Remote labels are not used as geographic evidence."
+    },
+    {
+      "enabled": true,
+      "name": "QSIT Egypt GIS Careers", "company": "QSIT", "type": "html",
+      "url": "https://qsitint.com/careers/", "country": "Egypt",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 5,
+      "allowedHosts": ["qsitint.com", "www.qsitint.com"],
+      "selectors": {
+        "job": ".awsm-job-item:has(.awsm-job-post-title:-soup-contains('GIS'))", "title": ".awsm-job-post-title", "link": ".awsm-job-post-title a",
+        "category": ".awsm-job-specification-job-category", "location": ".awsm-job-specification-job-location",
+        "employmentType": ".awsm-job-specification-job-type", "company": ""
+      },
+      "permissionNote": "Official Egypt GIS employer board; robots allowed, 8 current cards and 6 explicitly GIS-titled roles selected on 2026-10-29. Generic consultation-management title excluded. First individual application/details page returned HTTP 200. Country is shown on each card; no city or publication date inferred."
+    },
+    {
+      "enabled": true,
+      "name": "Oceangate Egypt Survey Careers", "company": "Oceangate", "type": "html",
+      "url": "https://oceangatefz.com/careers/", "country": "Egypt",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 5,
+      "allowedHosts": ["oceangatefz.com", "www.oceangatefz.com"],
+      "selectors": {
+        "job": ".e-grid > .e-con:has(h5):has(a[href*='/apply'])", "title": "h5", "link": "a[href*='/apply']",
+        "location": ".elementor-icon-list-text", "description": ".elementor-widget-heading div.elementor-heading-title",
+        "category": "", "company": ""
+      },
+      "permissionNote": "Official onshore/offshore surveying employer; robots allowed, 2 current Egypt cards and 1 role eligible under the existing GIS relevance filter on 2026-10-29. Employer's HTTPS application form returned HTTP 200. Locations copied from cards; no city inferred from company headquarters."
+    },
+    {
+      "enabled": true,
+      "name": "BKF Engineers Survey Careers", "company": "BKF Engineers", "type": "workable",
+      "url": "https://www.workable.com/api/accounts/bkfengineers", "country": "",
+      "pollIntervalHours": 2, "maxRequestsPerSource": 6,
+      "allowedHosts": ["www.workable.com", "apply.workable.com"],
+      "permissionNote": "Official public employer Workable feed; robots allowed, 313 vacancy/location records and 1 active relevant surveying vacancy after the existing 45-day expiry and deduplication checks on 2026-10-29. Application page returned HTTP 200. Actual locations retained; not labeled as Egypt or Saudi Arabia."
+    },
+    {
+      "enabled": true,
       "name": "IRTH UAE Careers", "company": "IRTH Group", "type": "html",
       "url": "https://irth.ae/careers/", "country": "United Arab Emirates",
       "pollIntervalHours": 2,
