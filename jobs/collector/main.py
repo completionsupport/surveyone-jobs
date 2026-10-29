@@ -4,13 +4,14 @@ import os
 import time
 from pathlib import Path
 from datetime import datetime, timezone
-from .model import make_job, relevant, expired, deduplicate, date, iso, quantity_surveying_role, normalize, normalize_url
+from .model import make_job, relevant, expired, deduplicate, date, iso, excluded_role, normalize, normalize_url
 from .network import Fetcher
 from .parsers import parse
 from .registry import enabled_sources, rotated_sources, source_key
 from .editorial import is_editorial, load_editorial, replace_editorial
 from .countries import internal_job, published_job
 from .taxonomy import filter_job
+from .feed_contract import save_feed
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -57,6 +58,7 @@ def collect(output_root=None):
     dead = set()
     checks = state.setdefault("linkChecks", {})
     source_health = state.setdefault("sourceHealth", {})
+    continuations = state.setdefault("sourceContinuations", {})
     sources = enabled_sources(config)
     ordered = rotated_sources(sources, state.get("sourceCursor"))
     started = time.monotonic()
@@ -67,23 +69,31 @@ def collect(output_root=None):
         previous_health = source_health.get(source.get("name", "unnamed"), {})
         last_success = date(previous_health.get("lastSuccess"))
         poll_hours = max(1, int(source.get("pollIntervalHours", 1)))
-        if last_success and (now - last_success).total_seconds() < poll_hours * 3600:
+        resume = source.get("resumePagination") is True
+        saved_queue = continuations.get(source_key(source), []) if resume else []
+        saved_queue = [url for url in saved_queue if isinstance(url, str) and len(url) <= 2048][:1000] if isinstance(saved_queue, list) else []
+        if not saved_queue and last_success and (now - last_success).total_seconds() < poll_hours * 3600:
             continue
         if checked >= source_limit or time.monotonic() - started >= run_seconds:
             break
         checked += 1
         state["sourceCursor"] = source_key(source)
         fetch = None
+        queue = []
+        url = None
         try:
             fetch = Fetcher(
                 source,
-                min(24, int(source.get("maxRequestsPerSource",
+                min(120 if resume else 24, int(source.get("maxRequestsPerSource",
                                        config.get("maxRequestsPerSource", 12)))),
                 source.get("maxResponseBytes", config.get("maxResponseBytes", 2000000)),
             )
             # Search/country variants belong to one employer/source, not separate
             # sources. All requests still pass the same allowlist and robots checks.
-            queue = [source["url"], *source.get("additionalUrls", [])[:6]]
+            seeds = [source["url"], *source.get("additionalUrls", [])[:6]]
+            if resume:
+                seeds.extend(source.get("collectionUrls", [])[:128])
+            queue = list(dict.fromkeys(saved_queue or seeds))
             visited = set()
             pages = records_read = matched = 0
             while queue and fetch.remaining > 1:
@@ -101,7 +111,9 @@ def collect(output_root=None):
                 records, links = parse(body, url, source)
                 pages += 1
                 records_read += len(records)
-                queue.extend(links[: config.get("maxRequestsPerSource", 12)])
+                for link in links[:120 if resume else config.get("maxRequestsPerSource", 12)]:
+                    if link not in visited and link not in queue and len(queue) < 1000:
+                        queue.append(link)
                 for raw in records:
                     if not relevant(
                         str(raw.get("title", "")) + " " + str(raw.get("category", "")),
@@ -141,6 +153,11 @@ def collect(output_root=None):
                 if status in (404, 410):
                     dead.add(job["id"])
             successes += 1
+            if resume:
+                if queue:
+                    continuations[source_key(source)] = queue
+                else:
+                    continuations.pop(source_key(source), None)
             source_health[source["name"]] = dict(
                 status="partial" if queue else "healthy",
                 lastSuccess=previous_health.get("lastSuccess") if queue else iso(now),
@@ -150,6 +167,10 @@ def collect(output_root=None):
                 consecutiveFailures=0,
             )
         except Exception as error:
+            if resume and url:
+                # Keep the failed page and unread URLs for a later scheduled run;
+                # never refetch all completed pages or retry a ban in this run.
+                continuations[source_key(source)] = list(dict.fromkeys([url, *queue]))[:1000]
             failures += 1
             source_health[source.get("name", "unnamed")] = dict(
                 status="failed",
@@ -174,7 +195,7 @@ def collect(output_root=None):
             j
             for j in merged.values()
             if j["id"] not in dead and not expired(j, now, config.get("expiryDays", 45))
-            and not quantity_surveying_role(str(j.get("title", "")) + " " + str(j.get("category", "")))
+            and not excluded_role(str(j.get("title", "")) + " " + str(j.get("category", "")), keywords)
         ]
     )
     editorial_jobs, editorial_health = load_editorial(config, now)
@@ -199,7 +220,7 @@ def collect(output_root=None):
         or old.get("expiryDays", 45) != expiry_days
         or not feedpath.exists()
     ):
-        save(
+        save_feed(
             feedpath,
             dict(
                 version=1,

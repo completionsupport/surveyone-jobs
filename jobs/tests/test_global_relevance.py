@@ -22,6 +22,17 @@ class GlobalRelevanceTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertFalse(relevant(title, self.keywords))
 
+    def test_worldwide_field_titles_match_without_including_educational_awards(self):
+        for title in ('Lead Data Engineer, Earth Observation','Geodetic Engineer','Géomètre Topographe',
+                      'Vermessungstechniker','Allround Landmeter','Lantmätare','Topógrafo','Geodeta','Геодезист',
+                      'Research Assistant (Remote Sensing), PERMIT Lab','Geographic Information Systems Manager',
+                      'Geographical Information Systems/Spatial Data Officer','Senior GeoAI Expert','Géomaticien',
+                      'Ingénieur topographie', 'Handläggare lantmäteri', 'Kartingenjör', 'Geodata Specialist',
+                      'Vibrationsanalys AB startar geodesiavdelning Vi söker Mättekniker!'):
+            with self.subTest(title=title):self.assertTrue(relevant(title,self.keywords))
+        self.assertFalse(relevant('Singapore Geomatics Scholarship',self.keywords))
+        self.assertFalse(relevant('Singapore Geospatial Scholarship',self.keywords))
+
     def test_valid_field_and_geospatial_titles_still_match(self):
         for title in ('Land Surveyor', 'Boundary Surveyor', 'County Surveyor', 'GIS Analyst',
                       'Geospatial Engineer', 'Utility Surveyor', 'Chief Mine Surveyor',

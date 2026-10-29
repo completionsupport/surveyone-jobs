@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from jobs.collector.registry import enabled_sources, source_key
+from jobs.collector.feed_contract import cache_bytes
 
 
 class GlobalRegistryTests(unittest.TestCase):
@@ -16,7 +17,8 @@ class GlobalRegistryTests(unittest.TestCase):
         self.assertLessEqual(config['maxRunSeconds'],900)
         for source in sources:
             self.assertTrue(source['url'].startswith('https://'))
-            self.assertLessEqual(source.get('maxRequestsPerSource',config['maxRequestsPerSource']),24)
+            self.assertLessEqual(source.get('maxRequestsPerSource',config['maxRequestsPerSource']),
+                                 120 if source.get('resumePagination') else 24)
 
     def test_collected_feed_remains_within_published_android_contract(self):
         path=Path(__file__).resolve().parents[2]/'public/jobs/jobs.json'
@@ -27,6 +29,7 @@ class GlobalRegistryTests(unittest.TestCase):
         self.assertEqual(len(feed['jobs']),len({j['id'] for j in feed['jobs']}))
         self.assertLessEqual(len(feed['jobs']),10000)
         self.assertLessEqual(len(payload),4*1024*1024)
+        self.assertLessEqual(cache_bytes(payload.decode('utf-8')),4*1024*1024)
         for job in feed['jobs']:
             if job.get('countryCode'):
                 self.assertRegex(job['countryCode'],r'^[A-Z]{2}$')

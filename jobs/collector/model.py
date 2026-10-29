@@ -74,6 +74,8 @@ def normalize(value):
 
 
 def normalize_url(url):
+    if not isinstance(url, str) or not url or len(url) > 2048:
+        raise ValueError("A bounded public HTTPS URL is required")
     p = urlsplit(url)
     if p.scheme.lower() != "https" or not p.hostname or p.username or p.password:
         raise ValueError("Only public HTTPS URLs are supported")
@@ -90,6 +92,30 @@ def normalize_url(url):
     return urlunsplit(
         ("https", p.netloc.lower(), p.path or "/", urlencode(sorted(query)), fragment)
     )
+
+
+def application_key(value):
+    """Known public ATS aliases identify one requisition, not extra vacancies."""
+    url = normalize_url(value)
+    parsed = urlsplit(url)
+    host = parsed.hostname
+    if host == 'jobs.smartrecruiters.com':
+        match = re.match(r'^/([^/]+)/(\d+)', parsed.path)
+        if match:
+            return 'smartrecruiters:' + match[1].casefold() + ':' + match[2]
+    if host == 'apply.workable.com':
+        match = re.search(r'/j/([a-f0-9]{10})(?:/|$)', parsed.path, re.I)
+        if match:
+            return 'workable:' + match[1].upper()
+    if host in ('jobs.lever.co', 'jobs.eu.lever.co'):
+        match = re.match(r'^/([^/]+)/([a-f0-9-]{36})(?:/apply)?/?$', parsed.path, re.I)
+        if match:
+            return 'lever:' + host + ':' + match[1].casefold() + ':' + match[2].casefold()
+    if host in ('boards.greenhouse.io', 'job-boards.greenhouse.io'):
+        match = re.match(r'^/([^/]+)/jobs/(\d+)', parsed.path)
+        if match:
+            return 'greenhouse:' + match[1].casefold() + ':' + match[2]
+    return url
 
 
 def date(value):
@@ -132,19 +158,19 @@ def quantity_surveying_role(title):
                 or re.search(r"(?:حصر\s+(?:ال)?كميات|(?:حاسب|حساب|مساح|مساحين)\s+(?:ال)?(?:كميات|كمية))", value))
 
 
-def relevant(title, keywords):
+def excluded_role(title, keywords):
     title = normalize(title)
     if quantity_surveying_role(title):
-        return False
+        return True
+    return any(re.search(r"(?<!\w)" + re.escape(normalize(word)) + r"(?!\w)", title)
+               is not None for word in keywords["exclude"])
 
-    def matches(word):
-        return (
-            re.search(r"(?<!\w)" + re.escape(normalize(word)) + r"(?!\w)", title)
-            is not None
-        )
 
-    return not any(matches(x) for x in keywords["exclude"]) and any(
-        matches(x) for x in keywords["include"]
+def relevant(title, keywords):
+    title = normalize(title)
+    return not excluded_role(title, keywords) and any(
+        re.search(r"(?<!\w)" + re.escape(normalize(word)) + r"(?!\w)", title)
+        is not None for word in keywords["include"]
     )
 
 
@@ -154,14 +180,17 @@ def category(title):
         (("quantity surveyor", "cost surveyor"), "Quantity Surveying"),
         (("building surveyor", "fire surveyor"), "Building Surveying"),
         (("lidar", "uav", "drone", "laser scanning"), "UAV / LiDAR"),
-        (("hydrographic",), "Hydrographic"),
+        (("hydrographic", "hydrographer", "hydrography"), "Hydrographic"),
         (("utility", "gpr"), "Utility Survey"),
-        (("gis", "geospatial", "geomatics"), "GIS / Geospatial"),
+        (("gis", "geospatial", "geomatics", "earth observation", "earth-observation", "remote sensing",
+          "geodesy", "cartograph", "cartógrafo", "cartografo", "insar", "geographic information",
+          "geographical information", "geoai", "geoinformatics", "mapping technician", "géomati", "geomati",
+          "geodata", "kartingenjör", "kartograf", "arcgis", "qgis"), "GIS / Geospatial"),
         (("engineer",), "Survey Engineering"),
     ]:
         if any(word in title for word in words):
             return label
-    return "Land Surveying"
+    return "GIS / Geospatial" if re.search(r"\bsig\b", title) else "Land Surveying"
 
 
 def make_job(raw, source, now):
@@ -185,7 +214,7 @@ def make_job(raw, source, now):
         (normalize(company), normalize(title), normalize(location), url)
     )
     posted = date(raw.get("postedAt"))
-    return dict(
+    result = dict(
         id=hashlib.sha256(identity.encode()).hexdigest(),
         title=title,
         company=company,
@@ -203,6 +232,12 @@ def make_job(raw, source, now):
         employmentType=BeautifulText(raw.get("employmentType", ""))[:80],
         remote=bool(raw.get("remote", False)),
     )
+    if raw.get("canonicalApplyUrl"):
+        try:
+            result["canonicalApplyUrl"] = normalize_url(raw["canonicalApplyUrl"])
+        except (ValueError, TypeError):
+            pass
+    return result
 
 
 def BeautifulText(value):
@@ -222,28 +257,29 @@ def deduplicate(jobs):
     # cross-postings only when their stable fields match and their descriptions are strongly
     # similar. Distinct requisition URLs without that evidence deliberately remain separate.
     result = {}
-    semantic = []
+    semantic = {}
     for job in jobs:
         # One requisition can advertise multiple countries. Keep these distinct so
         # country-specific delivery does not silently discard Egypt or Saudi Arabia.
         # Some employers deliberately use one shared application form for several roles.
         # Keep distinct titles while still collapsing the same requisition/country/title.
-        url_key = (normalize_url(job["applyUrl"]), normalize(job.get("country")),
+        try:
+            primary = application_key(job.get("canonicalApplyUrl") or job["applyUrl"])
+        except (ValueError, TypeError):
+            primary = application_key(job["applyUrl"])
+        url_key = (primary, normalize(country_name(job.get("country"))),
                    normalize(job.get("title")))
         if url_key in result:
             continue
         company = normalize(job.get("company"))
         title = normalize(job.get("title"))
-        country = normalize(job.get("country"))
+        country = normalize(country_name(job.get("country")))
         city = normalize(job.get("city") or job.get("location"))
         description = normalize(job.get("description"))
         posted = date(job.get("postedAt"))
         duplicate = False
         if description:
-            for previous in semantic:
-                if (company, title, country, city) != previous[:4]:
-                    continue
-                previous_posted, previous_description = previous[4], previous[5]
+            for previous_posted, previous_description in semantic.get((company, title, country, city), []):
                 if posted and previous_posted and abs((posted - previous_posted).days) > 3:
                     continue
                 if SequenceMatcher(None, description[:2000], previous_description[:2000]).ratio() >= 0.90:
@@ -253,5 +289,5 @@ def deduplicate(jobs):
             continue
         result[url_key] = job
         if description:
-            semantic.append((company, title, country, city, posted, description))
+            semantic.setdefault((company, title, country, city), []).append((posted, description))
     return list(result.values())

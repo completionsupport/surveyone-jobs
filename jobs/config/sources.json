@@ -3,9 +3,87 @@
   "maxRequestsPerSource": 12,
   "maxResponseBytes": 2000000,
   "checkLinksPerRun": 8,
-  "maxSourcesPerRun": 500,
+  "maxSourcesPerRun": 503,
   "maxRunSeconds": 900,
   "sources": [
+    {
+      "enabled": true,
+      "name": "Canada Job Bank Verified Survey and Geomatics Jobs",
+      "company": "",
+      "type": "jobbank",
+      "url": "https://www.jobbank.gc.ca/jobsearch/feed/jobSearchRSSfeed?fn21=21203&fsrc=16&sort=D&rows=100&fage=30",
+      "country": "",
+      "occupationCodes": [
+        "21203",
+        "22213",
+        "22214"
+      ],
+      "maxRequestsPerSource": 12,
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "www.jobbank.gc.ca"
+      ],
+      "permissionNote": "Official anonymous Atom/RSS feed linked from Job Bank; fsrc16 selects employer-direct verified jobs. No applicant account or session identifier included in public links.",
+      "initialBootstrapUrls": [
+        "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=21203&fsrc=16&sort=D",
+        "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=22213&fsrc=16&sort=D",
+        "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=22214&fsrc=16&sort=D"
+      ],
+      "resumePagination": true,
+      "minRequestIntervalSeconds": 2
+    },
+    {
+      "enabled": true,
+      "name": "France Travail Survey and Geospatial Jobs",
+      "company": "",
+      "type": "francetravail",
+      "url": "https://candidat.francetravail.fr/offres/recherche?motsCles=geometre&offresPartenaires=false&range=0-19&tri=1",
+      "country": "",
+      "searchTerms": [
+        "geometre",
+        "topographe",
+        "geomaticien",
+        "cartographe",
+        "SIG"
+      ],
+      "maxPagesPerTerm": 15,
+      "maxRequestsPerSource": 24,
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "candidat.francetravail.fr"
+      ],
+      "permissionNote": "Official public current vacancy cards; first-party France Travail postings only, no partner duplicates. Robots and TLS respected.",
+      "resumePagination": true,
+      "minRequestIntervalSeconds": 2
+    },
+    {
+      "enabled": true,
+      "name": "Arbetsförmedlingen JobTech Survey and GIS Jobs",
+      "company": "",
+      "type": "jobtech",
+      "url": "https://jobsearch.api.jobtechdev.se/search?q=lantm%C3%A4tare&limit=100&offset=0",
+      "country": "",
+      "searchTerms": [
+        "lantmätare",
+        "mätningstekniker",
+        "mätningsingenjör",
+        "kartingenjör",
+        "geodata",
+        "GIS",
+        "geodesi",
+        "kartograf"
+      ],
+      "maxPagesPerTerm": 2,
+      "maxRequestsPerSource": 24,
+      "pollIntervalHours": 2,
+      "allowedHosts": [
+        "jobsearch.api.jobtechdev.se",
+        "arbetsformedlingen.se"
+      ],
+      "permissionNote": "Official public JobSearch API; CC0, no API key or registration required. https://data.jobtechdev.se/dataservice/jobsearch/",
+      "resumePagination": true,
+      "minRequestIntervalSeconds": 2
+    },
     {
       "enabled": true,
       "name": "HanmiGlobal Saudi Careers",
@@ -157,18 +235,24 @@
       "url": "https://stantec.jobs/sitemaps/index.xml",
       "country": "",
       "pollIntervalHours": 2,
-      "maxRequestsPerSource": 4,
+      "maxRequestsPerSource": 24,
       "slugKeywords": [
-        "surveyor",
-        "survey-technician",
+        "survey",
         "geomatics",
         "geospatial",
-        "gis-"
+        "gis-",
+        "lidar",
+        "photogram",
+        "cartograph",
+        "remote-sensing",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
       "allowedHosts": [
         "stantec.jobs"
       ],
-      "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles; verified 2026-10-03"
+      "permissionNote": "Official robots-allowed public jobs sitemap; location is retained per vacancy, including current UAE roles; verified 2026-10-03 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -182,16 +266,21 @@
       "pollIntervalHours": 2,
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
         "geospatial",
-        "geomatics"
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 12,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "ejov.fa.ca2.oraclecloud.com"
       ],
-      "permissionNote": "Official GHD Oracle Candidate Experience public feed; live Philippines and global locations retained per vacancy"
+      "permissionNote": "Official GHD Oracle Candidate Experience public feed; live Philippines and global locations retained per vacancy Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -617,7 +706,16 @@
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer career search; active surveying vacancies across UAE, Bahrain and other markets validated 2026-10-02"
+      "permissionNote": "Official public employer career search; active surveying vacancies across UAE, Bahrain and other markets validated 2026-10-02 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
+      "maxRequestsPerSource": 24,
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/AECOM2/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -631,7 +729,16 @@
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer career search; active UAE, Saudi Arabia, Qatar and Kuwait surveying vacancies validated 2026-10-02"
+      "permissionNote": "Official public employer career search; active UAE, Saudi Arabia, Qatar and Kuwait surveying vacancies validated 2026-10-02 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
+      "maxRequestsPerSource": 24,
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/EgisGroup/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -683,7 +790,7 @@
       "url": "https://careers-systra.icims.com/sitemap.xml",
       "country": "",
       "pollIntervalHours": 2,
-      "maxRequestsPerSource": 16,
+      "maxRequestsPerSource": 24,
       "linkKeywords": [
         "surveyor",
         "survey-engineer",
@@ -694,7 +801,7 @@
       "allowedHosts": [
         "careers-systra.icims.com"
       ],
-      "permissionNote": "Official public iCIMS sitemap; relevant job pages are filtered before bounded fetching; live Cairo survey vacancy validated 2026-10-02"
+      "permissionNote": "Official public iCIMS sitemap; relevant job pages are filtered before bounded fetching; live Cairo survey vacancy validated 2026-10-02 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -813,69 +920,81 @@
       "name": "Parsons Careers",
       "company": "Parsons",
       "type": "workday",
-      "url": "https://parsons.wd5.myworkdayjobs.com/wday/cxs/parsons/Search/jobs?search=land%20surveyor&offset=0",
+      "url": "https://parsons.wd5.myworkdayjobs.com/wday/cxs/parsons/Search/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://parsons.wd5.myworkdayjobs.com/en-US/Search",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "parsons.wd5.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search; live UAE, Saudi Arabia and Qatar surveying vacancies validated 2026-10-02"
+      "permissionNote": "Official public Workday career search; live UAE, Saudi Arabia and Qatar surveying vacancies validated 2026-10-02 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
       "name": "AtkinsRealis Careers",
       "company": "AtkinsRealis",
       "type": "workday",
-      "url": "https://slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/Careers/jobs?search=land%20surveyor&offset=0",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/Careers/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "slihrms.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search; live UAE and Saudi Arabia land-surveying and GIS vacancies validated 2026-10-02"
+      "permissionNote": "Official public Workday career search; live UAE and Saudi Arabia land-surveying and GIS vacancies validated 2026-10-02 Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
       "name": "JLL Careers",
       "company": "JLL",
       "type": "workday",
-      "url": "https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs?search=land%20surveyor&offset=0",
+      "url": "https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://jll.wd1.myworkdayjobs.com/en-US/jllcareers",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "jll.wd1.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search; live Egypt and UAE board validated 2026-10-02; country retained from each vacancy"
+      "permissionNote": "Official public Workday career search; live Egypt and UAE board validated 2026-10-02; country retained from each vacancy Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -905,23 +1024,27 @@
       "name": "Surbana Jurong and SMEC Careers",
       "company": "Surbana Jurong Group / SMEC",
       "type": "workday",
-      "url": "https://surbanajurong.wd3.myworkdayjobs.com/wday/cxs/surbanajurong/careersatsmec/jobs?search=land%20surveyor&offset=0",
+      "url": "https://surbanajurong.wd3.myworkdayjobs.com/wday/cxs/surbanajurong/careersatsmec/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://surbanajurong.wd3.myworkdayjobs.com/en-US/careersatsmec",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "surbanajurong.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search; Middle East infrastructure board including Kuwait and regional roles"
+      "permissionNote": "Official public Workday career search; Middle East infrastructure board including Kuwait and regional roles Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -951,46 +1074,54 @@
       "name": "Fugro Careers",
       "company": "Fugro",
       "type": "workday",
-      "url": "https://fugro.wd3.myworkdayjobs.com/wday/cxs/fugro/Careers/jobs?search=land%20surveyor&offset=0",
+      "url": "https://fugro.wd3.myworkdayjobs.com/wday/cxs/fugro/Careers/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://fugro.wd3.myworkdayjobs.com/en-US/Careers",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "fugro.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search for land, marine, hydrographic and geospatial surveying roles, including Middle East offices"
+      "permissionNote": "Official public Workday career search for land, marine, hydrographic and geospatial surveying roles, including Middle East offices Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
       "name": "Amentum Careers",
       "company": "Amentum",
       "type": "workday",
-      "url": "https://pae.wd1.myworkdayjobs.com/wday/cxs/pae/Amentum_Careers/jobs?search=land%20surveyor&offset=0",
+      "url": "https://pae.wd1.myworkdayjobs.com/wday/cxs/pae/Amentum_Careers/jobs?search=surveyor&offset=0",
       "publicBaseUrl": "https://pae.wd1.myworkdayjobs.com/en-US/Amentum_Careers",
       "searchTerms": [
-        "land surveyor",
+        "surveyor",
+        "survey",
         "GIS",
         "geospatial",
         "geomatics",
-        "survey engineer"
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 2,
-      "maxRequestsPerSource": 16,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "pae.wd1.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public Workday career search covering GIS, surveying and infrastructure roles across Iraq, Kuwait, Qatar and other regional operations"
+      "permissionNote": "Official public Workday career search covering GIS, surveying and infrastructure roles across Iraq, Kuwait, Qatar and other regional operations Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -1385,20 +1516,99 @@
     },
     {
       "enabled": true,
-      "name": "GIS Career Hub Egypt and Saudi Jobs",
-      "company": "GIS Career Hub",
+      "name": "GIS Career Hub Worldwide Jobs",
+      "company": "",
       "type": "gis_career_hub",
-      "url": "https://giscareerhub.com/gis-jobs/location/egypt",
+      "url": "https://giscareerhub.com/jobs",
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "giscareerhub.com"
       ],
-      "additionalUrls": [
-        "https://giscareerhub.com/gis-jobs/location/saudi-arabia"
-      ],
-      "maxRequestsPerSource": 5,
-      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+      "maxRequestsPerSource": 60,
+      "permissionNote": "Public visible worldwide job-card and country/form-filter routes, robots/TLS checked 2026-10-29. One source; filters/pages never counted as boards. Read card JSON only, keep source attribution/original application identity. Per-query 20-page cap and HTTP200 rate-limit detected; stop and retain progress. Known country/state geocoder conflicts held; no guesses or daily-volume guarantee.",
+      "resumePagination": true,
+      "minRequestIntervalSeconds": 3,
+      "maxPagesPerQuery": 20,
+      "collectionUrls": [
+        "https://giscareerhub.com/gis-jobs/location/egypt",
+        "https://giscareerhub.com/gis-jobs/location/saudi-arabia",
+        "https://giscareerhub.com/gis-jobs/location/united-arab-emirates",
+        "https://giscareerhub.com/gis-jobs/location/pakistan",
+        "https://giscareerhub.com/gis-jobs/location/india",
+        "https://giscareerhub.com/gis-jobs/location/nigeria",
+        "https://giscareerhub.com/gis-jobs/location/kenya",
+        "https://giscareerhub.com/gis-jobs/location/south-africa",
+        "https://giscareerhub.com/gis-jobs/location/philippines",
+        "https://giscareerhub.com/gis-jobs/location/qatar",
+        "https://giscareerhub.com/gis-jobs/location/oman",
+        "https://giscareerhub.com/gis-jobs/location/lebanon",
+        "https://giscareerhub.com/gis-jobs/location/morocco",
+        "https://giscareerhub.com/gis-jobs/location/bangladesh",
+        "https://giscareerhub.com/gis-jobs/location/indonesia",
+        "https://giscareerhub.com/gis-jobs/location/malaysia",
+        "https://giscareerhub.com/gis-jobs/location/singapore",
+        "https://giscareerhub.com/gis-jobs/location/vietnam",
+        "https://giscareerhub.com/gis-jobs/location/china",
+        "https://giscareerhub.com/gis-jobs/location/brazil",
+        "https://giscareerhub.com/gis-jobs/location/mexico",
+        "https://giscareerhub.com/gis-jobs/location/chile",
+        "https://giscareerhub.com/gis-jobs/location/argentina",
+        "https://giscareerhub.com/gis-jobs/location/peru",
+        "https://giscareerhub.com/gis-jobs/location/colombia",
+        "https://giscareerhub.com/gis-jobs/location/united-kingdom",
+        "https://giscareerhub.com/gis-jobs/location/germany",
+        "https://giscareerhub.com/gis-jobs/location/poland",
+        "https://giscareerhub.com/gis-jobs/location/georgia",
+        "https://giscareerhub.com/gis-jobs/location/israel",
+        "https://giscareerhub.com/gis-jobs/location/austria",
+        "https://giscareerhub.com/gis-jobs/location/new-zealand",
+        "https://giscareerhub.com/gis-jobs/location/denmark",
+        "https://giscareerhub.com/gis-jobs/location/san-marino",
+        "https://giscareerhub.com/gis-jobs/location/portugal",
+        "https://giscareerhub.com/gis-jobs/location/romania",
+        "https://giscareerhub.com/gis-jobs/location/south-korea",
+        "https://giscareerhub.com/gis-jobs/location/greece",
+        "https://giscareerhub.com/gis-jobs/location/turkey",
+        "https://giscareerhub.com/gis-jobs/location/czechia",
+        "https://giscareerhub.com/gis-jobs/location/luxembourg",
+        "https://giscareerhub.com/gis-jobs/location/norway",
+        "https://giscareerhub.com/gis-jobs/location/azerbaijan",
+        "https://giscareerhub.com/gis-jobs/location/albania",
+        "https://giscareerhub.com/gis-jobs/location/botswana",
+        "https://giscareerhub.com/gis-jobs/location/hungary",
+        "https://giscareerhub.com/gis-jobs/location/bulgaria",
+        "https://giscareerhub.com/gis-jobs/location/senegal",
+        "https://giscareerhub.com/gis-jobs/location/suriname",
+        "https://giscareerhub.com/gis-jobs/location/thailand",
+        "https://giscareerhub.com/gis-jobs/location/uganda",
+        "https://giscareerhub.com/gis-jobs/location/algeria",
+        "https://giscareerhub.com/gis-jobs/location/angola",
+        "https://giscareerhub.com/gis-jobs/location/bahamas",
+        "https://giscareerhub.com/gis-jobs/location/belarus",
+        "https://giscareerhub.com/gis-jobs/location/cameroon",
+        "https://giscareerhub.com/gis-jobs/location/central-african-republic",
+        "https://giscareerhub.com/gis-jobs/location/costa-rica",
+        "https://giscareerhub.com/gis-jobs/location/croatia",
+        "https://giscareerhub.com/gis-jobs/location/estonia",
+        "https://giscareerhub.com/gis-jobs/location/ghana",
+        "https://giscareerhub.com/gis-jobs/location/grenada",
+        "https://giscareerhub.com/gis-jobs/location/guatemala",
+        "https://giscareerhub.com/gis-jobs/location/guyana",
+        "https://giscareerhub.com/gis-jobs/location/hong-kong",
+        "https://giscareerhub.com/gis-jobs/location/laos",
+        "https://giscareerhub.com/gis-jobs/location/namibia",
+        "https://giscareerhub.com/gis-jobs/location/nepal",
+        "https://giscareerhub.com/gis-jobs/location/russia",
+        "https://giscareerhub.com/gis-jobs/location/south-sudan",
+        "https://giscareerhub.com/gis-jobs/surveying-mapping",
+        "https://giscareerhub.com/jobs?country=United+States",
+        "https://giscareerhub.com/jobs?country=Canada",
+        "https://giscareerhub.com/jobs?country=Australia",
+        "https://giscareerhub.com/jobs?country=Japan",
+        "https://giscareerhub.com/jobs?country=France",
+        "https://giscareerhub.com/jobs?country=Spain"
+      ]
     },
     {
       "enabled": true,
@@ -1474,9 +1684,15 @@
         "jobs.smartrecruiters.com"
       ],
       "additionalUrls": [
-        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=GIS"
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/ASSYSTEM/api/groups?page=0&search=geomatics"
       ],
-      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
+      "maxRequestsPerSource": 24
     },
     {
       "enabled": true,
@@ -1491,9 +1707,15 @@
         "jobs.smartrecruiters.com"
       ],
       "additionalUrls": [
-        "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=GIS"
+        "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/besix/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/besix/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/besix/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/besix/api/groups?page=0&search=geomatics"
       ],
-      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded."
+      "permissionNote": "Public career metadata and robots access verified 2026-10-28; locations retained per vacancy, quantity surveying excluded. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
+      "maxRequestsPerSource": 24
     },
     {
       "enabled": true,
@@ -1619,17 +1841,23 @@
       "publicBaseUrl": "https://leidos.wd5.myworkdayjobs.com/en-US/External",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "leidos.wd5.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 41 sampled current vacancy records, 7 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 41 sampled current vacancy records, 7 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -1745,17 +1973,23 @@
       "publicBaseUrl": "https://caci.wd1.myworkdayjobs.com/en-US/External",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "caci.wd1.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 40 sampled current vacancy records, 4 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 40 sampled current vacancy records, 4 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -1805,11 +2039,11 @@
       "url": "https://jonesanddemille.bamboohr.com/careers/list",
       "country": "",
       "pollIntervalHours": 2,
-      "maxRequestsPerSource": 4,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "jonesanddemille.bamboohr.com"
       ],
-      "permissionNote": "Public employer careers feed independently checked 2026-10-29T14:10:45.224805Z; TLS and robots respected. Employer discovery: https://deriverge.com/tools/companies-using-ats/ . No daily-vacancy guarantee; locations retained per vacancy, no employer-headquarters country substituted."
+      "permissionNote": "Public employer careers feed independently checked 2026-10-29T14:10:45.224805Z; TLS and robots respected. Employer discovery: https://deriverge.com/tools/companies-using-ats/ . No daily-vacancy guarantee; locations retained per vacancy, no employer-headquarters country substituted. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -1841,17 +2075,23 @@
       "publicBaseUrl": "https://bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "bah.wd1.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 37 sampled current vacancy records, 3 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 37 sampled current vacancy records, 3 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -2103,17 +2343,23 @@
       "publicBaseUrl": "https://demegroup.wd3.myworkdayjobs.com/en-US/careers_external",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "demegroup.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 6 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 6 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -2125,17 +2371,23 @@
       "siteNumber": "CX_1",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "ebcs.fa.em2.oraclecloud.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing oracle parser; 53 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing oracle parser; 53 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -2190,17 +2442,23 @@
       "publicBaseUrl": "https://gdit.wd5.myworkdayjobs.com/en-US/External_Career_Site",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "gdit.wd5.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 26 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 26 sampled current vacancy records, 2 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -2316,17 +2574,23 @@
       "publicBaseUrl": "https://alcoa.wd5.myworkdayjobs.com/en-US/Careers",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "alcoa.wd5.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 2 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 2 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -2472,12 +2736,12 @@
       "url": "https://careers.smartrecruiters.com/ramboll3",
       "country": "",
       "pollIntervalHours": 2,
-      "maxRequestsPerSource": 6,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 31 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography.",
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 31 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
       "locationCountryMap": {
         "aalborg, denmark": "Denmark",
         "aarhus n, denmark": "Denmark",
@@ -2485,7 +2749,15 @@
         "aix-en-provence, france": "France",
         "albany, new york, united states": "United States",
         "alta, norway": "Norway"
-      }
+      },
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/ramboll3/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -2554,17 +2826,23 @@
       "siteNumber": "CX_1005",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 2,
       "allowedHosts": [
         "emit.fa.ca3.oraclecloud.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing oracle parser; 22 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing oracle parser; 22 sampled current vacancy records, 1 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -3467,12 +3745,12 @@
       "url": "https://api.lever.co/v0/postings/sitetracker?mode=json",
       "country": "",
       "pollIntervalHours": 12,
-      "maxRequestsPerSource": 6,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "api.lever.co",
         "jobs.lever.co"
       ],
-      "permissionNote": "Public lever employer board independently verified with production robots/TLS checks on 2026-10-29; 13 current records and 0 unexpired surveying/GIS/LiDAR keyword matches. No daily vacancy guarantee; actual vacancy locations retained. Discovery attribution where applicable: LastRound AI ATS Company Directory (CC BY 4.0), https://github.com/fyrosofttech/lastroundai-hiring-data/tree/main/ats-directory ."
+      "permissionNote": "Public lever employer board independently verified with production robots/TLS checks on 2026-10-29; 13 current records and 0 unexpired surveying/GIS/LiDAR keyword matches. No daily vacancy guarantee; actual vacancy locations retained. Discovery attribution where applicable: LastRound AI ATS Company Directory (CC BY 4.0), https://github.com/fyrosofttech/lastroundai-hiring-data/tree/main/ats-directory . Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -4631,17 +4909,23 @@
       "publicBaseUrl": "https://boliden.wd3.myworkdayjobs.com/en-US/BolidenJobs",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 12,
       "allowedHosts": [
         "boliden.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 2 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 2 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -4808,19 +5092,27 @@
       "url": "https://careers.smartrecruiters.com/artelia",
       "country": "",
       "pollIntervalHours": 12,
-      "maxRequestsPerSource": 6,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 13 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography.",
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 13 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
       "locationCountryMap": {
         "aiton, france": "France",
         "aix-en-provence, france": "France",
         "annecy, france": "France",
         "avignon, france": "France",
         "baie-comeau, canada": "Canada"
-      }
+      },
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/artelia/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -4988,17 +5280,25 @@
       "url": "https://careers.smartrecruiters.com/coffmanengineersinc",
       "country": "",
       "pollIntervalHours": 12,
-      "maxRequestsPerSource": 6,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 19 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography.",
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 19 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
       "locationCountryMap": {
         "atlanta, ga": "Gabon",
         "auburn, ca": "Canada",
         "bozeman, mt": "Malta"
-      }
+      },
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/coffmanengineersinc/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -5127,18 +5427,26 @@
       "url": "https://careers.smartrecruiters.com/kpffconsultingengineers",
       "country": "",
       "pollIntervalHours": 12,
-      "maxRequestsPerSource": 6,
+      "maxRequestsPerSource": 24,
       "allowedHosts": [
         "careers.smartrecruiters.com",
         "jobs.smartrecruiters.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 24 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography.",
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing smartrecruiters_html parser; 24 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source.",
       "locationCountryMap": {
         "birmingham, al": "Albania",
         "boise, id": "Indonesia",
         "chicago, il": "Israel",
         "coeur d'alene, id": "Indonesia"
-      }
+      },
+      "additionalUrls": [
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=0&search=surveyor",
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=1&search=surveyor",
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=2&search=surveyor",
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=0&search=GIS",
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=1&search=GIS",
+        "https://careers.smartrecruiters.com/kpffconsultingengineers/api/groups?page=0&search=geomatics"
+      ]
     },
     {
       "enabled": true,
@@ -6527,17 +6835,23 @@
       "publicBaseUrl": "https://firstquantum.wd3.myworkdayjobs.com/en-US/First_Quantum_Careers",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 12,
       "allowedHosts": [
         "firstquantum.wd3.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 1 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 1 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,
@@ -6813,17 +7127,23 @@
       "publicBaseUrl": "https://gi.wd1.myworkdayjobs.com/en-US/Global_Infrastructure",
       "searchTerms": [
         "surveyor",
+        "survey",
         "GIS",
-        "geospatial"
+        "geospatial",
+        "geomatics",
+        "lidar",
+        "vermess",
+        "topograph",
+        "geodetic"
       ],
-      "maxPagesPerTerm": 1,
-      "maxRequestsPerSource": 9,
+      "maxPagesPerTerm": 4,
+      "maxRequestsPerSource": 24,
       "country": "",
       "pollIntervalHours": 12,
       "allowedHosts": [
         "gi.wd1.myworkdayjobs.com"
       ],
-      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 18 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography."
+      "permissionNote": "Official public employer/agency board independently read with robots and TLS checks on 2026-10-29 using the existing workday parser; 18 sampled current vacancy records, 0 relevant unexpired survey/geospatial records after professional-role review. Source active does not mean daily surveying vacancies. Employer headquarters/directory hiring country never used as job geography. Expanded bounded public search and original publication/location metadata checked 2026-10-29; each board remains one source."
     },
     {
       "enabled": true,

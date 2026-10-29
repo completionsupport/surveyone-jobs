@@ -443,6 +443,7 @@ def jibe(text, url):
 def gis_career_hub(text, url):
     """Read public Next.js card data as JSON, without executing site JavaScript."""
     soup = BeautifulSoup(text, "html.parser")
+    visible = soup.get_text(" ", strip=True).casefold()
     decoder = json.JSONDecoder()
     found, seen = [], set()
     for script in soup.find_all("script"):
@@ -455,29 +456,63 @@ def gis_career_hub(text, url):
             continue
         if not isinstance(packet, list) or len(packet) < 2 or not isinstance(packet[1], str):
             continue
+        candidates = []
+        for marker in re.finditer(r'"initialJobs":\s*\[', packet[1]):
+            try:
+                values, _ = decoder.raw_decode(packet[1][marker.end() - 1:])
+                if isinstance(values, list):
+                    candidates.extend(values)
+            except ValueError:
+                continue
         for marker in re.finditer(r'"job":\s*\{', packet[1]):
             try:
                 job, _ = decoder.raw_decode(packet[1][marker.end() - 1:])
             except ValueError:
                 continue
+            candidates.append(job)
+        for job in candidates:
+            if not isinstance(job, dict):
+                continue
             slug = str(job.get("slug", ""))
-            if (not re.fullmatch(r"[a-z0-9-]+", slug) or slug in seen
+            if (not re.fullmatch(r"[a-z0-9_-]{1,512}", slug) or slug in seen
                     or not job.get("title")):
                 continue
             seen.add(slug)
             country, city = job.get("country", ""), job.get("city", "")
-            found.append(dict(
-                title=job["title"], company=job.get("company_name", ""),
+            region = str(job.get("region") or "")
+            # The provider has known state/country geocoder collisions. Preserve
+            # uncertainty rather than sending a US vacancy to Georgia/San Marino.
+            try:
+                latitude, longitude = float(job.get("latitude")), float(job.get("longitude"))
+            except (ValueError, TypeError):
+                latitude = longitude = None
+            north_america = (isinstance(latitude, (int, float)) and isinstance(longitude, (int, float))
+                             and 15 <= latitude <= 75 and -170 <= longitude <= -50)
+            georgia_conflict = (str(country).strip().casefold() in ("georgia", "ge") and
+                                (region.upper() in ("GA", "UNITED STATES") or
+                                 north_america and region.upper() == "GEORGIA"))
+            san_marino_conflict = (str(country).casefold().replace(" ", "") in ("sanmarino", "sm") and
+                                   (region.upper() in ("CA", "CALIFORNIA") or not region and not city))
+            if georgia_conflict or san_marino_conflict:
+                continue
+            row = dict(
+                title=job["title"], company=job.get("company_name") or "Employer not specified",
                 country=country, city=city,
-                location=job.get("location_name") or ", ".join(str(v) for v in (city, country) if v),
+                location=job.get("location_name") or ", ".join(str(v) for v in (city, region, country) if v),
                 description=job.get("summary", ""),
                 employmentType=job.get("employment_type", ""),
                 postedAt=job.get("posted_at"), expiresAt=job.get("closes_at"),
                 remote=job.get("location_type") == "Remote",
                 # Attribute the aggregator correctly; it owns this public job card.
                 applyUrl=urljoin(url, "/jobs/" + slug),
-            ))
+            )
+            primary = job.get("application_url")
+            if isinstance(primary, str) and primary.startswith("https://"):
+                row["canonicalApplyUrl"] = primary
+            found.append(row)
     if not found:
+        if "too many requests" in visible or "rate limit exceeded" in visible:
+            raise ValueError("Public job board rate limited; retain cached jobs and stop this run")
         empty = False
         for script in soup.select('script[type="application/ld+json"]'):
             try:
@@ -486,9 +521,30 @@ def gis_career_hub(text, url):
                                   and value.get("numberOfItems") == 0)
             except ValueError:
                 continue
-        if not empty:
+        if not empty and not seen:
             raise ValueError("GIS Career Hub public card data not found")
     return found
+
+
+def gis_career_hub_links(text, url, source):
+    """Follow public, advancing UI pages; the site currently caps each query at 20."""
+    if not source.get("resumePagination"):
+        return []
+    soup = BeautifulSoup(text, "html.parser")
+    match = re.search(r'Page\s+(\d+)\s+of\s+([\d,]+)', soup.get_text(" ", strip=True), re.I)
+    if not match:
+        return []
+    current, total = int(match.group(1)), int(match.group(2).replace(',', ''))
+    parsed = urlsplit(url)
+    query = parse_qs(parsed.query)
+    expected = int(query.get("page", ["1"])[0])
+    if current != expected:
+        raise ValueError("Public board pagination did not advance")
+    maximum = max(1, min(20, int(source.get("maxPagesPerQuery", 20))))
+    if current >= min(total, maximum):
+        return []
+    query["page"] = [str(current + 1)]
+    return [urlunsplit((parsed.scheme, parsed.netloc, parsed.path, urlencode(query, doseq=True), ""))]
 
 
 def dar_al_riyadh(text, url):
@@ -782,6 +838,12 @@ def icims(text, source):
 
 
 def parse(text, url, source):
+    if source.get("type") in ("jobtech", "francetravail", "jobbank"):
+        from . import government
+        reader = {"jobtech": government.parse_jobtech,
+                  "francetravail": government.parse_france_travail,
+                  "jobbank": government.parse_canada_jobbank}[source["type"]]
+        return reader(text, url, source)
     if source.get("type") in ("bamboohr", "recruitee", "personio"):
         from . import public_ats
         if source["type"] == "recruitee":
@@ -790,7 +852,7 @@ def parse(text, url, source):
     if source.get("type") == "jibe":
         return jibe(text, url)
     if source.get("type") == "gis_career_hub":
-        return gis_career_hub(text, url), []
+        return gis_career_hub(text, url), gis_career_hub_links(text, url, source)
     if source.get("type") == "dar_al_riyadh":
         return dar_al_riyadh(text, url), []
     if source.get("type") == "workable":

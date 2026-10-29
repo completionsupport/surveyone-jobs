@@ -10,6 +10,7 @@ from .main import ROOT, load, save
 from .model import date, iso
 from .countries import published_job
 from .taxonomy import filter_job
+from .feed_contract import encode_feed, save_feed
 
 # The already-published Android client accepts at most 4 MiB and 10,000 rows.
 MAX_FEED_BYTES = 4 * 1024 * 1024
@@ -41,12 +42,10 @@ def sync(output_root=None):
     result = {**old, "totalJobs": len(active), "jobs": active}
     if changed:
         result["generatedAt"] = iso(now)
-    encoded = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
-    if len(active) > 10000 or len(encoded.encode("utf-8")) > MAX_FEED_BYTES:
-        raise ValueError("Merged feed exceeds the published app limits; nothing was changed")
+    encode_feed(result, max_bytes=MAX_FEED_BYTES)
     state["editorialFeed"] = dict(checkedAt=iso(now), **health)
     if changed:
-        save(feedpath, result)
+        save_feed(feedpath, result, max_bytes=MAX_FEED_BYTES)
     # Never enqueue jobs or change seen/pending/notified/delivery reservations.
     save(statepath, state)
     summary = dict(mode="editorial_only", changed=changed, totalJobs=len(active),

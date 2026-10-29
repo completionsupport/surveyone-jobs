@@ -43,8 +43,6 @@
     "cad surveyor",
     "cad technician",
     "civil survey engineer",
-    "building surveyor",
-    "fire surveyor",
     "survey assistant",
     "survey party chief",
     "survey crew chief",
@@ -63,7 +61,20 @@
     "photogrammetrist",
     "photogrammetry",
     "cartography",
-    "cartographer"
+    "cartographer",
+    "earth observation", "earth-observation", "geodesy", "geodetic engineer",
+    "mapping technician", "insar",
+    "géomètre", "geometre", "topographe", "topógrafo", "topografo", "agrimensor",
+    "landmeter", "landmåler", "lantmätare", "mätningsingenjör", "mätningstekniker",
+    "vermessungsingenieur", "vermessungsingenieurin", "vermessungstechniker", "vermessungstechnikerin",
+    "geodät", "geodeta", "geodet", "геодезист", "топограф", "кадастровый инженер",
+    "cartógrafo", "cartografo", "harita mühendisi", "földmérő", "topograf",
+    "remote sensing", "geographic information system", "geographic information systems",
+    "geographical information system", "geographical information systems", "arcgis", "qgis", "geoai",
+    "spatial data officer", "spatial data engineer", "geoinformatics", "aerial survey", "aerial surveying",
+    "hydrographer", "hydrography", "vermessung", "geomatiker", "geomatikerin",
+    "géomaticien", "geomaticien", "géomaticienne", "geomaticienne", "géomatique", "geomatique",
+    "topographie", "geodesi", "geodesiavdelning", "lantmäteri", "kartingenjör", "kartograf", "geodata"
   ],
   "exclude": [
     "quantity surveyor", "quantity surveying", "quntity surveyor", "quanity surveyor", "cost surveyor",
@@ -72,6 +83,7 @@
     "assisted living surveyor", "nursing home surveyor", "nurse surveyor",
     "housing surveyor", "residential surveyor and valuer", "estates surveyor",
     "stock condition surveyor", "valuation surveyor", "electrical surveyor",
-    "gas installation surveying", "cargo surveyor"
+    "gas installation surveying", "cargo surveyor", "geomatics scholarship", "geospatial scholarship",
+    "building surveyor", "fire surveyor", "asbestos surveyor", "fastighetsvärderare"
   ]
 }

@@ -46,7 +46,8 @@ class Fetcher:
             raise ValueError("Robots disallows access")
         if self.remaining <= 0:
             raise ValueError("Source request budget reached")
-        time.sleep(max(0, 1.5 - (time.monotonic() - self.last)))
+        interval = max(1.5, min(10.0, float(self.source.get("minRequestIntervalSeconds", 1.5))))
+        time.sleep(max(0, interval - (time.monotonic() - self.last)))
         self.remaining -= 1
         self.last = time.monotonic()
         try:
