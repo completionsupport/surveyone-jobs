@@ -17,7 +17,7 @@ class GlobalRelevanceTests(unittest.TestCase):
             'Facility Compliance Consultant I (Nursing Home Surveyor - LPNs, Dietitians, Social Workers)',
             'Housing Surveyor', 'Residential Surveyor and Valuer', 'Senior Estates Surveyor',
             'Stock Condition Surveyor', '5871 - Principal Valuation Surveyor - Lanarkshire Valuation Joint Board',
-            'Electrical Surveyor', 'Gas Installation Surveying Engineer')
+            'Electrical Surveyor', 'Gas Installation Surveying Engineer', 'Junior Cargo Surveyor | Taranto')
         for title in titles:
             with self.subTest(title=title):
                 self.assertFalse(relevant(title, self.keywords))
