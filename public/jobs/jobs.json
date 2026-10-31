@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-31T12:58:56.224131Z",
+  "generatedAt": "2026-10-31T18:52:45.908049Z",
   "expiryDays": 45,
-  "totalJobs": 3257,
+  "totalJobs": 3255,
   "jobs": [
     {
       "id": "d60772b4aafcac88882c3bce904feb33ded2e3f76ccb57f3bb7571946cc826f3",
@@ -67503,42 +67503,6 @@
       "remote": false,
       "countryCode": "US",
       "countryName": "United States"
-    },
-    {
-      "id": "f2ce17b9b6d902193d7693a0da1cb3af4d7bd3c49d615c750399f8dbaea7a74b",
-      "title": "Senior Survey Crew Chief",
-      "company": "Woolpert",
-      "location": "Columbus, OH",
-      "city": "",
-      "country": "US",
-      "category": "Land Surveying",
-      "postedAt": "2026-09-16T14:29:24Z",
-      "discoveredAt": "2026-09-15T15:15:29.550527Z",
-      "expiresAt": null,
-      "source": "Woolpert Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4108573009",
-      "description": "",
-      "employmentType": "",
-      "remote": false,
-      "countryCode": "US",
-      "countryName": "United States"
-    },
-    {
-      "id": "7f9aa522f62825f8e2355a292192e513468e7039844a4b56fbd4aec96d1543be",
-      "title": "Embedded Systems & LIDAR Software Engineer",
-      "company": "Woolpert",
-      "location": "Kiln, MS",
-      "city": "",
-      "country": "",
-      "category": "UAV / LiDAR",
-      "postedAt": "2026-09-16T13:34:00Z",
-      "discoveredAt": "2026-09-15T15:15:29.550527Z",
-      "expiresAt": null,
-      "source": "Woolpert Careers",
-      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/woolpert/jobs",
-      "applyUrl": "https://job-boards.greenhouse.io/woolpert/jobs/4370881009",
-      "remote": false
     },
     {
       "id": "ec01600b1f5bcae6e57e60da067a5790a850bab83fb87ea63a6efc5b198c684d",
