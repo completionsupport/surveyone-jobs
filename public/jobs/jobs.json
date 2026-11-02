@@ -1,9 +1,29 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T01:48:49.607874Z",
+  "generatedAt": "2026-11-02T09:51:47.940929Z",
   "expiryDays": 45,
-  "totalJobs": 3208,
+  "totalJobs": 3209,
   "jobs": [
+    {
+      "id": "91ac7d6034b66deb9fceca1918b075c5418e201645ad81c53d8872a86285aca6",
+      "title": "Staff Geospatial Analyst",
+      "company": "Vantor / Maxar",
+      "location": "Orlando, FL",
+      "city": "Orlando, FL",
+      "country": "US",
+      "category": "GIS / Geospatial",
+      "postedAt": null,
+      "discoveredAt": "2026-11-02T09:36:45.854641Z",
+      "expiresAt": null,
+      "source": "Vantor / Maxar Careers",
+      "sourceUrl": "https://maxar.wd1.myworkdayjobs.com/wday/cxs/maxar/Vantor/jobs?search=surveyor&offset=0",
+      "applyUrl": "https://maxar.wd1.myworkdayjobs.com/en-US/Vantor/job/Orlando-FL/Staff-Geospatial-Analyst_R24770",
+      "description": "",
+      "employmentType": "",
+      "remote": false,
+      "countryCode": "US",
+      "countryName": "United States"
+    },
     {
       "id": "b31f8e8014491c82e4c7d385cd9df649a3f7bd1f1cbc8ffc4f363500d507972c",
       "title": "Land Surveyor",
