@@ -1,9 +1,29 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T07:11:55.289869Z",
+  "generatedAt": "2026-11-06T16:14:01.990111Z",
   "expiryDays": 45,
-  "totalJobs": 3180,
+  "totalJobs": 3181,
   "jobs": [
+    {
+      "id": "ecc08464efce82436dd8408c2c8eed879d8528be00afe7bdbbeceed72a7c74e2",
+      "title": "IT Enterprise GIS Technical Specialist",
+      "company": "Enbridge Inc.",
+      "location": "North York ON CAN",
+      "city": "",
+      "country": "CA",
+      "category": "GIS / Geospatial",
+      "postedAt": null,
+      "discoveredAt": "2026-11-06T15:58:59.896311Z",
+      "expiresAt": null,
+      "source": "Enbridge Inc. Global Careers",
+      "sourceUrl": "https://enbridge.wd3.myworkdayjobs.com/wday/cxs/enbridge/enbridge_careers/jobs?search=surveyor&offset=0",
+      "applyUrl": "https://enbridge.wd3.myworkdayjobs.com/en-US/enbridge_careers/job/North-York-ON-CAN/Specialist-I--IT-Enterprise-GIS-Technical-Specialist_72911-1",
+      "description": "",
+      "employmentType": "",
+      "remote": false,
+      "countryCode": "CA",
+      "countryName": "Canada"
+    },
     {
       "id": "0cbb4f9466cfc461ec7ba450371516f9ac5103ccd65eb87eb8286e58d945319b",
       "title": "Geospatial Intelligence Imagery (35G) Analyst",
