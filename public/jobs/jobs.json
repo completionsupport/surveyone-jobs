@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T09:08:25.045743Z",
+  "generatedAt": "2026-11-07T16:45:32.282316Z",
   "expiryDays": 45,
   "totalJobs": 3200,
   "jobs": [
@@ -123,6 +123,26 @@
       "remote": false,
       "countryCode": "FR",
       "countryName": "France"
+    },
+    {
+      "id": "56ed08380544855e483634cb2031ee3efaa8bff863db0dad6921f34590872391",
+      "title": "GIS ingenjör",
+      "company": "Öresundskraft AB",
+      "location": "Helsingborg, Sweden",
+      "city": "Helsingborg",
+      "country": "SE",
+      "category": "GIS / Geospatial",
+      "postedAt": "2026-11-07T00:00:00Z",
+      "discoveredAt": "2026-11-07T16:30:30.848020Z",
+      "expiresAt": "2026-11-29T00:00:00Z",
+      "source": "Arbetsförmedlingen JobTech Survey and GIS Jobs",
+      "sourceUrl": "https://jobsearch.api.jobtechdev.se/search?q=lantm%C3%A4tare&limit=100&offset=0",
+      "applyUrl": "https://arbetsformedlingen.se/platsbanken/annonser/31699979",
+      "description": "Vi är cirka 450 engagerade medarbetare som tillsammans med våra 125 000 kunder utvecklar och levererar energilösningar i nordvästra Skåne. Genom el, fjärrvärme, biogas, fjärrkyla, laddningsinfrastruktur och energitjänster bidrar vi till ett robust och långsiktigt energisystem för regionen.\n\nVi tror på kraften i samarbete och arbetar nära kunder, kommuner, företag och andra aktörer för att möta dagens och morgondagens energibehov.\n\nFör oss är det lika viktigt att våra kunder får en enkel och trygg energivardag som att våra medarbetare trivs, mår bra och har goda förutsättningar att göra ett bra jobb. Moderna kontorslokaler, träning på arbetstid, friskvårdsbidrag och 17 timmars volontärarbete varje år är några av våra förmåner. Kom och var med oss! #tillsammansför17\n\nBesök oss på Jobba hos Öresundskraft för mer information om våra förmåner och hur det är att arbeta hos oss.\n\nFör oss är mångfald viktigt på riktigt. Det som gör oss olika är också det som utvecklar oss mest. Olika perspektiv, erfarenheter och personligheter bidrar till vår utveckling och framgång. Var dig själv och bidra på ditt alldeles egna sätt.\n\nVi har valt att ta bort det personliga brevet och ersatt det med urvalsfrågor som är relevanta för tjänsten. Svaren på urvalsfrågorna och ditt CV skrivet på svenska, ligger till grund för bedömningen om du går vidare i processen.\n\nSom anställd kan du komma att bli krigsplacerad på Öresundskraft utifrån totalförsvarets behov.\n\nEftersom vi bedriver samhällsviktig verksamhet kan kontroller komma att genomföras före anställning.\n\nVälkommen till Öresundskraft!\r\n\r\n1 plats(er). \r\n\r\n\nVill du vara med och bygga framtidens digitala energinät?\nSom GIS-ingenjör hos oss blir du en nyckelspelare i arbetet med att utveckla och tillgängliggöra geografisk information som stöd för hela verksamheten. Du arbetar med våra kartplattformar, geodata och digitala informationsflöden för att skapa största möjliga nytta för planering, projektering, dokumentation, drift och underhåll.\nRollen är central i vår utveckling mot ett mer datadrivet nätbolag där högkvalitativ information blir allt viktigare för att möta elektrifieringen av samhället, ökade krav på kapacitet, säkerhet och de krav som ställs på framtidens energibolag.\nTjänsten är placerad på enheten Dokumentation inom avdelningen Nätplanering i vårt affärsområde Distribution. Affärsområdet ansvarar för utveckling, drift och underhåll av våra distributionsnät för el, fjärrvärme, gas och fjärrkyla.\nAvdelningen Nätplanering ansvarar för framtida investeringsbehov i näten, kapacitet, investeringsportfölj och teknisk anläggningsdokumentation. Tillsammans bidrar vi till att affärsområde Distribution är robust, både idag och framåt.\nOm rollen\nDu kommer att ha en kombination av förvaltnings-, utvecklings- och verksamhetsnära arbetsuppgifter och arbeta tätt tillsammans med kollegor inom till exempel dokumentation, nätplanering, projekt, drift och IT. Du kommer att arbeta mycket nära verksamhetsutvecklare inom exempelvis GIS, NIS och nät- och dataanalys.\nTjänsten erbjuder stor möjlighet att påverka både teknikval, arbetssätt och framtida utveckling inom GIS-området.\nDin profil\nDu vill vara med och forma ditt arbete och utveckla system och arbetssätt. Du skapar goda relationer, samarbetar gärna och trivs med variation, service och många kontaktytor. Du lyssnar in andras behov och förklarar teknisk information på ett tydligt sätt, anpassat till mottagaren. Du tar ansvar för att självständigt planera, driva och följa upp ditt arbete och prioriterar mellan arbetsuppgifter utifrån verksamhetens behov. När förutsättningarna förändras anpassar du ditt arbetssätt med bibehållet fokus på kvalitet. Du tar initiativ till förbättringar och är nyfiken på hur AI kan utveckla arbetet med GIS, geodata och informationshantering. Du vill aktivt utforska möjligheterna att förenkla återkommande arbetsuppgifter, förbättra datakvaliteten och utveckla smartare informationsflöden med stöd av AI och automatisering. Du testar ",
+      "employmentType": "Vanlig anställning",
+      "remote": false,
+      "countryCode": "SE",
+      "countryName": "Sweden"
     },
     {
       "id": "ecb86d884aaf146ad21e7f204927911142b4fae818e2995882946ef009cac38a",
@@ -13811,7 +13831,7 @@
       "source": "France Travail Survey and Geospatial Jobs",
       "sourceUrl": "https://candidat.francetravail.fr/offres/recherche?motsCles=geometre&offresPartenaires=false&range=0-19&tri=1",
       "applyUrl": "https://candidat.francetravail.fr/offres/recherche/detail/214WZXT",
-      "description": "Employer: AURILLAC AGGLOMERATION\n; Workplace: 15 - AURILLAC; Contract: CDD\n - Temps plein; Source publication label: Publié il y a 30 jours Soyez parmi les 1ers à postuler; Read the complete official advert and application instructions using the source link.",
+      "description": "Employer: AURILLAC AGGLOMERATION\n; Workplace: 15 - AURILLAC; Contract: CDD\n - Temps plein; Source publication label: Publié il y a plus de 30 jours Soyez parmi les 1ers à postuler; Read the complete official advert and application instructions using the source link.",
       "employmentType": "CDD\n - Temps plein",
       "remote": false,
       "countryCode": "FR",
@@ -50187,26 +50207,6 @@
       "remote": false,
       "countryCode": "SE",
       "countryName": "Sweden"
-    },
-    {
-      "id": "8fd965b8ac9e21687822f5df1e293b3b6d89ebdd5cc4818c716a9660f7acb1fd",
-      "title": "land surveyor",
-      "company": "Lessard L'Hérault Blanchard arpenteurs-géomètres",
-      "location": "Sherbrooke (QC)",
-      "city": "Sherbrooke",
-      "country": "CA",
-      "category": "Land Surveying",
-      "postedAt": "2026-10-16T00:00:00Z",
-      "discoveredAt": "2026-10-29T17:57:24.976708Z",
-      "expiresAt": null,
-      "source": "Canada Job Bank Verified Survey and Geomatics Jobs",
-      "sourceUrl": "https://www.jobbank.gc.ca/jobsearch/feed/jobSearchRSSfeed?fn21=21203&fsrc=16&sort=D&rows=100&fage=30",
-      "applyUrl": "https://www.jobbank.gc.ca/jobsearch/jobposting/50512866",
-      "description": "Employer: Lessard L'Hérault Blanchard arpenteurs-géomètres; Workplace: Sherbrooke (QC); Salary\n\t\t\t\t\t\t$75,000.00 to $90,000.00 annually (to be negotiated)",
-      "employmentType": "",
-      "remote": false,
-      "countryCode": "CA",
-      "countryName": "Canada"
     },
     {
       "id": "b337539915e6627f8df18b6a16f5ea3a689ce0159b38732aabb352d6fe86af73",
