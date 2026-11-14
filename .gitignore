@@ -5,3 +5,8 @@ __pycache__/
 .env
 service-account*.json
 jobs/notification.json
+equipment/node_modules/
+equipment/snapshot.json
+equipment/plan.json
+equipment/last-run.json
+equipment/*.log

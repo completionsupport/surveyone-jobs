@@ -1,0 +1,8 @@
+{
+  "name": "surveyone-equipment-collector",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": { "test": "node --test test/*.test.cjs" },
+  "dependencies": { "firebase-admin": "13.5.0" }
+}

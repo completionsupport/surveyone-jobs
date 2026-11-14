@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "source_0e79dabd804b15ae2d9ea1dd59f9bcc0",
+      "name": "Mesure Pro",
+      "countryCode": "FR",
+      "city": "Torcy",
+      "seedUrls": [
+        "https://www.mesure-professionnelle.fr/",
+        "https://www.mesure-professionnelle.fr/niveau-laser/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_14c0848d4c188725ded776421ae1a47f",
+      "name": "C.R. Kennedy Australia",
+      "countryCode": "AU",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://survey.crkennedy.com.au/",
+        "https://survey.crkennedy.com.au/products/lg945232/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_20461df7af24b746fec94c55409c34e9",
+      "name": "Topolaser",
+      "countryCode": "BE",
+      "city": "Villers-le-Bouillet",
+      "seedUrls": [
+        "https://topolaser.be/",
+        "https://topolaser.be/produits/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_25a28d19d51a456ca9e3ceb320a47c12",
+      "name": "Location for Surveying Technology",
+      "countryCode": "EG",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://location4surveying.com/",
+        "https://location4surveying.com/product/%d8%a8%d9%88%d9%84-%d8%a8%d8%a7%d8%b1-%d9%83%d8%a7%d8%b1%d8%a8%d9%88%d9%86-%d9%81%d8%a7%d9%8a%d8%a8%d8%b1-%d8%aa%d9%84%d8%b3%d9%83%d9%88%d8%a8-%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-2-5-%d9%85%d8%aa/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_268a62d2fb4c42e259102bf008c8823d",
+      "name": "Aemme Surveying",
+      "countryCode": "IT",
+      "city": "Turin",
+      "seedUrls": [
+        "https://www.aemmesurveying.com/",
+        "https://www.aemmesurveying.com/product/theis-ricevitore-laser-te-6/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_297b7cb6535bc02a001ea0c8483e76b9",
+      "name": "PT Alat Ukur Indosurta",
+      "countryCode": "ID",
+      "city": "Tangerang Selatan",
+      "seedUrls": [
+        "https://indosurta.co.id/",
+        "https://indosurta.co.id/jual-gps-geodetik-gnss-rtk-hi-target-v600l/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_2b4fcd901a23106f2dd318974dcde2f7",
+      "name": "Smith Surveying Equipment",
+      "countryCode": "GB",
+      "city": "Hull",
+      "seedUrls": [
+        "https://smithsurveyingequipment.co.uk/",
+        "https://smithsurveyingequipment.co.uk/shop/surveying-equipment/levels/automatic-levels/geomax-zal232-automatic-level/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_2cb6a62f2cc64fcd8c4c0b80c159d27c",
+      "name": "GeoArc Store",
+      "countryCode": "AE",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://geoarc-store.com/",
+        "https://geoarc-store.com/product/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_3586f8f6799a1b851ce554760902ebc8",
+      "name": "US Survey Supply",
+      "countryCode": "US",
+      "city": "Bandon",
+      "seedUrls": [
+        "https://ussurveysupply.com/",
+        "https://ussurveysupply.com/shop/gnss-receivers/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_35bb029eb5cfd5bf1b444e834cffbc41",
+      "name": "Bench Mark Canada",
+      "countryCode": "CA",
+      "city": "Calgary",
+      "seedUrls": [
+        "https://bench-mark.ca/",
+        "https://bench-mark.ca/product/geomax-zoom-95-3-robotic-total-station/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_43ed3508d68b158376536c8505ff9fe2",
+      "name": "Geotech Mercantile Corporation",
+      "countryCode": "PH",
+      "city": "Quezon City",
+      "seedUrls": [
+        "https://geotech.com.ph/",
+        "https://geotech.com.ph/product-catalog/lti-trupulse-360r/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_559f50c37aeeabb06265ce1c17fa7b30",
+      "name": "Skipper Technologies India",
+      "countryCode": "IN",
+      "city": "Noida",
+      "seedUrls": [
+        "https://www.skippertech.com/",
+        "https://www.skippertech.com/gm-52-2/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_5b1040f35309fb45576b0f0972cd7542",
+      "name": "Rasmark Surveying Equipment",
+      "countryCode": "NG",
+      "city": "Lagos",
+      "seedUrls": [
+        "https://surveyingproduct.com/shop/",
+        "https://surveyingproduct.com/product/s590-gnss-receiver/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_61ccd8e8724a967c4b68df911faaaea4",
+      "name": "Recycle Hunter Official Shop",
+      "countryCode": "JP",
+      "city": "Kyoto",
+      "seedUrls": [
+        "https://shop.recyclehunter.com/",
+        "https://shop.recyclehunter.com/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_6507a9baa76be6b3a72a601eb7a1d72b",
+      "name": "Intrac Geosystems",
+      "countryCode": "ES",
+      "city": "Bilbao",
+      "seedUrls": [
+        "https://www.intracgeosystems.com/shop/category/estaciones-totales-24",
+        "https://www.intracgeosystems.com/shop/estaciones-totales-24/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_6ac2ee45e33980b3b131dd0955614357",
+      "name": "Geotronics Dystrybucja",
+      "countryCode": "PL",
+      "city": "Krakow",
+      "seedUrls": [
+        "https://geotronics.com.pl/",
+        "https://geotronics.com.pl/produkty-i-rozwiazania/kontrolery/trimble-tsc510/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_77682ba17b192cf03196b1b3f56b45b9",
+      "name": "B&G Maschinenprofi",
+      "countryCode": "DE",
+      "city": "Reken",
+      "seedUrls": [
+        "https://www.maschinenprofi.de/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_7b828ef8a756138cad540a8d0371cadd",
+      "name": "CPE Tecnologia",
+      "countryCode": "BR",
+      "city": "Belo Horizonte",
+      "seedUrls": [
+        "https://cpetecnologia.com.br/index.jsp",
+        "https://cpetecnologia.com.br/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_7c8aefa39110444fa7d21a5ed4ee6334",
+      "name": "Bernasos",
+      "countryCode": "EG",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://bernasos.com/ar/",
+        "https://bernasos.com/en/"
+      ],
+      "discoveryEnabled": false
+    },
+    {
+      "id": "source_907e39f7100d015527b47ad003c11a7e",
+      "name": "Level NZ",
+      "countryCode": "NZ",
+      "city": "Rangiora",
+      "seedUrls": [
+        "https://levelnz.co.nz/",
+        "https://levelnz.co.nz/product/emlid-rs4-pro-gnss-receiver/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_93611add2a6cceeb61ce2acf7382af0c",
+      "name": "BTPMAT",
+      "countryCode": "FR",
+      "city": "Saint-Priest",
+      "seedUrls": [
+        "https://www.btpmat.fr/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_a32b1af1a26cd6b15b0bdfbf2017645c",
+      "name": "GeoTeha",
+      "countryCode": "HR",
+      "city": "Zagreb",
+      "seedUrls": [
+        "https://geoteha.hr/",
+        "https://geoteha.hr/proizvodi/cijena/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_aab502ce32d0fd0898f5f72e930c12a5",
+      "name": "Geoscope Instruments Kenya",
+      "countryCode": "KE",
+      "city": "Nairobi",
+      "seedUrls": [
+        "https://geoscopeinstruments.com/shop/",
+        "https://geoscopeinstruments.com/product/gr-500/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_b1f6500d585a0e56aaaab63f21f5258f",
+      "name": "Shahzad Brothers",
+      "countryCode": "PK",
+      "city": "Rawalpindi",
+      "seedUrls": [
+        "https://www.shahzadbrothers.com.pk/",
+        "https://www.shahzadbrothers.com.pk/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_b74a2120e0fcdebbfac5b1cb10ce5e39",
+      "name": "Geometius",
+      "countryCode": "NL",
+      "city": "Almere",
+      "seedUrls": [
+        "https://www.geometius.nl/",
+        "https://www.geometius.nl/product/statief-trimble-3d-laserscanner-x-serie/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_e36f4c9ee9104c0ca709e6902a2f1899",
+      "name": "Surveying Experts",
+      "countryCode": "SA",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://store.surveyingexperts-sa.com/",
+        "https://store.surveyingexperts-sa.com/collections/accessories/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_e9ddb73cd9edf87efbbc28fa53af8233",
+      "name": "Geocom Chile",
+      "countryCode": "CL",
+      "city": "Providencia, Santiago",
+      "seedUrls": [
+        "https://www.geocom.cl/collections/todos-los-productos",
+        "https://www.geocom.cl/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_ec2bc3706f44407d301cc6a37ceaa8b3",
+      "name": "GeoglobexHub",
+      "countryCode": "IT",
+      "city": "Villasanta",
+      "seedUrls": [
+        "https://geoglobexhub.it/",
+        "https://geoglobexhub.it/products/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_ecb8d5c2c86428d0e8dcdaf52993393e",
+      "name": "Allen Associates",
+      "countryCode": "ZA",
+      "city": "Port Elizabeth",
+      "seedUrls": [
+        "https://www.allenassociates.co.za/",
+        "https://www.allenassociates.co.za/products/product-viewer/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_f15bdf9e67625dbae1f6820c5eb3e79a",
+      "name": "Top Systems Sdn. Bhd.",
+      "countryCode": "MY",
+      "city": "Kuala Lumpur",
+      "seedUrls": [
+        "https://topsystems.com.my/",
+        "https://topsystems.com.my/product/surveying-equipment/se-gnss/se-cors/leica-ar25-gnss-choke-ring-antenna/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_f38b81c4f76a496c9a1bd5dd81cb9079",
+      "name": "Falcon Suppliers UAE",
+      "countryCode": "AE",
+      "city": "غير محددة / Not specified",
+      "seedUrls": [
+        "https://www.falconsuppliers.com/",
+        "https://www.falconsuppliers.com/product/leica-geb222-battery/"
+      ],
+      "discoveryEnabled": true
+    },
+    {
+      "id": "source_f462332b5bf3ecfe6772a348c260b71d",
+      "name": "Tah-Li Engineering",
+      "countryCode": "SG",
+      "city": "Singapore",
+      "seedUrls": [
+        "https://www.tah-li.com/",
+        "https://www.tah-li.com/index.php/products/total-stations/"
+      ],
+      "discoveryEnabled": true
+    }
+  ]
+}
