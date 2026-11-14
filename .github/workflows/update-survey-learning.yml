@@ -1,0 +1,53 @@
+name: Update Survey Learning
+on:
+  push:
+    branches: [main]
+    paths: ['learning/**', '.github/workflows/update-survey-learning.yml']
+  schedule:
+    - cron: '43 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+# Same Pages publisher lock as jobs: neither run can publish an older parallel checkout.
+concurrency:
+  group: survey-jobs
+  cancel-in-progress: false
+jobs:
+  learning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s learning/tests -v
+      - name: Discover and verify learning resources
+        run: python -m learning.collector
+      - name: Save catalogue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/learning/catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh learning catalogue [skip ci]"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+      - name: Save collection diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-diagnostics
+          path: learning/last-run.json
+          if-no-files-found: ignore
+          retention-days: 14

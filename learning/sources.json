@@ -1,0 +1,235 @@
+{
+  "channels": [
+    {
+      "name": "اتعلم مساحه",
+      "channelId": "UCdUT9J7i5C87morLiUBn4UA",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": [
+        "software",
+        "surveying"
+      ]
+    },
+    {
+      "name": "active abd alazim",
+      "channelId": "UCxsH1AEtsqq9ST0HORbtHDA",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": [
+        "software",
+        "surveying"
+      ]
+    },
+    {
+      "name": "EngoPedia -Bassim Shama",
+      "channelId": "UCh8kbFN7lEjRjzZ9vSKwsUQ",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": [
+        "software",
+        "surveying"
+      ]
+    },
+    {
+      "name": "Leica Geosystems AG",
+      "channelId": "UCIZ03tYu5Ddz3T1S0U_lWFg",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": [
+        "field",
+        "surveying"
+      ]
+    },
+    {
+      "name": "Autodesk Civil 3D Classes",
+      "channelId": "UC18T4N1xd18czNTyZssU6PA",
+      "language": "en",
+      "topic": "SOFTWARE",
+      "tags": [
+        "software",
+        "surveying"
+      ]
+    },
+    {
+      "name": "Vector RTK LTD",
+      "channelId": "UCB_j3O0mVyA_psndVIWpGPQ",
+      "language": "en",
+      "topic": "GNSS",
+      "tags": [
+        "gnss",
+        "surveying"
+      ]
+    },
+    {
+      "name": "دكتور المساحة | Survey Doctor",
+      "channelId": "UCpYjmkvZVGRZGOUhfqKKgsg",
+      "language": "ar",
+      "topic": "FIELD",
+      "tags": [
+        "field",
+        "surveying"
+      ]
+    },
+    {
+      "channelId": "UCltdZC9KXvgEf06YDmJAkaA",
+      "name": "Trimble Access",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UCCdeViOEuUGfKiQ0KMdyM4Q",
+      "name": "ComNav Technology Ltd.",
+      "language": "en",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCKGuTAsfLeMN71gHbdk3ONQ",
+      "name": "SOUTH Surveying & Mapping",
+      "language": "en",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCLPIvk_Oj2Cs0m_APA4FUyQ",
+      "name": "Emlid",
+      "language": "en",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCXv6I6n6WbOX7Kk_QnqxR6g",
+      "name": "Hi-Target Global",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UCpTi5sLZXyYVnQEyqM-2Kig",
+      "name": "SourceCAD",
+      "language": "en",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UC-pZJji5MeX122W2WiOER7A",
+      "name": "Surveying With Robert",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UC5eVO8WbTV3FU3-AbtRnl9g",
+      "name": "Rami Tamimi",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UCbtQr5PwnP28jLTV4rmo-uA",
+      "name": "Matt Forrest",
+      "language": "en",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UCfvxGTThEC75szdrIT_55Mw",
+      "name": "سؤال في المساحه",
+      "language": "ar",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UCsrIiPEbukgHPkoa5qFH0LQ",
+      "name": "Geomatics Online",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UCEku__mH3cey6LHIOc8UN7A",
+      "name": "Survey Code",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UCIybEEsVB_7vAICN9o5SLUQ",
+      "name": "Hisham Fawzy",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UC4uXHgPmztRFgJ_DVEDaH0w",
+      "name": "SinoGNSS بالعربى",
+      "language": "ar",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCugDuUg7aky_kw_o7h07QPQ",
+      "name": "Geo-Surveying",
+      "language": "ar",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCYR-wazFg_1T2icS4z3mcEw",
+      "name": "Amr Safwat-Survey Egypt",
+      "language": "ar",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UC1ZvEvgl3sklClmxYGiYRfg",
+      "name": "جمعية مهندسي المساحة الأردنية",
+      "language": "ar",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UCRyedeMU-ghKMYlvqq4jdbw",
+      "name": "CHCNAV | CHC Navigation",
+      "language": "en",
+      "topic": "GNSS",
+      "tags": []
+    },
+    {
+      "channelId": "UCI_vQaOgbSCr4aTt3uD6tnA",
+      "name": "Topcon Positioning Systems",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UC7OqSoQbbr3jqkVUKdgnRIg",
+      "name": "StonexPositioning",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UC-yIeUHe_QOgXWDaudvEcZQ",
+      "name": "GeoMax Positioning",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    },
+    {
+      "channelId": "UCGFwqcxRltRvT0kmt48XXzw",
+      "name": "Golden Software",
+      "language": "en",
+      "topic": "SOFTWARE",
+      "tags": []
+    },
+    {
+      "channelId": "UCNwyTOOKM9cWlaukS0NBi8g",
+      "name": "Aptella",
+      "language": "en",
+      "topic": "FIELD",
+      "tags": []
+    }
+  ]
+}

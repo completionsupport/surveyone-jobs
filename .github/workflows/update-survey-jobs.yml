@@ -32,6 +32,9 @@ jobs:
       EDITORIAL_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.editorial_only }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Refresh after the shared Pages lock, preserving the latest learning catalogue.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
