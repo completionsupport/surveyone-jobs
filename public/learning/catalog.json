@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAtMs": 1794667573551,
+  "generatedAtMs": 1794667892266,
   "refreshHours": 6,
   "items": [
     {
@@ -22,7 +22,7 @@
       ],
       "originalTitle": "الدرس الأول | النقاط والعمليات عليها | دورة شرح CIVIL3D",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "vxF1_slOA3Y",
@@ -45,7 +45,7 @@
       ],
       "originalTitle": "المستوي الاساسي| 02-Working with Attributes QGIS 3.16 (in Arabic)   الحلقة التانية من شرح برنامج ال",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "GKlmbVfSaXs",
@@ -68,7 +68,7 @@
       ],
       "originalTitle": "شرح مبسط جدا حساب مساحة قطعة أرض بجهاز الميزان بكل سهولة",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "f1PEMAjGLIc",
@@ -90,7 +90,7 @@
       ],
       "originalTitle": "شرح برنامج CIVIL 3D 2013  الدرس الأول إستيراد النقاط و إنشاء الأسطح و التعديل عليهم",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "wilN_D5cm18",
@@ -113,7 +113,7 @@
       ],
       "originalTitle": "Setup - Overview",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "5T9fajKJ-Sk",
@@ -136,7 +136,7 @@
       ],
       "originalTitle": "Setup - Set Orientation",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "a2AtViBLgCA",
@@ -160,7 +160,7 @@
       ],
       "originalTitle": "How to Set Up a GNSS RTK Rover & Controller – Pole Height, IMU, NTRIP & Fix Checks | Vector RTK",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "uvByiqFcko0",
@@ -183,7 +183,7 @@
       ],
       "originalTitle": "Static GNSS for Control, Post-Processed in Compass Solution – ComNav Jupiter | Vector RTK",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "_m1XGxuuPrQ",
@@ -206,7 +206,7 @@
       ],
       "originalTitle": "Closed traverse: how to check your misclosure | Angular, linear & Bowditch rule | Vector RTK",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "YM3O6TZinoc",
@@ -228,7 +228,7 @@
       ],
       "originalTitle": "Total Station Resection Step by Step: Set Up from Known Points | Vector RTK",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "dbUtgYqytWc",
@@ -251,7 +251,7 @@
       ],
       "originalTitle": "Civil 3D - Points, Point Group, Surface creation",
       "verifiedOn": "2026-11-14",
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "qgis-training",
@@ -311,7 +311,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "iU_rBsyIhNo",
@@ -332,7 +332,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "yZIAhldQEVk",
@@ -353,7 +353,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "aKQYcZyLWDo",
@@ -374,7 +374,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "vVE5gvmW8Rk",
@@ -395,7 +395,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "q0CMkYkB0a0",
@@ -415,7 +415,7 @@
         "سيفيل",
         "سيفل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "aLJHYI4gxoQ",
@@ -435,7 +435,7 @@
         "سيفيل",
         "سيفل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "WxeOSYGa1so",
@@ -455,7 +455,7 @@
         "سيفيل",
         "سيفل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "hBCYWw3Gr8w",
@@ -479,7 +479,7 @@
         "سيفيل",
         "سيفل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "eLwAZkq22j4",
@@ -499,7 +499,7 @@
         "سيفيل",
         "سيفل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "oN4XWOPKBxA",
@@ -518,7 +518,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "4yP38fc1TIA",
@@ -537,7 +537,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "gEhAJKGUMbU",
@@ -556,7 +556,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "_sNw9a4eRp4",
@@ -575,7 +575,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "74BhbbTHHEM",
@@ -597,7 +597,7 @@
         "Trimble",
         "ترمبل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "yo4nBMUubzw",
@@ -616,7 +616,7 @@
         "Trimble",
         "ترمبل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Z8vmdkJJkxU",
@@ -641,7 +641,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Dm09rYDifGk",
@@ -661,7 +661,7 @@
         "Trimble Business Center",
         "معالجة الرصد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "3NdeHsOIn64",
@@ -683,7 +683,7 @@
         "Sokkia",
         "سوكيا"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "B6hZqcG7h4o",
@@ -703,7 +703,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "LhLYJEfyXCg",
@@ -723,7 +723,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "kOuFHEkmOr8",
@@ -745,7 +745,7 @@
         "Sokkia",
         "سوكيا"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "3o6mWqEp_BA",
@@ -765,7 +765,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "QdTsqA7zY9o",
@@ -787,7 +787,7 @@
         "Topcon",
         "توبكون"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "eKNxT7WoDnQ",
@@ -809,7 +809,7 @@
         "Topcon",
         "توبكون"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "PlIw7O99gLo",
@@ -828,7 +828,7 @@
         "Topcon",
         "توبكون"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "W7p0FtYD4ko",
@@ -847,7 +847,7 @@
         "Topcon",
         "توبكون"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "MdpoChW2OjQ",
@@ -869,7 +869,7 @@
         "Topcon",
         "توبكون"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "V97h9CqzY4g",
@@ -889,7 +889,7 @@
         "لايكا",
         "ليكا"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "32RQhVfAMWU",
@@ -912,7 +912,7 @@
         "لايكا",
         "ليكا"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "JQx8DRhtg1g",
@@ -935,7 +935,7 @@
         "لايكا",
         "ليكا"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "sTwn9Y4SO2I",
@@ -955,7 +955,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "9JVPTwggb2Y",
@@ -975,7 +975,7 @@
         "LandStar",
         "لاند ستار"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "_nfvd_d73c4",
@@ -998,7 +998,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "FQ9mHLxp5ww",
@@ -1022,7 +1022,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Bk1MKnrPsmc",
@@ -1043,7 +1043,7 @@
         "Survey Master",
         "كومناف"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "2MNEBrntFf8",
@@ -1063,7 +1063,7 @@
         "ميزانية",
         "الميزان"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "9r-ApWsyDkU",
@@ -1083,7 +1083,7 @@
         "ميزانية",
         "الميزان"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "9Lp9I4U1hYQ",
@@ -1103,7 +1103,7 @@
         "ميزانية",
         "الميزان"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "pulU-xx--U4",
@@ -1123,7 +1123,7 @@
         "ميزانية",
         "الميزان"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "CwSek4TEc8k",
@@ -1143,7 +1143,7 @@
         "ميزانية",
         "الميزان"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "QHo0lvP8024",
@@ -1164,7 +1164,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "6cc2Hx4ljW8",
@@ -1185,7 +1185,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "XpyeE_mQGts",
@@ -1206,7 +1206,7 @@
         "كاد",
         "اوتوكاد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Z_RJHcmA7qE",
@@ -1228,7 +1228,7 @@
         "Trimble",
         "ترمبل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "uPMpzZWyNmQ",
@@ -1250,7 +1250,7 @@
         "Trimble",
         "ترمبل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "-Q7cIhHKGMs",
@@ -1270,7 +1270,7 @@
         "Trimble Business Center",
         "معالجة الرصد"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "NwL_Jjb2hMI",
@@ -1292,7 +1292,7 @@
         "Trimble",
         "ترمبل"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "idQvOMWNMGI",
@@ -1311,7 +1311,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "SovdBaus7pM",
@@ -1330,7 +1330,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "vC1MP2VJ7CM",
@@ -1349,7 +1349,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "xnS6b7WlWwQ",
@@ -1368,7 +1368,7 @@
         "GIS",
         "نظم المعلومات الجغرافية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "K8SEfTzpskg",
@@ -1388,7 +1388,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "VOYQp7AKBd8",
@@ -1408,7 +1408,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "p7L-3E-OM-c",
@@ -1428,7 +1428,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "EUVoXCHFp2c",
@@ -1448,7 +1448,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "MLRFHn9tQZM",
@@ -1468,7 +1468,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "vggxsDdCfhY",
@@ -1492,7 +1492,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "YdqQrMRb-LM",
@@ -1513,7 +1513,7 @@
         "Survey Master",
         "كومناف"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "bVSyV7RMbAI",
@@ -1534,7 +1534,7 @@
         "Survey Master",
         "كومناف"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Y6pjrnCoorE",
@@ -1558,7 +1558,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "U-D7GFo1TzY",
@@ -1579,7 +1579,7 @@
         "Survey Master",
         "كومناف"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "A2mUl2nPtZk",
@@ -1599,7 +1599,7 @@
         "LandStar",
         "لاند ستار"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "04hr6Gy-3RE",
@@ -1619,7 +1619,7 @@
         "LandStar",
         "لاند ستار"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Q0L64I5dZt8",
@@ -1642,7 +1642,7 @@
         "GPS",
         "الرصد بالأقمار الصناعية"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "lQqgzPh6x6g",
@@ -1658,7 +1658,7 @@
       "level": "PRACTICAL",
       "url": "https://www.youtube.com/watch?v=lQqgzPh6x6g",
       "tags": [],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "yLcMUkTEnoE",
@@ -1678,7 +1678,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "IReqSqa-xOI",
@@ -1698,7 +1698,7 @@
         "توتال ستيشن",
         "المحطة المتكاملة"
       ],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "gp-4QN2Nt0o",
@@ -1714,7 +1714,7 @@
       "level": "PRACTICAL",
       "url": "https://www.youtube.com/watch?v=gp-4QN2Nt0o",
       "tags": [],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "j2giThGIxk4",
@@ -1730,7 +1730,7 @@
       "level": "PRACTICAL",
       "url": "https://www.youtube.com/watch?v=j2giThGIxk4",
       "tags": [],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "k8mq3oF8WQw",
@@ -1746,7 +1746,7 @@
       "level": "PRACTICAL",
       "url": "https://www.youtube.com/watch?v=k8mq3oF8WQw",
       "tags": [],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "XGa0DSeWozg",
@@ -1762,7 +1762,7 @@
       "level": "PRACTICAL",
       "url": "https://www.youtube.com/watch?v=XGa0DSeWozg",
       "tags": [],
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "manhrZQbwWo",
@@ -1785,7 +1785,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1809,7 +1809,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1833,7 +1833,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1854,7 +1854,7 @@
         "surveying"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1875,7 +1875,7 @@
         "surveying"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1896,7 +1896,7 @@
         "surveying"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1917,7 +1917,7 @@
         "surveying"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCdUT9J7i5C87morLiUBn4UA"
     },
     {
@@ -1941,7 +1941,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -1965,7 +1965,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -1989,7 +1989,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2013,7 +2013,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2037,7 +2037,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2061,7 +2061,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2085,7 +2085,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2110,7 +2110,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "mjeOF16hg9U",
@@ -2133,7 +2133,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2161,7 +2161,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCxsH1AEtsqq9ST0HORbtHDA"
     },
     {
@@ -2186,7 +2186,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "iZhTeAcHTXc",
@@ -2210,7 +2210,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "1t8UeKyVQK0",
@@ -2234,7 +2234,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "EOGIVLNW6vk",
@@ -2258,7 +2258,7 @@
         "سيفل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "WBMGoI-1K7Y",
@@ -2281,7 +2281,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCpYjmkvZVGRZGOUhfqKKgsg"
     },
     {
@@ -2306,7 +2306,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "zP2CTpao1mc",
@@ -2329,7 +2329,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551,
+      "verifiedAtMs": 1794667892266,
       "sourceChannelId": "UCpYjmkvZVGRZGOUhfqKKgsg"
     },
     {
@@ -2354,7 +2354,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "0QQB4iLxmG4",
@@ -2375,7 +2375,7 @@
         "ترمبل"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "rlz4sl9PC-c",
@@ -2393,7 +2393,7 @@
       "sourceChannelId": "UCKGuTAsfLeMN71gHbdk3ONQ",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "l2qOaIcsXqQ",
@@ -2415,7 +2415,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "skRiCNmBI9g",
@@ -2437,7 +2437,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "oMEaeGQ-Yew",
@@ -2459,7 +2459,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "sRQCNcJ3JHg",
@@ -2481,7 +2481,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "MklMGew-iis",
@@ -2499,7 +2499,7 @@
       "sourceChannelId": "UC-pZJji5MeX122W2WiOER7A",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Pg3lIjBD0gE",
@@ -2517,7 +2517,7 @@
       "sourceChannelId": "UC-pZJji5MeX122W2WiOER7A",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "vXWoi3kUObw",
@@ -2539,7 +2539,7 @@
         "معالجة الرصد"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "xx0QnEdIasE",
@@ -2557,7 +2557,7 @@
       "sourceChannelId": "UC5eVO8WbTV3FU3-AbtRnl9g",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "-E28bqiepJE",
@@ -2578,7 +2578,7 @@
         "نظم المعلومات الجغرافية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "LZahymIvksM",
@@ -2596,7 +2596,7 @@
       "sourceChannelId": "UCugDuUg7aky_kw_o7h07QPQ",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "MyCrAMt_QGs",
@@ -2618,7 +2618,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "PC5wJX8eorc",
@@ -2636,7 +2636,7 @@
       "sourceChannelId": "UCugDuUg7aky_kw_o7h07QPQ",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "2J25gtWjbLQ",
@@ -2654,7 +2654,7 @@
       "sourceChannelId": "UCYR-wazFg_1T2icS4z3mcEw",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "imMgjOtDX9o",
@@ -2672,7 +2672,7 @@
       "sourceChannelId": "UCYR-wazFg_1T2icS4z3mcEw",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "9JpRAwxtiis",
@@ -2694,7 +2694,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "TcLHpu7Doys",
@@ -2716,7 +2716,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "-tYAT4Mvgzo",
@@ -2738,7 +2738,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "MXBhcGeRaWg",
@@ -2760,7 +2760,7 @@
         "الميزان"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "V-bvKacccwU",
@@ -2782,7 +2782,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "BKn360BG1Ho",
@@ -2807,7 +2807,7 @@
         "ليكا"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "-MvL4c-xKyY",
@@ -2832,7 +2832,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "uPZadRXHcXk",
@@ -2854,7 +2854,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "9h8vvTuLpdc",
@@ -2876,7 +2876,7 @@
         "الميزان"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "4sOkEjO3R94",
@@ -2898,7 +2898,7 @@
         "المحطة المتكاملة"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "LePoUrJ65oE",
@@ -2916,7 +2916,7 @@
       "sourceChannelId": "UC-yIeUHe_QOgXWDaudvEcZQ",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "xGzf-eltazw",
@@ -2938,7 +2938,7 @@
         "الرصد بالأقمار الصناعية"
       ],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "RqZKSxRKSnE",
@@ -2956,7 +2956,7 @@
       "sourceChannelId": "UC-yIeUHe_QOgXWDaudvEcZQ",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "XCKt1ZZOnvE",
@@ -2974,7 +2974,7 @@
       "sourceChannelId": "UCGFwqcxRltRvT0kmt48XXzw",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "PXy_gfnkiUM",
@@ -2992,7 +2992,7 @@
       "sourceChannelId": "UCGFwqcxRltRvT0kmt48XXzw",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     },
     {
       "id": "Q8G6kOXrB0g",
@@ -3010,7 +3010,7 @@
       "sourceChannelId": "UCNwyTOOKM9cWlaukS0NBi8g",
       "tags": [],
       "discovered": true,
-      "verifiedAtMs": 1794667573551
+      "verifiedAtMs": 1794667892266
     }
   ],
   "sourceCount": 30
