@@ -478,6 +478,7 @@
     "1b7a1acd7111a8420a13db9d3d27ad91edc62b03b17090cad8028128620345d5",
     "1b8904fc6b4838a01eefe5b893b1d5b635ec614825a7b0463a79233cb82c25a2",
     "1b8af7fb7bbf4cf6b8ec3201fe80be817c7d5a08dc81a595a2f8e948dd3ddfbf",
+    "1b924c8f07e08f2052cd27084be461d91455dd1f9a269652a8e81ac20695f2ba",
     "1b988d6f39a20d5fe703957832b703c0d4075287e0d32bd8fc938479285c3b1f",
     "1b9d434c47edf499e28c98b2ac492bcf2d4fb4bd7a2462075ededeaf2a5629b9",
     "1bb30a93308a8c3e9e680e6b914701adaaf0d00b786a855fbf2ecd6dbb096a13",
@@ -935,6 +936,7 @@
     "350ea6b0137ac98d28c416f5bb47e50e3c017ba62977adbf00ccb5550879d395",
     "351ac8ef810fe3f0ef7d0ef0379802daa55f77e50d62fd886bcb096bf6bf07cb",
     "3527683cf1e93801dd0170a20809d75372bdb61923820ecce885df983c182af7",
+    "355ad32c63c7ab294e669731f0b9595493d1074c29320bcdcfe722aebeb42af4",
     "35afabb739c8be427d439d7848b597578b64be8203b783ee1754ff23bdd5d769",
     "35bcb17303a1327b2a65845c335b3da11d50459bf804f480a074f2214288ab1a",
     "35c977fe8f95e18eb68a314a39dc6da2d0b6bdf0899483534d2621b623c23c23",
@@ -4329,6 +4331,7 @@
     "eee8b0050ae3127bbfbcf155361ebb953117f3272e5a17c28a6e51e0ea24e9a5",
     "eef0f36bf2d0847110ad6300b6cd1477f73156556114732b8234fef9ca5ef9dc",
     "eef777dde38ca8fbe2884ecc46ed5c7e1bb03e03d2dd8d96c73aaad04cec3494",
+    "eeffcfdfe6feafba559c506a4054ff1ceec3129295192701c0b0bf2d21350ee9",
     "ef0d93ff03c9697ce3e8c7541affe5887e30956fe8dc4a34519ae166670cb9dc",
     "ef114e25e1b66864466b72a522925c5f03263a549788b4693b3920ac6e54d020",
     "ef129af710775f8491554cdb2db378d7c55c8df947b05ac8bb5cd84a5e85b8f7",
@@ -9028,7 +9031,6 @@
   ],
   "pending": [
     "00d32a6537d15f45879a9ef52a537cb8dd2717444ad3ef2f13fe6247cb9c113e",
-    "0342ef90bc7ef8c58abb621df6dc7625e05b726b42619d3e0ac458cd41e03e23",
     "0537936110d3faf0ecdf55441ccb20095348312912281ab9a26980f1a374be78",
     "061dbc0792e1e2e05e87fc503bce261b47b40e4987f31c97145996d09be77338",
     "09aee88b3e22889a1050eef957488a8efcbd523a3ecba34efa22b58faf9d3cc5",
@@ -9048,6 +9050,7 @@
     "185f5e22f00623ff7d180d87504e02bb2766bc8217df651436280c7f3880dcfa",
     "194799dc5d92a524befc92ea75e690130b23e77b610cb53d76e04f53091bf76e",
     "1a0f3af16dc8fb3c296a7917f23f100a509d24ee7714ca7ce53efe636891f99a",
+    "1b924c8f07e08f2052cd27084be461d91455dd1f9a269652a8e81ac20695f2ba",
     "1c0c69b6ad51fa4224c6928d971b330c86a37c0d5af0c814d628bcc635c82893",
     "1c7a81163eb2a6b6832adb90eac6f78fc64b5cf246b99da8b4476849dbbf7382",
     "1e16180b996117c2aeb82bdafc75f54b79efbc65b096f70b8c28e4e5f6231335",
@@ -9063,6 +9066,7 @@
     "31ff86371b29ce0dd41fb6deab5a6ff5a54d6e60687053af81171dbc14dde7fd",
     "32a91cc98700a16f21a34491fcfa03abf0d63b63b7bb8e493b4e84de82eafe67",
     "33546bcf5aee717238459c2918dc11969433fb710c28907b07c7270e1bc4566e",
+    "355ad32c63c7ab294e669731f0b9595493d1074c29320bcdcfe722aebeb42af4",
     "36abfff6d701c71d9f3a30aba3c9b42d1b7280e9b0d3fe3694f435aac9d50399",
     "38946bcc66811cb040d8fb0d4f7c44e8a096c2a3ed8c3a7bbbe7141e7b6c410f",
     "38cfe56a9d5f76723cf101dfdba14fa1614826957b5ccc01ef1530b38ffab009",
@@ -9210,6 +9214,7 @@
     "eb0ac07ea84aa295214e58102433237cb5f7f517781cc5c2afcdda6c3f6a4219",
     "eb165d081b42df4847ad07e6ab31a0931c47c316dcc69ab136685788bf2f0f40",
     "eeba17695dbf945011e23b46c75ec91a833865e4d29ceb6e09e38df7f3908215",
+    "eeffcfdfe6feafba559c506a4054ff1ceec3129295192701c0b0bf2d21350ee9",
     "efe095e208208744c535683ae498099b1fdde5b836c996f34104fd3f343e600e",
     "f0921c1e3a73de02b203674c165ee6371820b2460dfaae0e91c3e4a7a9b3bdd0",
     "f15da9627d3c240acc9cce81fca5c56ccee6aa9e42e26e74c0f01846b317fa86",
@@ -9645,8 +9650,8 @@
     "d94bc1efcfc21b4dc31798ade24941682a5bde66a2fb5a2d01496dd56c4c8916": "2026-11-01T06:18:50.784616Z",
     "74d725933849fbac3c2eb1533b328aa011c78a1ff239fffc65238f3f9379eb53": "2026-11-13T01:10:20.233600Z",
     "13813f298d4a41ce1b31f338fa5bd009d5672f3204fb5bac73f9a6f83229ff44": "2026-11-01T06:18:50.784616Z",
-    "7ef5cdc1413102cf43ef21f074fb765a4a20f086798a8059ce7647e695a96479": "2026-11-01T06:18:50.784616Z",
-    "463d64610681dddfd2c3b2a4f8b56b4a3b821682f5484213293ee993cb45e00f": "2026-11-01T06:18:50.784616Z",
+    "7ef5cdc1413102cf43ef21f074fb765a4a20f086798a8059ce7647e695a96479": "2026-11-15T01:58:15.094515Z",
+    "463d64610681dddfd2c3b2a4f8b56b4a3b821682f5484213293ee993cb45e00f": "2026-11-15T01:58:15.094515Z",
     "5f01fa7d4156f334fcc17008e3b1dd927b923fba9947dd85db8ce0a15995cdc0": "2026-11-09T09:54:09.608912Z",
     "4223e99907590c6915acbda46752fa72169128ad8bb931dcf3756daca907be9a": "2026-11-01T15:15:36.818156Z",
     "fb5986d73b78943dcf6c1a57450fdd360283a6e4d12a7aa56d8c12e94ad19b8b": "2026-11-01T15:15:36.818156Z",
@@ -9666,7 +9671,7 @@
     "37ac78d0fd48f833221038da8bf7880167af8d013fcf13ce513777a5d0f16278": "2026-11-02T01:33:48.318228Z",
     "ecc58de9db9963f0c51323b78b74bc51d7cc910d57675d2daab13b42e942fdaf": "2026-11-02T01:33:48.318228Z",
     "28a1ca6f84f0921fec64fb5f33b56e0e8c9f6622ab820f498ab6efc50edd1dda": "2026-11-02T01:33:48.318228Z",
-    "c5cb349db44928600d4c639c175e9706aeea471a60209200dd54229a80473b6b": "2026-11-02T09:36:45.854641Z",
+    "c5cb349db44928600d4c639c175e9706aeea471a60209200dd54229a80473b6b": "2026-11-15T01:58:15.094515Z",
     "59269855a7937fdef80acfdd22a8b202b9d44c3cfea790e477646f6f1b1c9cb7": "2026-11-02T09:36:45.854641Z",
     "1ca82a876016f427dd310d3eae46101161b89866d4f528d04b5ffc7e39d0b4d4": "2026-11-02T09:36:45.854641Z",
     "b7ffe213912b5faa92f278eabf5a5c1cbbfbb0f4b7df482d4cc5fc262e59ab63": "2026-11-02T09:36:45.854641Z",
@@ -9751,7 +9756,7 @@
     "620398428655f9395b4bedbce0a61850e19f130a1f3ecb19cbe14a5a89a6ff17": "2026-11-06T21:34:59.151423Z",
     "389d47b7f7e4282b7684a167da24963e59560c6c0e9981c7693b387320f298d0": "2026-11-06T21:34:59.151423Z",
     "3f1660275f5cf9783568f96a5d997e09d7d5f7872d296824f15e4fbe0545bd22": "2026-11-06T21:34:59.151423Z",
-    "1097a8e2a0e4a12cd2f4dc2ca7de3bbebea36a339d42760fb8f3436fb75cce82": "2026-11-07T08:53:23.796490Z",
+    "1097a8e2a0e4a12cd2f4dc2ca7de3bbebea36a339d42760fb8f3436fb75cce82": "2026-11-15T01:58:15.094515Z",
     "dcfe7c6187a6ef25c09c807a7df33e5f3d3885293c16241f0d07e544cfd7516f": "2026-11-07T08:53:23.796490Z",
     "039b5ebc07950c56e588da9ae2aa15efb170cfaa7354dd2c5b23602832836bea": "2026-11-07T08:53:23.796490Z",
     "403a4d03fbdc92920a288bb91e7e83ace4c16eb0bc3f3aba41ce552f8e49bfde": "2026-11-07T08:53:23.796490Z",
@@ -9841,7 +9846,11 @@
     "9517b7e9a0d15e615f67386b2f8dc89c81a176b7e19228578e18b3c1eee69642": "2026-11-14T20:46:22.848381Z",
     "83e2cfcb432b11fdfc89cc4619ab021e7504e2f16b815fdaf9d2f449e1eebe8c": "2026-11-14T20:46:22.848381Z",
     "3527683cf1e93801dd0170a20809d75372bdb61923820ecce885df983c182af7": "2026-11-14T20:46:22.848381Z",
-    "a370f066e0897f6ca6c161ab6852da02eb5e81a1411f6238e2c851fc8209097a": "2026-11-14T20:46:22.848381Z"
+    "a370f066e0897f6ca6c161ab6852da02eb5e81a1411f6238e2c851fc8209097a": "2026-11-14T20:46:22.848381Z",
+    "4c3207fd69515029e921999808e99ee27709b05ad7fadedf9f85ccfb5b778384": "2026-11-15T01:58:15.094515Z",
+    "fae1d70e0378df0ba7a7482c57b594ea85a13d91c9d5ebd994502faf78e8dfa0": "2026-11-15T01:58:15.094515Z",
+    "1f25ead31a1f1dad5ab397e051819654f172e12d24a957855667e5409ea9c23c": "2026-11-15T01:58:15.094515Z",
+    "a74e852b5bffac11bb85773283e91921b9c6b563760888a0e078e205fe8f5244": "2026-11-15T01:58:15.094515Z"
   },
   "firstDiscovered": {
     "a95151d997d8231266169e3055596ae3e695b585125cde822ae0f8c0da45472d": "2026-09-15T15:15:29.550527Z",
@@ -14872,7 +14881,11 @@
     "1f22afe0034d80882dc6ab4bbb5589e064bd3d5da68db0b5536775546e5658c6": "2026-11-14T06:37:55.530379Z",
     "f48c28c2282a43660646761b93c49e2c94cd73f78b4419ac516d40d15f2df235": "2026-11-14T06:37:55.530379Z",
     "4c3207fd69515029e921999808e99ee27709b05ad7fadedf9f85ccfb5b778384": "2026-11-14T06:37:55.530379Z",
-    "bb10c439d6715663e9e6fc3ce877c2131dc3795a6e824e64fd63c4cdfa430a0c": "2026-11-14T15:09:43.257873Z"
+    "bb10c439d6715663e9e6fc3ce877c2131dc3795a6e824e64fd63c4cdfa430a0c": "2026-11-14T15:09:43.257873Z",
+    "355ad32c63c7ab294e669731f0b9595493d1074c29320bcdcfe722aebeb42af4": "2026-11-15T01:58:15.094515Z",
+    "eeffcfdfe6feafba559c506a4054ff1ceec3129295192701c0b0bf2d21350ee9": "2026-11-15T01:58:15.094515Z",
+    "48f4d5a6f14457ee98dd19483cfac3925dad04bfbe0bac73f1d6fe98b2f51a39": "2026-11-15T01:58:15.094515Z",
+    "1b924c8f07e08f2052cd27084be461d91455dd1f9a269652a8e81ac20695f2ba": "2026-11-15T01:58:15.094515Z"
   },
   "sourceHealth": {
     "Woolpert Careers": {
@@ -15057,8 +15070,8 @@
     },
     "SSC HR Solutions Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 141,
       "matchingRecords": 0,
@@ -15067,8 +15080,8 @@
     },
     "Hyde Park Developments Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 15,
       "matchingRecords": 0,
@@ -15077,8 +15090,8 @@
     },
     "Phasor Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 48,
       "matchingRecords": 17,
@@ -15087,8 +15100,8 @@
     },
     "LaBella Associates Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 308,
       "matchingRecords": 11,
@@ -15097,8 +15110,8 @@
     },
     "Label Your Data Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 30,
       "matchingRecords": 0,
@@ -15107,8 +15120,8 @@
     },
     "Eram Talent Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 1365,
       "matchingRecords": 1,
@@ -15117,8 +15130,8 @@
     },
     "JASARA PMC Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 147,
       "matchingRecords": 3,
@@ -15127,8 +15140,8 @@
     },
     "ICARDA Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 4,
       "matchingRecords": 0,
@@ -15137,8 +15150,8 @@
     },
     "International Water Management Institute Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -15147,8 +15160,8 @@
     },
     "Qiddiya Investment Company Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 252,
       "matchingRecords": 1,
@@ -15157,8 +15170,8 @@
     },
     "ABIS Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 98,
       "matchingRecords": 0,
@@ -15167,8 +15180,8 @@
     },
     "ABEC Egypt Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -15197,8 +15210,8 @@
     },
     "Devoteam Saudi Arabia Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 2,
       "matchingRecords": 2,
@@ -15207,8 +15220,8 @@
     },
     "Jobs for Humanity Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 29,
       "matchingRecords": 1,
@@ -15217,8 +15230,8 @@
     },
     "Turner and Townsend Saudi Arabia Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 1,
       "matchingRecords": 0,
@@ -15228,25 +15241,25 @@
     "SYSTRA Careers": {
       "status": "failed",
       "lastSuccess": "2026-11-12T00:49:05.693390Z",
-      "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 4,
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 5,
       "errorType": "ValueError"
     },
     "AECOM Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 7,
-      "records": 785,
+      "records": 781,
       "matchingRecords": 137,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Egis Middle East Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 7,
       "records": 180,
       "matchingRecords": 22,
@@ -15255,8 +15268,8 @@
     },
     "G Map Oman Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 2,
       "matchingRecords": 1,
@@ -15265,8 +15278,8 @@
     },
     "InfoGraph Jordan Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 3,
       "matchingRecords": 3,
@@ -15275,8 +15288,8 @@
     },
     "Alpha Electric Oman Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 1,
       "matchingRecords": 1,
@@ -15285,8 +15298,8 @@
     },
     "MIRA Construction Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 245,
       "matchingRecords": 1,
@@ -15295,8 +15308,8 @@
     },
     "Experts Plus Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 159,
       "matchingRecords": 0,
@@ -15305,8 +15318,8 @@
     },
     "Parsons Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 14,
       "records": 193,
       "matchingRecords": 114,
@@ -15314,12 +15327,12 @@
       "consecutiveFailures": 0
     },
     "AtkinsRealis Careers": {
-      "status": "healthy",
+      "status": "partial",
       "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "pages": 14,
-      "records": 224,
-      "matchingRecords": 40,
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 8,
+      "records": 133,
+      "matchingRecords": 28,
       "lastFailure": "2026-11-04T18:02:18.433758Z",
       "consecutiveFailures": 0
     },
@@ -15385,8 +15398,8 @@
     },
     "IRTH UAE Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 13,
       "matchingRecords": 0,
@@ -15395,8 +15408,8 @@
     },
     "Rise Geo UAE Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -15405,8 +15418,8 @@
     },
     "Stantec Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 80,
       "matchingRecords": 73,
@@ -15415,8 +15428,8 @@
     },
     "GHD Global Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 10,
       "records": 63,
       "matchingRecords": 4,
@@ -15425,8 +15438,8 @@
     },
     "Punjab Land Records Authority Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 18,
       "matchingRecords": 6,
@@ -15435,8 +15448,8 @@
     },
     "Fosad Nigeria Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 14,
       "matchingRecords": 0,
@@ -15445,8 +15458,8 @@
     },
     "Kenya National Highways Authority Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 2,
       "matchingRecords": 0,
@@ -15455,8 +15468,8 @@
     },
     "Orbital Africa Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 8,
       "matchingRecords": 5,
@@ -15465,8 +15478,8 @@
     },
     "GeoDev Kenya Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -15475,8 +15488,8 @@
     },
     "Hassan Allam Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 5,
       "matchingRecords": 0,
@@ -15486,15 +15499,15 @@
     "Pakistan National Job Portal": {
       "status": "failed",
       "lastSuccess": "2026-11-05T06:57:03.565653Z",
-      "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 15,
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 16,
       "errorType": "SSLError"
     },
     "Karachi Water and Sewerage Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 1,
       "matchingRecords": 0,
@@ -15503,8 +15516,8 @@
     },
     "ACCIONA Global Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 31,
       "matchingRecords": 13,
@@ -15513,8 +15526,8 @@
     },
     "SLR Consulting Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 5,
       "records": 29,
       "matchingRecords": 1,
@@ -15523,8 +15536,8 @@
     },
     "World Food Programme Geospatial Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 0,
@@ -15533,8 +15546,8 @@
     },
     "Ferrovial Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 30,
       "matchingRecords": 11,
@@ -15543,8 +15556,8 @@
     },
     "Westgold Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 6,
       "matchingRecords": 3,
@@ -15553,8 +15566,8 @@
     },
     "Planet Geospatial Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 116,
       "matchingRecords": 0,
@@ -15563,8 +15576,8 @@
     },
     "BlackSky Geospatial Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 39,
       "matchingRecords": 0,
@@ -15603,18 +15616,18 @@
     },
     "Talent360 Egypt Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
-      "records": 499,
+      "records": 500,
       "matchingRecords": 1,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Assystem Middle East Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 7,
       "records": 95,
       "matchingRecords": 8,
@@ -15633,8 +15646,8 @@
     },
     "alfanar and DAR Engineering Saudi Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 16,
       "matchingRecords": 0,
@@ -15643,8 +15656,8 @@
     },
     "BESIX Middle East Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 7,
       "records": 39,
       "matchingRecords": 6,
@@ -15663,8 +15676,8 @@
     },
     "BlackStone eIT Egypt and Gulf GIS Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 116,
       "matchingRecords": 0,
@@ -15673,8 +15686,8 @@
     },
     "Hill International Egypt and Saudi Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 27,
       "matchingRecords": 0,
@@ -15693,8 +15706,8 @@
     },
     "Archirodon Egypt and Saudi Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 10,
       "matchingRecords": 0,
@@ -15723,8 +15736,8 @@
     },
     "HanmiGlobal Saudi Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 57,
       "matchingRecords": 2,
@@ -15733,8 +15746,8 @@
     },
     "Advanced Roads and Development Saudi Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 9,
       "matchingRecords": 0,
@@ -15743,8 +15756,8 @@
     },
     "QSIT Egypt GIS Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 6,
       "matchingRecords": 6,
@@ -15753,8 +15766,8 @@
     },
     "Oceangate Egypt Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -15763,8 +15776,8 @@
     },
     "BKF Engineers Survey Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 333,
       "matchingRecords": 18,
@@ -15773,8 +15786,8 @@
     },
     "Murphy Geospatial Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 34,
       "matchingRecords": 22,
@@ -15783,8 +15796,8 @@
     },
     "CARDINAL CIVIL RESOURCES Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 12,
       "matchingRecords": 9,
@@ -15793,8 +15806,8 @@
     },
     "Encompass Energy Services Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 23,
       "matchingRecords": 5,
@@ -15802,45 +15815,41 @@
       "consecutiveFailures": 0
     },
     "Singapore Public Service Careers": {
-      "status": "healthy",
+      "status": "failed",
       "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "pages": 3,
-      "records": 43,
-      "matchingRecords": 15,
-      "lastFailure": "2026-11-13T01:10:20.233600Z",
-      "consecutiveFailures": 0
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 1,
+      "errorType": "ValueError"
     },
     "Leidos Careers": {
       "status": "failed",
       "lastSuccess": "2026-11-13T17:49:46.362641Z",
-      "lastFailure": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 2,
+      "errorType": "ValueError"
     },
     "Vantor / Maxar Careers": {
       "status": "failed",
       "lastSuccess": "2026-11-13T17:49:46.362641Z",
-      "lastFailure": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 2,
+      "errorType": "ValueError"
     },
     "Primoris Renewable Energy Global Careers": {
-      "status": "healthy",
+      "status": "failed",
       "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "pages": 3,
-      "records": 17,
-      "matchingRecords": 5,
-      "lastFailure": "2026-11-13T01:10:20.233600Z",
-      "consecutiveFailures": 0
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 1,
+      "errorType": "ValueError"
     },
     "Apex Geomatics Construction Surveyors Ltd Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 7,
       "matchingRecords": 5,
@@ -15849,8 +15858,8 @@
     },
     "Atlas Surveying Inc Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 10,
       "matchingRecords": 7,
@@ -15858,19 +15867,17 @@
       "consecutiveFailures": 0
     },
     "EllisDon Construction Services Inc. Global Careers": {
-      "status": "healthy",
+      "status": "failed",
       "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "pages": 3,
-      "records": 10,
-      "matchingRecords": 5,
-      "lastFailure": "2026-11-13T01:10:20.233600Z",
-      "consecutiveFailures": 0
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 1,
+      "errorType": "ValueError"
     },
     "Fleming Engineering Inc Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 11,
       "matchingRecords": 5,
@@ -15880,15 +15887,15 @@
     "CACI Careers": {
       "status": "failed",
       "lastSuccess": "2026-11-13T17:49:46.362641Z",
-      "lastFailure": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 2,
+      "errorType": "ValueError"
     },
     "Modern Geographic Technologies Corp Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 5,
       "matchingRecords": 5,
@@ -15897,8 +15904,8 @@
     },
     "Clark Construction Group, LLC Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 6,
       "matchingRecords": 4,
@@ -15907,8 +15914,8 @@
     },
     "Jones & DeMille Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 17,
       "matchingRecords": 4,
@@ -15917,8 +15924,8 @@
     },
     "Airbus Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 28,
       "matchingRecords": 4,
@@ -15926,17 +15933,19 @@
       "consecutiveFailures": 0
     },
     "Booz Allen Hamilton Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 11,
+      "records": 96,
+      "matchingRecords": 6,
       "lastFailure": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "consecutiveFailures": 0
     },
     "Flatiron Construction Corp Global Careers": {
       "status": "partial",
       "lastSuccess": "2026-10-29T14:08:00.779084Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 3,
@@ -15946,7 +15955,7 @@
     "Quanta Infrastructure Solutions Group, LLC Global Careers": {
       "status": "partial",
       "lastSuccess": "2026-10-29T14:07:58.138827Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 3,
@@ -15955,8 +15964,8 @@
     },
     "Essential Energy Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 0,
       "matchingRecords": 0,
@@ -15964,17 +15973,19 @@
       "consecutiveFailures": 0
     },
     "ICF Resources, LLC Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 26,
+      "matchingRecords": 6,
       "lastFailure": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "consecutiveFailures": 0
     },
     "Bexar County Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 5,
       "matchingRecords": 4,
@@ -15983,8 +15994,8 @@
     },
     "Fervo Energy Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 65,
       "matchingRecords": 2,
@@ -15994,7 +16005,7 @@
     "MasTec Civil Global Careers": {
       "status": "partial",
       "lastSuccess": "2026-10-29T14:08:19.744274Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 2,
@@ -16004,7 +16015,7 @@
     "Dynamic Engineering Consultants, PC Careers": {
       "status": "partial",
       "lastSuccess": "2026-10-29T14:08:05.390785Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 2,
@@ -16013,8 +16024,8 @@
     },
     "M&J Engineering Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 2,
       "matchingRecords": 2,
@@ -16023,8 +16034,8 @@
     },
     "Sureway Construction Group Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 1,
       "matchingRecords": 1,
@@ -16034,7 +16045,7 @@
     "CEI Services Global Careers": {
       "status": "partial",
       "lastSuccess": "2026-10-29T14:08:03.933485Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 4,
       "records": 3,
       "matchingRecords": 2,
@@ -16043,8 +16054,8 @@
     },
     "DEME Group Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 9,
       "records": 25,
       "matchingRecords": 6,
@@ -16052,19 +16063,19 @@
       "consecutiveFailures": 0
     },
     "Arcadis Global Careers": {
-      "status": "partial",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
-      "lastAttempt": "2026-11-14T06:37:55.530379Z",
-      "pages": 11,
-      "records": 131,
-      "matchingRecords": 18,
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 15,
+      "records": 218,
+      "matchingRecords": 19,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "SAIC Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 13,
       "matchingRecords": 5,
@@ -16073,8 +16084,8 @@
     },
     "Georgia Power Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 8,
       "matchingRecords": 0,
@@ -16082,65 +16093,79 @@
       "consecutiveFailures": 0
     },
     "General Dynamics Information Technology Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 11,
+      "records": 72,
+      "matchingRecords": 5,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Invenergy LLC Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 10,
+      "matchingRecords": 4,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Maricopa County Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 0,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Penn Environmental & Remediation Inc. Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 10,
+      "matchingRecords": 2,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Richland County Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 12,
+      "matchingRecords": 3,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "STV Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 17,
+      "matchingRecords": 5,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Alcoa of Australia Limited Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 9,
+      "records": 5,
+      "matchingRecords": 3,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Aeva, Inc. Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 46,
       "matchingRecords": 6,
@@ -16149,8 +16174,8 @@
     },
     "True Environmental Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 50,
       "matchingRecords": 2,
@@ -16159,8 +16184,8 @@
     },
     "Blattner Energy, LLC Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 1,
       "matchingRecords": 1,
@@ -16169,8 +16194,8 @@
     },
     "Torc Robotics Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 45,
       "matchingRecords": 1,
@@ -16179,8 +16204,8 @@
     },
     "Citizens Energy Group Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 0,
       "matchingRecords": 0,
@@ -16189,8 +16214,8 @@
     },
     "Consor Engineers Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 1,
       "matchingRecords": 1,
@@ -16199,8 +16224,8 @@
     },
     "North American Construction Group Inc. Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 1,
       "matchingRecords": 1,
@@ -16209,8 +16234,8 @@
     },
     "Ramboll Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 7,
       "records": 238,
       "matchingRecords": 3,
@@ -16218,17 +16243,19 @@
       "consecutiveFailures": 0
     },
     "Caterpillar Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T17:49:46.362641Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 12,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Chloris Geospatial Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 1,
       "matchingRecords": 0,
@@ -16237,8 +16264,8 @@
     },
     "Leicestershire County Council Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 1,
       "matchingRecords": 1,
@@ -16247,8 +16274,8 @@
     },
     "WSP Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 10,
       "records": 52,
       "matchingRecords": 0,
@@ -16257,8 +16284,8 @@
     },
     "Environmental Resources Management (ERM) Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 26,
       "matchingRecords": 3,
@@ -16267,8 +16294,8 @@
     },
     "Strathcona County Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 0,
       "matchingRecords": 0,
@@ -16277,8 +16304,8 @@
     },
     "Mortenson Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 12,
       "matchingRecords": 9,
@@ -16287,8 +16314,8 @@
     },
     "Dallas County Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 1,
       "matchingRecords": 1,
@@ -16297,8 +16324,8 @@
     },
     "G Mining Ventures Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 91,
       "matchingRecords": 1,
@@ -16307,8 +16334,8 @@
     },
     "Shelby County Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 6,
       "matchingRecords": 2,
@@ -16317,8 +16344,8 @@
     },
     "Barnard Construction Company Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 2,
       "records": 1,
       "matchingRecords": 1,
@@ -16327,8 +16354,8 @@
     },
     "Kinsley Construction Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 48,
       "matchingRecords": 1,
@@ -16337,8 +16364,8 @@
     },
     "Leonardo SpA Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 3,
       "matchingRecords": 1,
@@ -16347,8 +16374,8 @@
     },
     "Maverick Engineering Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 2,
       "matchingRecords": 0,
@@ -16357,8 +16384,8 @@
     },
     "Sawtooth Mining Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 1,
       "matchingRecords": 1,
@@ -16367,8 +16394,8 @@
     },
     "State of North Carolina Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 15,
       "matchingRecords": 0,
@@ -16377,8 +16404,8 @@
     },
     "Orla Mining Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 32,
       "matchingRecords": 2,
@@ -16387,8 +16414,8 @@
     },
     "Portland General Electric Company Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 4,
       "matchingRecords": 2,
@@ -16397,8 +16424,8 @@
     },
     "United Infrastructure Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 22,
       "matchingRecords": 1,
@@ -16407,8 +16434,8 @@
     },
     "Washington County, Oregon Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 2,
       "matchingRecords": 0,
@@ -16417,8 +16444,8 @@
     },
     "County of Weld Global Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 3,
       "records": 4,
       "matchingRecords": 1,
@@ -16427,8 +16454,8 @@
     },
     "Maple Reinders Careers": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 1,
       "records": 34,
       "matchingRecords": 1,
@@ -16436,12 +16463,14 @@
       "consecutiveFailures": 0
     },
     "Xcel Energy Services Inc Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T01:10:20.233600Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 3,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 2,
-      "errorType": "HTTPError"
+      "consecutiveFailures": 0
     },
     "Edge Construction Careers": {
       "status": "healthy",
@@ -16466,9 +16495,9 @@
     "Alberta Energy Regulator Careers": {
       "status": "failed",
       "lastSuccess": "2026-10-30T19:27:27.486088Z",
-      "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 22,
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 23,
       "errorType": "HTTPError"
     },
     "Aero Constructors Careers": {
@@ -16922,20 +16951,24 @@
       "consecutiveFailures": 0
     },
     "Baker Hughes Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T01:10:20.233600Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 0,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 2,
-      "errorType": "HTTPError"
+      "consecutiveFailures": 0
     },
     "City of Baltimore Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T23:39:13.404460Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 0,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "BayWa r.e. Careers": {
       "status": "healthy",
@@ -18098,12 +18131,14 @@
       "consecutiveFailures": 0
     },
     "Cubic Transportation Systems (Australia) Pty Limited Global Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T23:39:13.404460Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 0,
+      "matchingRecords": 0,
       "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "consecutiveFailures": 0
     },
     "Design Works Engineering Careers": {
       "status": "healthy",
@@ -18208,9 +18243,9 @@
     "Eiffage Careers": {
       "status": "failed",
       "lastSuccess": "2026-11-08T22:13:42.075832Z",
-      "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 7,
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 8,
       "errorType": "HTTPError"
     },
     "Badger Infrastructure Solutions Global Careers": {
@@ -18616,9 +18651,9 @@
     "gensler Global Careers": {
       "status": "failed",
       "lastSuccess": "2026-10-29T14:09:25.475920Z",
-      "lastFailure": "2026-11-14T15:09:43.257873Z",
-      "lastAttempt": "2026-11-14T15:09:43.257873Z",
-      "consecutiveFailures": 25,
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 26,
       "errorType": "HTTPError"
     },
     "Georg Fischer Careers": {
@@ -19012,12 +19047,14 @@
       "consecutiveFailures": 0
     },
     "K+S Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-09T09:54:09.608912Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 2,
+      "matchingRecords": 1,
       "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 7,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Kuby Renewable Energy Careers": {
       "status": "healthy",
@@ -19060,12 +19097,14 @@
       "consecutiveFailures": 0
     },
     "Las Vegas Valley Water District Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-10T04:10:06.150916Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 2,
+      "matchingRecords": 2,
       "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 6,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "Massman Construction Co. Careers": {
       "status": "healthy",
@@ -19208,12 +19247,14 @@
       "consecutiveFailures": 0
     },
     "Northrop Grumman Careers": {
-      "status": "failed",
-      "lastSuccess": "2026-11-13T09:39:53.957606Z",
+      "status": "healthy",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 3,
+      "records": 7,
+      "matchingRecords": 2,
       "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 1,
-      "errorType": "ValueError"
+      "consecutiveFailures": 0
     },
     "National Geographic Society Careers": {
       "status": "healthy",
@@ -19847,8 +19888,8 @@
     },
     "Arbetsförmedlingen JobTech Survey and GIS Jobs": {
       "status": "healthy",
-      "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
+      "lastSuccess": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
       "pages": 9,
       "records": 78,
       "matchingRecords": 77,
@@ -19856,22 +19897,22 @@
       "consecutiveFailures": 0
     },
     "France Travail Survey and Geospatial Jobs": {
-      "status": "healthy",
+      "status": "partial",
       "lastSuccess": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "pages": 2,
-      "records": 11,
-      "matchingRecords": 11,
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "pages": 22,
+      "records": 193,
+      "matchingRecords": 193,
       "lastFailure": null,
       "consecutiveFailures": 0
     },
     "Canada Job Bank Verified Survey and Geomatics Jobs": {
       "status": "failed",
       "lastSuccess": "2026-11-14T06:37:55.530379Z",
-      "lastFailure": "2026-11-14T20:46:22.848381Z",
-      "lastAttempt": "2026-11-14T20:46:22.848381Z",
-      "consecutiveFailures": 1,
-      "errorType": "HTTPError"
+      "lastFailure": "2026-11-15T01:58:15.094515Z",
+      "lastAttempt": "2026-11-15T01:58:15.094515Z",
+      "consecutiveFailures": 2,
+      "errorType": "ReadTimeout"
     },
     "GIS Career Hub Worldwide Jobs": {
       "status": "failed",
@@ -19882,9 +19923,9 @@
       "errorType": "ValueError"
     }
   },
-  "sourceCursor": "fa-esco-saasfaprod1.fa.ocs.oraclecloud.com/hcmrestapi/resources/latest/recruitingcejobrequisitions",
+  "sourceCursor": "slihrms.wd3.myworkdayjobs.com/wday/cxs/slihrms/careers/jobs",
   "editorialFeed": {
-    "checkedAt": "2026-11-14T21:01:23.364232Z",
+    "checkedAt": "2026-11-15T02:13:16.155710Z",
     "status": "healthy",
     "activeJobs": 0
   },
@@ -19943,10 +19984,14 @@
       "https://giscareerhub.com/gis-jobs/location/south-korea?page=2"
     ],
     "www.jobbank.gc.ca/jobsearch/feed/jobsearchrssfeed": [
-      "https://www.jobbank.gc.ca/jobsearch/feed/jobSearchRSSfeed?fn21=22214&fsrc=16&sort=D&rows=100&fage=30",
       "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=21203&fsrc=16&sort=D",
       "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=22213&fsrc=16&sort=D",
       "https://www.jobbank.gc.ca/jobsearch/jobsearch?fn21=22214&fsrc=16&sort=D"
+    ],
+    "candidat.francetravail.fr/offres/recherche": [
+      "https://candidat.francetravail.fr/offres/recherche?motsCles=SIG&offresPartenaires=false&range=80-99&tri=1",
+      "https://candidat.francetravail.fr/offres/recherche?motsCles=geometre&offresPartenaires=false&range=120-139&tri=1",
+      "https://candidat.francetravail.fr/offres/recherche?motsCles=topographe&offresPartenaires=false&range=100-119&tri=1"
     ]
   }
 }
