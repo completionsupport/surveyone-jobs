@@ -51,6 +51,21 @@ not on the publication path for these vacancies. The optional `editorial_only`
 manual run cleans legacy copies without scraping employers or sending any FCM.
 The regular two-hour employer collection and its notification policy are unchanged.
 
+## Recover a failed Pages publication
+
+Jobs and learning share `.github/actions/publish-pages`. It uploads the public
+directory once and retries a failed Pages deployment after 15 and then 30 seconds.
+This handles temporary artifact-visibility/API failures without repeating source
+collection or notifications. A third failure still fails the workflow, so FCM is
+never sent for an unpublished jobs feed. The shared `survey-jobs` concurrency lock
+and `ref: main` checkout remain in place to preserve both public catalogues.
+
+If collection succeeded but publication failed, manually run **Update Survey
+Jobs** on `main` with `publish_only` checked. It validates and republishes the
+already saved feeds without scraping, editing collector state or sending FCM.
+This option takes precedence over `editorial_only` if both are checked. Leave it
+unchecked for the normal collection and country-notification workflow.
+
 ## Verified source coverage
 
 As of 2026-10-04, 68 distinct enabled career boards passed live parsing and clean

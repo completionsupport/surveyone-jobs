@@ -38,11 +38,8 @@ jobs:
             git commit -m "Refresh learning catalogue [skip ci]"
             git push
           fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-      - uses: actions/deploy-pages@v4
+      - name: Publish feeds with bounded retries
+        uses: ./.github/actions/publish-pages
       - name: Save collection diagnostics
         if: always()
         uses: actions/upload-artifact@v4

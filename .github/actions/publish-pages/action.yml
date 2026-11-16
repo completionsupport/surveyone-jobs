@@ -1,0 +1,47 @@
+name: Publish SurveyOne feeds
+description: Upload once and retry transient GitHub Pages deployment failures.
+inputs:
+  path:
+    description: Directory containing the public feeds.
+    required: false
+    default: public
+outputs:
+  page_url:
+    description: URL returned by the successful Pages deployment.
+    value: ${{ steps.deploy_final.outputs.page_url || steps.deploy_retry.outputs.page_url || steps.deploy.outputs.page_url }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/configure-pages@v5
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: ${{ inputs.path }}
+    # Upload can finish before the artifact is visible to deploy-pages. Keep
+    # retries inside publication, never around collection or FCM delivery.
+    - name: Deploy Pages
+      id: deploy
+      continue-on-error: true
+      uses: actions/deploy-pages@v4
+    - name: Wait before second deployment attempt
+      if: steps.deploy.outcome == 'failure'
+      shell: bash
+      run: |
+        echo 'Pages deployment failed; retrying the same artifact in 15 seconds.'
+        sleep 15
+    - name: Retry Pages deployment
+      if: steps.deploy.outcome == 'failure'
+      id: deploy_retry
+      continue-on-error: true
+      uses: actions/deploy-pages@v4
+    - name: Wait before final deployment attempt
+      if: steps.deploy_retry.outcome == 'failure'
+      shell: bash
+      run: |
+        echo 'Pages deployment failed again; making the final attempt in 30 seconds.'
+        sleep 30
+    # This attempt MUST fail the caller if publishing is still unavailable.
+    # Notification steps therefore remain skipped until publication succeeds.
+    - name: Final Pages deployment attempt
+      if: steps.deploy_retry.outcome == 'failure'
+      id: deploy_final
+      uses: actions/deploy-pages@v4

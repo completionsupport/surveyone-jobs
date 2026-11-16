@@ -7,12 +7,18 @@ on:
       - 'jobs/config/**'
       - 'jobs/tests/**'
       - 'jobs/requirements.txt'
+      - '.github/workflows/update-survey-jobs.yml'
+      - '.github/actions/publish-pages/**'
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
     inputs:
       editorial_only:
         description: 'Sync admin vacancies to the app only (no scraping or notifications)'
+        type: boolean
+        default: false
+      publish_only:
+        description: 'Republish saved feeds only (no scraping, state changes or notifications)'
         type: boolean
         default: false
 permissions:
@@ -30,6 +36,7 @@ jobs:
       name: github-pages
     env:
       EDITORIAL_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.editorial_only }}
+      PUBLISH_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_only }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,16 +50,17 @@ jobs:
       - run: pip install -r jobs/requirements.txt
       - run: python -m unittest discover -s jobs/tests -v
       - name: Collect employer sources and admin vacancies
-        if: env.EDITORIAL_ONLY != 'true'
+        if: env.PUBLISH_ONLY != 'true' && env.EDITORIAL_ONLY != 'true'
         run: python -m jobs.collector.main
         env:
           SURVEYONE_EDITORIAL_JOBS_FEED_URL: ${{ vars.SURVEYONE_EDITORIAL_JOBS_FEED_URL }}
       - name: Sync admin vacancies without notifications
-        if: env.EDITORIAL_ONLY == 'true'
+        if: env.PUBLISH_ONLY != 'true' && env.EDITORIAL_ONLY == 'true'
         run: python -m jobs.collector.sync_editorial
         env:
           SURVEYONE_EDITORIAL_JOBS_FEED_URL: ${{ vars.SURVEYONE_EDITORIAL_JOBS_FEED_URL }}
       - name: Save feed and collector state when changed
+        if: env.PUBLISH_ONLY != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -61,20 +69,17 @@ jobs:
             git commit -m "Update Survey Jobs [skip ci]"
             git push
           fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-      - uses: actions/deploy-pages@v4
+      - name: Publish feeds with bounded retries
+        uses: ./.github/actions/publish-pages
       - name: Check notification configuration
-        if: env.EDITORIAL_ONLY != 'true'
+        if: env.PUBLISH_ONLY != 'true' && env.EDITORIAL_ONLY != 'true'
         id: config
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
           if [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"; fi
       - name: Reserve notification before delivery
-        if: env.EDITORIAL_ONLY != 'true' && steps.config.outputs.enabled == 'true'
+        if: env.PUBLISH_ONLY != 'true' && env.EDITORIAL_ONLY != 'true' && steps.config.outputs.enabled == 'true'
         id: reserve
         run: |
           python -m jobs.collector.notify reserve
@@ -84,7 +89,7 @@ jobs:
             git push
           fi
       - name: Send one FCM notification
-        if: env.EDITORIAL_ONLY != 'true' && steps.reserve.outputs.send == 'true'
+        if: env.PUBLISH_ONLY != 'true' && env.EDITORIAL_ONLY != 'true' && steps.reserve.outputs.send == 'true'
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python -m jobs.collector.notify send
